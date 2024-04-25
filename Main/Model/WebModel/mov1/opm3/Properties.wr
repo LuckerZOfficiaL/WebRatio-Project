@@ -1,0 +1,24 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="270" gr:y="165" id="mov1#opm3" name="Register">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm3#icu3" gr:x="30" gr:y="60">
+      <InputCollectorParameter id="mov1#opm3#icu3#icp10" name="email"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp9" name="password"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp8" name="userName"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp7" name="lastName"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp6" name="firstName"/>
+      <InputCollectorParameter id="mov1#opm3#icu3#icp5" name="group ID"/>
+      <OKLink id="mov1#opm3#icu3#oln3" name="OKFlow3" to="mov1#opm3#cru1">
+        <LinkParameter id="mov1#opm3#icu3#oln3#par3" name="email_email" source="mov1#opm3#icu3#icp10" target="mov1#opm3#cru1.email"/>
+        <LinkParameter id="mov1#opm3#icu3#oln3#par4" name="firstName_firstName" source="mov1#opm3#icu3#icp6" target="mov1#opm3#cru1.User#att17"/>
+        <LinkParameter id="mov1#opm3#icu3#oln3#par5" name="group ID_Group.oid(defaultGroup)" source="mov1#opm3#icu3#icp5" target="mov1#opm3#cru1.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="mov1#opm3#icu3#oln3#par6" name="lastName_lastName" source="mov1#opm3#icu3#icp7" target="mov1#opm3#cru1.User#att22"/>
+        <LinkParameter id="mov1#opm3#icu3#oln3#par7" name="password_password" source="mov1#opm3#icu3#icp9" target="mov1#opm3#cru1.password"/>
+        <LinkParameter id="mov1#opm3#icu3#oln3#par8" name="userName_userName" source="mov1#opm3#icu3#icp8" target="mov1#opm3#cru1.userName"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <CreateUnit gr:x="310" gr:y="120" id="mov1#opm3#cru1" name="CreateUser" entity="User">
+      <KOLink id="mov1#opm3#cru1#kln4" name="KOFlow4" to="mov1#opm3#kocu3" automaticCoupling="true"/>
+    </CreateUnit>
+    <KOCollectorUnit gr:x="455" gr:y="120" id="mov1#opm3#kocu3" name="KO Port3"/>
+  </OperationUnits>
+</OperationModule>

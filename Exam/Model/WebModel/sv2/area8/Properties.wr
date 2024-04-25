@@ -1,0 +1,31 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="10" gr:y="-5" id="sv2#area8" name="Exams" landmark="false" defaultPage="sv2#area8#seu8">
+  <OperationUnits>
+    <SelectorUnit gr:x="205" gr:y="310" id="sv2#area8#seu8" name="Selected exam" entity="ent4" distinctAttributes="ent4#att6">
+      <Selector id="sv2#area8#seu8#su13" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area8#seu8#su13#rcond7" name="RoleCondition7" predicate="in" implied="false" role="rel3#role5.rel3#role6.rel3#role5.rel3#role6"/>
+      </Selector>
+      <OKLink id="sv2#area8#seu8#oln21" name="OKFlow21" to="sv2#area8#seu6">
+        <LinkParameter id="sv2#area8#seu8#oln21#par62" name="AssignedExamsToExam.exam_code_PASSING" sourceLinkParameter="sv2#area8#page16#pwu7#ln36#par45" passing="true"/>
+        <LinkParameter id="sv2#area8#seu8#oln21#par71" name="AssignedExamsToExam.exam_code_PASSING_RoleCondition8 [exam_code]" sourceLinkParameter="sv2#area8#page16#pwu7#ln36#par45" target="sv2#area8#seu6#su14#rcond8.ent4#att6"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit gr:x="345" gr:y="470" id="sv2#area8#seu6" name="Select questions" entity="ent6" distinctAttributes="ent6#att10 ent6#att11 ent6#att12 ent6#att13 ent6#att14 ent6#att15 ent6#att16" linkOrder="sv2#area8#seu6#ln32">
+      <Selector id="sv2#area8#seu6#su14" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area8#seu6#su14#rcond8" name="RoleCondition8" role="rel3#role5" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#area8#seu6#oln23" name="OKFlow23" to="sv2#area8#page17#enu6" automaticCoupling="true"/>
+      <Link id="sv2#area8#seu6#ln32" name="Flow32" to="sv2#area8#lpu1" type="transport" validate="true">
+        <LinkParameter id="sv2#area8#seu6#ln32#par82" name="answer_Real answers" source="ent6#att16Array" target="sv2#area8#lpu1#lsa3"/>
+      </Link>
+    </SelectorUnit>
+    <LoopUnit gr:x="0" gr:y="520" id="sv2#area8#lpu1" name="Iterate over questions" gr:showAllParts="false">
+      <SecondaryArray id="sv2#area8#lpu1#lsa3" name="Real answers"/>
+      <OKLink id="sv2#area8#lpu1#oln27" name="Next" to="sv2#area8#seu10" automaticCoupling="true" code="next"/>
+      <OKLink id="sv2#area8#lpu1#oln29" name="OKFlow29" to="sv2#area8#page18" automaticCoupling="true" code="end"/>
+    </LoopUnit>
+    <SelectorUnit gr:x="20" gr:y="640" id="sv2#area8#seu10" name="Selector10" entity="ent6">
+      <OKLink id="sv2#area8#seu10#oln28" name="OKFlow28" to="sv2#area8#lpu1" automaticCoupling="true" gr:bendpoints="23,-54,8,46"/>
+      <KOLink id="sv2#area8#seu10#kln3" name="KOFlow3" to="sv2#area8#lpu1" automaticCoupling="true" gr:bendpoints="-7,-58,-22,42"/>
+    </SelectorUnit>
+  </OperationUnits>
+</Area>

@@ -1,0 +1,6 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="675" gr:y="155" id="sv2#area5" name="Enrolled Courses" landmark="true" defaultPage="sv2#area5#seu2">
+  <OperationUnits>
+    <SelectorUnit gr:x="290" gr:y="185" id="sv2#area5#seu2" name="Selected Course" entity="ent5"/>
+    <SelectorUnit gr:x="315" gr:y="340" id="sv2#area5#seu3" name="Selected Lecture" entity="ent6"/>
+  </OperationUnits>
+</Area>

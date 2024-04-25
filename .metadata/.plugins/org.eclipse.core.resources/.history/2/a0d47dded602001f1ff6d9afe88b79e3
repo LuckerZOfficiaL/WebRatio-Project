@@ -1,0 +1,51 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="40" gr:y="320" id="sv2#area5#page7" name="Lectures">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area5#page7#dau2" name="Content" entity="ent6" displayAttributes="ent6#att19 ent6#att24">
+      <Selector id="sv2#area5#page7#dau2#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area5#page7#dau2#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <MultiMessageUnit gr:x="10" gr:y="180" id="sv2#area5#page7#mssu4" name="Quiz" linkOrder="sv2#area5#page7#mssu4#ln13">
+      <Link id="sv2#area5#page7#mssu4#ln13" name="Flow13" to="sv2#area5#page8" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page7#dau2">
+          <layout:Attribute attribute="ent6#att19"/>
+          <layout:Attribute attribute="ent6#att24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page7#mssu4">
+          <layout:Link link="sv2#area5#page7#mssu4#ln13"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

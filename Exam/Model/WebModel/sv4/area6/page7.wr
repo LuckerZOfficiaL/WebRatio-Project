@@ -1,0 +1,56 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area6#page7" name="manage exams">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="120" id="sv4#area6#page7#pwu1" name="Your exams" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att7" customDescriptor="false" linkOrder="sv4#area6#page7#pwu1#ln13 sv4#area6#page7#pwu1#ln14 sv4#area6#page7#pwu1#ln15">
+      <Link id="sv4#area6#page7#pwu1#ln15" name="delete" to="sv4#dlu1" automaticCoupling="true" type="normal" validate="true"/>
+      <Selector id="sv4#area6#page7#pwu1#su9" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#area6#page7#pwu1#su9#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel9#role17"/>
+      </Selector>
+      <Link id="sv4#area6#page7#pwu1#ln14" name="add question" to="sv4#seu3" type="normal" validate="true">
+        <LinkParameter id="sv4#area6#page7#pwu1#ln14#par65" name="exam_code_PASSING" source="data[].ent4#att6" passing="true"/>
+      </Link>
+      <Link id="sv4#area6#page7#pwu1#ln13" name="view and update questions" to="sv4#seu2" type="normal" validate="true">
+        <LinkParameter id="sv4#area6#page7#pwu1#ln13#par20" name="exam_code_PASSING" source="data[].ent4#att6" passing="true"/>
+      </Link>
+    </PowerIndexUnit>
+    <GetUnit gr:x="0" gr:y="0" id="sv4#area6#page7#gtu2" name="Get2" contextParameters="UserCtxParam">
+      <Link id="sv4#area6#page7#gtu2#ln19" name="Flow19" to="sv4#area6#page7#pwu1" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area6#page7#pwu1">
+          <layout:Attribute attribute="ent4#att7"/>
+          <layout:Link link="sv4#area6#page7#pwu1#ln13"/>
+          <layout:Link link="sv4#area6#page7#pwu1#ln14"/>
+          <layout:Link link="sv4#area6#page7#pwu1#ln15"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

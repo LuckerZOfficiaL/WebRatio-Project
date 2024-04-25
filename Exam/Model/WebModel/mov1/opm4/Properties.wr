@@ -1,0 +1,16 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="125" gr:y="305" id="mov1#opm4" name="Add students">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm4#icu2" gr:x="30" gr:y="60">
+      <OKLink id="mov1#opm4#icu2#oln14" name="OKFlow14" to="mov1#opm4#cru4">
+        <LinkParameter id="mov1#opm4#icu2#oln14#par77" name="Exam.exam_code(AssignedExamsToExam)" source="mov1#opm4#icu2#icp7" target="mov1#opm4#cru4.rel11#role22.ent4#att6"/>
+        <LinkParameter id="mov1#opm4#icu2#oln14#par78" name="User.oid(AssignedExamsToUser)" source="mov1#opm4#icu2#icp25" target="mov1#opm4#cru4.rel1#role2.userOID"/>
+      </OKLink>
+      <InputCollectorParameter id="mov1#opm4#icu2#icp7" name="Exam.exam_code(AssignedExamsToExam)"/>
+      <InputCollectorParameter id="mov1#opm4#icu2#icp25" name="User.oid(AssignedExamsToUser)"/>
+    </InputCollectorUnit>
+    <CreateUnit gr:x="435" gr:y="60" id="mov1#opm4#cru4" name="Add student" entity="ent8">
+      <OKLink id="mov1#opm4#cru4#oln16" name="OKFlow16" to="mov1#opm4#okcu2" automaticCoupling="true"/>
+    </CreateUnit>
+    <OKCollectorUnit gr:x="605" gr:y="55" id="mov1#opm4#okcu2" name="OK Port2"/>
+  </OperationUnits>
+</OperationModule>

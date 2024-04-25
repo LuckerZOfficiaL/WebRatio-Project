@@ -1,0 +1,36 @@
+[15 Jun 2020 00:49:19] DEBUG Executing SQL script
+[15 Jun 2020 00:49:19] INFO ================================================================================
+[15 Jun 2020 00:49:19] INFO onError= 'stop'
+[15 Jun 2020 00:49:19] INFO autoCommit= 'false'
+[15 Jun 2020 00:49:19] INFO username= 'postgres'
+[15 Jun 2020 00:49:19] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\RollbackSQL.xml'
+[15 Jun 2020 00:49:19] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\RollbackSQL.xml.log'
+[15 Jun 2020 00:49:19] INFO encoding= ''
+[15 Jun 2020 00:49:19] INFO driverClass= 'org.postgresql.Driver'
+[15 Jun 2020 00:49:19] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\RollbackSQL.sql'
+[15 Jun 2020 00:49:19] INFO eventSocketPort= '1862'
+[15 Jun 2020 00:49:19] INFO statementSeparator= ';'
+[15 Jun 2020 00:49:19] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[15 Jun 2020 00:49:19] INFO password= 'postgres'
+[15 Jun 2020 00:49:19] INFO url= 'jdbc:postgresql://localhost:5432/Exam_system'
+[15 Jun 2020 00:49:19] INFO ================================================================================
+[15 Jun 2020 00:49:19] INFO Connecting to the Database...
+[15 Jun 2020 00:49:19] INFO Database connection estabilished
+[15 Jun 2020 00:49:19] INFO transaction isolation: 2
+[15 Jun 2020 00:49:19] DEBUG ================================================================================
+[15 Jun 2020 00:49:19] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\RollbackSQL.sql
+[15 Jun 2020 00:49:19] DEBUG Executing statement:  alter table "public"."user"  drop column  "student_student_code"
+[15 Jun 2020 00:49:19] ERROR Could not execute statement:  alter table "public"."user"  drop column  "student_student_code"
+org.postgresql.util.PSQLException: ERROR: column "student_student_code" of relation "user" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2101)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:1834)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:255)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:510)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.executeWithFlags(AbstractJdbc2Statement.java:372)
+	at org.postgresql.jdbc2.AbstractJdbc2Statement.execute(AbstractJdbc2Statement.java:364)
+	at com.webratio.commons.db.utils.DBUtils.execute(DBUtils.java:523)
+	at com.webratio.commons.db.utils.DBUtils.executeScriptFiles(DBUtils.java:442)
+	at com.webratio.commons.db.utils.DBUtils.main(DBUtils.java:257)
+[15 Jun 2020 00:49:19] ERROR SQL SCRIPT EXECUTION FAILED
+[15 Jun 2020 00:49:20] INFO Database connection closed
+[15 Jun 2020 00:49:20] DEBUG Total time: 239 milliseconds

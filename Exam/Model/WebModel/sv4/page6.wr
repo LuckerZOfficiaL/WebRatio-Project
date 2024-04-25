@@ -1,0 +1,50 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="25" gr:y="35" id="sv4#page6" name="Teacher's functions" landmark="true">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv4#page6#mssu4" name="Add Exam" linkOrder="sv4#page6#mssu4#ln9">
+      <Link id="sv4#page6#mssu4#ln9" name="Add Exam" to="sv4#area5#page2#enu4" automaticCoupling="true" type="normal" validate="true"/>
+      <Message xml:space="preserve">Click to create new exam</Message>
+    </MultiMessageUnit>
+    <MultiMessageUnit gr:x="0" gr:y="70" id="sv4#page6#mssu5" name="manage exams" linkOrder="sv4#page6#mssu5#ln10">
+      <Message xml:space="preserve">Click to manage existing exams </Message>
+      <Link id="sv4#page6#mssu5#ln10" name="manage exams" to="sv4#area6" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page6#mssu4">
+          <layout:Link link="sv4#page6#mssu4#ln9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page6#mssu5">
+          <layout:Link link="sv4#page6#mssu5#ln10"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

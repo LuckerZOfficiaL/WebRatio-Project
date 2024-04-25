@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Warnings> 
+  <Warning xpath="id('sv4#seu4#oln10#par73')" rootXPath="id('sv4')" key="UNUSED_PASSING_PARAMETER" label="QuestionToExam.exam_code_PASSING"> 
+    <Message>The passing parameter 'QuestionToExam.exam_code_PASSING' is declared but never used</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv4#seu4#oln10#par73'</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#miu8#oln13')" rootXPath="id('sv4')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow13"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow13'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
+  <Warning xpath="id('sv4#cru1')" rootXPath="id('sv4')" error="false" label="AddExam" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'AddExam'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#cru1')" rootXPath="id('sv4')" error="false" label="AddExam" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'AddExam'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#miu4')" rootXPath="id('sv4')" error="false" label="Logout" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Logout'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#miu4')" rootXPath="id('sv4')" error="false" label="Logout" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Logout'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#dlu1')" rootXPath="id('sv4')" error="false" label="Delete exam" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Delete exam'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#dlu1')" rootXPath="id('sv4')" error="false" label="Delete exam" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Delete exam'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#miu7')" rootXPath="id('sv4')" error="false" label="sv4#miu7" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'sv4#miu7'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#miu7')" rootXPath="id('sv4')" error="false" label="sv4#miu7" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'sv4#miu7'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#seu3')" rootXPath="id('sv4')" error="false" label="Selected exam" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Selected exam'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#seu2')" rootXPath="id('sv4')" error="false" label="Selected exam" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Selected exam'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#seu4')" rootXPath="id('sv4')" error="false" label="Selected question" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Selected question'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#dlu2')" rootXPath="id('sv4')" error="false" label="Delete question" key="NO_OUTGOING_OK_LINKS"> 
+    <Message>No outgoing OK flow(s) for the operation 'Delete question'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#dlu2')" rootXPath="id('sv4')" error="false" label="Delete question" key="NO_OUTGOING_KO_LINKS"> 
+    <Message>No outgoing KO flow(s) for the operation 'Delete question'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#page8#pwu2')" rootXPath="id('sv4')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Question list"> 
+    <Message>Sorting attribute are unspecified for the component 'Question list'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area5#page2#dau1')" rootXPath="id('sv4')" key="NO_DISPLAY_ATTRIBUTES" label="SelectUsername"> 
+    <Message>No attributes to display are specified for the component 'SelectUsername'</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area6#page7#pwu1')" rootXPath="id('sv4')" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Your exams"> 
+    <Message>Sorting attribute are unspecified for the component 'Your exams'</Message> 
+  </Warning>  
+  <Warning xpath="id('sv4#area5#page2')" rootXPath="id('sv4')" label="AddExam"> 
+    <Message>Security Warning: the public page 'AddExam' shows information about the user</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="protected" value="true">Protect the page</Resolution> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area5#page2')" rootXPath="id('sv4')" key="" label="AddExam"> 
+    <Message>Security Warning: the page 'AddExam' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#area7#page11')" rootXPath="id('sv4')" key="" label="Question Definition"> 
+    <Message>Security Warning: the page 'Question Definition' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning error="false" xpath="id('sv4#page9')" rootXPath="id('sv4')" key="" label="Edit question"> 
+    <Message>Security Warning: the page 'Edit question' is public but no captcha field is configured on its form component</Message> 
+  </Warning>  
+  <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject"> 
+    <Message>Security Warning: the Admin Area generation is enabled</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="adminArea" value="">Remove the 'Admin Area' property</Resolution> 
+  </Warning> 
+</Warnings>

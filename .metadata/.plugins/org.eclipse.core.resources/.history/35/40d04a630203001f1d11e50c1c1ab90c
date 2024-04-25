@@ -1,0 +1,12 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="Teacher" landmarks="sv3#area2 sv3#area6" homePage="sv3#area2#page3">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="35" gr:y="100" id="sv3#miu1" action="true" moduleId="mov1#opm2"/>
+    <CreateUnit gr:x="905" gr:y="185" id="sv3#cru2" name="Create Course" entity="ent1"/>
+    <DeleteUnit gr:x="650" gr:y="820" id="sv3#dlu2" name="Delete Course" entity="ent1">
+      <Selector id="sv3#dlu2#su9" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dlu2#su9#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <SelectorUnit gr:x="890" gr:y="645" id="sv3#seu1" name="Selected Course" entity="ent1"/>
+  </OperationUnits>
+</SiteView>

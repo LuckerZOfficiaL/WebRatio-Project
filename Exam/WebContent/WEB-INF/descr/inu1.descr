@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.db.IndexUnitService" name="Questions list">
+  <UseFirstRowAsDefaultCurrent>false</UseFirstRowAsDefaultCurrent>
+  <MaxResults/>
+  <Query entity="ent6">
+    <Input id="p0" param="rcond2.att6" type="integer" implied="false" expandStyle="in"/>
+    <Output id="att10" name="questionCode" index="0"/>
+    <Output id="att15" name="option4" index="1"/>
+    <Output id="att14" name="option3" index="2"/>
+    <Output id="att16" name="answer" index="3"/>
+    <Output id="att11" name="question" index="4"/>
+    <Output id="att13" name="option2" index="5"/>
+    <Output id="att12" name="option1" index="6"/>
+    <HQL>select a_question.questionCode, a_question.option4, a_question.option3, a_question.answer, a_question.question, a_question.option2, a_question.option1 from Question a_question
+      <Where defaultPolicy="fill" allImplied="false">(({[p0](a_question.questionToExam.examCode in(?))}))</Where>
+    </HQL>
+  </Query>
+</Descriptor>

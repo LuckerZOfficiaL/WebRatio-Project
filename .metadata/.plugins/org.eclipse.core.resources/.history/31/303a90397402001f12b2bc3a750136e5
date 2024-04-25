@@ -1,0 +1,16 @@
+
+<Warnings>
+
+<Warning xpath="id('sv1#area1#page1#enu1#ln4')" rootXPath="id('sv1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow4">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow4'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    
+
+  <Warning error="false" xpath="id('sv1#area1#page1')" rootXPath="id(&apos;sv1&apos;)" key="" label="Login">
+    <Message>Security Warning: the page &apos;Login&apos; is public but no captcha field is configured on its form component</Message>
+  </Warning> 
+</Warnings>

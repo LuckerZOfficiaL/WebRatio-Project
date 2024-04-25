@@ -1,0 +1,78 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv4#area7#page11" name="Question Definition">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv4#area7#page11#enu5" name="Add Questions" fieldOrder="sv4#area7#page11#enu5#fld33 sv4#area7#page11#enu5#fld34 sv4#area7#page11#enu5#fld35 sv4#area7#page11#enu5#fld36 sv4#area7#page11#enu5#fld37 sv4#area7#page11#enu5#sfld4" linkOrder="sv4#area7#page11#enu5#ln12">
+      <Field id="sv4#area7#page11#enu5#fld33" name="Question" type="string" modifiable="true"/>
+      <Field id="sv4#area7#page11#enu5#fld34" name="option1" type="string" modifiable="true"/>
+      <Field id="sv4#area7#page11#enu5#fld35" name="option2" type="string" modifiable="true"/>
+      <Field id="sv4#area7#page11#enu5#fld36" name="option3" type="string" modifiable="true"/>
+      <Field id="sv4#area7#page11#enu5#fld37" name="option4" type="string" modifiable="true"/>
+      <Link id="sv4#area7#page11#enu5#ln12" name="Save question" to="sv4#miu7" type="normal" validate="true">
+        <LinkParameter id="sv4#area7#page11#enu5#ln12#par28" name="Answer_answer" source="sv4#area7#page11#enu5#sfld4#slot7" target="sv4#miu7.mov1#opm1#icu3#icp10"/>
+        <LinkParameter id="sv4#area7#page11#enu5#ln12#par30" name="option1_option1" source="sv4#area7#page11#enu5#fld34" target="sv4#miu7.mov1#opm1#icu3#icp11"/>
+        <LinkParameter id="sv4#area7#page11#enu5#ln12#par31" name="option2_option2" source="sv4#area7#page11#enu5#fld35" target="sv4#miu7.mov1#opm1#icu3#icp14"/>
+        <LinkParameter id="sv4#area7#page11#enu5#ln12#par34" name="option3_option3" source="sv4#area7#page11#enu5#fld36" target="sv4#miu7.mov1#opm1#icu3#icp15"/>
+        <LinkParameter id="sv4#area7#page11#enu5#ln12#par35" name="option4_option4" source="sv4#area7#page11#enu5#fld37" target="sv4#miu7.mov1#opm1#icu3#icp16"/>
+        <LinkParameter id="sv4#area7#page11#enu5#ln12#par36" name="Question_question" source="sv4#area7#page11#enu5#fld33" target="sv4#miu7.mov1#opm1#icu3#icp17"/>
+        <LinkParameter id="sv4#area7#page11#enu5#ln12#par69" name="exam_code_PASSING_Exam.exam_code(QuestionToExam)" sourceLinkParameter="sv4#seu3#oln5#par68" target="sv4#miu7.mov1#opm1#icu3#icp9"/>
+      </Link>
+      <SelectionField id="sv4#area7#page11#enu5#sfld4" name="Answer" type="string" modifiable="true" splitOutput="true" slotOrder="sv4#area7#page11#enu5#sfld4#slot6 sv4#area7#page11#enu5#sfld4#slot7">
+        <Slot id="sv4#area7#page11#enu5#sfld4#slot6" name="Slot6" value="Option 1|Option 2|Option 3|Option 4|" label="true"/>
+        <Slot id="sv4#area7#page11#enu5#sfld4#slot7" name="Slot7" value="1|2|3|4" output="true"/>
+      </SelectionField>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area7#page11#enu5">
+          <layout:Link link="sv4#area7#page11#enu5#ln12"/>
+          <layout:Field field="sv4#area7#page11#enu5#fld33"/>
+          <layout:Field field="sv4#area7#page11#enu5#fld34"/>
+          <layout:Field field="sv4#area7#page11#enu5#fld35"/>
+          <layout:Field field="sv4#area7#page11#enu5#fld36"/>
+          <layout:Field field="sv4#area7#page11#enu5#fld37"/>
+          <layout:Field field="sv4#area7#page11#enu5#sfld4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

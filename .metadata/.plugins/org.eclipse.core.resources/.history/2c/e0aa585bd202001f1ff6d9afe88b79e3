@@ -1,0 +1,20 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="675" gr:y="155" id="sv2#area5" name="Enrolled Courses" landmark="true" defaultPage="sv2#area5#seu3">
+  <OperationUnits>
+    <SelectorUnit gr:x="290" gr:y="185" id="sv2#area5#seu2" name="Selected Course" entity="ent1">
+      <Selector id="sv2#area5#seu2#su4" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#seu2#su4#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel11#role21"/>
+      </Selector>
+      <OKLink id="sv2#area5#seu2#oln4" name="Flow9" to="sv2#area5#seu3">
+        <LinkParameter id="sv2#area5#seu2#oln4#par23" name="EnrolledCourseToCourse.oid_PASSING" sourceLinkParameter="sv2#area5#page5#pwu1#ln6#par18" passing="true"/>
+        <LinkParameter id="sv2#area5#seu2#oln4#par24" name="oid_RoleCondition3 [oid]" source="ent1#att1Array" target="sv2#area5#seu3#su5#rcond3.ent1#att1"/>
+        <LinkParameter id="sv2#area5#seu2#oln4#par25" name="name_RoleCondition3 [name]" source="ent1#att11Array" target="sv2#area5#seu3#su5#rcond3.ent1#att11"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit gr:x="310" gr:y="360" id="sv2#area5#seu3" name="Selected Lecture" entity="ent6">
+      <Selector id="sv2#area5#seu3#su5" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#seu3#su5#rcond3" name="RoleCondition3" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+      <OKLink id="sv2#area5#seu3#oln5" name="OKFlow5" to="sv2#area5#page7#dau2" automaticCoupling="true"/>
+    </SelectorUnit>
+  </OperationUnits>
+</Area>

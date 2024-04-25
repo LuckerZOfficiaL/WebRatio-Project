@@ -1,0 +1,50 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="Teacher" landmarks="sv3#area2 sv3#area6 sv3#area8" homePage="sv3#area2#page3">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="65" gr:y="65" id="sv3#miu1" action="true" moduleId="mov1#opm2"/>
+    <CreateUnit gr:x="555" gr:y="95" id="sv3#cru2" name="Create Course" entity="ent1"/>
+    <DeleteUnit gr:x="325" gr:y="735" id="sv3#dlu2" name="Delete Course" entity="ent1">
+      <Selector id="sv3#dlu2#su9" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dlu2#su9#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <SelectorUnit gr:x="570" gr:y="565" id="sv3#seu1" name="Selected Course" entity="ent1" linkOrder="sv3#seu1#ln29">
+      <Link id="sv3#seu1#ln22" name="Flow22" to="sv3#page12#dau4" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#seu1#ln23" name="Flow23" to="sv3#page12#pwu4" automaticCoupling="true" type="transport" validate="true"/>
+      <Selector id="sv3#seu1#su16" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#seu1#su16#kcond9" name="KeyCondition9" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#seu1#ln29" name="Flow29" to="sv3#page12#page15#enu6" type="transport" validate="true">
+        <LinkParameter id="sv3#seu1#ln29#par29" name="courseID_PASSING" source="ent1#att1Array" passing="true"/>
+        <LinkParameter id="sv3#seu1#ln29#par33" name="name_PASSING" source="ent1#att11Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <SelectorUnit gr:x="1035" gr:y="655" id="sv3#seu4" name="Selected Lecture" entity="ent6" linkOrder="sv3#seu4#ln26 sv3#seu4#ln31">
+      <Link id="sv3#seu4#ln25" name="Flow25" to="sv3#page13#dau5" automaticCoupling="true" type="transport" validate="true"/>
+      <Selector id="sv3#seu4#su17" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#seu4#su17#kcond10" name="KeyCondition10" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#seu4#ln26" name="Flow26" to="sv3#page13#pwu5" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#seu4#ln31" name="Flow31" to="sv3#page13#page16#enu7" type="transport" validate="true">
+        <LinkParameter id="sv3#seu4#ln31#par35" name="lectureID_PASSING" source="ent6#att18Array" passing="true"/>
+      </Link>
+    </SelectorUnit>
+    <CreateUnit gr:x="820" gr:y="965" id="sv3#cru4" name="Create Lecture" entity="ent6"/>
+    <CreateUnit gr:x="1265" gr:y="1045" id="sv3#cru5" name="Create Question" entity="ent3"/>
+    <SelectorUnit gr:x="1485" gr:y="745" id="sv3#seu8" name="Selected Question" entity="ent3" linkOrder="sv3#seu8#ln34">
+      <Selector id="sv3#seu8#su20" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#seu8#su20#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#seu8#ln34" name="Flow34" to="sv3#page17#dau6" automaticCoupling="true" type="transport" validate="true"/>
+    </SelectorUnit>
+    <DeleteUnit gr:x="1570" gr:y="910" id="sv3#dlu3" name="Delete Question" entity="ent3">
+      <Selector id="sv3#dlu3#su21" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dlu3#su21#kcond13" name="KeyCondition13" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <ModifyUnit gr:x="1775" gr:y="910" id="sv3#mfu1" name="Update Question" entity="ent3">
+      <Selector id="sv3#mfu1#su22" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#mfu1#su22#kcond14" name="KeyCondition14" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+  </OperationUnits>
+</SiteView>

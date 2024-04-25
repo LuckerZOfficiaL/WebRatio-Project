@@ -1,0 +1,24 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area5#page5" name="Enrolled Courses">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="5" id="sv2#area5#page5#gtu2" name="Get Student" contextParameters="UserCtxParam"/>
+    <PowerIndexUnit gr:x="170" gr:y="0" id="sv2#area5#page5#pwu1" name="Courses" sortable="true" checkable="false" useCountQuery="false" entity="ent5"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page5#pwu1"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

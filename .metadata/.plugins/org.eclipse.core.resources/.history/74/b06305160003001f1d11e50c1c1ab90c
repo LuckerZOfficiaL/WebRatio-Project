@@ -1,0 +1,30 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area6#page6" name="Add Course">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="0" id="sv3#area6#page6#gtu3" name="Get User" contextParameters="UserCtxParam"/>
+    <EntryUnit gr:x="5" gr:y="135" id="sv3#area6#page6#enu3" name="Course Info" fieldOrder="sv3#area6#page6#enu3#fld3 sv3#area6#page6#enu3#fld4">
+      <Field id="sv3#area6#page6#enu3#fld4" name="Course topic" type="string" modifiable="true"/>
+      <Field id="sv3#area6#page6#enu3#fld3" name="Course name" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area6#page6#enu3">
+          <layout:Field field="sv3#area6#page6#enu3#fld3"/>
+          <layout:Field field="sv3#area6#page6#enu3#fld4"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

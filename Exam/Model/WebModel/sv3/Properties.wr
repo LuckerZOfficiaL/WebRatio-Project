@@ -1,0 +1,23 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="AdminSiteView" landmarks="sv3#area3 sv3#miu6" homePage="sv3#area3#page4">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="810" gr:y="95" id="sv3#miu6" action="true" name="Logout" moduleId="mov1#mpkg1#opm5" landmark="true"/>
+    <SelectorUnit gr:x="390" gr:y="80" id="sv3#seu5" name="SelectExam" entity="ent4" distinctAttributes="ent4#att6">
+      <OKLink id="sv3#seu5#oln6" name="OKFlow6" to="sv3#page13#pwu4">
+        <LinkParameter id="sv3#seu5#oln6#par39" name="exam_code_PASSING_assigned students [exam_code]" sourceLinkParameter="sv3#area3#page4#pwu3#ln11#par25" target="sv3#page13#pwu4#su4#rcond2.ent4#att6"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit gr:x="420" gr:y="370" id="sv3#seu7" name="Select student" entity="User">
+      <OKLink id="sv3#seu7#oln18" name="OKFlow18" to="sv3#miu10">
+        <LinkParameter id="sv3#seu7#oln18#par79" name="oid_PASSING_User.oid(AssignedExamsToUser)" sourceLinkParameter="sv3#page14#pwu5#ln17#par21" target="sv3#miu10.mov1#opm4#icu2#icp25"/>
+        <LinkParameter id="sv3#seu7#oln18#par27" name="exam_code_PASSING_Exam.exam_code(AssignedExamsToExam)" sourceLinkParameter="sv3#page14#pwu5#ln17#par26" target="sv3#miu10.mov1#opm4#icu2#icp7"/>
+      </OKLink>
+    </SelectorUnit>
+    <ModuleInstanceUnit gr:x="665" gr:y="390" id="sv3#miu10" action="true" name="Add students" moduleId="mov1#opm4"/>
+    <SelectorUnit gr:x="405" gr:y="245" id="sv3#seu1" name="Select exam" entity="ent4" distinctAttributes="ent4#att6">
+      <OKLink id="sv3#seu1#oln7" name="OKFlow7" to="sv3#page14#pwu5">
+        <LinkParameter id="sv3#seu1#oln7#par76" name="exam_code_PASSING_not assigned [exam_code]" sourceLinkParameter="sv3#area3#page4#pwu3#ln27#par75" target="sv3#page14#pwu5#su10#rcond3.ent4#att6"/>
+        <LinkParameter id="sv3#seu1#oln7#par24" name="exam_code_PASSING" sourceLinkParameter="sv3#area3#page4#pwu3#ln27#par75" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+  </OperationUnits>
+</SiteView>

@@ -1,0 +1,27 @@
+[22 Jun 2020 19:38:28] DEBUG Executing SQL script
+[22 Jun 2020 19:38:28] INFO ================================================================================
+[22 Jun 2020 19:38:28] INFO onError= 'stop'
+[22 Jun 2020 19:38:28] INFO autoCommit= 'false'
+[22 Jun 2020 19:38:28] INFO username= 'postgres'
+[22 Jun 2020 19:38:28] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\UpdateSQL.xml'
+[22 Jun 2020 19:38:28] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\UpdateSQL.xml.log'
+[22 Jun 2020 19:38:28] INFO encoding= ''
+[22 Jun 2020 19:38:28] INFO driverClass= 'org.postgresql.Driver'
+[22 Jun 2020 19:38:28] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\UpdateSQL.sql'
+[22 Jun 2020 19:38:28] INFO eventSocketPort= '25028'
+[22 Jun 2020 19:38:28] INFO statementSeparator= ';'
+[22 Jun 2020 19:38:28] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[22 Jun 2020 19:38:28] INFO password= 'postgres'
+[22 Jun 2020 19:38:28] INFO url= 'jdbc:postgresql://localhost:5432/DB'
+[22 Jun 2020 19:38:28] INFO ================================================================================
+[22 Jun 2020 19:38:28] INFO Connecting to the Database...
+[22 Jun 2020 19:38:28] INFO Database connection estabilished
+[22 Jun 2020 19:38:28] INFO transaction isolation: 2
+[22 Jun 2020 19:38:28] DEBUG ================================================================================
+[22 Jun 2020 19:38:28] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\UpdateSQL.sql
+[22 Jun 2020 19:38:28] DEBUG Executing statement:  alter table "public"."assignedexams"  add column  "grades_oid"  int4
+[22 Jun 2020 19:38:28] DEBUG Executing statement:  alter table "public"."assignedexams"   add constraint fk_assignedexams_grades foreign key ("grades_oid") references "public"."grades" ("oid")
+[22 Jun 2020 19:38:28] DEBUG ================================================================================
+[22 Jun 2020 19:38:28] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[22 Jun 2020 19:38:28] INFO Database connection closed
+[22 Jun 2020 19:38:28] DEBUG Total time: 246 milliseconds

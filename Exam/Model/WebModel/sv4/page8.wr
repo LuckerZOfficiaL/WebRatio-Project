@@ -1,0 +1,50 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="460" gr:y="405" id="sv4#page8" name="View Questions">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv4#page8#pwu2" name="Question list" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="ent6#att11" linkOrder="sv4#page8#pwu2#ln18 sv4#page8#pwu2#ln22">
+      <Selector id="sv4#page8#pwu2#su6" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv4#page8#pwu2#su6#rcond1" name="question list" role="rel3#role5" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv4#page8#pwu2#ln18" name="Edit" to="sv4#seu4" type="normal" validate="true">
+        <LinkParameter id="sv4#page8#pwu2#ln18#par114" name="question_code_PASSING" source="data[].ent6#att10" passing="true"/>
+        <LinkParameter id="sv4#page8#pwu2#ln18#par122" name="QuestionToExam.exam_code_PASSING" source="data[].rel3#role6_ent4#att6" passing="true"/>
+      </Link>
+      <Link id="sv4#page8#pwu2#ln22" name="Delete" to="sv4#dlu2" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#page8#pwu2">
+          <layout:Attribute attribute="ent6#att11"/>
+          <layout:Link link="sv4#page8#pwu2#ln18"/>
+          <layout:Link link="sv4#page8#pwu2#ln22"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

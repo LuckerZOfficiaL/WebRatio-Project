@@ -1,0 +1,86 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="340" id="sv2#area8#page17" name="Questions">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area8#page17#enu6" name="Questions" entity="ent6" fieldOrder="sv2#area8#page17#enu6#fld25 sv2#area8#page17#enu6#fld26 sv2#area8#page17#enu6#fld27 sv2#area8#page17#enu6#fld28 sv2#area8#page17#enu6#fld29 sv2#area8#page17#enu6#sfld5" linkOrder="sv2#area8#page17#enu6#ln29">
+      <Field id="sv2#area8#page17#enu6#fld25" name="question" type="string" modifiable="true" attribute="ent6#att11"/>
+      <Field id="sv2#area8#page17#enu6#fld26" name="option1" type="string" modifiable="true" attribute="ent6#att12"/>
+      <Field id="sv2#area8#page17#enu6#fld27" name="option2" type="string" modifiable="true" attribute="ent6#att13"/>
+      <Field id="sv2#area8#page17#enu6#fld28" name="option3" type="string" modifiable="true" attribute="ent6#att14"/>
+      <Field id="sv2#area8#page17#enu6#fld29" name="option4" type="string" modifiable="true" attribute="ent6#att15"/>
+      <SelectionField id="sv2#area8#page17#enu6#sfld5" name="Answer" type="string" modifiable="true" splitOutput="true" slotOrder="sv2#area8#page17#enu6#sfld5#slot8 sv2#area8#page17#enu6#sfld5#slot9">
+        <Slot id="sv2#area8#page17#enu6#sfld5#slot8" name="options" value="Option 1|Option 2|Option 3|Option 4" label="true"/>
+        <Slot id="sv2#area8#page17#enu6#sfld5#slot9" name="output" value="1|2|3|4" output="true"/>
+      </SelectionField>
+      <Link id="sv2#area8#page17#enu6#ln29" name="Next" to="sv2#area8#lpu1" type="normal" validate="true">
+        <LinkParameter id="sv2#area8#page17#enu6#ln29#par80" name="Answer[output]_Input Array" source="sv2#area8#page17#enu6#sfld5#slot9" target="sv2#area8#lpu1.array"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area8#page17#enu6">
+          <layout:Field field="sv2#area8#page17#enu6#fld25"/>
+          <layout:Field field="sv2#area8#page17#enu6#fld26"/>
+          <layout:Field field="sv2#area8#page17#enu6#fld27"/>
+          <layout:Field field="sv2#area8#page17#enu6#fld28"/>
+          <layout:Field field="sv2#area8#page17#enu6#fld29"/>
+          <layout:Field field="sv2#area8#page17#enu6#sfld5"/>
+          <layout:Link link="sv2#area8#page17#enu6#ln29"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

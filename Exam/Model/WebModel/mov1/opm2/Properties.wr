@@ -1,0 +1,34 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="190" gr:y="245" id="mov1#opm2" name="Update Question">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm2#icu1" gr:x="35" gr:y="95">
+      <InputCollectorParameter id="mov1#opm2#icu1#icp8" name="KeyCondition6 [question_code]"/>
+      <OKLink id="mov1#opm2#icu1#oln12" name="OKFlow12" to="mov1#opm2#mfu2" automaticCoupling="false">
+        <LinkParameter id="mov1#opm2#icu1#oln12#par43" name="KeyCondition6 [question_code]_KeyCondition6 [question_code]" source="mov1#opm2#icu1#icp8" target="mov1#opm2#mfu2#su8#kcond6.ent6#att10"/>
+        <LinkParameter id="mov1#opm2#icu1#oln12#par44" name="Question Object_Question Object" source="mov1#opm2#icu1#icp7" target="mov1#opm2#mfu2.entityBeans"/>
+        <LinkParameter id="mov1#opm2#icu1#oln12#par47" name="Exam.exam_code(QuestionToExam)" source="mov1#opm2#icu1#icp18" target="mov1#opm2#mfu2.rel3#role6.ent4#att6"/>
+        <LinkParameter id="mov1#opm2#icu1#oln12#par48" name="answer" source="mov1#opm2#icu1#icp19" target="mov1#opm2#mfu2.ent6#att16"/>
+        <LinkParameter id="mov1#opm2#icu1#oln12#par56" name="option1" source="mov1#opm2#icu1#icp20" target="mov1#opm2#mfu2.ent6#att12"/>
+        <LinkParameter id="mov1#opm2#icu1#oln12#par57" name="option2" source="mov1#opm2#icu1#icp21" target="mov1#opm2#mfu2.ent6#att13"/>
+        <LinkParameter id="mov1#opm2#icu1#oln12#par58" name="option3" source="mov1#opm2#icu1#icp22" target="mov1#opm2#mfu2.ent6#att14"/>
+        <LinkParameter id="mov1#opm2#icu1#oln12#par59" name="option4" source="mov1#opm2#icu1#icp23" target="mov1#opm2#mfu2.ent6#att15"/>
+        <LinkParameter id="mov1#opm2#icu1#oln12#par60" name="question" source="mov1#opm2#icu1#icp24" target="mov1#opm2#mfu2.ent6#att11"/>
+      </OKLink>
+      <InputCollectorParameter id="mov1#opm2#icu1#icp18" name="Exam.exam_code(QuestionToExam)"/>
+      <InputCollectorParameter id="mov1#opm2#icu1#icp19" name="answer"/>
+      <InputCollectorParameter id="mov1#opm2#icu1#icp20" name="option1"/>
+      <InputCollectorParameter id="mov1#opm2#icu1#icp21" name="option2"/>
+      <InputCollectorParameter id="mov1#opm2#icu1#icp22" name="option3"/>
+      <InputCollectorParameter id="mov1#opm2#icu1#icp23" name="option4"/>
+      <InputCollectorParameter id="mov1#opm2#icu1#icp24" name="question"/>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="630" gr:y="60" id="mov1#opm2#okcu1" name="OK Port1"/>
+    <KOCollectorUnit gr:x="630" gr:y="160" id="mov1#opm2#kocu1" name="KO Port1"/>
+    <ModifyUnit gr:x="410" gr:y="85" id="mov1#opm2#mfu2" name="Update question" entity="ent6">
+      <Selector id="mov1#opm2#mfu2#su8" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm2#mfu2#su8#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#opm2#mfu2#oln11" name="OKFlow11" to="mov1#opm2#okcu1" automaticCoupling="true"/>
+      <KOLink id="mov1#opm2#mfu2#kln5" name="KOFlow5" to="mov1#opm2#kocu1" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</OperationModule>

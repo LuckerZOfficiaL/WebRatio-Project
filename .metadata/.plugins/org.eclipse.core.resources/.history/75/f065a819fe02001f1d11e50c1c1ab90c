@@ -1,0 +1,37 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="TeacherSiteView" landmarks="sv4#area5 sv4#miu4 sv4#page6 sv4#area6" homePage="sv4#page6" linkVisibilityPolicy="always">
+  <OperationUnits>
+    <CreateUnit gr:x="730" gr:y="60" id="sv4#cru1" name="AddExam" entity="ent4"/>
+    <ModuleInstanceUnit gr:x="840" gr:y="110" id="sv4#miu4" action="true" name="Logout" moduleId="mov1#mpkg1#opm5" landmark="true"/>
+    <DeleteUnit gr:x="40" gr:y="630" id="sv4#dlu1" name="Delete exam" entity="ent4">
+      <Selector id="sv4#dlu1#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#dlu1#su3#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <ModuleInstanceUnit gr:x="715" gr:y="680" id="sv4#miu7" action="true" moduleId="mov1#opm1"/>
+    <SelectorUnit gr:x="235" gr:y="650" id="sv4#seu3" name="Selected exam" entity="ent4" distinctAttributes="ent4#att6">
+      <OKLink id="sv4#seu3#oln5" name="OKFlow5" to="sv4#area7#page11#enu5">
+        <LinkParameter id="sv4#seu3#oln5#par68" name="exam_code_PASSING" sourceLinkParameter="sv4#area6#page7#pwu1#ln14#par65" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit gr:x="275" gr:y="440" id="sv4#seu2" name="Selected exam" entity="ent4" distinctAttributes="ent4#att6">
+      <OKLink id="sv4#seu2#oln4" name="OKFlow4" to="sv4#page8#pwu2">
+        <LinkParameter id="sv4#seu2#oln4#par23" name="exam_code_PASSING_question list [exam_code]" sourceLinkParameter="sv4#area6#page7#pwu1#ln13#par20" target="sv4#page8#pwu2#su6#rcond1.ent4#att6"/>
+      </OKLink>
+    </SelectorUnit>
+    <SelectorUnit gr:x="735" gr:y="560" id="sv4#seu4" name="Selected question" entity="ent6" distinctAttributes="ent6#att10">
+      <OKLink id="sv4#seu4#oln10" name="OKFlow10" to="sv4#page9#enu7">
+        <LinkParameter id="sv4#seu4#oln10#par72" name="question_code_PASSING" sourceLinkParameter="sv4#page8#pwu2#ln18#par114" passing="true"/>
+        <LinkParameter id="sv4#seu4#oln10#par73" name="QuestionToExam.exam_code_PASSING" sourceLinkParameter="sv4#page8#pwu2#ln18#par122" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <ModuleInstanceUnit gr:x="805" gr:y="470" id="sv4#miu8" action="true" name="Change question" moduleId="mov1#opm2">
+      <OKLink id="sv4#miu8#oln13" name="OKFlow13" to="sv4#page12#mssu7" automaticCoupling="true"/>
+      <KOLink id="sv4#miu8#kln1" name="KOFlow1" to="sv4#page10" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <DeleteUnit gr:x="470" gr:y="275" id="sv4#dlu2" name="Delete question" entity="ent6">
+      <Selector id="sv4#dlu2#su7" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#dlu2#su7#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+  </OperationUnits>
+</SiteView>

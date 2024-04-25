@@ -1,0 +1,48 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area3#page4" name="Main Activities">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv3#area3#page4#pwu3" name="Exam list" sortable="true" checkable="false" useCountQuery="false" entity="ent4" displayAttributes="ent4#att7" linkOrder="sv3#area3#page4#pwu3#ln11 sv3#area3#page4#pwu3#ln27">
+      <Link id="sv3#area3#page4#pwu3#ln11" name="View students" to="sv3#seu5" type="normal" validate="true">
+        <LinkParameter id="sv3#area3#page4#pwu3#ln11#par25" name="exam_code_PASSING" source="data[].ent4#att6" passing="true"/>
+      </Link>
+      <Link id="sv3#area3#page4#pwu3#ln27" name="Add students" to="sv3#seu1" type="normal" validate="true">
+        <LinkParameter id="sv3#area3#page4#pwu3#ln27#par75" name="exam_code_PASSING" source="data[].ent4#att6" passing="true"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area3#page4#pwu3">
+          <layout:Attribute attribute="ent4#att7"/>
+          <layout:Link link="sv3#area3#page4#pwu3#ln11"/>
+          <layout:Link link="sv3#area3#page4#pwu3#ln27"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

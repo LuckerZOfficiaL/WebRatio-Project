@@ -1,0 +1,87 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area2#page3" name="Register">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area2#page3#enu3" name="Registration Form" fieldOrder="sv1#area2#page3#enu3#fld6 sv1#area2#page3#enu3#fld7 sv1#area2#page3#enu3#fld8 sv1#area2#page3#enu3#fld9 sv1#area2#page3#enu3#fld10 sv1#area2#page3#enu3#sfld3" linkOrder="sv1#area2#page3#enu3#ln2" entity="User">
+      <Field id="sv1#area2#page3#enu3#fld6" name="First Name" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area2#page3#enu3#fld6#mnd2" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area2#page3#enu3#fld7" name="Last Name" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area2#page3#enu3#fld7#mnd4" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area2#page3#enu3#fld8" name="E-mail" type="string" modifiable="true" contentType="text/html">
+        <VRules>
+          <EMailValidationRule id="sv1#area2#page3#enu3#fld8#email1" name="Email"/>
+          <MandatoryValidationRule id="sv1#area2#page3#enu3#fld8#mnd1" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area2#page3#enu3#fld9" name="Username" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area2#page3#enu3#fld9#mnd6" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Field id="sv1#area2#page3#enu3#fld10" name="Password" type="password" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area2#page3#enu3#fld10#mnd5" name="Mandatory"/>
+        </VRules>
+      </Field>
+      <Link id="sv1#area2#page3#enu3#ln2" name="Register" to="sv1#miu2" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#page3#enu3#ln2#par11" name="E-mail_email" source="sv1#area2#page3#enu3#fld8" target="sv1#miu2.mov1#mpkg1#opm6#icu8#icp1"/>
+        <LinkParameter id="sv1#area2#page3#enu3#ln2#par12" name="First Name_firstName" source="sv1#area2#page3#enu3#fld6" target="sv1#miu2.mov1#mpkg1#opm6#icu8#icp2"/>
+        <LinkParameter id="sv1#area2#page3#enu3#ln2#par13" name="Last Name_lastName" source="sv1#area2#page3#enu3#fld7" target="sv1#miu2.mov1#mpkg1#opm6#icu8#icp3"/>
+        <LinkParameter id="sv1#area2#page3#enu3#ln2#par14" name="Password_password" source="sv1#area2#page3#enu3#fld10" target="sv1#miu2.mov1#mpkg1#opm6#icu8#icp4"/>
+        <LinkParameter id="sv1#area2#page3#enu3#ln2#par15" name="Username_userName" source="sv1#area2#page3#enu3#fld9" target="sv1#miu2.mov1#mpkg1#opm6#icu8#icp5"/>
+        <LinkParameter id="sv1#area2#page3#enu3#ln2#par3" name="Key [oid]_Group.oid(defaultGroup)" target="sv1#miu2.mov1#mpkg1#opm6#icu8#icp6" source="sv1#area2#page3#enu3#sfld3"/>
+      </Link>
+      <SelectionField id="sv1#area2#page3#enu3#sfld3" name="Group" type="string" modifiable="true" ajaxEventEnabled="false" slotOrder="sv1#area2#page3#enu3#sfld3#slot4 sv1#area2#page3#enu3#sfld3#slot5" splitOutput="true">
+        <VRules>
+          <MandatoryValidationRule id="sv1#area2#page3#enu3#sfld3#mnd3" name="Mandatory"/>
+        </VRules>
+        <Slot id="sv1#area2#page3#enu3#sfld3#slot5" name="Slot5" value="1|2" output="true"/>
+        <Slot id="sv1#area2#page3#enu3#sfld3#slot4" name="Slot4" value="Student|Teacher" label="true"/>
+      </SelectionField>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#page3#enu3">
+          <layout:Link link="sv1#area2#page3#enu3#ln2"/>
+          <layout:Field field="sv1#area2#page3#enu3#fld6"/>
+          <layout:Field field="sv1#area2#page3#enu3#fld7"/>
+          <layout:Field field="sv1#area2#page3#enu3#fld8"/>
+          <layout:Field field="sv1#area2#page3#enu3#fld9"/>
+          <layout:Field field="sv1#area2#page3#enu3#fld10"/>
+          <layout:Field field="sv1#area2#page3#enu3#sfld3"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

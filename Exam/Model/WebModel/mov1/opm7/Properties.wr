@@ -1,0 +1,15 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="510" gr:y="300" id="mov1#opm7" name="Delete assigned student">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#opm7#icu4" gr:x="30" gr:y="60">
+      <OKLink id="mov1#opm7#icu4#oln15" name="OKFlow15" to="mov1#opm7#dlu4" automaticCoupling="false">
+        <LinkParameter id="mov1#opm7#icu4#oln15#par84" name="KeyCondition7 [oid]" source="mov1#opm7#icu4#icp26" target="mov1#opm7#dlu4#su11#kcond7.ent8#att21"/>
+      </OKLink>
+      <InputCollectorParameter id="mov1#opm7#icu4#icp26" name="KeyCondition7 [oid]"/>
+    </InputCollectorUnit>
+    <DeleteUnit gr:x="315" gr:y="50" id="mov1#opm7#dlu4" name="Delete assigned exam" entity="ent8">
+      <Selector id="mov1#opm7#dlu4#su11" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#opm7#dlu4#su11#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationModule>
