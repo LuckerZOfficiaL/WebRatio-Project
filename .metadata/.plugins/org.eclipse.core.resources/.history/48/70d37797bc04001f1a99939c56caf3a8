@@ -1,0 +1,8 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="140" gr:y="0" id="mov1#mpkg2#opm6" name="Logout">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#mpkg2#opm6#icu6" gr:x="30" gr:y="60">
+      <OKLink id="mov1#mpkg2#opm6#icu6#oln17" name="OKFlow2" to="mov1#mpkg2#opm6#lou2" automaticCoupling="true"/>
+    </InputCollectorUnit>
+    <LogoutUnit gr:x="300" gr:y="70" id="mov1#mpkg2#opm6#lou2" name="Logout1" siteView="sv1"/>
+  </OperationUnits>
+</OperationModule>

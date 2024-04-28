@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="285" gr:y="510" id="sv2#area5#page9" name="Question">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="285" gr:y="510" id="sv2#area5#page9" name="Question Page">
   <ContentUnits>
     <EntryUnit gr:x="0" gr:y="0" id="sv2#area5#page9#enu4" name="Question" entity="ent3" fieldOrder="sv2#area5#page9#enu4#fld13 sv2#area5#page9#enu4#fld14 sv2#area5#page9#enu4#fld15 sv2#area5#page9#enu4#fld16 sv2#area5#page9#enu4#fld17 sv2#area5#page9#enu4#sfld2" linkOrder="sv2#area5#page9#enu4#ln19">
       <Field id="sv2#area5#page9#enu4#fld17" name="option4" type="string" preloaded="true"/>
@@ -9,8 +9,8 @@
       <Link id="sv2#area5#page9#enu4#ln19" name="Flow19" to="sv2#area5#lpu1" type="normal" validate="true">
         <LinkParameter id="sv2#area5#page9#enu4#ln19#par39" name="Answer[output]_Input Array" source="sv2#area5#page9#enu4#sfld2#slot3" target="sv2#area5#lpu1.array"/>
       </Link>
-      <SelectionField id="sv2#area5#page9#enu4#sfld2" name="Answer" type="string" modifiable="true" splitOutput="true" slotOrder="sv2#area5#page9#enu4#sfld2#slot2 sv2#area5#page9#enu4#sfld2#slot3">
-        <Slot id="sv2#area5#page9#enu4#sfld2#slot3" name="output" value="1|2|3|5" output="true"/>
+      <SelectionField id="sv2#area5#page9#enu4#sfld2" name="Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv2#area5#page9#enu4#sfld2#slot2 sv2#area5#page9#enu4#sfld2#slot3">
+        <Slot id="sv2#area5#page9#enu4#sfld2#slot3" name="output" value="1|2|3|4" output="true"/>
         <Slot id="sv2#area5#page9#enu4#sfld2#slot2" name="option" value="option1|option2|option3|option4" label="true"/>
       </SelectionField>
     </EntryUnit>

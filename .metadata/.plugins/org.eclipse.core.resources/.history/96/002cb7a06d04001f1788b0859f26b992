@@ -1,0 +1,184 @@
+
+<Warnings>
+
+<Warning xpath="id('sv3#seu1#ln29#par33')" rootXPath="id('sv3')" key="UNUSED_PASSING_PARAMETER" label="name_PASSING">
+          <Message>The passing parameter 'name_PASSING' is declared but never used</Message>
+          <Resolution 
+	          class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv3#seu1#ln29#par33'</Resolution>
+        </Warning>
+      <Warning xpath="id('sv3#page13#pwu5#ln33#par45')" rootXPath="id('sv3')" key="UNUSED_PASSING_PARAMETER" label="questionID_PASSING">
+          <Message>The passing parameter 'questionID_PASSING' is declared but never used</Message>
+          <Resolution 
+	          class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv3#page13#pwu5#ln33#par45'</Resolution>
+        </Warning>
+      <Warning xpath="id('sv3#area2#page3#mssu4#ln16')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Flow16">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Flow16'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#cru4#oln5')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow5">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow5'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#cru5#oln12')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow12">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow12'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#dlu3#oln6')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow6">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow6'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#mfu1#oln11')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow11">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow11'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#cru4#kln6')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow6">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow6'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#cru5#kln9')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow9">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow9'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#dlu3#kln7')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow7">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow7'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#mfu1#kln8')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow8">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow8'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+     <Warning xpath="id('sv3#miu1')" rootXPath="id('sv3')" error="false" label="sv3#miu1" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'sv3#miu1'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#miu1')" rootXPath="id('sv3')" error="false" label="sv3#miu1" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'sv3#miu1'</Message>
+        </Warning>
+     <Warning xpath="id('sv3#cru2')" rootXPath="id('sv3')" error="false" label="Create Course" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Create Course'</Message>
+        </Warning>
+    
+ <Warning xpath="id('sv3#dlu2')" rootXPath="id('sv3')" error="false" label="Delete Course" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Delete Course'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#dlu2')" rootXPath="id('sv3')" error="false" label="Delete Course" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Delete Course'</Message>
+        </Warning>
+     <Warning xpath="id('sv3#seu1')" rootXPath="id('sv3')" error="false" label="Selected Course" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Selected Course'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#seu1')" rootXPath="id('sv3')" error="false" label="Selected Course" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Selected Course'</Message>
+        </Warning>
+     <Warning xpath="id('sv3#seu4')" rootXPath="id('sv3')" error="false" label="Selected Lecture" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Selected Lecture'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#seu4')" rootXPath="id('sv3')" error="false" label="Selected Lecture" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Selected Lecture'</Message>
+        </Warning>
+    
+
+ <Warning xpath="id('sv3#seu8')" rootXPath="id('sv3')" error="false" label="Selected Question" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Selected Question'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#seu8')" rootXPath="id('sv3')" error="false" label="Selected Question" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Selected Question'</Message>
+        </Warning>
+    
+  <Warning error="false" xpath="id('sv3#page17#dau6')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Question Details">
+    <Message>No attributes to display are specified for the component &apos;Question Details&apos;</Message>
+  </Warning> 
+
+<Warning xpath="id('sv3#page17#enu8')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Update Form">
+         <Message>The mandatory input parameter 'Correct Answer' is not provided to the component 'Update Form'</Message>
+       </Warning><Warning xpath="id('sv3#page17#enu8')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Update Form">
+         <Message>The mandatory input parameter 'Option 1' is not provided to the component 'Update Form'</Message>
+       </Warning><Warning xpath="id('sv3#page17#enu8')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Update Form">
+         <Message>The mandatory input parameter 'Option 2' is not provided to the component 'Update Form'</Message>
+       </Warning><Warning xpath="id('sv3#page17#enu8')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Update Form">
+         <Message>The mandatory input parameter 'Option 3' is not provided to the component 'Update Form'</Message>
+       </Warning><Warning xpath="id('sv3#page17#enu8')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Update Form">
+         <Message>The mandatory input parameter 'Option 4' is not provided to the component 'Update Form'</Message>
+       </Warning><Warning xpath="id('sv3#page17#enu8')" rootXPath="id('sv3')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Update Form">
+         <Message>The mandatory input parameter 'Question' is not provided to the component 'Update Form'</Message>
+       </Warning>
+  <Warning error="false" xpath="id('sv3#page13#dau5')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Lecture Details">
+    <Message>No attributes to display are specified for the component &apos;Lecture Details&apos;</Message>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv3#page13#pwu5')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Questions">
+    <Message>No attributes to display are specified for the component &apos;Questions&apos;</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page13#pwu5')" rootXPath="id(&apos;sv3&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Questions">
+    <Message>Sorting attribute are unspecified for the component &apos;Questions&apos;</Message>
+  </Warning> 
+
+
+  <Warning error="false" xpath="id('sv3#page12#dau4')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Course Details">
+    <Message>No attributes to display are specified for the component &apos;Course Details&apos;</Message>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv3#page12#pwu4')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Lectures">
+    <Message>No attributes to display are specified for the component &apos;Lectures&apos;</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page12#pwu4')" rootXPath="id(&apos;sv3&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lectures">
+    <Message>Sorting attribute are unspecified for the component &apos;Lectures&apos;</Message>
+  </Warning> 
+
+
+
+  <Warning error="false" xpath="id('sv3#area8#page8#pwu2')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Your Courses">
+    <Message>No attributes to display are specified for the component &apos;Your Courses&apos;</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#area8#page8#pwu2')" rootXPath="id(&apos;sv3&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Your Courses">
+    <Message>Sorting attribute are unspecified for the component &apos;Your Courses&apos;</Message>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv3#page12')" rootXPath="id(&apos;sv3&apos;)" key="" label="Mange Course">
+    <Message>Security Warning: the page &apos;Mange Course&apos; is public but no captcha field is configured on its form component</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#area6#page6')" rootXPath="id(&apos;sv3&apos;)" key="" label="Add Course">
+    <Message>Security Warning: the page &apos;Add Course&apos; is public but no captcha field is configured on its form component</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page13')" rootXPath="id(&apos;sv3&apos;)" key="" label="Manage Lecture">
+    <Message>Security Warning: the page &apos;Manage Lecture&apos; is public but no captcha field is configured on its form component</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page17')" rootXPath="id(&apos;sv3&apos;)" key="" label="Manage Question">
+    <Message>Security Warning: the page &apos;Manage Question&apos; is public but no captcha field is configured on its form component</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page17')" rootXPath="id(&apos;sv3&apos;)" key="" label="Manage Question">
+    <Message>Security Warning: the page &apos;Manage Question&apos; is orphan</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page13')" rootXPath="id(&apos;sv3&apos;)" key="" label="Manage Lecture">
+    <Message>Security Warning: the page &apos;Manage Lecture&apos; is orphan</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page12')" rootXPath="id(&apos;sv3&apos;)" key="" label="Mange Course">
+    <Message>Security Warning: the page &apos;Mange Course&apos; is orphan</Message>
+  </Warning> 
+</Warnings>

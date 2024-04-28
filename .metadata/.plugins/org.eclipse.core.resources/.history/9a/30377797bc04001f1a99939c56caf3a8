@@ -1,0 +1,27 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="50" gr:y="70" id="mov1#mpkg2#opm5" name="Register">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#mpkg2#opm5#icu5" gr:x="30" gr:y="60">
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp11" name="email"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp12" name="password"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp13" name="userName"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp14" name="lastName"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp15" name="firstName"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp16" name="group ID"/>
+      <OKLink id="mov1#mpkg2#opm5#icu5#oln15" name="OKFlow3" to="mov1#mpkg2#opm5#cru3">
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par62" name="email_email" source="mov1#mpkg2#opm5#icu5#icp11" target="mov1#mpkg2#opm5#cru3.email"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par63" name="firstName_firstName" source="mov1#mpkg2#opm5#icu5#icp15" target="mov1#mpkg2#opm5#cru3.User#att17"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par64" name="group ID_Group.oid(defaultGroup)" source="mov1#mpkg2#opm5#icu5#icp16" target="mov1#mpkg2#opm5#cru3.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par65" name="lastName_lastName" source="mov1#mpkg2#opm5#icu5#icp14" target="mov1#mpkg2#opm5#cru3.User#att22"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par66" name="password_password" source="mov1#mpkg2#opm5#icu5#icp12" target="mov1#mpkg2#opm5#cru3.password"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par67" name="userName_userName" source="mov1#mpkg2#opm5#icu5#icp13" target="mov1#mpkg2#opm5#cru3.userName"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <CreateUnit gr:x="310" gr:y="120" id="mov1#mpkg2#opm5#cru3" name="CreateUser" entity="User">
+      <OKLink id="mov1#mpkg2#opm5#cru3#oln16" name="OKFlow13" to="mov1#mpkg2#opm5#miu8">
+        <LinkParameter id="mov1#mpkg2#opm5#cru3#oln16#par68" name="password_Password" source="passwordArray" target="mov1#mpkg2#opm5#miu8.mov1#mpkg2#opm4#icu4#icp1"/>
+        <LinkParameter id="mov1#mpkg2#opm5#cru3#oln16#par69" name="userName_Username" source="userNameArray" target="mov1#mpkg2#opm5#miu8.mov1#mpkg2#opm4#icu4#icp4"/>
+      </OKLink>
+    </CreateUnit>
+    <ModuleInstanceUnit gr:x="500" gr:y="120" id="mov1#mpkg2#opm5#miu8" action="true" moduleId="mov1#mpkg2#opm4"/>
+  </OperationUnits>
+</OperationModule>

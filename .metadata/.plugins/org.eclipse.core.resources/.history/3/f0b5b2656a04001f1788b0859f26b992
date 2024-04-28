@@ -1,0 +1,48 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area3#page2" name="Registration">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area3#page2#enu2" name="Registration Form" entity="User" customDescriptor="false" linkOrder="sv1#area3#page2#enu2#ln5" fieldOrder="sv1#area3#page2#enu2#fld5 sv1#area3#page2#enu2#fld6 sv1#area3#page2#enu2#fld7 sv1#area3#page2#enu2#fld8 sv1#area3#page2#enu2#fld9 sv1#area3#page2#enu2#sfld1">
+      <Link id="sv1#area3#page2#enu2#ln5" name="Register" to="sv1#miu5" type="normal" validate="true">
+        <LinkParameter id="sv1#area3#page2#enu2#ln5#par12" name="email_email" source="sv1#area3#page2#enu2#fld5" target="sv1#miu5.mov1#opm3#icu3#icp10"/>
+        <LinkParameter id="sv1#area3#page2#enu2#ln5#par13" name="firstName_firstName" source="sv1#area3#page2#enu2#fld8" target="sv1#miu5.mov1#opm3#icu3#icp6"/>
+        <LinkParameter id="sv1#area3#page2#enu2#ln5#par15" name="lastName_lastName" source="sv1#area3#page2#enu2#fld9" target="sv1#miu5.mov1#opm3#icu3#icp7"/>
+        <LinkParameter id="sv1#area3#page2#enu2#ln5#par16" name="password_password" source="sv1#area3#page2#enu2#fld7" target="sv1#miu5.mov1#opm3#icu3#icp9"/>
+        <LinkParameter id="sv1#area3#page2#enu2#ln5#par17" name="userName_userName" source="sv1#area3#page2#enu2#fld6" target="sv1#miu5.mov1#opm3#icu3#icp8"/>
+      </Link>
+      <Field id="sv1#area3#page2#enu2#fld9" name="lastName" type="string" modifiable="true"/>
+      <Field id="sv1#area3#page2#enu2#fld8" name="firstName" type="string" modifiable="true"/>
+      <Field id="sv1#area3#page2#enu2#fld7" name="password" type="password" modifiable="true"/>
+      <Field id="sv1#area3#page2#enu2#fld6" name="userName" type="string" modifiable="true"/>
+      <Field id="sv1#area3#page2#enu2#fld5" name="email" type="string" modifiable="true"/>
+      <SelectionField id="sv1#area3#page2#enu2#sfld1" name="groupID" type="string" modifiable="true" slotOrder="sv1#area3#page2#enu2#sfld1#slot1 sv1#area3#page2#enu2#sfld1#slot4" splitOutput="true">
+        <Slot id="sv1#area3#page2#enu2#sfld1#slot1" name="Slot1" value="Student|Teacher" label="true"/>
+        <Slot id="sv1#area3#page2#enu2#sfld1#slot4" name="Slot4" value="0|1" output="true"/>
+      </SelectionField>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page2#enu2">
+          <layout:Link link="sv1#area3#page2#enu2#ln5"/>
+          <layout:Field field="sv1#area3#page2#enu2#fld5"/>
+          <layout:Field field="sv1#area3#page2#enu2#fld6"/>
+          <layout:Field field="sv1#area3#page2#enu2#fld7"/>
+          <layout:Field field="sv1#area3#page2#enu2#fld8"/>
+          <layout:Field field="sv1#area3#page2#enu2#fld9"/>
+          <layout:Field field="sv1#area3#page2#enu2#sfld1"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

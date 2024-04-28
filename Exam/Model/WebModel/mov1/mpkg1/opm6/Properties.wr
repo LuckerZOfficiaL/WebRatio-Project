@@ -1,14 +1,13 @@
 <OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="mov1#mpkg1#opm6" name="Registration" gr:x="255" gr:y="0">
   <OperationUnits>
     <InputCollectorUnit id="mov1#mpkg1#opm6#icu8" gr:x="30" gr:y="60">
-      <OKLink id="mov1#mpkg1#opm6#icu8#oln2" name="OKFlow2" to="mov1#mpkg1#opm6#cru3" automaticCoupling="false">
+      <OKLink id="mov1#mpkg1#opm6#icu8#oln2" name="OKFlow2" to="mov1#mpkg1#opm6#cru3">
         <LinkParameter id="mov1#mpkg1#opm6#icu8#oln2#par1" name="email" source="mov1#mpkg1#opm6#icu8#icp1" target="mov1#mpkg1#opm6#cru3.email"/>
         <LinkParameter id="mov1#mpkg1#opm6#icu8#oln2#par2" name="firstName" source="mov1#mpkg1#opm6#icu8#icp2" target="mov1#mpkg1#opm6#cru3.User#att19"/>
         <LinkParameter id="mov1#mpkg1#opm6#icu8#oln2#par6" name="lastName" source="mov1#mpkg1#opm6#icu8#icp3" target="mov1#mpkg1#opm6#cru3.User#att20"/>
         <LinkParameter id="mov1#mpkg1#opm6#icu8#oln2#par7" name="password" source="mov1#mpkg1#opm6#icu8#icp4" target="mov1#mpkg1#opm6#cru3.password"/>
         <LinkParameter id="mov1#mpkg1#opm6#icu8#oln2#par8" name="userName" source="mov1#mpkg1#opm6#icu8#icp5" target="mov1#mpkg1#opm6#cru3.userName"/>
         <LinkParameter id="mov1#mpkg1#opm6#icu8#oln2#par4" name="Group.oid(defaultGroup)" source="mov1#mpkg1#opm6#icu8#icp6" target="mov1#mpkg1#opm6#cru3.User2DefaultGroup.groupOID"/>
-        <LinkParameter id="mov1#mpkg1#opm6#icu8#oln2#par29" name="Group.oid(groups)" source="mov1#mpkg1#opm6#icu8#icp27" target="mov1#mpkg1#opm6#cru3.User2Group.groupOID"/>
       </OKLink>
       <InputCollectorParameter id="mov1#mpkg1#opm6#icu8#icp1" name="email"/>
       <InputCollectorParameter id="mov1#mpkg1#opm6#icu8#icp2" name="firstName"/>
@@ -17,12 +16,12 @@
       <InputCollectorParameter id="mov1#mpkg1#opm6#icu8#icp5" name="userName"/>
       <InputCollectorParameter id="mov1#mpkg1#opm6#icu8#icp6" name="Group.oid(defaultGroup)"/>
     </InputCollectorUnit>
-    <CreateUnit id="mov1#mpkg1#opm6#cru3" name="Create user" gr:x="335" gr:y="90" entity="User">
+    <CreateUnit id="mov1#mpkg1#opm6#cru3" name="Create user" gr:x="425" gr:y="105" entity="User">
       <OKLink id="mov1#mpkg1#opm6#cru3#oln3" name="OKFlow3" to="mov1#mpkg1#opm6#miu3">
         <LinkParameter id="mov1#mpkg1#opm6#cru3#oln3#par9" name="userName_Password" source="passwordArray" target="mov1#mpkg1#opm6#miu3.mov1#mpkg1#opm3#icu6#icp12"/>
         <LinkParameter id="mov1#mpkg1#opm6#cru3#oln3#par10" name="password_Username" source="userNameArray" target="mov1#mpkg1#opm6#miu3.mov1#mpkg1#opm3#icu6#icp13"/>
       </OKLink>
     </CreateUnit>
-    <ModuleInstanceUnit gr:x="500" gr:y="95" id="mov1#mpkg1#opm6#miu3" action="true" moduleId="mov1#mpkg1#opm3"/>
+    <ModuleInstanceUnit gr:x="605" gr:y="100" id="mov1#mpkg1#opm6#miu3" action="true" moduleId="mov1#mpkg1#opm3"/>
   </OperationUnits>
 </OperationModule>

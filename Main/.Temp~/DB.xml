@@ -1,20 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<DBError>java.lang.UnsupportedClassVersionError: org/postgresql/Driver : Unsupported major.minor version 52.0
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Unknown Source)
-	at com.webratio.commons.db.metadata.MetaDataRetriever.runAnt(MetaDataRetriever.java:131)
-	at com.webratio.commons.db.metadata.MetaDataRetriever.main(MetaDataRetriever.java:51)
-</DBError>
+<DBMetaData driverMajorVersion="5" driverMinorVersion="1" driverVersion="mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )" productVersion="5.7.7-rc-log" identifierQuoteString="`" transactionLevel="Repeatable read" driverName="MySQL Connector Java" productName="MySQL">
+  <Table type="TABLE" schema="" ignoreIndexes="false" name="course" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="courseid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="name" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="topic" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_userid" primaryKey="false" notNull="false"/>
+  </Table>
+  <Table type="TABLE" schema="" ignoreIndexes="false" name="enrolledcourse" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="encolledcourseid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="DOUBLE" size="22" decimalDigits="0" name="grade" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="course_courseid" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="course_name" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_userid" primaryKey="false" notNull="false"/>
+  </Table>
+  <Table type="TABLE" schema="" ignoreIndexes="false" name="group" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="groupid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="groupname" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="false" notNull="false"/>
+  </Table>
+  <Table type="TABLE" schema="" ignoreIndexes="false" name="group_module" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_groupid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="true" notNull="true"/>
+  </Table>
+  <Table type="TABLE" schema="" ignoreIndexes="false" name="lecture" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="lectureid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="title" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="content" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="course_courseid" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="course_name" primaryKey="false" notNull="false"/>
+  </Table>
+  <Table type="TABLE" schema="" ignoreIndexes="false" name="module" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="moduleid" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="modulename" primaryKey="false" notNull="false"/>
+  </Table>
+  <Table type="TABLE" schema="" ignoreIndexes="false" name="question" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="questionid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="question" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="option1" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="option2" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="option3" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="option4" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="correctanswer" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="lecture_lectureid" primaryKey="false" notNull="false"/>
+  </Table>
+  <Table type="TABLE" schema="" ignoreIndexes="false" name="user" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="userid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="username" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="password" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="email" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="firstname" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="lastname" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_groupid" primaryKey="false" notNull="false"/>
+  </Table>
+  <Table type="TABLE" schema="" ignoreIndexes="false" name="user_group" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_userid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_groupid" primaryKey="true" notNull="true"/>
+  </Table>
+</DBMetaData>

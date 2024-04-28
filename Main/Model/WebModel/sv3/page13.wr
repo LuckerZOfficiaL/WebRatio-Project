@@ -63,7 +63,7 @@
                   <layout:Field field="sv3#page13#page16#enu7#fld21"/>
                   <layout:Field field="sv3#page13#page16#enu7#fld22"/>
                   <layout:Field field="sv3#page13#page16#enu7#fld23"/>
-                  <layout:Field field="sv3#page13#page16#enu7#fld24"/>
+                  <layout:Field field="sv3#page13#page16#enu7#sfld4"/>
                 </layout:Unit>
               </layout:Cell>
               <layout:Cell/>
@@ -96,10 +96,10 @@
   </layout:Grid>
   <Page gr:x="5" gr:y="265" id="sv3#page13#page16" name="Add Question">
     <ContentUnits>
-      <EntryUnit gr:x="0" gr:y="0" id="sv3#page13#page16#enu7" name="Question Info" linkOrder="sv3#page13#page16#enu7#ln32" fieldOrder="sv3#page13#page16#enu7#fld19 sv3#page13#page16#enu7#fld20 sv3#page13#page16#enu7#fld21 sv3#page13#page16#enu7#fld22 sv3#page13#page16#enu7#fld23 sv3#page13#page16#enu7#fld24">
+      <EntryUnit gr:x="0" gr:y="0" id="sv3#page13#page16#enu7" name="Question Info" linkOrder="sv3#page13#page16#enu7#ln32" fieldOrder="sv3#page13#page16#enu7#fld19 sv3#page13#page16#enu7#fld20 sv3#page13#page16#enu7#fld21 sv3#page13#page16#enu7#fld22 sv3#page13#page16#enu7#fld23 sv3#page13#page16#enu7#sfld4">
         <Link id="sv3#page13#page16#enu7#ln32" name="Flow32" to="sv3#cru5" type="normal" validate="true">
           <LinkParameter id="sv3#page13#page16#enu7#ln32#par36" name="lectureID_PASSING_Lecture.lectureID(QuestionToLecture)" sourceLinkParameter="sv3#seu4#ln31#par35" target="sv3#cru5.rel9#role18.ent6#att18"/>
-          <LinkParameter id="sv3#page13#page16#enu7#ln32#par37" name="Correct Answer_correctAnswer" source="sv3#page13#page16#enu7#fld24" target="sv3#cru5.ent3#att10"/>
+          <LinkParameter id="sv3#page13#page16#enu7#ln32#par37" name="Correct Answer_correctAnswer" source="sv3#page13#page16#enu7#sfld4#slot10" target="sv3#cru5.ent3#att10"/>
           <LinkParameter id="sv3#page13#page16#enu7#ln32#par38" name="Option 1_option1" source="sv3#page13#page16#enu7#fld20" target="sv3#cru5.ent3#att6"/>
           <LinkParameter id="sv3#page13#page16#enu7#ln32#par41" name="Option 2_option2" source="sv3#page13#page16#enu7#fld21" target="sv3#cru5.ent3#att7"/>
           <LinkParameter id="sv3#page13#page16#enu7#ln32#par42" name="Option 3_option3" source="sv3#page13#page16#enu7#fld22" target="sv3#cru5.ent3#att8"/>
@@ -111,7 +111,10 @@
         <Field id="sv3#page13#page16#enu7#fld21" name="Option 2" type="string" modifiable="true"/>
         <Field id="sv3#page13#page16#enu7#fld20" name="Option 1" type="string" modifiable="true"/>
         <Field id="sv3#page13#page16#enu7#fld19" name="Question" type="string" modifiable="true"/>
-        <Field id="sv3#page13#page16#enu7#fld24" name="Correct Answer" type="integer" modifiable="true"/>
+        <SelectionField id="sv3#page13#page16#enu7#sfld4" name="Correct Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv3#page13#page16#enu7#sfld4#slot9 sv3#page13#page16#enu7#sfld4#slot10">
+          <Slot id="sv3#page13#page16#enu7#sfld4#slot9" name="label" value="option1|option2|option3|option4" label="true"/>
+          <Slot id="sv3#page13#page16#enu7#sfld4#slot10" name="output" value="1|2|3|4" output="true"/>
+        </SelectionField>
       </EntryUnit>
     </ContentUnits>
   </Page>

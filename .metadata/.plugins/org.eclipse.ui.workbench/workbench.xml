@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="48" version="2.0">
+<workbench progressCount="44" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="114" y="114">
+<window height="768" maximized="true" width="1024" x="38" y="38">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="205"/>
@@ -24,36 +24,30 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1713898770922" focus="true" label="Workspace - Web IFML">
+<page aggregateWorkingSetId="Aggregate for window 1714286656221" focus="true" label="Workspace - Web IFML">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="com.webratio.ide.ui.editors.WebProjectEditor" name="Model.wr" partName="Main" path="F:/University/MSc/Y1/S2/Advanced SWE/Project/Main/Model.wr" title="Main" tooltip="Main/Model.wr" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="com.webratio.ide.ui.editors.WebProjectEditor" name="Model.wr" partName="Main" path="F:/University/MSc/Y1/S2/Advanced SWE/Project/Main/Model.wr" title="Main" tooltip="Main/Model.wr" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Main/Model.wr"/>
-</editor>
-<editor activePart="true" focus="true" id="com.webratio.ide.ui.editors.WebProjectEditor" name="Model.wr" partName="Exam" path="F:/University/MSc/Y1/S2/Advanced SWE/Project/Exam/Model.wr" title="Exam" tooltip="Exam/Model.wr" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Exam/Model.wr"/>
 </editor>
 </editors>
 <views>
 <view id="com.webratio.ide.ui.grid.views.GridView" partName="Layout">
 <viewState/>
 </view>
-<view id="com.webratio.ide.ui.views.GenerationErrorsView" partName="Generation Errors">
-<viewState/>
-</view>
+<view id="com.webratio.ide.ui.views.GenerationErrorsView" partName="Generation Errors"/>
 <view id="com.webratio.ide.ui.explorer.views.WRExplorerView" partName="WebRatio Explorer">
 <viewState configured="false" sortWorkingSets="false">
 <localWorkingSetManager>
-<workingSet editPageId="org.eclipse.jdt.internal.ui.OthersWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1713898727507_0" label="Other Projects" name="Other Projects">
+<workingSet editPageId="org.eclipse.jdt.internal.ui.OthersWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1714286308587_0" label="Other Projects" name="Other Projects">
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Exam" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Main" type="4"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/project" type="4"/>
@@ -65,24 +59,7 @@
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
-<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
-<viewState isPinned="false">
-<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
-</viewState>
-</view>
-<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
-<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-</expanded>
-<columnWidths org.eclipse.ui.ide.locationField="104" org.eclipse.ui.ide.markerType="154" org.eclipse.ui.ide.pathField="204" org.eclipse.ui.ide.resourceField="154" org.eclipse.ui.ide.severityAndDescriptionField="909"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
-<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
-</viewState>
-</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1713898770922">
 <customFilters userDefinedPatternsEnabled="false">
@@ -112,13 +89,9 @@
 </customFilters>
 </viewState>
 </view>
-<view id="com.webratio.eclipse.cloud.ui.views.CloudServicesView" partName="Cloud Accounts">
-<viewState/>
-</view>
+<view id="com.webratio.eclipse.cloud.ui.views.CloudServicesView" partName="Cloud Accounts"/>
 <view id="com.webratio.bpm.ui.views.BPMDocumentationView" partName="Documentation"/>
-<view id="com.webratio.ide.ui.views.WRAerialView" partName="Overview">
-<viewState/>
-</view>
+<view id="com.webratio.ide.ui.views.WRAerialView" partName="Overview"/>
 <view id="com.webratio.bpm.ui.explorer.views.BPMExplorerView" partName="BPMN Explorer"/>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
@@ -251,7 +224,6 @@
 <view id="com.webratio.ide.ui.grid.views.GridView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="com.webratio.ide.ui.views.GenerationErrorsView"/>
-<view id="org.eclipse.search.ui.views.SearchView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -270,27 +242,24 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@6376969d" ratio="0.749497" ratioLeft="745" ratioRight="249" relationship="2" relative="left">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@70f622d0" ratio="0.749497" ratioLeft="745" ratioRight="249" relationship="2" relative="left">
 <folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.15535504" ratioLeft="396" ratioRight="2153" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.833199" ratioLeft="1034" ratioRight="207" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<info part="org.eclipse.ui.editorss" ratio="0.24949698" ratioLeft="248" ratioRight="746" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.69951534" ratioLeft="433" ratioRight="186" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.webratio.ide.ui.grid.views.GridView" appearance="2" expanded="2">
 <page content="com.webratio.ide.ui.grid.views.GridView" label="Layout"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.webratio.ide.ui.views.GenerationErrorsView" label="Generation Errors"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
-<page content="com.webratio.ide.ui.views.WRLogView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -312,158 +281,8 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.webratio.ide.ui.editors.WebProjectEditor" path="/Main/Model.wr"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.webratio.ide.ui.editors.WebProjectEditor" path="/Exam/Model.wr"/>
 </editors>
-<item historyLabel="Exam &gt; TeacherSiteView &gt; Change question" index="1">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv4&apos;)" GRAPHEDITOR_PATH="id(&apos;sv4&apos;)" LOCATIONS="id(&apos;sv4#miu8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Exam &gt; Update Question" index="1">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;mov1#opm2&apos;)" GRAPHEDITOR_PATH="id(&apos;mov1&apos;)" LOCATIONS="id(&apos;mov1#opm2&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Exam &gt; TeacherSiteView &gt; Change question" index="1">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv4&apos;)" GRAPHEDITOR_PATH="id(&apos;sv4&apos;)" LOCATIONS="id(&apos;sv4#miu8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher &gt; Update Question" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#mfu1&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Exam &gt; TeacherSiteView &gt; Change question" index="1">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv4&apos;)" GRAPHEDITOR_PATH="id(&apos;sv4&apos;)" LOCATIONS="id(&apos;sv4#miu8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher &gt; Update Question" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#mfu1&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question &gt; Update Question" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17#enu8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher &gt; Logout" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#miu1&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Courses" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#area8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Mange Course" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page12&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Courses" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#area8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Mange Courses &gt; Your Courses" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#area8#page8#pwu2&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Mange Courses" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#area8#page8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question &gt; Flow36" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17#dau6#ln36&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question &gt; Flow37" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17#enu8#ln37&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17#enu8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question &gt; Update Form" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17#enu8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question &gt; Flow37" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17#enu8#ln37&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Add Lecture &gt; courseID_PASSING_Course.courseID(LectureToCourse)" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page12#page15#enu6#ln30#par31&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Mange Course" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page12&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Add Lecture &gt; Lecture Info" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page12#page15#enu6&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Add Lecture &gt; Flow30" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page12#page15#enu6#ln30&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question &gt; Update Form" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17#enu8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question &gt; Flow37" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17#enu8#ln37&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Question" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page17&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Add Question &gt; lectureID_PASSING_Lecture.lectureID(QuestionToLecture)" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page13#page16#enu7#ln32#par36&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Manage Lecture" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page13&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Add Lecture &gt; Flow30" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#page12#page15#enu6#ln30&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher &gt; Create Lecture" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#cru4&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Exam &gt; TeacherSiteView &gt; Change question" index="1">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv4&apos;)" GRAPHEDITOR_PATH="id(&apos;sv4&apos;)" LOCATIONS="id(&apos;sv4#miu8&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Exam &gt; TeacherSiteView" index="1">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv4&apos;)" GRAPHEDITOR_PATH="id(&apos;sv4&apos;)" LOCATIONS="id(&apos;sv4&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher &gt; Create Lecture" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3#cru4&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Question &gt; Question" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv2&apos;)" GRAPHEDITOR_PATH="id(&apos;sv2&apos;)" LOCATIONS="id(&apos;sv2#area5#page9#enu4&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Student" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv2&apos;)" GRAPHEDITOR_PATH="id(&apos;sv2&apos;)" LOCATIONS="id(&apos;sv2&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Enrolled Courses &gt; myCourses" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv2&apos;)" GRAPHEDITOR_PATH="id(&apos;sv2&apos;)" LOCATIONS="id(&apos;sv2#area5#page5#pwu1#su2#rcond1&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Enrolled Courses" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv2&apos;)" GRAPHEDITOR_PATH="id(&apos;sv2&apos;)" LOCATIONS="id(&apos;sv2#area5#page5&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Public" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv1&apos;)" GRAPHEDITOR_PATH="id(&apos;sv1&apos;)" LOCATIONS="id(&apos;sv1&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Teacher" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv3&apos;)" GRAPHEDITOR_PATH="id(&apos;sv3&apos;)" LOCATIONS="id(&apos;sv3&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item active="true" historyLabel="Exam &gt; TeacherSiteView" index="1">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="id(&apos;sv4&apos;)" GRAPHEDITOR_PATH="id(&apos;sv4&apos;)" LOCATIONS="id(&apos;sv4&apos;)" PROPERTY_TAB_ID=""/>
-</item>
+<item active="true" historyLabel="Main" index="0"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -481,12 +300,6 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.webratio.ide.ui.editors.WebProjectEditor" name="Model.wr" tooltip="Exam/Model.wr">
-<persistable path="/Exam/Model.wr"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.webratio.ide.ui.editors.WebProjectEditor" name="Model.wr" tooltip="project/Model.wr">
-<persistable path="/project/Model.wr"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.webratio.ide.ui.editors.WebProjectEditor" name="Model.wr" tooltip="Main/Model.wr">
 <persistable path="/Main/Model.wr"/>
 </file>

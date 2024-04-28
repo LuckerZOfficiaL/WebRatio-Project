@@ -1,27 +1,52 @@
-[22 Jun 2020 19:38:28] DEBUG Executing SQL script
-[22 Jun 2020 19:38:28] INFO ================================================================================
-[22 Jun 2020 19:38:28] INFO onError= 'stop'
-[22 Jun 2020 19:38:28] INFO autoCommit= 'false'
-[22 Jun 2020 19:38:28] INFO username= 'postgres'
-[22 Jun 2020 19:38:28] INFO outputPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\UpdateSQL.xml'
-[22 Jun 2020 19:38:28] INFO outputLogPath= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\UpdateSQL.xml.log'
-[22 Jun 2020 19:38:28] INFO encoding= ''
-[22 Jun 2020 19:38:28] INFO driverClass= 'org.postgresql.Driver'
-[22 Jun 2020 19:38:28] INFO sqlScript= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\UpdateSQL.sql'
-[22 Jun 2020 19:38:28] INFO eventSocketPort= '25028'
-[22 Jun 2020 19:38:28] INFO statementSeparator= ';'
-[22 Jun 2020 19:38:28] INFO derby.system.home= 'C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[22 Jun 2020 19:38:28] INFO password= 'postgres'
-[22 Jun 2020 19:38:28] INFO url= 'jdbc:postgresql://localhost:5432/DB'
-[22 Jun 2020 19:38:28] INFO ================================================================================
-[22 Jun 2020 19:38:28] INFO Connecting to the Database...
-[22 Jun 2020 19:38:28] INFO Database connection estabilished
-[22 Jun 2020 19:38:28] INFO transaction isolation: 2
-[22 Jun 2020 19:38:28] DEBUG ================================================================================
-[22 Jun 2020 19:38:28] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Platform 7.2.18.x64bit\workspace\Exam\.Temp~\UpdateSQL.sql
-[22 Jun 2020 19:38:28] DEBUG Executing statement:  alter table "public"."assignedexams"  add column  "grades_oid"  int4
-[22 Jun 2020 19:38:28] DEBUG Executing statement:  alter table "public"."assignedexams"   add constraint fk_assignedexams_grades foreign key ("grades_oid") references "public"."grades" ("oid")
-[22 Jun 2020 19:38:28] DEBUG ================================================================================
-[22 Jun 2020 19:38:28] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[22 Jun 2020 19:38:28] INFO Database connection closed
-[22 Jun 2020 19:38:28] DEBUG Total time: 246 milliseconds
+[27 Apr 2024 19:52:19] DEBUG Executing SQL script
+[27 Apr 2024 19:52:19] INFO ================================================================================
+[27 Apr 2024 19:52:19] INFO outputPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Exam\.Temp~\UpdateSQL.xml'
+[27 Apr 2024 19:52:19] INFO onError= 'stop'
+[27 Apr 2024 19:52:19] INFO statementSeparator= ';'
+[27 Apr 2024 19:52:19] INFO derby.system.home= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\.metadata\.plugins\com.webratio.commons.db\derby'
+[27 Apr 2024 19:52:19] INFO password= '585858'
+[27 Apr 2024 19:52:19] INFO url= 'jdbc:mysql://localhost:3306/DB2'
+[27 Apr 2024 19:52:19] INFO username= 'root'
+[27 Apr 2024 19:52:19] INFO autoCommit= 'false'
+[27 Apr 2024 19:52:19] INFO outputLogPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Exam\.Temp~\UpdateSQL.xml.log'
+[27 Apr 2024 19:52:19] INFO driverClass= 'com.mysql.jdbc.Driver'
+[27 Apr 2024 19:52:19] INFO encoding= ''
+[27 Apr 2024 19:52:19] INFO eventSocketPort= '51429'
+[27 Apr 2024 19:52:19] INFO sqlScript= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Exam\.Temp~\UpdateSQL.sql'
+[27 Apr 2024 19:52:19] INFO ================================================================================
+[27 Apr 2024 19:52:19] INFO Connecting to the Database...
+[27 Apr 2024 19:52:20] INFO Database connection estabilished
+[27 Apr 2024 19:52:20] INFO transaction isolation: 4
+[27 Apr 2024 19:52:20] DEBUG ================================================================================
+[27 Apr 2024 19:52:20] DEBUG Executing SQL script file: F:\University\MSc\Y1\S2\Advanced SWE\Project\Exam\.Temp~\UpdateSQL.sql
+[27 Apr 2024 19:52:20] DEBUG Executing statement:  create table `group` ( `oid`  integer  not null, `groupname`  varchar(255), primary key (`oid`) )
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    create table `module` ( `oid`  integer  not null, `moduleid`  varchar(255), `modulename`  varchar(255), primary key (`oid`) )
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    create table `user` ( `oid`  integer  not null, `username`  varchar(255), `password`  varchar(255), `email`  varchar(255), `firstname`  varchar(255), `lastname`  varchar(255), primary key (`oid`) )
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    create table `grades` ( `oid`  integer  not null, `grade`  double precision, primary key (`oid`) )
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    create table `exam` ( `exam_code`  integer  not null, `name`  varchar(255), primary key (`exam_code`) )
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    create table `question` ( `question_code`  integer  not null, `question`  varchar(255), `option1`  varchar(255), `option2`  varchar(255), `option3`  varchar(255), `option4`  varchar(255), `answer`  integer, primary key (`question_code`) )
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    create table `assignedexams` ( `oid`  integer  not null, primary key (`oid`) )
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    alter table `group`  add column  `module_oid`  integer
+[27 Apr 2024 19:52:20] DEBUG Executing statement:  alter table `group`   add index fk_group_module (`module_oid`), add constraint fk_group_module foreign key (`module_oid`) references `module` (`oid`)
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    create table `group_module` ( `group_oid`  integer not null, `module_oid`  integer not null, primary key (`group_oid`, `module_oid`) )
+[27 Apr 2024 19:52:20] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_group (`group_oid`), add constraint fk_group_module_group foreign key (`group_oid`) references `group` (`oid`)
+[27 Apr 2024 19:52:20] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_module (`module_oid`), add constraint fk_group_module_module foreign key (`module_oid`) references `module` (`oid`)
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    alter table `user`  add column  `group_oid`  integer
+[27 Apr 2024 19:52:20] DEBUG Executing statement:  alter table `user`   add index fk_user_group (`group_oid`), add constraint fk_user_group foreign key (`group_oid`) references `group` (`oid`)
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    create table `user_group` ( `user_oid`  integer not null, `group_oid`  integer not null, primary key (`user_oid`, `group_oid`) )
+[27 Apr 2024 19:52:20] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_user (`user_oid`), add constraint fk_user_group_user foreign key (`user_oid`) references `user` (`oid`)
+[27 Apr 2024 19:52:20] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_group (`group_oid`), add constraint fk_user_group_group foreign key (`group_oid`) references `group` (`oid`)
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    alter table `assignedexams`  add column  `user_oid`  integer
+[27 Apr 2024 19:52:20] DEBUG Executing statement:  alter table `assignedexams`   add index fk_assignedexams_user (`user_oid`), add constraint fk_assignedexams_user foreign key (`user_oid`) references `user` (`oid`)
+[27 Apr 2024 19:52:20] DEBUG Executing statement:    alter table `assignedexams`  add column  `exam_exam_code`  integer
+[27 Apr 2024 19:52:21] DEBUG Executing statement:  alter table `assignedexams`   add index fk_assignedexams_exam (`exam_exam_code`), add constraint fk_assignedexams_exam foreign key (`exam_exam_code`) references `exam` (`exam_code`)
+[27 Apr 2024 19:52:21] DEBUG Executing statement:    alter table `assignedexams`  add column  `grades_oid`  integer
+[27 Apr 2024 19:52:21] DEBUG Executing statement:  alter table `assignedexams`   add index fk_assignedexams_grades (`grades_oid`), add constraint fk_assignedexams_grades foreign key (`grades_oid`) references `grades` (`oid`)
+[27 Apr 2024 19:52:21] DEBUG Executing statement:    alter table `question`  add column  `exam_exam_code`  integer
+[27 Apr 2024 19:52:21] DEBUG Executing statement:  alter table `question`   add index fk_question_exam (`exam_exam_code`), add constraint fk_question_exam foreign key (`exam_exam_code`) references `exam` (`exam_code`)
+[27 Apr 2024 19:52:21] DEBUG Executing statement:    alter table `exam`  add column  `user_oid`  integer
+[27 Apr 2024 19:52:21] DEBUG Executing statement:  alter table `exam`   add index fk_exam_user (`user_oid`), add constraint fk_exam_user foreign key (`user_oid`) references `user` (`oid`)
+[27 Apr 2024 19:52:21] DEBUG ================================================================================
+[27 Apr 2024 19:52:21] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[27 Apr 2024 19:52:21] INFO Database connection closed
+[27 Apr 2024 19:52:21] DEBUG Total time: 1597 milliseconds

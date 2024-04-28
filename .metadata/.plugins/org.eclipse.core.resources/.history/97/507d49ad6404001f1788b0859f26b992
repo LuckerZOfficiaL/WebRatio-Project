@@ -1,0 +1,9 @@
+
+<Warnings>
+<Warning xpath="id('password')" rootXPath="/WebProject/DataModel" label="password" tab="mapping">
+	            <Message>Security Warning: the 'password' attribute is not encrypted</Message>
+	            <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	                        attribute="db:cryptAlgorithm" value="com.webratio.rtx.core.PBKDF2WithHmacSHA1CryptImplementation">Set the 'Crypt Algorithm' property to 'PBKDF2WithHmacSHA1'</Resolution>
+	         </Warning>
+
+</Warnings>
