@@ -1,0 +1,89 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area1#page1" name="Login">
+  <ContentUnits>
+    <EntryUnit gr:x="15" gr:y="0" id="sv1#area1#page1#enu1" name="Login" linkOrder="sv1#area1#page1#enu1#ln4" fieldOrder="sv1#area1#page1#enu1#fld2 sv1#area1#page1#enu1#fld1">
+      <Link id="sv1#area1#page1#enu1#ln4" name="Login" to="sv1#miu4" type="normal" validate="true">
+        <LinkParameter id="sv1#area1#page1#enu1#ln4#par9" name="password_Password" source="sv1#area1#page1#enu1#fld1" target="sv1#miu4.mov1#mpkg2#opm4#icu4#icp1"/>
+        <LinkParameter id="sv1#area1#page1#enu1#ln4#par10" name="username_Username" source="sv1#area1#page1#enu1#fld2" target="sv1#miu4.mov1#mpkg2#opm4#icu4#icp4"/>
+      </Link>
+      <Field id="sv1#area1#page1#enu1#fld1" name="password" type="password" modifiable="true"/>
+      <Field id="sv1#area1#page1#enu1#fld2" name="username" type="string" modifiable="true"/>
+    </EntryUnit>
+    <MultiMessageUnit gr:x="0" gr:y="195" id="sv1#area1#page1#mssu2" name="Registration" linkOrder="sv1#area1#page1#mssu2#ln2" customDescriptor="false">
+      <Link id="sv1#area1#page1#mssu2#ln2" name="Register" to="sv1#area3#page2#enu2" automaticCoupling="true" type="normal" validate="true"/>
+      <Message xml:space="preserve">Don't have an account yet?</Message>
+    </MultiMessageUnit>
+    <MultiMessageUnit gr:x="0" gr:y="100" id="sv1#area1#page1#mssu9" name="Error Message">
+      <Message xml:space="preserve">Failed to login!</Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page1#enu1">
+          <layout:Link link="sv1#area1#page1#enu1#ln4"/>
+          <layout:Field field="sv1#area1#page1#enu1#fld2"/>
+          <layout:Field field="sv1#area1#page1#enu1#fld1"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page1#mssu2">
+          <layout:Link link="sv1#area1#page1#mssu2#ln2"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area1#page1#mssu9"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

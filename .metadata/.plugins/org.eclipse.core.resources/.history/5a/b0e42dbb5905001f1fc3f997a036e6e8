@@ -1,0 +1,12 @@
+<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="60" gr:y="210" id="sv3#mpage3" name="Master Page">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="20" gr:y="0" id="sv3#mpage3#mssu9" name="Add Course" linkOrder="sv3#mpage3#mssu9#ln40">
+      <Message xml:space="preserve">Add a Course</Message>
+      <Link id="sv3#mpage3#mssu9#ln40" name="Flow10" to="sv3#area6#page6#enu3" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+    <MultiMessageUnit gr:x="0" gr:y="120" id="sv3#mpage3#mssu10" name="Manage Courses" linkOrder="sv3#mpage3#mssu10#ln41">
+      <Message xml:space="preserve">Manage Courses</Message>
+      <Link id="sv3#mpage3#mssu10#ln41" name="Flow16" to="sv3#area8#page8#pwu2" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+</MasterPage>

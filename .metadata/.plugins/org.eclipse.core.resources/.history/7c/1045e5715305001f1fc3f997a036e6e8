@@ -1,0 +1,8 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Public" landmarks="sv1#area1 sv1#area3" homePage="sv1#area1#page1">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="455" gr:y="165" id="sv1#miu4" action="true" moduleId="mov1#mpkg2#opm4">
+      <KOLink id="sv1#miu4#kln4" name="KOFlow4" to="sv1#area1#page1#mssu9" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="765" gr:y="350" id="sv1#miu5" action="true" moduleId="mov1#mpkg2#opm5"/>
+  </OperationUnits>
+</SiteView>

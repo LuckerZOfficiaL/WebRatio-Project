@@ -12,9 +12,6 @@
       <Link id="sv1#area1#page1#mssu2#ln2" name="Register" to="sv1#area3#page2#enu2" automaticCoupling="true" type="normal" validate="true"/>
       <Message xml:space="preserve">Don't have an account yet?</Message>
     </MultiMessageUnit>
-    <MultiMessageUnit gr:x="0" gr:y="100" id="sv1#area1#page1#mssu9" name="Error Message">
-      <Message xml:space="preserve">Failed to login!</Message>
-    </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -70,9 +67,21 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#area1#page1#mssu9"/>
-      </layout:Cell>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

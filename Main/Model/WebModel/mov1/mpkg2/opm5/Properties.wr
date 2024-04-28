@@ -14,14 +14,20 @@
         <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par65" name="lastName_lastName" source="mov1#mpkg2#opm5#icu5#icp14" target="mov1#mpkg2#opm5#cru3.User#att22"/>
         <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par66" name="password_password" source="mov1#mpkg2#opm5#icu5#icp12" target="mov1#mpkg2#opm5#cru3.password"/>
         <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par67" name="userName_userName" source="mov1#mpkg2#opm5#icu5#icp13" target="mov1#mpkg2#opm5#cru3.userName"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par1" name="group ID_Group.groupID(groups)" source="mov1#mpkg2#opm5#icu5#icp16" target="mov1#mpkg2#opm5#cru3.User2Group.groupOID"/>
       </OKLink>
     </InputCollectorUnit>
     <CreateUnit gr:x="310" gr:y="120" id="mov1#mpkg2#opm5#cru3" name="CreateUser" entity="User">
-      <OKLink id="mov1#mpkg2#opm5#cru3#oln16" name="OKFlow13" to="mov1#mpkg2#opm5#miu8">
-        <LinkParameter id="mov1#mpkg2#opm5#cru3#oln16#par68" name="password_Password" source="passwordArray" target="mov1#mpkg2#opm5#miu8.mov1#mpkg2#opm4#icu4#icp1"/>
-        <LinkParameter id="mov1#mpkg2#opm5#cru3#oln16#par69" name="userName_Username" source="userNameArray" target="mov1#mpkg2#opm5#miu8.mov1#mpkg2#opm4#icu4#icp4"/>
+      <OKLink id="mov1#mpkg2#opm5#cru3#oln16" name="OKFlow13" to="mov1#mpkg2#opm5#okcu1">
+        <LinkParameter id="mov1#mpkg2#opm5#cru3#oln16#par2" name="password_PASSING" source="passwordArray" passing="true"/>
+        <LinkParameter id="mov1#mpkg2#opm5#cru3#oln16#par3" name="userName_PASSING" source="userNameArray" passing="true"/>
+        <LinkParameter id="mov1#mpkg2#opm5#cru3#oln16#par4" name="password_Password" source="passwordArray" target="mov1#mpkg2#opm5#okcu1#ocp2"/>
+        <LinkParameter id="mov1#mpkg2#opm5#cru3#oln16#par5" name="userName_Username" source="userNameArray" target="mov1#mpkg2#opm5#okcu1#ocp1"/>
       </OKLink>
     </CreateUnit>
-    <ModuleInstanceUnit gr:x="500" gr:y="120" id="mov1#mpkg2#opm5#miu8" action="true" moduleId="mov1#mpkg2#opm4"/>
+    <OKCollectorUnit gr:x="515" gr:y="110" id="mov1#mpkg2#opm5#okcu1" name="OK Port1">
+      <OutputCollectorParameter id="mov1#mpkg2#opm5#okcu1#ocp2" name="Password"/>
+      <OutputCollectorParameter id="mov1#mpkg2#opm5#okcu1#ocp1" name="Username"/>
+    </OKCollectorUnit>
   </OperationUnits>
 </OperationModule>
