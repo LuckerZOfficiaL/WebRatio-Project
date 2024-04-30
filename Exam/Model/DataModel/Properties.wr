@@ -108,6 +108,5 @@
       <db:JoinColumn attribute="ent8#att21" name="oid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db1" name="DB2" type="MySQL" url="jdbc:mysql://localhost:3306/DB2" username="root" cryptedPassword="true" password="NTg1ODU4">
-  </db:Database>
+  <db:Database id="db1" name="DB2" type="MySQL" url="jdbc:mysql://localhost:3306/DB2" username="root" cryptedPassword="true" password="NTg1ODU4"/>
 </DataModel>

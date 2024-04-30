@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="com.webratio.ide.ui.actions.MoveElementsAction.chooseTargetElementDialog">
-		<item value="sv3#mpage3" key="LAST_CHOOSEN_TARGET_ELEMENT_ID"/>
+		<item value="sv3#page4" key="LAST_CHOOSEN_TARGET_ELEMENT_ID"/>
 	</section>
 	<section name="DBSyncPlugin">
 	</section>
@@ -20,11 +20,11 @@
 		</section>
 	</section>
 	<section name="DialogBounds_CouplingDialog">
-		<item value="1030" key="DIALOG_WIDTH"/>
+		<item value="1322" key="DIALOG_WIDTH"/>
 		<item value="438" key="DIALOG_Y_ORIGIN"/>
-		<item value="911" key="DIALOG_HEIGHT"/>
+		<item value="1147" key="DIALOG_HEIGHT"/>
 		<item value="399" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="DatabaseMissingJarsDialog.FileDialog">
 		<item value="C:\Users\Luca\Desktop\postgresql-42.2.29.jre7.jar" key="PATH"/>

@@ -2,9 +2,20 @@
   <OperationUnits>
     <ModuleInstanceUnit gr:x="575" gr:y="40" id="sv1#miu1" action="true" name="Login" moduleId="mov1#mpkg1#opm3">
       <KOLink id="sv1#miu1#kln2" name="KOFlow2" to="sv1#area1#page1#mssu1">
-        <LinkParameter id="sv1#miu1#kln2#par5" name="Login error_Shown Messages" sourceValue="Login error" target="sv1#area1#page1#mssu1.shownMessages"/>
+        <LinkParameter id="sv1#miu1#kln2#par5" name="Login error_Shown Messages" target="sv1#area1#page1#mssu1.shownMessages" source="mov1#mpkg1#opm3#kocu4#ocp1"/>
       </KOLink>
+      <OKLink id="sv1#miu1#oln19" name="OKFlow19" to="sv1#switch1">
+        <LinkParameter id="sv1#miu1#oln19#par42" name="Group ID_Switch" source="mov1#mpkg1#opm3#okcu4#ocp2" target="sv1#switch1.switch"/>
+      </OKLink>
     </ModuleInstanceUnit>
     <ModuleInstanceUnit gr:x="810" gr:y="225" id="sv1#miu2" action="true" moduleId="mov1#mpkg1#opm6"/>
+    <SwitchUnit gr:x="865" gr:y="80" id="sv1#switch1" name="Switch Site">
+      <OKLink id="sv1#switch1#oln22" name="OKFlow22" to="sv1#miu9" automaticCoupling="true"/>
+      <Case value="0"/>
+      <Case value="1"/>
+      <OKLink id="sv1#switch1#oln24" name="OKFlow24" to="sv1#miu11" automaticCoupling="true"/>
+    </SwitchUnit>
+    <ModuleInstanceUnit gr:x="1125" gr:y="5" id="sv1#miu9" action="true" name="Go Student Site"/>
+    <ModuleInstanceUnit gr:x="1125" gr:y="180" id="sv1#miu11" action="true" name="Go Teacher Site"/>
   </OperationUnits>
 </SiteView>

@@ -9,7 +9,7 @@
     <ModuleInstanceUnit gr:x="265" gr:y="-375" id="sv1#miu1" name="Manage Cart" moduleId="mov1#opm4">
       <OKLink id="sv1#miu1#oln12" to="sv1#page15" name="OKLink42" automaticCoupling="true" ajaxWindowModal="true" ajaxWindowAutoResizing="true" ajaxOpenWindow="true" ajaxWindowUseTitle="false" ajaxWindowResizable="true" ajaxWindowClosable="true" ajaxReplaceWindow="true"/>
     </ModuleInstanceUnit>
-    <LogoutUnit gr:x="95" gr:y="-165" id="sv1#lou3" name="Logout" siteView="sv1"/>
+    <LogoutUnit gr:x="190" gr:y="-210" id="sv1#lou3" name="Logout" siteView="sv1"/>
     <LoginUnit id="sv1#lgu2" name="Login" gr:x="120" gr:y="90">
       <KOLink id="sv1#lgu2#kln1" name="KOLink6" to="sv1#page11#enu4" gr:bendpoints="-93,46,97,46"/>
     </LoginUnit>

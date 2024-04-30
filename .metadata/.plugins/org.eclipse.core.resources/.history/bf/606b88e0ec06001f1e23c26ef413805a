@@ -1,0 +1,23 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Public" landmarks="sv1#area1 sv1#area3" homePage="sv1#area1#page1">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="455" gr:y="130" id="sv1#miu4" action="true" moduleId="mov1#mpkg2#opm4">
+      <KOLink id="sv1#miu4#kln4" name="KOFlow4" to="sv1#area1#page1#mssu12">
+        <LinkParameter id="sv1#miu4#kln4#par7" name="Error Message_Shown Messages" source="mov1#mpkg2#opm4#kocu2#ocp2" target="sv1#area1#page1#mssu12.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv1#miu4#oln18" name="OKFlow18" to="sv1#switch2">
+        <LinkParameter id="sv1#miu4#oln18#par8" name="group ID_Switch" source="mov1#mpkg2#opm4#okcu2#ocp3" target="sv1#switch2.switch"/>
+      </OKLink>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="770" gr:y="395" id="sv1#miu5" action="true" moduleId="mov1#mpkg2#opm5">
+      <OKLink id="sv1#miu5#oln1" name="OKFlow1" to="sv1#area1#page1#enu1" gr:bendpoints="-34,-182,646,2" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <SwitchUnit gr:x="675" gr:y="135" id="sv1#switch2" name="Switch Page">
+      <Case value="0"/>
+      <Case value="1"/>
+      <OKLink id="sv1#switch2#oln19" name="OKFlow19" to="sv1#miu3" automaticCoupling="true" code="0"/>
+      <OKLink id="sv1#switch2#oln20" name="OKFlow20" to="sv1#miu6" automaticCoupling="true" code="1"/>
+    </SwitchUnit>
+    <ModuleInstanceUnit gr:x="915" gr:y="40" id="sv1#miu3" action="true" name="Go Student Site"/>
+    <ModuleInstanceUnit gr:x="925" gr:y="210" id="sv1#miu6" action="true" name="Go Teacher Site"/>
+  </OperationUnits>
+</SiteView>

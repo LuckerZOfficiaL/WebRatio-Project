@@ -1,20 +1,3 @@
-<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-75" gr:y="190" id="sv3#mpage3" name="Master Page">
-  <ContentUnits>
-    <MultiMessageUnit gr:x="185" gr:y="10" id="sv3#mpage3#mssu9" name="Add Course" linkOrder="sv3#mpage3#mssu9#ln40">
-      <Message xml:space="preserve">Add a Course</Message>
-      <Link id="sv3#mpage3#mssu9#ln40" name="Flow10" to="sv3#area6#page6#enu3" automaticCoupling="true" type="normal" validate="true"/>
-    </MultiMessageUnit>
-    <MultiMessageUnit gr:x="160" gr:y="135" id="sv3#mpage3#mssu10" name="Manage Courses" linkOrder="sv3#mpage3#mssu10#ln41">
-      <Message xml:space="preserve">Manage Courses</Message>
-      <Link id="sv3#mpage3#mssu10#ln41" name="Flow16" to="sv3#area8#page8#pwu2" automaticCoupling="true" type="normal" validate="true"/>
-    </MultiMessageUnit>
-    <GetUnit gr:x="10" gr:y="0" id="sv3#mpage3#gtu6" name="Get User" contextParameters="UserCtxParam">
-      <Link id="sv3#mpage3#gtu6#ln42" name="Flow42" to="sv3#mpage3#dau7" automaticCoupling="true" type="transport" validate="true"/>
-    </GetUnit>
-    <DataUnit gr:x="0" gr:y="125" id="sv3#mpage3#dau7" name="Selected User" entity="User">
-      <Selector id="sv3#mpage3#dau7#su10" defaultPolicy="fill" booleanOperator="and">
-        <KeyCondition id="sv3#mpage3#dau7#su10#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
-      </Selector>
-    </DataUnit>
-  </ContentUnits>
+<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-210" gr:y="155" id="sv3#mpage3" name="Master Page">
+  <ContentUnits/>
 </MasterPage>

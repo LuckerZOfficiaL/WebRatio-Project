@@ -1,0 +1,14 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Public" landmarks="sv1#area1 sv1#area3" homePage="sv1#area1#page1">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="455" gr:y="165" id="sv1#miu4" action="true" moduleId="mov1#mpkg2#opm4">
+      <Link id="sv1#miu4#ln10" name="Flow10" to="sv1#stu4" type="transport" validate="true">
+        <LinkParameter id="sv1#miu4#ln10#par4" name="OK Port2.group ID_GroupCtxParam.groupID" source="mov1#mpkg2#opm4#okcu2#ocp3" target="sv1#stu4.GroupCtxParam"/>
+        <LinkParameter id="sv1#miu4#ln10#par5" name="OK Port2.User ID_UserCtxParam.userID" source="mov1#mpkg2#opm4#okcu2#ocp1" target="sv1#stu4.UserCtxParam"/>
+      </Link>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="830" gr:y="390" id="sv1#miu5" action="true" moduleId="mov1#mpkg2#opm5">
+      <OKLink id="sv1#miu5#oln1" name="OKFlow1" to="sv1#area1#page1#enu1" gr:bendpoints="-222,-143,462,51" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <SetUnit gr:x="725" gr:y="95" id="sv1#stu4" name="Set Context" contextParameters="GroupCtxParam UserCtxParam"/>
+  </OperationUnits>
+</SiteView>

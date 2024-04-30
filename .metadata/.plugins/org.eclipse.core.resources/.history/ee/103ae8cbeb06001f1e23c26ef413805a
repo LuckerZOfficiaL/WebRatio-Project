@@ -1,0 +1,12 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="PublicSiteView" landmarks="sv1#area1" homePage="sv1#area1#page1">
+  <OperationUnits>
+    <ModuleInstanceUnit gr:x="575" gr:y="40" id="sv1#miu1" action="true" name="Login" moduleId="mov1#mpkg1#opm3">
+      <KOLink id="sv1#miu1#kln2" name="KOFlow2" to="sv1#area1#page1#mssu1">
+        <LinkParameter id="sv1#miu1#kln2#par5" name="Login error_Shown Messages" target="sv1#area1#page1#mssu1.shownMessages" source="mov1#mpkg1#opm3#kocu4#ocp1"/>
+      </KOLink>
+      <OKLink id="sv1#miu1#oln19" name="OKFlow19" to="sv1#switch1" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="810" gr:y="225" id="sv1#miu2" action="true" moduleId="mov1#mpkg1#opm6"/>
+    <SwitchUnit gr:x="865" gr:y="80" id="sv1#switch1" name="Switch1"/>
+  </OperationUnits>
+</SiteView>
