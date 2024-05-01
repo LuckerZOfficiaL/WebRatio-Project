@@ -1,0 +1,60 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="140" gr:y="370" id="sv2#area5#page7" name="Lectures">
+  <ContentUnits>
+    <DataUnit gr:x="5" gr:y="0" id="sv2#area5#page7#dau2" name="Lecture Content" entity="ent6" displayAll="true">
+      <Selector id="sv2#area5#page7#dau2#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area5#page7#dau2#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <SelectorUnit id="sv2#area5#page7#seu5" entity="ent3" distinctAttributes="ent3#att5" gr:x="0" gr:y="150" name="Questions">
+      <Selector id="sv2#area5#page7#seu5#su8" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#page7#seu5#su8#rcond9" role="rel9#role17" predicate="in" implied="false" name="RoleCondition6"/>
+      </Selector>
+      <Link id="sv2#area5#page7#seu5#ln18" name="Flow18" to="sv2#area5#page9#enu4" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page7#seu5#ln18#par23" name="questionID_Key Condition [questionID]" source="ent3#att3Array" target="sv2#area5#page9#enu4.ent3#att3"/>
+        <LinkParameter id="sv2#area5#page7#seu5#ln18#par24" name="option1_option1" source="ent3#att6Array" target="sv2#area5#page9#enu4#fld14_slot"/>
+        <LinkParameter id="sv2#area5#page7#seu5#ln18#par25" name="option2_option2" source="ent3#att7Array" target="sv2#area5#page9#enu4#fld15_slot"/>
+        <LinkParameter id="sv2#area5#page7#seu5#ln18#par34" name="option3_option3" source="ent3#att8Array" target="sv2#area5#page9#enu4#fld16_slot"/>
+        <LinkParameter id="sv2#area5#page7#seu5#ln18#par55" name="option4_option4" source="ent3#att9Array" target="sv2#area5#page9#enu4#fld17_slot"/>
+        <LinkParameter id="sv2#area5#page7#seu5#ln18#par56" name="question_question" source="ent3#att5Array" target="sv2#area5#page9#enu4#fld13_slot"/>
+      </Link>
+      <Link id="sv2#area5#page7#seu5#ln20" name="Flow20" to="sv2#area5#lpu1" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page7#seu5#ln20#par40" name="correctAnswer_Correct Answer" source="ent3#att10Array" target="sv2#area5#lpu1#lsa1"/>
+      </Link>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page7#dau2">
+          <layout:Attribute attribute="ent6#att19"/>
+          <layout:Attribute attribute="ent6#att24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

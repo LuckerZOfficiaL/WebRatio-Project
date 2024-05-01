@@ -1,7 +1,9 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area6#page6" name="Add Course">
   <ContentUnits>
     <GetUnit gr:x="10" gr:y="100" id="sv3#area6#page6#gtu3" name="Get User" contextParameters="UserCtxParam">
-      <Link id="sv3#area6#page6#gtu3#ln9" name="Flow9" to="sv3#cru2" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#area6#page6#gtu3#ln9" name="Flow9" to="sv3#cru2" type="transport" validate="true">
+        <LinkParameter id="sv3#area6#page6#gtu3#ln9#par69" name="UserCtxParam.userID_User.userID(CourseToUser)" source="sv3#area6#page6#gtu3.UserCtxParam" target="sv3#cru2.rel1#role2.userOID"/>
+      </Link>
     </GetUnit>
     <EntryUnit gr:x="0" gr:y="0" id="sv3#area6#page6#enu3" name="Course Info" fieldOrder="sv3#area6#page6#enu3#fld3 sv3#area6#page6#enu3#fld4" linkOrder="sv3#area6#page6#enu3#ln1">
       <Field id="sv3#area6#page6#enu3#fld4" name="Course topic" type="string" modifiable="true"/>

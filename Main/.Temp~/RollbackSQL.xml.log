@@ -1,0 +1,26 @@
+[01 May 2024 18:36:09] DEBUG Executing SQL script
+[01 May 2024 18:36:09] INFO ================================================================================
+[01 May 2024 18:36:09] INFO outputPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\RollbackSQL.xml'
+[01 May 2024 18:36:09] INFO onError= 'stop'
+[01 May 2024 18:36:09] INFO statementSeparator= ';'
+[01 May 2024 18:36:09] INFO derby.system.home= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\.metadata\.plugins\com.webratio.commons.db\derby'
+[01 May 2024 18:36:09] INFO password= '585858'
+[01 May 2024 18:36:09] INFO url= 'jdbc:mysql://localhost:3306/DB'
+[01 May 2024 18:36:09] INFO username= 'root'
+[01 May 2024 18:36:09] INFO autoCommit= 'false'
+[01 May 2024 18:36:09] INFO outputLogPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\RollbackSQL.xml.log'
+[01 May 2024 18:36:09] INFO driverClass= 'com.mysql.jdbc.Driver'
+[01 May 2024 18:36:09] INFO encoding= ''
+[01 May 2024 18:36:09] INFO eventSocketPort= '51290'
+[01 May 2024 18:36:09] INFO sqlScript= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\RollbackSQL.sql'
+[01 May 2024 18:36:09] INFO ================================================================================
+[01 May 2024 18:36:09] INFO Connecting to the Database...
+[01 May 2024 18:36:09] INFO Database connection estabilished
+[01 May 2024 18:36:09] INFO transaction isolation: 4
+[01 May 2024 18:36:09] DEBUG ================================================================================
+[01 May 2024 18:36:09] DEBUG Executing SQL script file: F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\RollbackSQL.sql
+[01 May 2024 18:36:09] DEBUG Executing statement:  alter table `enrolledcourse`   drop column  `enrolledcourseid_2`
+[01 May 2024 18:36:09] DEBUG ================================================================================
+[01 May 2024 18:36:09] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[01 May 2024 18:36:09] INFO Database connection closed
+[01 May 2024 18:36:09] DEBUG Total time: 282 milliseconds

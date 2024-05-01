@@ -11,7 +11,9 @@
       </Link>
     </PowerIndexUnit>
     <GetUnit gr:x="5" gr:y="0" id="sv3#area8#page8#gtu4" name="Get User" contextParameters="UserCtxParam">
-      <Link id="sv3#area8#page8#gtu4#ln11" name="Flow11" to="sv3#area8#page8#pwu2" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#area8#page8#gtu4#ln11" name="Flow11" to="sv3#area8#page8#pwu2" type="transport" validate="true">
+        <LinkParameter id="sv3#area8#page8#gtu4#ln11#par70" name="UserCtxParam.userID_RoleCondition4 [userID]" source="sv3#area8#page8#gtu4.UserCtxParam" target="sv3#area8#page8#pwu2#su6#rcond4.userOID"/>
+      </Link>
     </GetUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

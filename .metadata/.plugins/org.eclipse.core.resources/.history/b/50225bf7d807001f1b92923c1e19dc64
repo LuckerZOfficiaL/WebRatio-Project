@@ -1,0 +1,52 @@
+
+<Warnings>
+<Warning xpath="id('password')" rootXPath="/WebProject/DataModel" label="password" tab="mapping">
+	            <Message>Security Warning: the 'password' attribute is not encrypted</Message>
+	            <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	                        attribute="db:cryptAlgorithm" value="com.webratio.rtx.core.PBKDF2WithHmacSHA1CryptImplementation">Set the 'Crypt Algorithm' property to 'PBKDF2WithHmacSHA1'</Resolution>
+	         </Warning><Warning xpath="id('ent5#att15')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="enrolledCourseID" key="INVALID_MAPPING_COLUMN">
+       <Message>The column 'enrolledcourseid_2' of the attribute 'enrolledCourseID' is not valid</Message>
+          <Resolution 
+	          class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	          attribute="db:column">Remove the invalid column attribute 'enrolledcourseid_2'</Resolution>
+      </Warning><Warning xpath="id('rel2')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="EnrolledCourseToUser" key="INVALID_JOIN_COLUMN">
+            <Message>The join column 'encolledcourseid' of the target relationship role 'EnrolledCourseToUser' is not valid</Message>
+            <Resolution 
+      			class="com.webratio.ide.ui.resources.RemoveJoinColumnResolutionGenerator"
+      			roleId="rel2#role4"
+      			columnName="encolledcourseid">Remove the invalid join column 'encolledcourseid'</Resolution>
+        </Warning><Warning xpath="id('rel2')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="EnrolledCourseToUser" key="INVALID_JOIN_COLUMN">
+            <Message>The join column 'encolledcourseid' of the relationship role 'EnrolledCourseToUser' is not a key attribute column</Message>
+            <Resolution 
+      			class="com.webratio.ide.ui.resources.RemoveJoinColumnResolutionGenerator"
+      			roleId="rel2#role4"
+      			columnName="encolledcourseid">Remove the invalid join column 'encolledcourseid'</Resolution>
+        </Warning><Warning xpath="id('rel11')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="EnrolledCourseToCourse" key="INVALID_JOIN_COLUMN">
+            <Message>The join column 'encolledcourseid' of the source relationship role 'EnrolledCourseToCourse' is not valid</Message>
+            <Resolution 
+      			class="com.webratio.ide.ui.resources.RemoveJoinColumnResolutionGenerator"
+      			roleId="rel11#role21"
+      			columnName="encolledcourseid">Remove the invalid join column 'encolledcourseid'</Resolution>
+        </Warning><Warning xpath="id('rel11')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="EnrolledCourseToCourse" key="INVALID_JOIN_COLUMN">
+            <Message>The join column 'encolledcourseid' of the relationship role 'EnrolledCourseToCourse' is not a key attribute column</Message>
+            <Resolution 
+      			class="com.webratio.ide.ui.resources.RemoveJoinColumnResolutionGenerator"
+      			roleId="rel11#role21"
+      			columnName="encolledcourseid">Remove the invalid join column 'encolledcourseid'</Resolution>
+        </Warning>
+<Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject">
+	      <Message>Security Warning: the Admin Area generation is enabled</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="adminArea"
+	            value="">Remove the 'Admin Area' property</Resolution>
+	    </Warning>
+    <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject" tab="security">
+	      <Message>Security Warning: the project contains a protected resource but the 'Protect URL' property is missing</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="protectURL"
+	            value="true">Set the 'Protect URL' property to 'true'</Resolution>
+	    </Warning>
+    
+</Warnings>

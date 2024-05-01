@@ -1,0 +1,36 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area2#page18" name="Home" protected="false">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="0" id="sv3#area2#page18#gtu1" name="Get User" contextParameters="GroupCtxParam UserCtxParam">
+      <Link id="sv3#area2#page18#gtu1#ln3" name="Flow42" to="sv3#area2#page18#dau1" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <DataUnit gr:x="25" gr:y="130" id="sv3#area2#page18#dau1" name="Selected User" entity="User" displayAll="true">
+      <Selector id="sv3#area2#page18#dau1#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#page18#dau1#su1#kcond1" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <MultiMessageUnit gr:x="215" gr:y="155" id="sv3#area2#page18#mssu1" name="Manage Courses" linkOrder="sv3#area2#page18#mssu1#ln7">
+      <Message xml:space="preserve">Manage Courses</Message>
+      <Link id="sv3#area2#page18#mssu1#ln7" name="Flow16" to="sv3#area8#page8" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+    <MultiMessageUnit gr:x="260" gr:y="10" id="sv3#area2#page18#mssu3" name="Add Course" linkOrder="sv3#area2#page18#mssu3#ln10">
+      <Message xml:space="preserve">Add a Course</Message>
+      <Link id="sv3#area2#page18#mssu3#ln10" name="Flow10" to="sv3#area6#page6" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

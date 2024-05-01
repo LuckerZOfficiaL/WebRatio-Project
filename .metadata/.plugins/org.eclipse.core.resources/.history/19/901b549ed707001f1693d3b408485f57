@@ -1,0 +1,27 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="65" gr:y="5" id="sv2#area5" name="Enrolled Courses" landmark="true" protected="false" defaultPage="sv2#area5#page5" landmarks="sv2#area5#miu3">
+  <OperationUnits>
+    <SelectorUnit gr:x="380" gr:y="275" id="sv2#area5#seu2" name="Selected Course" entity="ent1">
+      <Selector id="sv2#area5#seu2#su4" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#seu2#su4#rcond2" name="RoleCondition2" predicate="in" implied="false" role="rel11#role21"/>
+      </Selector>
+      <OKLink id="sv2#area5#seu2#oln4" name="Flow9" to="sv2#area5#seu3" automaticCoupling="true"/>
+    </SelectorUnit>
+    <SelectorUnit gr:x="405" gr:y="410" id="sv2#area5#seu3" name="Selected Lecture" entity="ent6">
+      <Selector id="sv2#area5#seu3#su5" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#seu3#su5#rcond3" name="RoleCondition3" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+      <Link id="sv2#area5#seu3#ln17" name="OKFlow6" to="sv2#area5#page7#seu5" type="transport" automaticCoupling="true"/>
+      <OKLink id="sv2#area5#seu3#oln7" name="Flow16" to="sv2#area5#page7#dau2" automaticCoupling="true"/>
+    </SelectorUnit>
+    <LoopUnit gr:x="400" gr:y="735" id="sv2#area5#lpu1" name="Iterate over questions">
+      <SecondaryArray id="sv2#area5#lpu1#lsa1" name="Correct Answer"/>
+      <OKLink id="sv2#area5#lpu1#oln8" name="OKFlow8" to="sv2#area5#page10" automaticCoupling="true" code="end"/>
+      <OKLink id="sv2#area5#lpu1#oln9" name="OKFlow9" to="sv2#area5#seu6" automaticCoupling="true" code="next"/>
+    </LoopUnit>
+    <SelectorUnit gr:x="145" gr:y="725" id="sv2#area5#seu6" name="Next Question" entity="ent3">
+      <KOLink id="sv2#area5#seu6#kln1" name="KOFlow1" to="sv2#area5#lpu1" automaticCoupling="true" gr:bendpoints="127,15,-163,15"/>
+      <OKLink id="sv2#area5#seu6#oln10" name="OKFlow10" to="sv2#area5#lpu1" automaticCoupling="true" gr:bendpoints="111,35,-159,35"/>
+    </SelectorUnit>
+    <ModuleInstanceUnit id="sv2#area5#miu3" landmark="true" gr:x="0" gr:y="300" action="true" moduleId="mov1#mpkg2#opm6"/>
+  </OperationUnits>
+</Area>

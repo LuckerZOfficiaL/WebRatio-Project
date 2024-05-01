@@ -1,0 +1,25 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="50" gr:y="65" id="mov1#mpkg2#opm5" name="Register">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#mpkg2#opm5#icu5" gr:x="30" gr:y="60">
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp11" name="email"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp12" name="password"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp13" name="userName"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp14" name="lastName"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp15" name="firstName"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp16" name="group ID"/>
+      <OKLink id="mov1#mpkg2#opm5#icu5#oln15" name="OKFlow3" to="mov1#mpkg2#opm5#cru3">
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par62" name="email_email" source="mov1#mpkg2#opm5#icu5#icp11" target="mov1#mpkg2#opm5#cru3.email"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par63" name="firstName_firstName" source="mov1#mpkg2#opm5#icu5#icp15" target="mov1#mpkg2#opm5#cru3.User#att17"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par64" name="group ID_Group.oid(defaultGroup)" source="mov1#mpkg2#opm5#icu5#icp16" target="mov1#mpkg2#opm5#cru3.User2DefaultGroup.groupOID"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par65" name="lastName_lastName" source="mov1#mpkg2#opm5#icu5#icp14" target="mov1#mpkg2#opm5#cru3.User#att22"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par66" name="password_password" source="mov1#mpkg2#opm5#icu5#icp12" target="mov1#mpkg2#opm5#cru3.password"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par67" name="userName_userName" source="mov1#mpkg2#opm5#icu5#icp13" target="mov1#mpkg2#opm5#cru3.userName"/>
+        <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par1" name="group ID_Group.groupID(groups)" source="mov1#mpkg2#opm5#icu5#icp16" target="mov1#mpkg2#opm5#cru3.User2Group.groupOID"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <CreateUnit gr:x="310" gr:y="120" id="mov1#mpkg2#opm5#cru3" name="CreateUser" entity="User">
+      <OKLink id="mov1#mpkg2#opm5#cru3#oln16" name="OKFlow13" to="mov1#mpkg2#opm5#okcu1" automaticCoupling="true"/>
+    </CreateUnit>
+    <OKCollectorUnit gr:x="515" gr:y="110" id="mov1#mpkg2#opm5#okcu1" name="OK Port1"/>
+  </OperationUnits>
+</OperationModule>

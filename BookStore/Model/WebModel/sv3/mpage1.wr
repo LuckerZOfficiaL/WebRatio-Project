@@ -1,4 +1,4 @@
-<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="470" gr:y="-810" id="sv3#mpage1" name="Master Page">
+<MasterPage xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="455" gr:y="-785" id="sv3#mpage1" name="Master Page">
   <ContentUnits>
     <GetUnit id="sv3#mpage1#gtu2a" name="Get Current User Key" gr:x="0" gr:y="180" contextParameters="UserCtxParam">
       <Link id="sv3#mpage1#gtu2a#ln3a" name="Link37" to="sv3#mpage1#dau2a" type="transport" automaticCoupling="true" validate="true"/>

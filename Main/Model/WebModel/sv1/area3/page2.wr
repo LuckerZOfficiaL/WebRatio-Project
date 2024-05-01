@@ -9,12 +9,12 @@
         <LinkParameter id="sv1#area3#page2#enu2#ln5#par17" name="userName_userName" source="sv1#area3#page2#enu2#fld6" target="sv1#miu5.mov1#mpkg2#opm5#icu5#icp13"/>
         <LinkParameter id="sv1#area3#page2#enu2#ln5#par22" name="groupID[Slot4]_group ID" source="sv1#area3#page2#enu2#sfld1#slot4" target="sv1#miu5.mov1#mpkg2#opm5#icu5#icp16"/>
       </Link>
-      <Field id="sv1#area3#page2#enu2#fld9" name="lastName" type="string" modifiable="true"/>
-      <Field id="sv1#area3#page2#enu2#fld8" name="firstName" type="string" modifiable="true"/>
-      <Field id="sv1#area3#page2#enu2#fld7" name="password" type="password" modifiable="true"/>
-      <Field id="sv1#area3#page2#enu2#fld6" name="userName" type="string" modifiable="true"/>
-      <Field id="sv1#area3#page2#enu2#fld5" name="email" type="string" modifiable="true"/>
-      <SelectionField id="sv1#area3#page2#enu2#sfld1" name="groupID" type="integer" modifiable="true" slotOrder="sv1#area3#page2#enu2#sfld1#slot1 sv1#area3#page2#enu2#sfld1#slot4" splitOutput="true">
+      <Field id="sv1#area3#page2#enu2#fld9" name="Last Name" type="string" modifiable="true"/>
+      <Field id="sv1#area3#page2#enu2#fld8" name="First Name" type="string" modifiable="true"/>
+      <Field id="sv1#area3#page2#enu2#fld7" name="Password" type="password" modifiable="true"/>
+      <Field id="sv1#area3#page2#enu2#fld6" name="Username" type="string" modifiable="true"/>
+      <Field id="sv1#area3#page2#enu2#fld5" name="Email" type="string" modifiable="true"/>
+      <SelectionField id="sv1#area3#page2#enu2#sfld1" name="Group" type="integer" modifiable="true" slotOrder="sv1#area3#page2#enu2#sfld1#slot1 sv1#area3#page2#enu2#sfld1#slot4" splitOutput="true">
         <Slot id="sv1#area3#page2#enu2#sfld1#slot1" name="Label Slot" value="Student|Teacher" label="true"/>
         <Slot id="sv1#area3#page2#enu2#sfld1#slot4" name="Output Slot" value="0|1" output="true"/>
       </SelectionField>

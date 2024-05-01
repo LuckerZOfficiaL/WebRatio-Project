@@ -3,6 +3,9 @@
     <InputCollectorUnit id="mov1#mpkg2#opm6#icu6" gr:x="30" gr:y="60">
       <OKLink id="mov1#mpkg2#opm6#icu6#oln17" name="OKFlow2" to="mov1#mpkg2#opm6#lou2" automaticCoupling="true"/>
     </InputCollectorUnit>
-    <LogoutUnit gr:x="300" gr:y="70" id="mov1#mpkg2#opm6#lou2" name="Logout1" siteView="sv1"/>
+    <LogoutUnit gr:x="300" gr:y="70" id="mov1#mpkg2#opm6#lou2" name="Logout1" siteView="sv1">
+      <KOLink id="mov1#mpkg2#opm6#lou2#kln2" name="KOFlow2" to="mov1#mpkg2#opm6#kocu1" automaticCoupling="true"/>
+    </LogoutUnit>
+    <KOCollectorUnit gr:x="445" gr:y="65" id="mov1#mpkg2#opm6#kocu1" name="KO Port1"/>
   </OperationUnits>
 </OperationModule>

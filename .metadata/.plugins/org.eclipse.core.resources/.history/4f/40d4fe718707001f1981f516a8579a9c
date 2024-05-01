@@ -1,0 +1,334 @@
+
+<Warnings>
+<Warning xpath="id('password')" rootXPath="/WebProject/DataModel" label="password" tab="mapping">
+	            <Message>Security Warning: the 'password' attribute is not encrypted</Message>
+	            <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	                        attribute="db:cryptAlgorithm" value="com.webratio.rtx.core.PBKDF2WithHmacSHA1CryptImplementation">Set the 'Crypt Algorithm' property to 'PBKDF2WithHmacSHA1'</Resolution>
+	         </Warning><Warning xpath="id('db2')" rootXPath="/WebProject/DataModel" key="DISCONNECTED_DATABASE" tab="mapping" label="DB">
+        <Message>The database 'DB' is not connected: unable to perform a deep analysis</Message>
+        <Resolution class="com.webratio.ide.ui.resources.RefreshDatabaseResolutionGenerator">Refresh the database</Resolution>
+      </Warning>
+    
+<Warning xpath="id('sv4')" rootXPath="id('sv4')" key="UNDEFINED_HOME_PAGE" label="Admin">
+      <Message>The home element of the site view 'Admin' is undefined</Message>
+    </Warning>
+  <Warning xpath="id('sv1#area1#page1#mssu2#ln2')" rootXPath="id('sv1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Register">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Register'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#seu1#ln29#par33')" rootXPath="id('sv3')" key="UNUSED_PASSING_PARAMETER" label="name_PASSING">
+          <Message>The passing parameter 'name_PASSING' is declared but never used</Message>
+          <Resolution 
+	          class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv3#seu1#ln29#par33'</Resolution>
+        </Warning>
+      <Warning xpath="id('sv3#page13#pwu5#ln33#par45')" rootXPath="id('sv3')" key="UNUSED_PASSING_PARAMETER" label="questionID_PASSING">
+          <Message>The passing parameter 'questionID_PASSING' is declared but never used</Message>
+          <Resolution 
+	          class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv3#page13#pwu5#ln33#par45'</Resolution>
+        </Warning>
+      <Warning xpath="id('mov1#mpkg2#opm4#lgu2#oln2')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow2">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow2'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('mov1#mpkg2#opm5#cru3#oln16')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow13">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow13'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv1#switch2#oln19')" rootXPath="id('sv1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow19">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow19'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv1#switch2#oln20')" rootXPath="id('sv1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow20">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow20'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv2#area5#lpu1#oln9')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow9">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow9'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv2#area5#seu6#oln10')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow10">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow10'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#cru4#oln5')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow5">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow5'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#cru5#oln12')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow12">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow12'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#dlu3#oln6')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow6">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow6'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#mfu1#oln11')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow11">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow11'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv2#area5#seu6#kln1')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow1">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow1'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#cru4#kln6')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow6">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow6'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#cru5#kln9')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow9">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow9'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#dlu3#kln7')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow7">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow7'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv3#mfu1#kln8')" rootXPath="id('sv3')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow8">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow8'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+     <Warning xpath="id('mov1#mpkg2#opm1#icu1')" rootXPath="id('mov1')" error="false" label="Input Collector" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Input Collector'</Message>
+        </Warning>
+     <Warning xpath="id('mov1#mpkg2#opm2#icu2')" rootXPath="id('mov1')" error="false" label="Input Collector" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Input Collector'</Message>
+        </Warning>
+    	<Warning xpath="id('mov1#mpkg2#opm4#seu7')" rootXPath="id('mov1')" error="false" label="Selected User" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Selected User'</Message>
+        </Warning>
+    	<Warning xpath="id('mov1#mpkg2#opm5#cru3')" rootXPath="id('mov1')" error="false" label="CreateUser" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'CreateUser'</Message>
+        </Warning>
+    
+	<Warning xpath="id('mov1#mpkg2#opm6#lou2')" rootXPath="id('mov1')" error="false" label="Logout1" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Logout1'</Message>
+        </Warning>
+    
+  <Warning error="false" xpath="id('mov1#mpkg2#opm6#lou2')" rootXPath="id('mov1')" key="" label="Logout1">
+    <Message>Security Warning: the Logout operation &apos;Logout1&apos; does not have the &apos;Invalidate Session&apos; flag enabled.</Message>
+    <Resolution message="Set Invalidate Session" class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="invalidateSession" value="true" >Set Invalidate Session</Resolution>
+  </Warning> 	<Warning xpath="id('sv1#miu5')" rootXPath="id('sv1')" error="false" label="sv1#miu5" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'sv1#miu5'</Message>
+        </Warning>
+    
+  <Warning error="false" xpath="id('sv1#switch2')" rootXPath="id(&apos;sv1&apos;)" key="MISSING_NO_CODE_OK_LINK" label="Switch Page">
+    <Message>No default OK flow is specified for the component &apos;Switch Page&apos;</Message>
+  </Warning>  <Warning xpath="id('sv1#miu3')" rootXPath="id('sv1')" error="false" label="Go Student Site" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Go Student Site'</Message>
+        </Warning>
+    	<Warning xpath="id('sv1#miu3')" rootXPath="id('sv1')" error="false" label="Go Student Site" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Go Student Site'</Message>
+        </Warning>
+     <Warning xpath="id('sv1#miu6')" rootXPath="id('sv1')" error="false" label="Go Teacher Site" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Go Teacher Site'</Message>
+        </Warning>
+    	<Warning xpath="id('sv1#miu6')" rootXPath="id('sv1')" error="false" label="Go Teacher Site" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Go Teacher Site'</Message>
+        </Warning>
+     <Warning xpath="id('sv2#miu2')" rootXPath="id('sv2')" error="false" label="sv2#miu2" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'sv2#miu2'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#miu2')" rootXPath="id('sv2')" error="false" label="sv2#miu2" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'sv2#miu2'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#area5#seu2')" rootXPath="id('sv2')" error="false" label="Selected Course" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Selected Course'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#area5#seu3')" rootXPath="id('sv2')" error="false" label="Selected Lecture" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Selected Lecture'</Message>
+        </Warning>
+     <Warning xpath="id('sv3#miu1')" rootXPath="id('sv3')" error="false" label="sv3#miu1" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'sv3#miu1'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#miu1')" rootXPath="id('sv3')" error="false" label="sv3#miu1" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'sv3#miu1'</Message>
+        </Warning>
+     <Warning xpath="id('sv3#cru2')" rootXPath="id('sv3')" error="false" label="Create Course" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Create Course'</Message>
+        </Warning>
+    
+ <Warning xpath="id('sv3#dlu2')" rootXPath="id('sv3')" error="false" label="Delete Course" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Delete Course'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#dlu2')" rootXPath="id('sv3')" error="false" label="Delete Course" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Delete Course'</Message>
+        </Warning>
+     <Warning xpath="id('sv3#seu1')" rootXPath="id('sv3')" error="false" label="Selected Course" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Selected Course'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#seu1')" rootXPath="id('sv3')" error="false" label="Selected Course" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Selected Course'</Message>
+        </Warning>
+     <Warning xpath="id('sv3#seu4')" rootXPath="id('sv3')" error="false" label="Selected Lecture" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Selected Lecture'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#seu4')" rootXPath="id('sv3')" error="false" label="Selected Lecture" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Selected Lecture'</Message>
+        </Warning>
+    
+
+ <Warning xpath="id('sv3#seu8')" rootXPath="id('sv3')" error="false" label="Selected Question" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Selected Question'</Message>
+        </Warning>
+    	<Warning xpath="id('sv3#seu8')" rootXPath="id('sv3')" error="false" label="Selected Question" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Selected Question'</Message>
+        </Warning>
+    
+
+
+
+  <Warning error="false" xpath="id('sv2#area5#page5#pwu1')" rootXPath="id(&apos;sv2&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Enrolled Courses">
+    <Message>Sorting attribute are unspecified for the component &apos;Enrolled Courses&apos;</Message>
+  </Warning> 
+
+<Warning xpath="id('sv2#area5#page7#seu5#ln18')" rootXPath="id('sv2')" error="warning" label="Flow18" key="HIDDEN_LINK_NO_TRANSPORT">
+      <Message>The type of the flow 'Flow18' must be 'transport'</Message>
+      <Resolution 
+          class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+          attribute="type"
+          value="transport">Set the link type to 'transport'</Resolution>
+    </Warning>
+    
+
+  <Warning error="false" xpath="id('sv3#page17#dau6')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Question Details">
+    <Message>No attributes to display are specified for the component &apos;Question Details&apos;</Message>
+  </Warning> 
+
+
+  <Warning error="false" xpath="id('sv3#page4#dau3')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Selected User">
+    <Message>No attributes to display are specified for the component &apos;Selected User&apos;</Message>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv3#page13#dau5')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Lecture Details">
+    <Message>No attributes to display are specified for the component &apos;Lecture Details&apos;</Message>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv3#page13#pwu5')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Questions">
+    <Message>No attributes to display are specified for the component &apos;Questions&apos;</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page13#pwu5')" rootXPath="id(&apos;sv3&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Questions">
+    <Message>Sorting attribute are unspecified for the component &apos;Questions&apos;</Message>
+  </Warning> 
+
+
+  <Warning error="false" xpath="id('sv3#page12#dau4')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Course Details">
+    <Message>No attributes to display are specified for the component &apos;Course Details&apos;</Message>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv3#page12#pwu4')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Lectures">
+    <Message>No attributes to display are specified for the component &apos;Lectures&apos;</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page12#pwu4')" rootXPath="id(&apos;sv3&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lectures">
+    <Message>Sorting attribute are unspecified for the component &apos;Lectures&apos;</Message>
+  </Warning> 
+
+
+
+  <Warning error="false" xpath="id('sv3#area8#page8#pwu2')" rootXPath="id(&apos;sv3&apos;)" key="NO_DISPLAY_ATTRIBUTES" label="Your Courses">
+    <Message>No attributes to display are specified for the component &apos;Your Courses&apos;</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#area8#page8#pwu2')" rootXPath="id(&apos;sv3&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Your Courses">
+    <Message>Sorting attribute are unspecified for the component &apos;Your Courses&apos;</Message>
+  </Warning> 
+
+					  <Warning xpath="id('sv1#area1#page1#enu1#fld1')" rootXPath="id('sv1')" label="password">
+					    <Message>Security Warning: the password field 'password' does not have any validation to ensure password strength</Message>
+					    <Resolution 
+					    	class="com.webratio.ide.ui.resources.AddMissingValidationRuleResolutionGenerator" 
+					    	validationRuleName="PasswordStrengthValidationRule">Add missing Password Strength validation rule</Resolution>
+					  </Warning>
+					
+					  <Warning xpath="id('sv1#area3#page2#enu2#fld7')" rootXPath="id('sv1')" label="password">
+					    <Message>Security Warning: the password field 'password' does not have any validation to ensure password strength</Message>
+					    <Resolution 
+					    	class="com.webratio.ide.ui.resources.AddMissingValidationRuleResolutionGenerator" 
+					    	validationRuleName="PasswordStrengthValidationRule">Add missing Password Strength validation rule</Resolution>
+					  </Warning>
+					
+		  <Warning xpath="id('sv1#area3#page2')" rootXPath="id('sv1')" label="Registration">
+		    <Message>Security Warning: the public page 'Registration' shows information about the user</Message>
+		    
+			    <Resolution 
+			        class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+			        attribute="protected"
+			        value="true">Protect the page</Resolution>
+		    
+		  </Warning>
+		
+  <Warning error="false" xpath="id('sv1#area3#page2')" rootXPath="id(&apos;sv1&apos;)" key="" label="Registration">
+    <Message>Security Warning: the page &apos;Registration&apos; is public but no captcha field is configured on its form component</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv1#area1#page1')" rootXPath="id(&apos;sv1&apos;)" key="" label="Login">
+    <Message>Security Warning: the page &apos;Login&apos; is public but no captcha field is configured on its form component</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page17')" rootXPath="id(&apos;sv3&apos;)" key="" label="Manage Question">
+    <Message>Security Warning: the page &apos;Manage Question&apos; is orphan</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page13')" rootXPath="id(&apos;sv3&apos;)" key="" label="Manage Lecture">
+    <Message>Security Warning: the page &apos;Manage Lecture&apos; is orphan</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv3#page12')" rootXPath="id(&apos;sv3&apos;)" key="" label="Mange Course">
+    <Message>Security Warning: the page &apos;Mange Course&apos; is orphan</Message>
+  </Warning> <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject">
+	      <Message>Security Warning: the Admin Area generation is enabled</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="adminArea"
+	            value="">Remove the 'Admin Area' property</Resolution>
+	    </Warning>
+    <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject" tab="security">
+	      <Message>Security Warning: the project contains a protected resource but the 'Protect URL' property is missing</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="protectURL"
+	            value="true">Set the 'Protect URL' property to 'true'</Resolution>
+	    </Warning>
+    
+</Warnings>

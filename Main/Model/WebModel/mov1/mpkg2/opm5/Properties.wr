@@ -17,7 +17,7 @@
         <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par1" name="group ID_Group.groupID(groups)" source="mov1#mpkg2#opm5#icu5#icp16" target="mov1#mpkg2#opm5#cru3.User2Group.groupOID"/>
       </OKLink>
     </InputCollectorUnit>
-    <CreateUnit gr:x="310" gr:y="120" id="mov1#mpkg2#opm5#cru3" name="CreateUser" entity="User">
+    <CreateUnit gr:x="345" gr:y="120" id="mov1#mpkg2#opm5#cru3" name="CreateUser" entity="User">
       <OKLink id="mov1#mpkg2#opm5#cru3#oln16" name="OKFlow13" to="mov1#mpkg2#opm5#okcu1" automaticCoupling="true"/>
     </CreateUnit>
     <OKCollectorUnit gr:x="515" gr:y="110" id="mov1#mpkg2#opm5#okcu1" name="OK Port1"/>

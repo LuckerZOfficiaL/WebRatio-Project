@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="-330" gr:y="260" id="sv3#page4" name="Home" linkOrder="sv3#page4#ln7" protected="true">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="359" gr:y="56" id="sv3#page4#mssu7" name="Add Course" linkOrder="sv3#page4#mssu7#ln38">
+      <Message xml:space="preserve">Add a Course</Message>
+      <Link id="sv3#page4#mssu7#ln38" name="Flow10" to="sv3#area6#page6" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+    <GetUnit gr:x="14" gr:y="56" id="sv3#page4#gtu5" name="Get User" contextParameters="GroupCtxParam UserCtxParam">
+      <Link id="sv3#page4#gtu5#ln39" name="Flow42" to="sv3#page4#dau3" automaticCoupling="true" type="transport" validate="true"/>
+    </GetUnit>
+    <DataUnit gr:x="74" gr:y="191" id="sv3#page4#dau3" name="Selected User" entity="User">
+      <Selector id="sv3#page4#dau3#su12" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#page4#dau3#su12#kcond3" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <MultiMessageUnit gr:x="334" gr:y="181" id="sv3#page4#mssu11" name="Manage Courses" linkOrder="sv3#page4#mssu11#ln43">
+      <Message xml:space="preserve">Manage Courses</Message>
+      <Link id="sv3#page4#mssu11#ln43" name="Flow16" to="sv3#area8#page8" automaticCoupling="true" type="normal" validate="true"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv3#page4#ln7" name="Flow7" to="sv3#miu1" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="65,-282,60,103"/>
+</Page>

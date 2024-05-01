@@ -1,54 +1,26 @@
-[30 Apr 2024 12:22:28] DEBUG Executing SQL script
-[30 Apr 2024 12:22:28] INFO ================================================================================
-[30 Apr 2024 12:22:28] INFO onError= 'stop'
-[30 Apr 2024 12:22:28] INFO autoCommit= 'false'
-[30 Apr 2024 12:22:28] INFO username= 'root'
-[30 Apr 2024 12:22:28] INFO outputPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml'
-[30 Apr 2024 12:22:28] INFO outputLogPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml.log'
-[30 Apr 2024 12:22:28] INFO encoding= ''
-[30 Apr 2024 12:22:28] INFO driverClass= 'com.mysql.jdbc.Driver'
-[30 Apr 2024 12:22:28] INFO sqlScript= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql'
-[30 Apr 2024 12:22:28] INFO eventSocketPort= '50171'
-[30 Apr 2024 12:22:28] INFO statementSeparator= ';'
-[30 Apr 2024 12:22:28] INFO derby.system.home= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\.metadata\.plugins\com.webratio.commons.db\derby'
-[30 Apr 2024 12:22:28] INFO password= '585858'
-[30 Apr 2024 12:22:28] INFO url= 'jdbc:mysql://localhost:3306/DB'
-[30 Apr 2024 12:22:28] INFO ================================================================================
-[30 Apr 2024 12:22:28] INFO Connecting to the Database...
-[30 Apr 2024 12:22:29] INFO Database connection estabilished
-[30 Apr 2024 12:22:29] INFO transaction isolation: 4
-[30 Apr 2024 12:22:29] DEBUG ================================================================================
-[30 Apr 2024 12:22:29] DEBUG Executing SQL script file: E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  create table `group` ( `groupid`  integer  not null, `groupname`  varchar(255), primary key (`groupid`) )
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    create table `module` ( `oid`  integer  not null, `moduleid`  varchar(255), `modulename`  varchar(255), primary key (`oid`) )
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    create table `user` ( `userid`  integer  not null, `username`  varchar(255), `password`  varchar(255), `email`  varchar(255), `firstname`  varchar(255), `lastname`  varchar(255), primary key (`userid`) )
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    create table `course` ( `courseid`  integer  not null, `name`  varchar(255)  not null, `topic`  varchar(255), primary key (`courseid`, `name`) )
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    create table `question` ( `questionid`  integer  not null, `question`  varchar(255), `option1`  varchar(255), `option2`  varchar(255), `option3`  varchar(255), `option4`  varchar(255), `correctanswer`  integer, primary key (`questionid`) )
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    create table `enrolledcourse` ( `encolledcourseid`  integer  not null, `grade`  double precision, primary key (`encolledcourseid`) )
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    create table `lecture` ( `lectureid`  integer  not null, `title`  varchar(255), `content`  varchar(255), primary key (`lectureid`) )
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    alter table `group`  add column  `module_oid`  integer
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `group`   add index fk_group_module (`module_oid`), add constraint fk_group_module foreign key (`module_oid`) references `module` (`oid`)
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    create table `group_module` ( `group_groupid`  integer not null, `module_oid`  integer not null, primary key (`group_groupid`, `module_oid`) )
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_group (`group_groupid`), add constraint fk_group_module_group foreign key (`group_groupid`) references `group` (`groupid`)
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_module (`module_oid`), add constraint fk_group_module_module foreign key (`module_oid`) references `module` (`oid`)
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    alter table `user`  add column  `group_groupid`  integer
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `user`   add index fk_user_group (`group_groupid`), add constraint fk_user_group foreign key (`group_groupid`) references `group` (`groupid`)
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    create table `user_group` ( `user_userid`  integer not null, `group_groupid`  integer not null, primary key (`user_userid`, `group_groupid`) )
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_user (`user_userid`), add constraint fk_user_group_user foreign key (`user_userid`) references `user` (`userid`)
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_group (`group_groupid`), add constraint fk_user_group_group foreign key (`group_groupid`) references `group` (`groupid`)
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    alter table `course`  add column  `user_userid`  integer
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `course`   add index fk_course_user (`user_userid`), add constraint fk_course_user foreign key (`user_userid`) references `user` (`userid`)
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    alter table `enrolledcourse`  add column  `course_courseid`  integer
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `enrolledcourse`  add column  `course_name`  varchar(255)
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `enrolledcourse`   add index fk_enrolledcourse_course (`course_courseid`, `course_name`), add constraint fk_enrolledcourse_course foreign key (`course_courseid`, `course_name`) references `course` (`courseid`, `name`)
-[30 Apr 2024 12:22:29] DEBUG Executing statement:    alter table `enrolledcourse`  add column  `user_userid`  integer
-[30 Apr 2024 12:22:29] DEBUG Executing statement:  alter table `enrolledcourse`   add index fk_enrolledcourse_user (`user_userid`), add constraint fk_enrolledcourse_user foreign key (`user_userid`) references `user` (`userid`)
-[30 Apr 2024 12:22:30] DEBUG Executing statement:    alter table `lecture`  add column  `course_courseid`  integer
-[30 Apr 2024 12:22:30] DEBUG Executing statement:  alter table `lecture`  add column  `course_name`  varchar(255)
-[30 Apr 2024 12:22:30] DEBUG Executing statement:  alter table `lecture`   add index fk_lecture_course (`course_courseid`, `course_name`), add constraint fk_lecture_course foreign key (`course_courseid`, `course_name`) references `course` (`courseid`, `name`)
-[30 Apr 2024 12:22:30] DEBUG Executing statement:    alter table `question`  add column  `lecture_lectureid`  integer
-[30 Apr 2024 12:22:30] DEBUG Executing statement:  alter table `question`   add index fk_question_lecture (`lecture_lectureid`), add constraint fk_question_lecture foreign key (`lecture_lectureid`) references `lecture` (`lectureid`)
-[30 Apr 2024 12:22:30] DEBUG ================================================================================
-[30 Apr 2024 12:22:30] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[30 Apr 2024 12:22:30] INFO Database connection closed
-[30 Apr 2024 12:22:30] DEBUG Total time: 1624 milliseconds
+[01 May 2024 18:38:42] DEBUG Executing SQL script
+[01 May 2024 18:38:42] INFO ================================================================================
+[01 May 2024 18:38:42] INFO outputPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.xml'
+[01 May 2024 18:38:42] INFO onError= 'stop'
+[01 May 2024 18:38:42] INFO statementSeparator= ';'
+[01 May 2024 18:38:42] INFO derby.system.home= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\.metadata\.plugins\com.webratio.commons.db\derby'
+[01 May 2024 18:38:42] INFO password= '585858'
+[01 May 2024 18:38:42] INFO url= 'jdbc:mysql://localhost:3306/DB'
+[01 May 2024 18:38:42] INFO username= 'root'
+[01 May 2024 18:38:42] INFO autoCommit= 'false'
+[01 May 2024 18:38:42] INFO outputLogPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.xml.log'
+[01 May 2024 18:38:42] INFO driverClass= 'com.mysql.jdbc.Driver'
+[01 May 2024 18:38:42] INFO encoding= ''
+[01 May 2024 18:38:42] INFO eventSocketPort= '51319'
+[01 May 2024 18:38:42] INFO sqlScript= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.sql'
+[01 May 2024 18:38:42] INFO ================================================================================
+[01 May 2024 18:38:42] INFO Connecting to the Database...
+[01 May 2024 18:38:43] INFO Database connection estabilished
+[01 May 2024 18:38:43] INFO transaction isolation: 4
+[01 May 2024 18:38:43] DEBUG ================================================================================
+[01 May 2024 18:38:43] DEBUG Executing SQL script file: F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.sql
+[01 May 2024 18:38:43] DEBUG Executing statement:  alter table `enrolledcourse`  add column  `enrolledcourseid_2`  integer  not null
+[01 May 2024 18:38:43] DEBUG ================================================================================
+[01 May 2024 18:38:43] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[01 May 2024 18:38:43] INFO Database connection closed
+[01 May 2024 18:38:43] DEBUG Total time: 271 milliseconds

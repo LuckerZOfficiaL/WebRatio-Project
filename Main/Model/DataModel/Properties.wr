@@ -63,7 +63,7 @@
     <Attribute id="ent3#att10" name="correctAnswer" type="integer" db:column="correctanswer"/>
   </Entity>
   <Entity gr:x="330" gr:y="425" id="ent5" name="EnrolledCourse" duration="persistent" attributeOrder="ent5#att15 ent5#att16 ent5#att23" volatileStorage="database" db:database="db2" db:table="enrolledcourse">
-    <Attribute id="ent5#att15" key="true" name="encolledCourseID" type="integer" db:column="encolledcourseid"/>
+    <Attribute id="ent5#att15" key="true" name="enrolledCourseID" type="integer" db:column="enrolledcourseid"/>
     <Attribute id="ent5#att16" name="grade" type="float" db:column="grade"/>
     <Attribute id="ent5#att23" name="courseName" type="string" derivationQuery="simpleImported::Self.rel11#role21.ent1#att11"/>
   </Entity>
@@ -72,12 +72,12 @@
     <Attribute id="ent6#att19" name="title" type="string" db:column="title"/>
     <Attribute id="ent6#att24" name="content" type="blob" db:column="content"/>
   </Entity>
-  <Relationship id="rel2" name="User_EnrolledCourse" sourceEntity="User" targetEntity="ent5" db:database="db2" db:table="enrolledcourse">
+  <Relationship id="rel2" name="User_EnrolledCourse" sourceEntity="User" targetEntity="ent5" db:database="db2" db:table="enrolledcourse" db:isView="false">
     <RelationshipRole1 id="rel2#role3" name="UserToEnrolledCourse" maxCard="N">
       <db:JoinColumn attribute="userOID" name="user_userid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel2#role4" name="EnrolledCourseToUser" maxCard="1">
-      <db:JoinColumn attribute="ent5#att15" name="encolledcourseid"/>
+      <db:JoinColumn attribute="ent5#att15" name="enrolledcourseid"/>
     </RelationshipRole2>
   </Relationship>
   <Relationship id="rel4" name="Course_Lecture" sourceEntity="ent1" targetEntity="ent6" db:database="db2" db:table="lecture">
@@ -91,14 +91,15 @@
   </Relationship>
   <Relationship id="rel11" name="EnrolledCourse_Course" sourceEntity="ent5" targetEntity="ent1" db:database="db2" db:table="enrolledcourse">
     <RelationshipRole1 id="rel11#role21" name="EnrolledCourseToCourse" maxCard="1">
-      <db:JoinColumn attribute="ent5#att15" name="encolledcourseid"/>
+      <db:JoinColumn attribute="ent5#att15" name="enrolledcourseid"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel11#role22" name="CourseToEnrolledCourse" maxCard="N">
       <db:JoinColumn attribute="ent1#att1" name="course_courseid"/>
       <db:JoinColumn attribute="ent1#att11" name="course_name"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/DB" username="root" password="NTg1ODU4" cryptedPassword="true"/>
+  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/DB" username="root" password="NTg1ODU4" cryptedPassword="true">
+  </db:Database>
   <Relationship id="rel9" name="Lecture_Question" sourceEntity="ent6" targetEntity="ent3" db:database="db2" db:table="question">
     <RelationshipRole1 id="rel9#role17" name="LectureToQuestion" maxCard="N">
       <db:JoinColumn attribute="ent6#att18" name="lecture_lectureid"/>
