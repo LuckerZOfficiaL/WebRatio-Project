@@ -2,9 +2,9 @@
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area4#page19#mssu7" name="Enrolled Courses" linkOrder="sv2#area4#page19#mssu7#ln6">
       <Message xml:space="preserve">Access Enrolled Courses</Message>
-      <Link id="sv2#area4#page19#mssu7#ln6" name="Flow6" to="sv2#area5" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv2#area4#page19#mssu7#ln6" name="Enrolled Courses" to="sv2#area5" automaticCoupling="true" type="normal" validate="true"/>
     </MultiMessageUnit>
-    <DataUnit gr:x="185" gr:y="90" id="sv2#area4#page19#dau3" name="Selected User" entity="User" displayAll="true">
+    <DataUnit gr:x="270" gr:y="80" id="sv2#area4#page19#dau3" name="Selected User" entity="User" displayAll="true">
       <Selector id="sv2#area4#page19#dau3#su7" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area4#page19#dau3#su7#kcond3" name="KeyCondition1" predicate="in" implied="false"/>
       </Selector>

@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="405" gr:y="575" id="sv2#area5#page9" name="Question Page">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="360" gr:y="600" id="sv2#area5#page9" name="Question Page">
   <ContentUnits>
-    <EntryUnit gr:x="165" gr:y="0" id="sv2#area5#page9#enu4" name="Question" entity="ent3" fieldOrder="sv2#area5#page9#enu4#fld13 sv2#area5#page9#enu4#fld14 sv2#area5#page9#enu4#fld15 sv2#area5#page9#enu4#fld16 sv2#area5#page9#enu4#fld17 sv2#area5#page9#enu4#sfld2" linkOrder="sv2#area5#page9#enu4#ln19">
+    <EntryUnit gr:x="225" gr:y="0" id="sv2#area5#page9#enu4" name="Question" entity="ent3" fieldOrder="sv2#area5#page9#enu4#fld13 sv2#area5#page9#enu4#fld14 sv2#area5#page9#enu4#fld15 sv2#area5#page9#enu4#fld16 sv2#area5#page9#enu4#fld17 sv2#area5#page9#enu4#sfld2" linkOrder="sv2#area5#page9#enu4#ln19">
       <Field id="sv2#area5#page9#enu4#fld17" name="option4" type="string" preloaded="true"/>
       <Field id="sv2#area5#page9#enu4#fld16" name="option3" type="string" preloaded="true"/>
       <Field id="sv2#area5#page9#enu4#fld15" name="option2" type="string" preloaded="true"/>
@@ -14,7 +14,6 @@
         <Slot id="sv2#area5#page9#enu4#sfld2#slot2" name="option" value="option1|option2|option3|option4" label="true"/>
       </SelectionField>
     </EntryUnit>
-    <PowerIndexUnit gr:x="0" gr:y="0" id="sv2#area5#page9#pwu7" name="Question List" sortable="true" checkable="false" useCountQuery="false" entity="ent3"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>

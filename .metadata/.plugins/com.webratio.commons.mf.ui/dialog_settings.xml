@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="com.webratio.ide.ui.dialogs.EditEntryUnitDialog">
-		<item value="1902" key="DIALOG_WIDTH"/>
+		<item value="2476" key="DIALOG_WIDTH"/>
 		<item value="106" key="DIALOG_Y_ORIGIN"/>
 		<item value="342" key="DIALOG_X_ORIGIN"/>
-		<item value="1219" key="DIALOG_HEIGHT"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="1553" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="com.webratio.ide.ui.dialogs.EditSubUnitsDialog">
 		<item value="1202" key="DIALOG_WIDTH"/>

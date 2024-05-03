@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="390" gr:y="970" id="sv2#area5#page10" name="Done Page">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="495" gr:y="970" id="sv2#area5#page10" name="Done Page">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#area5#page10#mssu5" name="Done Message">
       <Message xml:space="preserve">You are done!</Message>

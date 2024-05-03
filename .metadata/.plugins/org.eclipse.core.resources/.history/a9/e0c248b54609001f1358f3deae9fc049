@@ -1,0 +1,75 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1900" gr:y="570" id="sv3#page17" name="Manage Question">
+  <ContentUnits>
+    <DataUnit gr:x="135" gr:y="0" id="sv3#page17#dau6" name="Question Details" entity="ent3">
+      <Selector id="sv3#page17#dau6#su19" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#page17#dau6#su19#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#page17#dau6#ln35" name="Flow35" to="sv3#dlu3" automaticCoupling="true" type="transport" validate="true"/>
+      <Link id="sv3#page17#dau6#ln36" name="Flow36" to="sv3#mfu1" type="transport" validate="true">
+        <LinkParameter id="sv3#page17#dau6#ln36#par47" name="questionID_KeyCondition14 [questionID]" source="data.ent3#att3" target="sv3#mfu1#su22#kcond14.ent3#att3"/>
+        <LinkParameter id="sv3#page17#dau6#ln36#par48" name="QuestionToLecture.lectureID_Lecture.lectureID(QuestionToLecture)" source="data.rel9#role18_ent6#att18" target="sv3#mfu1.rel9#role18.ent6#att18"/>
+      </Link>
+    </DataUnit>
+    <EntryUnit gr:x="0" gr:y="115" id="sv3#page17#enu8" name="Update Form" fieldOrder="sv3#page17#enu8#fld25 sv3#page17#enu8#fld26 sv3#page17#enu8#fld27 sv3#page17#enu8#fld28 sv3#page17#enu8#fld29 sv3#page17#enu8#sfld3" linkOrder="sv3#page17#enu8#ln37">
+      <Field id="sv3#page17#enu8#fld29" name="Option 4" type="string" preloaded="true" modifiable="true"/>
+      <Field id="sv3#page17#enu8#fld28" name="Option 3" type="string" preloaded="true" modifiable="true"/>
+      <Field id="sv3#page17#enu8#fld27" name="Option 2" type="string" preloaded="true" modifiable="true"/>
+      <Field id="sv3#page17#enu8#fld26" name="Option 1" type="string" preloaded="true" modifiable="true"/>
+      <Field id="sv3#page17#enu8#fld25" name="Question" type="string" preloaded="true" modifiable="true"/>
+      <Link id="sv3#page17#enu8#ln37" name="Flow37" to="sv3#mfu1" type="normal" validate="true">
+        <LinkParameter id="sv3#page17#enu8#ln37#par49" name="Correct Answer_correctAnswer" source="sv3#page17#enu8#sfld3#slot6" target="sv3#mfu1.ent3#att10"/>
+        <LinkParameter id="sv3#page17#enu8#ln37#par50" name="Option 1_option1" source="sv3#page17#enu8#fld26" target="sv3#mfu1.ent3#att6"/>
+        <LinkParameter id="sv3#page17#enu8#ln37#par51" name="Option 2_option2" source="sv3#page17#enu8#fld27" target="sv3#mfu1.ent3#att7"/>
+        <LinkParameter id="sv3#page17#enu8#ln37#par52" name="Option 3_option3" source="sv3#page17#enu8#fld28" target="sv3#mfu1.ent3#att8"/>
+        <LinkParameter id="sv3#page17#enu8#ln37#par53" name="Option 4_option4" source="sv3#page17#enu8#fld29" target="sv3#mfu1.ent3#att9"/>
+        <LinkParameter id="sv3#page17#enu8#ln37#par54" name="Question_question" source="sv3#page17#enu8#fld25" target="sv3#mfu1.ent3#att5"/>
+      </Link>
+      <SelectionField id="sv3#page17#enu8#sfld3" name="Correct Answer" type="integer" modifiable="true" slotOrder="sv3#page17#enu8#sfld3#slot5 sv3#page17#enu8#sfld3#slot6" splitOutput="true">
+        <Slot id="sv3#page17#enu8#sfld3#slot5" name="label" value="option1|option2|option3|option4" label="true"/>
+        <Slot id="sv3#page17#enu8#sfld3#slot6" name="output" value="1|2|3|4" label="true" output="true"/>
+      </SelectionField>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page17#dau6"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page17#enu8">
+          <layout:Link link="sv3#page17#enu8#ln37"/>
+          <layout:Field field="sv3#page17#enu8#fld25"/>
+          <layout:Field field="sv3#page17#enu8#fld26"/>
+          <layout:Field field="sv3#page17#enu8#fld27"/>
+          <layout:Field field="sv3#page17#enu8#fld28"/>
+          <layout:Field field="sv3#page17#enu8#fld29"/>
+          <layout:Field field="sv3#page17#enu8#sfld3"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

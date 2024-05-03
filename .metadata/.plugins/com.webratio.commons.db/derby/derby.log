@@ -1,7 +1,7 @@
-2024-05-03 07:15:19.139 GMT : Apache Derby Network Server - 10.5.3.0 - (802917) started and ready to accept connections on port 50123
+2024-05-03 12:24:09.876 GMT : Apache Derby Network Server - 10.5.3.0 - (802917) started and ready to accept connections on port 50124
 ----------------------------------------------------------------
-2024-05-03 07:15:19.309 GMT:
- Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-018f-3d4e-b3d3-00006e99294d
-on database directory F:\University\MSc\Y1\S2\Advanced SWE\Project\.metadata\.plugins\com.webratio.commons.db\derby\AcmeDB  
+2024-05-03 12:24:10.084 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.5.3.0 - (802917): instance a816c00e-018f-3e69-7574-ffffca98d02d
+on database directory E:\University\Sapienza\Advanced SWE\WebRatio-Project\.metadata\.plugins\com.webratio.commons.db\derby\BookStoreDB  
 
 Database Class Loader started - derby.database.classpath=''

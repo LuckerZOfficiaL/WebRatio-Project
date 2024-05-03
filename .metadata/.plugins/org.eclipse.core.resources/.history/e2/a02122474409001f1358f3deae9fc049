@@ -1,0 +1,22 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-45" gr:y="5" id="sv2#area5" name="Enrolled Courses Area" landmark="true" protected="false" defaultPage="sv2#area5#page5">
+  <OperationUnits>
+    <SelectorUnit gr:x="675" gr:y="260" id="sv2#area5#seu2" name="Selected Course" entity="ent1">
+      <Selector id="sv2#area5#seu2#su4" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area5#seu2#su4#kcond5" predicate="in" implied="false" name="RoleCondition2"/>
+      </Selector>
+      <OKLink id="sv2#area5#seu2#oln4" name="Flow9" to="sv2#area5#page3#dau7">
+        <LinkParameter id="sv2#area5#seu2#oln4#par79" name="courseID_KeyCondition15 [courseID]" source="ent1#att1Array" target="sv2#area5#page3#dau7#su11#kcond15.ent1#att1"/>
+        <LinkParameter id="sv2#area5#seu2#oln4#par80" name="name_KeyCondition15 [name]" source="ent1#att11Array" target="sv2#area5#page3#dau7#su11#kcond15.ent1#att11"/>
+      </OKLink>
+    </SelectorUnit>
+    <LoopUnit gr:x="520" gr:y="810" id="sv2#area5#lpu1" name="Iterate over questions">
+      <SecondaryArray id="sv2#area5#lpu1#lsa1" name="Correct Answer"/>
+      <OKLink id="sv2#area5#lpu1#oln8" name="OKFlow8" to="sv2#area5#page10" automaticCoupling="true" code="end"/>
+      <OKLink id="sv2#area5#lpu1#oln9" name="OKFlow9" to="sv2#area5#seu6" automaticCoupling="true" code="next"/>
+    </LoopUnit>
+    <SelectorUnit gr:x="110" gr:y="830" id="sv2#area5#seu6" name="Next Question" entity="ent3">
+      <KOLink id="sv2#area5#seu6#kln1" name="KOFlow1" to="sv2#area5#lpu1" automaticCoupling="true" gr:bendpoints="127,15,-163,15"/>
+      <OKLink id="sv2#area5#seu6#oln10" name="OKFlow10" to="sv2#area5#lpu1" automaticCoupling="true" gr:bendpoints="111,35,-159,35"/>
+    </SelectorUnit>
+  </OperationUnits>
+</Area>

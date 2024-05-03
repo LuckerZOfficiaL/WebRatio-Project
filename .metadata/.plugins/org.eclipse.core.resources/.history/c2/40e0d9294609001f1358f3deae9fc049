@@ -1,0 +1,126 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1240" gr:y="465" id="sv3#page13" name="Manage Lecture">
+  <ContentUnits>
+    <DataUnit gr:x="15" gr:y="0" id="sv3#page13#dau5" name="Lecture Details" entity="ent6" displayAll="true">
+      <Selector id="sv3#page13#dau5#su15" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#page13#dau5#su15#kcond7" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#page13#dau5#ln25" name="Flow25" to="sv3#page13#pwu5" type="transport" validate="true">
+        <LinkParameter id="sv3#page13#dau5#ln25#par26" name="lectureID_RoleCondition8 [lectureID]" source="data.ent6#att18" target="sv3#page13#pwu5#su18#rcond8.ent6#att18"/>
+      </Link>
+    </DataUnit>
+    <PowerIndexUnit gr:x="0" gr:y="185" id="sv3#page13#pwu5" name="Questions" sortable="true" checkable="false" useCountQuery="false" entity="ent3" linkOrder="sv3#page13#pwu5#ln33">
+      <Selector id="sv3#page13#pwu5#su18" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page13#pwu5#su18#rcond8" name="RoleCondition8" role="rel9#role17" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#page13#pwu5#ln33" name="Flow33" to="sv3#seu8" type="normal" validate="true">
+        <LinkParameter id="sv3#page13#pwu5#ln33#par45" name="questionID_PASSING" source="data[].ent3#att3" passing="true"/>
+        <LinkParameter id="sv3#page13#pwu5#ln33#par46" name="questionID_KeyCondition12 [questionID]" source="data[].ent3#att3" target="sv3#seu8#su20#kcond12.ent3#att3"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page13#dau5">
+          <layout:Attribute attribute="ent6#att19"/>
+          <layout:Attribute attribute="ent6#att24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page13#pwu5">
+          <layout:Link link="sv3#page13#pwu5#ln33"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv3#page13#page16">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv3#page13#page16#enu7">
+                  <layout:Link link="sv3#page13#page16#enu7#ln32"/>
+                  <layout:Field field="sv3#page13#page16#enu7#fld19"/>
+                  <layout:Field field="sv3#page13#page16#enu7#fld20"/>
+                  <layout:Field field="sv3#page13#page16#enu7#fld21"/>
+                  <layout:Field field="sv3#page13#page16#enu7#fld22"/>
+                  <layout:Field field="sv3#page13#page16#enu7#fld23"/>
+                  <layout:Field field="sv3#page13#page16#enu7#sfld4"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Page gr:x="5" gr:y="370" id="sv3#page13#page16" name="Add Question">
+    <ContentUnits>
+      <EntryUnit gr:x="0" gr:y="0" id="sv3#page13#page16#enu7" name="Question Info" linkOrder="sv3#page13#page16#enu7#ln32" fieldOrder="sv3#page13#page16#enu7#fld19 sv3#page13#page16#enu7#fld20 sv3#page13#page16#enu7#fld21 sv3#page13#page16#enu7#fld22 sv3#page13#page16#enu7#fld23 sv3#page13#page16#enu7#sfld4">
+        <Link id="sv3#page13#page16#enu7#ln32" name="Flow32" to="sv3#cru5" type="normal" validate="true">
+          <LinkParameter id="sv3#page13#page16#enu7#ln32#par37" name="Correct Answer_correctAnswer" source="sv3#page13#page16#enu7#sfld4#slot10" target="sv3#cru5.ent3#att10"/>
+          <LinkParameter id="sv3#page13#page16#enu7#ln32#par38" name="Option 1_option1" source="sv3#page13#page16#enu7#fld20" target="sv3#cru5.ent3#att6"/>
+          <LinkParameter id="sv3#page13#page16#enu7#ln32#par41" name="Option 2_option2" source="sv3#page13#page16#enu7#fld21" target="sv3#cru5.ent3#att7"/>
+          <LinkParameter id="sv3#page13#page16#enu7#ln32#par42" name="Option 3_option3" source="sv3#page13#page16#enu7#fld22" target="sv3#cru5.ent3#att8"/>
+          <LinkParameter id="sv3#page13#page16#enu7#ln32#par43" name="Option 4_option4" source="sv3#page13#page16#enu7#fld23" target="sv3#cru5.ent3#att9"/>
+          <LinkParameter id="sv3#page13#page16#enu7#ln32#par44" name="Question_question" source="sv3#page13#page16#enu7#fld19" target="sv3#cru5.ent3#att5"/>
+        </Link>
+        <Field id="sv3#page13#page16#enu7#fld23" name="Option 4" type="string" modifiable="true"/>
+        <Field id="sv3#page13#page16#enu7#fld22" name="Option 3" type="string" modifiable="true"/>
+        <Field id="sv3#page13#page16#enu7#fld21" name="Option 2" type="string" modifiable="true"/>
+        <Field id="sv3#page13#page16#enu7#fld20" name="Option 1" type="string" modifiable="true"/>
+        <Field id="sv3#page13#page16#enu7#fld19" name="Question" type="string" modifiable="true"/>
+        <SelectionField id="sv3#page13#page16#enu7#sfld4" name="Correct Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv3#page13#page16#enu7#sfld4#slot9 sv3#page13#page16#enu7#sfld4#slot10">
+          <Slot id="sv3#page13#page16#enu7#sfld4#slot9" name="label" value="option1|option2|option3|option4" label="true"/>
+          <Slot id="sv3#page13#page16#enu7#sfld4#slot10" name="output" value="1|2|3|4" output="true"/>
+        </SelectionField>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+</Page>
