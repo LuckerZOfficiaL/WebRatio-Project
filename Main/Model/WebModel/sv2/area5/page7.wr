@@ -1,26 +1,32 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="135" gr:y="370" id="sv2#area5#page7" name="Lectures">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="345" id="sv2#area5#page7" name="Lectures">
   <ContentUnits>
-    <DataUnit gr:x="5" gr:y="0" id="sv2#area5#page7#dau2" name="Lecture Content" entity="ent6" displayAll="true">
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area5#page7#dau2" name="Lecture Content" entity="ent6" displayAll="true">
       <Selector id="sv2#area5#page7#dau2#su3" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area5#page7#dau2#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
       </Selector>
     </DataUnit>
-    <SelectorUnit id="sv2#area5#page7#seu5" entity="ent3" distinctAttributes="ent3#att5" gr:x="0" gr:y="150" name="Questions">
+    <SelectorUnit id="sv2#area5#page7#seu5" entity="ent3" distinctAttributes="ent3#att5" gr:x="30" gr:y="165" name="Questions">
       <Selector id="sv2#area5#page7#seu5#su8" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv2#area5#page7#seu5#su8#rcond9" role="rel9#role17" predicate="in" implied="false" name="RoleCondition6"/>
+        <RelationshipRoleCondition id="sv2#area5#page7#seu5#su8#rcond9" name="RoleCondition9" role="rel9#role17" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#area5#page7#seu5#ln18" name="Flow18" to="sv2#area5#page9#enu4" type="normal" validate="true">
-        <LinkParameter id="sv2#area5#page7#seu5#ln18#par23" name="questionID_Key Condition [questionID]" source="ent3#att3Array" target="sv2#area5#page9#enu4.ent3#att3"/>
-        <LinkParameter id="sv2#area5#page7#seu5#ln18#par24" name="option1_option1" source="ent3#att6Array" target="sv2#area5#page9#enu4#fld14_slot"/>
-        <LinkParameter id="sv2#area5#page7#seu5#ln18#par25" name="option2_option2" source="ent3#att7Array" target="sv2#area5#page9#enu4#fld15_slot"/>
-        <LinkParameter id="sv2#area5#page7#seu5#ln18#par34" name="option3_option3" source="ent3#att8Array" target="sv2#area5#page9#enu4#fld16_slot"/>
-        <LinkParameter id="sv2#area5#page7#seu5#ln18#par55" name="option4_option4" source="ent3#att9Array" target="sv2#area5#page9#enu4#fld17_slot"/>
-        <LinkParameter id="sv2#area5#page7#seu5#ln18#par56" name="question_question" source="ent3#att5Array" target="sv2#area5#page9#enu4#fld13_slot"/>
+      <Link id="sv2#area5#page7#seu5#ln18" name="Flow18" to="sv2#area5#page9#pwu7" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page7#seu5#ln18#par84" name="questionID_current questionID" source="ent3#att3Array" target="sv2#area5#page9#pwu7.current.ent3#att3"/>
       </Link>
       <Link id="sv2#area5#page7#seu5#ln20" name="Flow20" to="sv2#area5#lpu1" type="transport" validate="true">
         <LinkParameter id="sv2#area5#page7#seu5#ln20#par40" name="correctAnswer_Correct Answer" source="ent3#att10Array" target="sv2#area5#lpu1#lsa1"/>
       </Link>
     </SelectorUnit>
+    <PowerIndexUnit gr:x="220" gr:y="0" id="sv2#area5#page7#pwu3" name="Lecture List" sortable="true" checkable="false" useCountQuery="false" entity="ent6" linkOrder="sv2#area5#page7#pwu3#ln39 sv2#area5#page7#pwu3#ln40" displayAttributes="ent6#att18 ent6#att19 ent6#att24">
+      <Link id="sv2#area5#page7#pwu3#ln39" name="Questions" to="sv2#area5#page7#seu5" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page7#pwu3#ln39#par83" name="lectureID_RoleCondition6 [lectureID]" source="data[].ent6#att18" target="sv2#area5#page7#seu5#su8#rcond9.ent6#att18"/>
+      </Link>
+      <Selector id="sv2#area5#page7#pwu3#su11" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#page7#pwu3#su11#rcond6" name="RoleCondition6" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+      <Link id="sv2#area5#page7#pwu3#ln40" name="Lecture Details" to="sv2#area5#page7#dau2" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page7#pwu3#ln40#par85" name="lectureID_KeyCondition2 [lectureID]" source="data[].ent6#att18" target="sv2#area5#page7#dau2#su3#kcond2.ent6#att18"/>
+      </Link>
+    </PowerIndexUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -43,7 +49,31 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page7#pwu3">
+          <layout:Link link="sv2#area5#page7#pwu3#ln39"/>
+          <layout:Link link="sv2#area5#page7#pwu3#ln40"/>
+          <layout:Attribute attribute="ent6#att18"/>
+          <layout:Attribute attribute="ent6#att19"/>
+          <layout:Attribute attribute="ent6#att24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page9#pwu7"/>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

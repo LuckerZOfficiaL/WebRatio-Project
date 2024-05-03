@@ -1,0 +1,68 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area5#page5" name="Enrolled Courses Page" landmark="false">
+  <ContentUnits>
+    <GetUnit gr:x="0" gr:y="20" id="sv2#area5#page5#gtu2" name="Get Student" contextParameters="UserCtxParam">
+      <Link id="sv2#area5#page5#gtu2#ln8" name="Flow8" to="sv2#area5#page5#inu2" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page5#gtu2#ln8#par19" name="UserCtxParam.userID_User ID Condition [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#area5#page5#inu2#su24#rcond10.userOID"/>
+      </Link>
+      <Link id="sv2#area5#page5#gtu2#ln27" name="Flow27" to="sv2#area5#page5#dau8" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page5#gtu2#ln27#par68" name="UserCtxParam.userID_KeyCondition8 [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#area5#page5#dau8#su10#kcond8.userOID"/>
+      </Link>
+    </GetUnit>
+    <DataUnit gr:x="225" gr:y="130" id="sv2#area5#page5#dau8" name="Selected User" entity="User" displayAll="true">
+      <Selector id="sv2#area5#page5#dau8#su10" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area5#page5#dau8#su10#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <IndexUnit id="sv2#area5#page5#inu2" entity="ent5" displayAttributes="ent5#att15 ent5#att23" gr:x="375" gr:y="0" name="Enrolled Courses" linkOrder="sv2#area5#page5#inu2#ln41">
+      <Selector id="sv2#area5#page5#inu2#su24" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#page5#inu2#su24#rcond10" role="rel2#role3" predicate="in" implied="false" name="User ID Condition"/>
+      </Selector>
+      <Link id="sv2#area5#page5#inu2#ln41" name="Course Details" to="sv2#area5#seu2" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page5#inu2#ln41#par2" name="enrolledCourseID_RoleCondition2 [enrolledCourseID]" source="data[].rel11#role21_ent1#att1" target="sv2#area5#seu2#su4#rcond2.ent5#att15"/>
+      </Link>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page5#inu2">
+          <layout:Link link="sv2#area5#page5#inu2#ln41"/>
+          <layout:Attribute attribute="ent5#att15"/>
+          <layout:Attribute attribute="ent5#att23"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page5#dau8">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att17"/>
+          <layout:Attribute attribute="User#att22"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
