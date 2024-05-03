@@ -1,0 +1,34 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="Teacher" landmarks="sv3#area6 sv3#area8 sv3#area2" protected="true" homePage="sv3#area2#page18">
+  <OperationUnits>
+    <CreateUnit gr:x="695" gr:y="110" id="sv3#cru2" name="Create Course" entity="ent1">
+      <KOLink id="sv3#cru2#kln10" name="KOFlow10" to="sv3#page14" automaticCoupling="true"/>
+    </CreateUnit>
+    <DeleteUnit gr:x="245" gr:y="835" id="sv3#dlu2" name="Delete Course" entity="ent1">
+      <Selector id="sv3#dlu2#su9" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dlu2#su9#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <CreateUnit gr:x="1035" gr:y="820" id="sv3#cru4" name="Create Lecture" entity="ent6">
+      <OKLink id="sv3#cru4#oln5" name="OKFlow5" to="sv3#page11#mssu6" automaticCoupling="true"/>
+      <KOLink id="sv3#cru4#kln6" name="KOFlow6" to="sv3#page14#mssu8" automaticCoupling="true"/>
+    </CreateUnit>
+    <CreateUnit gr:x="1550" gr:y="895" id="sv3#cru5" name="Create Question" entity="ent3">
+      <KOLink id="sv3#cru5#kln9" name="KOFlow9" to="sv3#page14#mssu8" automaticCoupling="true"/>
+      <OKLink id="sv3#cru5#oln12" name="OKFlow12" to="sv3#page11#mssu6" automaticCoupling="true"/>
+    </CreateUnit>
+    <DeleteUnit gr:x="1775" gr:y="890" id="sv3#dlu3" name="Delete Question" entity="ent3">
+      <Selector id="sv3#dlu3#su21" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#dlu3#su21#kcond13" name="KeyCondition13" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#dlu3#oln6" name="OKFlow6" to="sv3#page11#mssu6" automaticCoupling="true"/>
+      <KOLink id="sv3#dlu3#kln7" name="KOFlow7" to="sv3#page14#mssu8" automaticCoupling="true"/>
+    </DeleteUnit>
+    <ModifyUnit gr:x="2085" gr:y="895" id="sv3#mfu1" name="Update Question" entity="ent3">
+      <Selector id="sv3#mfu1#su22" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#mfu1#su22#kcond14" name="KeyCondition14" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv3#mfu1#oln11" name="OKFlow11" to="sv3#page11#mssu6" automaticCoupling="true"/>
+      <KOLink id="sv3#mfu1#kln8" name="KOFlow8" to="sv3#page14#mssu8" automaticCoupling="true"/>
+    </ModifyUnit>
+  </OperationUnits>
+</SiteView>

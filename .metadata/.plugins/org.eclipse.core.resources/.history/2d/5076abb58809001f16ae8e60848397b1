@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="65" gr:y="170" id="sv3#area2#page25" name="Personal Info">
+  <ContentUnits>
+    <GetUnit id="sv3#area2#page25#gtu13" name="Get Student" gr:x="5" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv3#area2#page25#gtu13#ln53" name="Flow27" to="sv3#area2#page25#dau16" type="transport" validate="true">
+        <LinkParameter id="sv3#area2#page25#gtu13#ln53#par36" name="UserCtxParam.userID_KeyCondition8 [userID]" source="sv3#area2#page25#gtu13.UserCtxParam" target="sv3#area2#page25#dau16#su25#kcond19.userOID"/>
+      </Link>
+    </GetUnit>
+    <DataUnit id="sv3#area2#page25#dau16" name="User Info" gr:x="0" gr:y="145" entity="User" displayAll="true">
+      <Selector id="sv3#area2#page25#dau16#su25" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#page25#dau16#su25#kcond19" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#area2#page25#dau16#ln58" name="Flow58" to="sv3#mfu4" type="transport" validate="true">
+        <LinkParameter id="sv3#area2#page25#dau16#ln58#par59" name="userID_KeyCondition20 [userID]" source="data.userOID" target="sv3#mfu4#su28#kcond22.userOID"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page25#dau16">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att17"/>
+          <layout:Attribute attribute="User#att22"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

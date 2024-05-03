@@ -1,0 +1,13 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1275" gr:y="-10" id="sv2#area10" name="Enroll Courses" landmark="true" defaultPage="sv2#area10#page30">
+  <OperationUnits>
+    <CreateUnit gr:x="195" gr:y="350" id="sv2#area10#cru1" name="Create Enrolledcourse" entity="ent5">
+      <OKLink id="sv2#area10#cru1#oln18" name="OKFlow18" to="sv2#page28#mssu18" automaticCoupling="true"/>
+      <KOLink id="sv2#area10#cru1#kln14" name="KOFlow14" to="sv2#page29#mssu19" automaticCoupling="true"/>
+    </CreateUnit>
+    <GetUnit gr:x="10" gr:y="355" id="sv2#area10#gtu14" name="Get User" contextParameters="UserCtxParam">
+      <Link id="sv2#area10#gtu14#ln71" name="Flow71" to="sv2#area10#cru1" type="transport" validate="true">
+        <LinkParameter id="sv2#area10#gtu14#ln71#par95" name="UserCtxParam.userID_User.userID(EnrolledCourseToUser)" source="sv2#area10#gtu14.UserCtxParam" target="sv2#area10#cru1.rel2#role4.userOID"/>
+      </Link>
+    </GetUnit>
+  </OperationUnits>
+</Area>

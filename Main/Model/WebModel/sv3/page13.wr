@@ -14,12 +14,15 @@
         <LinkParameter id="sv3#page13#dau5#ln52#par92" name="lectureID_Lecture.lectureID(QuestionToLecture)" source="data.ent6#att18" target="sv3#cru5.rel9#role18.ent6#att18"/>
       </Link>
     </DataUnit>
-    <PowerIndexUnit gr:x="0" gr:y="185" id="sv3#page13#pwu5" name="Questions" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att3 ent3#att5 ent3#att6 ent3#att7 ent3#att8 ent3#att9 ent3#att10" linkOrder="sv3#page13#pwu5#ln50">
+    <PowerIndexUnit gr:x="0" gr:y="185" id="sv3#page13#pwu5" name="Questions" sortable="true" checkable="false" useCountQuery="false" entity="ent3" displayAttributes="ent3#att3 ent3#att5 ent3#att6 ent3#att7 ent3#att8 ent3#att9 ent3#att10" linkOrder="sv3#page13#pwu5#ln50 sv3#page13#pwu5#ln68">
       <Selector id="sv3#page13#pwu5#su18" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#page13#pwu5#su18#rcond8" name="RoleCondition8" role="rel9#role17" predicate="in" implied="false"/>
       </Selector>
       <Link id="sv3#page13#pwu5#ln50" name="Edit Question" to="sv3#page17#dau6" type="normal" validate="true">
         <LinkParameter id="sv3#page13#pwu5#ln50#par89" name="questionID_KeyCondition11 [questionID]" source="data[].ent3#att3" target="sv3#page17#dau6#su19#kcond11.ent3#att3"/>
+      </Link>
+      <Link id="sv3#page13#pwu5#ln68" name="Delete" to="sv3#dlu4" type="normal" validate="true">
+        <LinkParameter id="sv3#page13#pwu5#ln68#par83" name="questionID_KeyCondition24 [questionID]" source="data[].ent3#att3" target="sv3#dlu4#su30#kcond24.ent3#att3"/>
       </Link>
     </PowerIndexUnit>
   </ContentUnits>
@@ -54,6 +57,7 @@
           <layout:Attribute attribute="ent3#att9"/>
           <layout:Attribute attribute="ent3#att10"/>
           <layout:Link link="sv3#page13#pwu5#ln50"/>
+          <layout:Link link="sv3#page13#pwu5#ln68"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

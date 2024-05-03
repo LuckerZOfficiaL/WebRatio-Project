@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="50" gr:y="375" id="sv2#area9#page26" name="Edit Info">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv2#area9#page26#enu9" name="Edit Personal Information" fieldOrder="sv2#area9#page26#enu9#fld31 sv2#area9#page26#enu9#fld32 sv2#area9#page26#enu9#fld33 sv2#area9#page26#enu9#fld34" linkOrder="sv2#area9#page26#enu9#ln55">
+      <Field id="sv2#area9#page26#enu9#fld34" name="Last Name" type="string" modifiable="true"/>
+      <Field id="sv2#area9#page26#enu9#fld33" name="First name" type="string" modifiable="true"/>
+      <Field id="sv2#area9#page26#enu9#fld32" name="Email" type="string" modifiable="true"/>
+      <Field id="sv2#area9#page26#enu9#fld31" name="Username" type="string" modifiable="true"/>
+      <Link id="sv2#area9#page26#enu9#ln55" name="Flow55" to="sv2#mfu2" type="normal" validate="true">
+        <LinkParameter id="sv2#area9#page26#enu9#ln55#par40" name="Email_email" source="sv2#area9#page26#enu9#fld32" target="sv2#mfu2.email"/>
+        <LinkParameter id="sv2#area9#page26#enu9#ln55#par45" name="First name_firstName" source="sv2#area9#page26#enu9#fld33" target="sv2#mfu2.User#att17"/>
+        <LinkParameter id="sv2#area9#page26#enu9#ln55#par46" name="Last Name_lastName" source="sv2#area9#page26#enu9#fld34" target="sv2#mfu2.User#att22"/>
+        <LinkParameter id="sv2#area9#page26#enu9#ln55#par47" name="Username_userName" source="sv2#area9#page26#enu9#fld31" target="sv2#mfu2.userName"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area9#page26#enu9">
+          <layout:Field field="sv2#area9#page26#enu9#fld31"/>
+          <layout:Field field="sv2#area9#page26#enu9#fld32"/>
+          <layout:Field field="sv2#area9#page26#enu9#fld33"/>
+          <layout:Field field="sv2#area9#page26#enu9#fld34"/>
+          <layout:Link link="sv2#area9#page26#enu9#ln55"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

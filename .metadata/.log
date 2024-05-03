@@ -1292,3 +1292,391 @@ org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+!SESSION 2024-05-03 19:14:37.967 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2024-05-03 19:14:58.443
+!MESSAGE Unable to create editor ID com.webratio.ide.ui.editors.WebProjectEditor: Unable to open editor
+!STACK 0
+com.webratio.commons.mf.MFException: Error loading file L/Main/Model/WebModel/sv2/area4/Properties.wr
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/Main/Model/WebModel/sv2/area4/Properties.wr'.
+
+!ENTRY org.eclipse.ui 2 2 2024-05-03 19:14:58.495
+!MESSAGE Ignored attempt to add saveable that was already registered
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: unknown saveable: org.eclipse.ui.internal.DefaultSaveable@72e1db60 from part: org.eclipse.ui.internal.ErrorEditorPart@72e1db60
+	at org.eclipse.ui.internal.SaveablesList.logWarning(SaveablesList.java:187)
+	at org.eclipse.ui.internal.SaveablesList.addModel(SaveablesList.java:117)
+	at org.eclipse.ui.internal.SaveablesList.addModels(SaveablesList.java:289)
+	at org.eclipse.ui.internal.SaveablesList.postOpen(SaveablesList.java:684)
+	at org.eclipse.ui.internal.PartList.partOpened(PartList.java:234)
+	at org.eclipse.ui.internal.PartList.access$0(PartList.java:210)
+	at org.eclipse.ui.internal.PartList$1.propertyChanged(PartList.java:40)
+	at org.eclipse.ui.internal.WorkbenchPartReference.fireInternalPropertyChange(WorkbenchPartReference.java:375)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:610)
+	at org.eclipse.ui.internal.EditorAreaHelper.setVisibleEditor(EditorAreaHelper.java:271)
+	at org.eclipse.ui.internal.EditorManager.setVisibleEditor(EditorManager.java:1429)
+	at org.eclipse.ui.internal.EditorManager$5.runWithException(EditorManager.java:942)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$31.runWithException(Workbench.java:1567)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2548)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-05-03 19:15:34.282
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2024-05-03 19:15:34.282
+!MESSAGE Conflict for 'org.eclipse.ui.edit.findReplace':
+HandlerActivation(commandId=org.eclipse.ui.edit.findReplace,
+	handler=ActionHandler(RetargetAction(com.webratio.ide.ui.actions.SearchInProjectAction)),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.edit.findReplace,
+	handler=ActionHandler(RetargetAction(com.webratio.ide.ui.actions.SearchInProjectAction)),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.230
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.230
+!MESSAGE Conflict for 'org.eclipse.ui.file.print':
+HandlerActivation(commandId=org.eclipse.ui.file.print,
+	handler=ActionHandler(com.webratio.ide.ui.actions.WRPrintAction@5f978b97),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.file.print,
+	handler=ActionHandler(com.webratio.ide.ui.actions.WRPrintAction@564d9788),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.231
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.231
+!MESSAGE Conflict for 'org.eclipse.ui.edit.selectAll':
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionHandler(org.eclipse.gef.ui.actions.SelectAllAction@669276e5),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.edit.selectAll,
+	handler=ActionHandler(org.eclipse.gef.ui.actions.SelectAllAction@19bbe8ff),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.231
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.231
+!MESSAGE Conflict for 'org.eclipse.ui.edit.cut':
+HandlerActivation(commandId=org.eclipse.ui.edit.cut,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.CutAction@15d8b993),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.edit.cut,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.CutAction@477f6d19),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.232
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.232
+!MESSAGE Conflict for 'org.eclipse.ui.edit.copy':
+HandlerActivation(commandId=org.eclipse.ui.edit.copy,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.CopyAction@217cf085),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.edit.copy,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.CopyAction@1192bcf0),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.232
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.232
+!MESSAGE Conflict for 'org.eclipse.ui.edit.paste':
+HandlerActivation(commandId=org.eclipse.ui.edit.paste,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.PasteAction@40ad9827),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.edit.paste,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.PasteAction@44e0499d),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.232
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.232
+!MESSAGE Conflict for 'org.eclipse.ui.edit.delete':
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.ConfirmDeleteAction@dd77cd1),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.ui.edit.delete,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.ConfirmDeleteAction@3e438470),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.233
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.233
+!MESSAGE Conflict for 'org.eclipse.gef.toggle_grid_visibility':
+HandlerActivation(commandId=org.eclipse.gef.toggle_grid_visibility,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.ToggleShowGridAction@107a3c7),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.gef.toggle_grid_visibility,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.ToggleShowGridAction@1c915e58),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.233
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2024-05-03 19:15:35.233
+!MESSAGE Conflict for 'org.eclipse.gef.toggle_snapto_geometry':
+HandlerActivation(commandId=org.eclipse.gef.toggle_snapto_geometry,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.ToggleShowSnapToGeometryAction@3197e176),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+HandlerActivation(commandId=org.eclipse.gef.toggle_snapto_geometry,
+	handler=ActionHandler(com.webratio.commons.mf.ui.actions.ToggleShowSnapToGeometryAction@6a532369),
+	expression=AndExpression(LegacyEditorActionBarExpression(com.webratio.ide.ui.editors.WebProjectEditor),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@61d547f5)),sourcePriority=4210689)
+!SESSION 2024-05-03 21:01:35.557 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.webratio.commons.mf.ui 4 0 2024-05-03 21:14:36.649
+!MESSAGE Cannot change the graph editor element  from 'id('sv3')' to 'id('sv2')'
+!STACK 0
+java.lang.Exception: Cannot change the graph editor element  from 'id('sv3')' to 'id('sv2')'
+	at com.webratio.commons.mf.ui.editors.MFGraphEditor.setInput(MFGraphEditor.java:470)
+	at com.webratio.commons.mf.ui.editors.MFGraphEditor.changeInput(MFGraphEditor.java:427)
+	at com.webratio.commons.mf.ui.editors.MFMultiContentOutlinePage.selectionChanged(MFMultiContentOutlinePage.java:287)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.fireSelectionChanged(AbstractEditPartViewer.java:247)
+	at org.eclipse.gef.ui.parts.TreeViewer.fireSelectionChanged(TreeViewer.java:171)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer$1.run(AbstractEditPartViewer.java:131)
+	at org.eclipse.gef.SelectionManager.fireSelectionChanged(SelectionManager.java:127)
+	at org.eclipse.gef.SelectionManager.setSelection(SelectionManager.java:262)
+	at com.webratio.commons.mf.ui.editors.MFGraphTreeViewer$1.setSelection(MFGraphTreeViewer.java:75)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setSelection(AbstractEditPartViewer.java:751)
+	at org.eclipse.gef.ui.parts.SelectionSynchronizer.setViewerSelection(SelectionSynchronizer.java:141)
+	at org.eclipse.gef.ui.parts.SelectionSynchronizer.syncSelection(SelectionSynchronizer.java:111)
+	at org.eclipse.gef.ui.parts.SelectionSynchronizer.selectionChanged(SelectionSynchronizer.java:102)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.fireSelectionChanged(AbstractEditPartViewer.java:247)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer$1.run(AbstractEditPartViewer.java:131)
+	at org.eclipse.gef.SelectionManager.fireSelectionChanged(SelectionManager.java:127)
+	at org.eclipse.gef.SelectionManager.deselect(SelectionManager.java:101)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.deselect(AbstractEditPartViewer.java:202)
+	at org.eclipse.gef.editparts.AbstractEditPart.removeNotify(AbstractEditPart.java:934)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.removeNotify(AbstractGraphicalEditPart.java:812)
+	at org.eclipse.gef.editparts.AbstractEditPart.removeChild(AbstractEditPart.java:872)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:785)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:718)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:633)
+	at com.webratio.commons.mf.ui.editors.MFGraphEditor.refreshEditParts(MFGraphEditor.java:2329)
+	at com.webratio.commons.mf.ui.editors.MFGraphEditor.elementChanged(MFGraphEditor.java:2318)
+	at com.webratio.commons.mf.operations.MFOperationManager.fire(MFOperationManager.java:172)
+	at com.webratio.commons.mf.operations.MFOperationManager.endSession(MFOperationManager.java:194)
+	at com.webratio.commons.mf.ui.commands.AbstractMFCommand.endOperationSession(AbstractMFCommand.java:285)
+	at com.webratio.ide.ui.commands.WebMLSurroundCommand.doExecute(WebMLSurroundCommand.java:382)
+	at com.webratio.ide.ui.commands.WebMLSurroundCommand.access$2(WebMLSurroundCommand.java:210)
+	at com.webratio.ide.ui.commands.WebMLSurroundCommand$3.run(WebMLSurroundCommand.java:177)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at com.webratio.ide.ui.commands.WebMLSurroundCommand.execute(WebMLSurroundCommand.java:184)
+	at com.webratio.commons.mf.ui.MFCommandStack.execute(MFCommandStack.java:129)
+	at com.webratio.commons.mf.ui.actions.MFSurroundWithElementAction.run(MFSurroundWithElementAction.java:209)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+
+!ENTRY com.webratio.ide.ui 4 1 2024-05-03 21:14:37.574
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.gef.editparts.AbstractEditPart.getRoot(AbstractEditPart.java:587)
+	at org.eclipse.gef.editparts.AbstractEditPart.getRoot(AbstractEditPart.java:587)
+	at org.eclipse.gef.editparts.AbstractEditPart.getRoot(AbstractEditPart.java:587)
+	at org.eclipse.gef.editparts.AbstractEditPart.getRoot(AbstractEditPart.java:587)
+	at org.eclipse.gef.editparts.AbstractEditPart.getViewer(AbstractEditPart.java:639)
+	at com.webratio.commons.mf.ui.editors.DefaultGraphicalNodeEditPart.getViewer(DefaultGraphicalNodeEditPart.java:106)
+	at com.webratio.commons.mf.ui.editors.DefaultGraphicalNodeEditPart.getViewer(DefaultGraphicalNodeEditPart.java:1)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.unregisterVisuals(AbstractGraphicalEditPart.java:927)
+	at org.eclipse.gef.editparts.AbstractEditPart.unregister(AbstractEditPart.java:1123)
+	at org.eclipse.gef.editparts.AbstractEditPart.removeNotify(AbstractEditPart.java:941)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.removeNotify(AbstractGraphicalEditPart.java:812)
+	at org.eclipse.gef.editparts.AbstractEditPart.removeChild(AbstractEditPart.java:872)
+	at org.eclipse.gef.editparts.AbstractEditPart.refreshChildren(AbstractEditPart.java:785)
+	at org.eclipse.gef.editparts.AbstractEditPart.refresh(AbstractEditPart.java:718)
+	at org.eclipse.gef.editparts.AbstractGraphicalEditPart.refresh(AbstractGraphicalEditPart.java:633)
+	at com.webratio.commons.mf.ui.editors.MFGraphEditor.refreshEditParts(MFGraphEditor.java:2329)
+	at com.webratio.commons.mf.ui.editors.MFGraphEditor.elementChanged(MFGraphEditor.java:2318)
+	at com.webratio.commons.mf.operations.MFOperationManager.fire(MFOperationManager.java:172)
+	at com.webratio.commons.mf.operations.MFOperationManager.endSession(MFOperationManager.java:194)
+	at com.webratio.commons.mf.ui.commands.AbstractMFCommand.endOperationSession(AbstractMFCommand.java:285)
+	at com.webratio.ide.ui.commands.WebMLSurroundCommand.doExecute(WebMLSurroundCommand.java:382)
+	at com.webratio.ide.ui.commands.WebMLSurroundCommand.access$2(WebMLSurroundCommand.java:210)
+	at com.webratio.ide.ui.commands.WebMLSurroundCommand$3.run(WebMLSurroundCommand.java:177)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at com.webratio.ide.ui.commands.WebMLSurroundCommand.execute(WebMLSurroundCommand.java:184)
+	at com.webratio.commons.mf.ui.MFCommandStack.execute(MFCommandStack.java:129)
+	at com.webratio.commons.mf.ui.actions.MFSurroundWithElementAction.run(MFSurroundWithElementAction.java:209)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+
+!ENTRY com.webratio.commons.mf.ui 4 0 2024-05-03 21:14:45.315
+!MESSAGE Cannot change the graph editor element  from 'id('sv2')' to 'id('sv3')'
+!STACK 0
+java.lang.Exception: Cannot change the graph editor element  from 'id('sv2')' to 'id('sv3')'
+	at com.webratio.commons.mf.ui.editors.MFGraphEditor.setInput(MFGraphEditor.java:470)
+	at com.webratio.commons.mf.ui.editors.MFGraphEditor.changeInput(MFGraphEditor.java:427)
+	at com.webratio.commons.mf.ui.editors.MFMultiContentOutlinePage.selectionChanged(MFMultiContentOutlinePage.java:287)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.fireSelectionChanged(AbstractEditPartViewer.java:247)
+	at org.eclipse.gef.ui.parts.TreeViewer.fireSelectionChanged(TreeViewer.java:171)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer$1.run(AbstractEditPartViewer.java:131)
+	at org.eclipse.gef.SelectionManager.fireSelectionChanged(SelectionManager.java:127)
+	at org.eclipse.gef.SelectionManager.setSelection(SelectionManager.java:262)
+	at com.webratio.commons.mf.ui.editors.MFGraphTreeViewer$1.setSelection(MFGraphTreeViewer.java:75)
+	at org.eclipse.gef.ui.parts.AbstractEditPartViewer.setSelection(AbstractEditPartViewer.java:751)
+	at com.webratio.commons.mf.ui.editors.MFMultiEditor.pageChange(MFMultiEditor.java:1631)
+	at org.eclipse.ui.part.MultiPageEditorPart$2.widgetSelected(MultiPageEditorPart.java:290)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.CTabFolder.setSelection(CTabFolder.java:2743)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:1429)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:257)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4066)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3657)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+
+!ENTRY org.eclipse.ui 4 0 2024-05-03 22:31:05.839
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4083)
+	at org.eclipse.swt.SWT.error(SWT.java:3998)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:137)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4041)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2640)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2604)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2438)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:664)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:115)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:369)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:620)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1408)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1384)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.gef.tools.TargetingTool.updateTargetUnderMouse(TargetingTool.java:424)
+	at org.eclipse.gef.tools.CreationTool.handleMove(CreationTool.java:249)
+	at org.eclipse.gef.tools.TargetingTool.handleAutoexpose(TargetingTool.java:184)
+	at org.eclipse.gef.tools.TargetingTool.doAutoexpose(TargetingTool.java:94)
+	at org.eclipse.gef.tools.TargetingTool$QueuedAutoexpose.run(TargetingTool.java:319)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	... 23 more

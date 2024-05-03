@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="160" id="sv2#area9#page24" name="Personal Info">
+  <ContentUnits>
+    <DataUnit id="sv2#area9#page24#dau15" name="User Info" gr:x="190" gr:y="0" entity="User" displayAll="true">
+      <Selector id="sv2#area9#page24#dau15#su24" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area9#page24#dau15#su24#kcond18" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area9#page24#dau15#ln56" name="Flow56" to="sv2#mfu2" type="transport" validate="true">
+        <LinkParameter id="sv2#area9#page24#dau15#ln56#par48" name="userID_KeyCondition20 [userID]" source="data.userOID" target="sv2#mfu2#su26#kcond20.userOID"/>
+      </Link>
+    </DataUnit>
+    <GetUnit id="sv2#area9#page24#gtu12" name="Get Student" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
+      <Link id="sv2#area9#page24#gtu12#ln46" name="Flow27" to="sv2#area9#page24#dau15" type="transport" validate="true">
+        <LinkParameter id="sv2#area9#page24#gtu12#ln46#par35" name="UserCtxParam.userID_KeyCondition8 [userID]" source="sv2#area9#page24#gtu12.UserCtxParam" target="sv2#area9#page24#dau15#su24#kcond18.userOID"/>
+      </Link>
+    </GetUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area9#page24#dau15">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att17"/>
+          <layout:Attribute attribute="User#att22"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

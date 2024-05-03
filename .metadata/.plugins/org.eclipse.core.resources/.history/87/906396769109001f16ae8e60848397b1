@@ -1,0 +1,96 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area10#page30" name="Enroll Courses">
+  <ContentUnits>
+    <EntryUnit gr:x="15" gr:y="5" id="sv2#area10#page30#enu12" name="Search" fieldOrder="sv2#area10#page30#enu12#fld43" linkOrder="sv2#area10#page30#enu12#ln72" gr:showAllParts="true">
+      <Field id="sv2#area10#page30#enu12#fld43" name="Keyword" type="string" modifiable="true"/>
+      <Link id="sv2#area10#page30#enu12#ln72" name="Search" to="sv2#area10#page30#pwu7" type="normal" validate="true">
+        <LinkParameter id="sv2#area10#page30#enu12#ln72#par96" name="Keyword_AttCondition1" source="sv2#area10#page30#enu12#fld43" target="sv2#area10#page30#pwu7#su31#acond1"/>
+        <LinkParameter id="sv2#area10#page30#enu12#ln72#par97" name="Keyword_AttCondition2" source="sv2#area10#page30#enu12#fld43" target="sv2#area10#page30#pwu7#su31#acond2"/>
+        <LinkParameter id="sv2#area10#page30#enu12#ln72#par98" name="Keyword_AttCondition3" source="sv2#area10#page30#enu12#fld43" target="sv2#area10#page30#pwu7#su31#acond3"/>
+      </Link>
+    </EntryUnit>
+    <PowerIndexUnit gr:x="0" gr:y="130" id="sv2#area10#page30#pwu7" name="Resulting Courses" sortable="true" checkable="false" useCountQuery="false" entity="ent1" displayAttributes="ent1#att1 ent1#att11 ent1#att12" linkOrder="sv2#area10#page30#pwu7#ln74">
+      <SortAttribute attribute="ent1#att1" order="descending"/>
+      <Selector id="sv2#area10#page30#pwu7#su31" defaultPolicy="fill" booleanOperator="or">
+        <AttributesCondition id="sv2#area10#page30#pwu7#su31#acond1" name="AttCondition1" predicate="contains" booleanOperator="or" implied="true" attributes="ent1#att1" ignoreCase="true"/>
+        <AttributesCondition id="sv2#area10#page30#pwu7#su31#acond2" name="AttCondition2" predicate="contains" booleanOperator="or" implied="true" attributes="ent1#att11" ignoreCase="true"/>
+        <AttributesCondition id="sv2#area10#page30#pwu7#su31#acond3" name="AttCondition3" predicate="contains" booleanOperator="or" implied="true" attributes="ent1#att12" ignoreCase="true"/>
+      </Selector>
+      <Link id="sv2#area10#page30#pwu7#ln74" name="Enroll" to="sv2#area10#cru1" type="normal" validate="true">
+        <LinkParameter id="sv2#area10#page30#pwu7#ln74#par99" name="courseID_Course.courseID(EnrolledCourseToCourse)" source="data[].ent1#att1" target="sv2#area10#cru1.rel11#role21.ent1#att1"/>
+        <LinkParameter id="sv2#area10#page30#pwu7#ln74#par100" name="name_Course.name(EnrolledCourseToCourse)" source="data[].ent1#att11" target="sv2#area10#cru1.rel11#role21.ent1#att11"/>
+        <LinkParameter id="sv2#area10#page30#pwu7#ln74#par101" name="0_grade" sourceValue="0" target="sv2#area10#cru1.ent5#att16"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area10#page30#enu12">
+          <layout:Field field="sv2#area10#page30#enu12#fld43"/>
+          <layout:Link link="sv2#area10#page30#enu12#ln72"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area10#page30#pwu7">
+          <layout:Attribute attribute="ent1#att1"/>
+          <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att12"/>
+          <layout:Link link="sv2#area10#page30#pwu7#ln74"/>
+          <layout:Link link="sv2#area10#page30#pwu7ent1#att1"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

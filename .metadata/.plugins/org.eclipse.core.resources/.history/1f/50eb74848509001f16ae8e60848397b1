@@ -1,0 +1,75 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv3#area2#page18" name="Home Page" protected="false" linkOrder="sv3#area2#page18#ln34 sv3#area2#page18#ln33">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="130" id="sv3#area2#page18#dau1" name="Selected User" entity="User" displayAll="true">
+      <Selector id="sv3#area2#page18#dau1#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#page18#dau1#su1#kcond1" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+    <GetUnit gr:x="5" gr:y="0" id="sv3#area2#page18#gtu1" name="Get User" contextParameters="UserCtxParam">
+      <Link id="sv3#area2#page18#gtu1#ln3" name="Flow42" to="sv3#area2#page18#dau1" type="transport" validate="true">
+        <LinkParameter id="sv3#area2#page18#gtu1#ln3#par8" name="UserCtxParam.userID_KeyCondition5 [userID]" target="sv3#area2#page18#dau1#su1#kcond1.userOID" source="sv3#area2#page18#gtu1.UserCtxParam"/>
+      </Link>
+    </GetUnit>
+    <EntryUnit gr:x="155" gr:y="130" id="sv3#area2#page18#enu5" name="Welcome" fieldOrder="sv3#area2#page18#enu5#fld30">
+      <Field id="sv3#area2#page18#enu5#fld30" name="How are you?" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page18#enu5">
+          <layout:Field field="sv3#area2#page18#enu5#fld30"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv3#area2#page18#page21">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12"/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Page gr:x="165" gr:y="0" id="sv3#area2#page18#page21" name="Home">
+    <ContentUnits/>
+  </Page>
+  <Link id="sv3#area2#page18#ln33" name="Add Course" to="sv3#area6#page6" type="normal" automaticCoupling="true" validate="true"/>
+  <Link id="sv3#area2#page18#ln34" name="Manage Courses" to="sv3#area8#page8" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

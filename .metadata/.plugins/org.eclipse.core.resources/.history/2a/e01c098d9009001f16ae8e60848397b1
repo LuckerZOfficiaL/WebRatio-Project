@@ -1,0 +1,34 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="155" gr:y="0" id="sv2#area10#page30" name="Enroll Courses">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv2#area10#page30#pwu3" name="All Courses" sortable="true" checkable="false" useCountQuery="false" entity="ent1" linkOrder="sv2#area10#page30#pwu3#ln70" displayAttributes="ent1#att1 ent1#att11 ent1#att12">
+      <Link id="sv2#area10#page30#pwu3#ln70" name="Flow70" to="sv2#area10#cru1" type="normal" validate="true">
+        <LinkParameter id="sv2#area10#page30#pwu3#ln70#par90" name="courseID_Course.courseID(EnrolledCourseToCourse)" source="data[].ent1#att1" target="sv2#area10#cru1.rel11#role21.ent1#att1"/>
+        <LinkParameter id="sv2#area10#page30#pwu3#ln70#par93" name="name_Course.name(EnrolledCourseToCourse)" source="data[].ent1#att11" target="sv2#area10#cru1.rel11#role21.ent1#att11"/>
+        <LinkParameter id="sv2#area10#page30#pwu3#ln70#par94" name="0_grade" sourceValue="0" target="sv2#area10#cru1.ent5#att16"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area10#page30#pwu3">
+          <layout:Link link="sv2#area10#page30#pwu3#ln70"/>
+          <layout:Attribute attribute="ent1#att1"/>
+          <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att12"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -8,7 +8,7 @@
       <Field id="sv1#area1#page1#enu1#fld1" name="password" type="password" modifiable="true"/>
       <Field id="sv1#area1#page1#enu1#fld2" name="username" type="string" modifiable="true"/>
     </EntryUnit>
-    <MultiMessageUnit gr:x="15" gr:y="185" id="sv1#area1#page1#mssu2" name="Registration" linkOrder="sv1#area1#page1#mssu2#ln2" customDescriptor="false">
+    <MultiMessageUnit gr:x="15" gr:y="185" id="sv1#area1#page1#mssu2" name="Registration" customDescriptor="false" linkOrder="sv1#area1#page1#mssu2#ln2">
       <Link id="sv1#area1#page1#mssu2#ln2" name="Register" to="sv1#area3#page2#enu2" automaticCoupling="true" type="normal" validate="true"/>
       <Message xml:space="preserve">Don't have an account yet?</Message>
     </MultiMessageUnit>
