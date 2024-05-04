@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="160" id="sv2#area9#page24" name="Personal Info" linkOrder="sv2#area9#page24#ln60">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="160" id="sv2#area9#page24" name="Personal Info">
   <ContentUnits>
     <DataUnit id="sv2#area9#page24#dau15" name="User Info" gr:x="190" gr:y="0" entity="User" displayAll="true">
       <Selector id="sv2#area9#page24#dau15#su24" defaultPolicy="fill" booleanOperator="and">
@@ -8,9 +8,6 @@
     <GetUnit id="sv2#area9#page24#gtu12" name="Get Student" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
       <Link id="sv2#area9#page24#gtu12#ln46" name="Flow27" to="sv2#area9#page24#dau15" type="transport" validate="true">
         <LinkParameter id="sv2#area9#page24#gtu12#ln46#par35" name="UserCtxParam.userID_KeyCondition8 [userID]" source="sv2#area9#page24#gtu12.UserCtxParam" target="sv2#area9#page24#dau15#su24#kcond18.userOID"/>
-      </Link>
-      <Link id="sv2#area9#page24#gtu12#ln62" name="Flow62" to="sv2#mfu2" type="transport" validate="true">
-        <LinkParameter id="sv2#area9#page24#gtu12#ln62#par75" name="UserCtxParam.userID_KeyCondition20 [userID]" source="sv2#area9#page24#gtu12.UserCtxParam" target="sv2#mfu2#su26#kcond20.userOID"/>
       </Link>
     </GetUnit>
   </ContentUnits>
@@ -37,5 +34,4 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
-  <Link id="sv2#area9#page24#ln60" name="Edit Info" to="sv2#area9#page26" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

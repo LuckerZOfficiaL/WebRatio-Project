@@ -2,7 +2,7 @@
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#page14#mssu8" name="Error Message" linkOrder="sv3#page14#mssu8#ln21">
       <Message xml:space="preserve">Some error occurred!</Message>
-      <Link id="sv3#page14#mssu8#ln21" name="Manage Courses" to="sv3#area8" automaticCoupling="true" type="normal" validate="true" gr:bendpoints="-795,-173,420,507"/>
+      <Link id="sv3#page14#mssu8#ln21" name="Manage Courses" to="sv3#area8" automaticCoupling="true" type="normal" validate="true"/>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

@@ -1,0 +1,75 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="410" id="sv2#area5#page7" name="Lectures Page">
+  <ContentUnits>
+    <DataUnit gr:x="15" gr:y="0" id="sv2#area5#page7#dau2" name="Lecture Content" entity="ent6" displayAll="true">
+      <Selector id="sv2#area5#page7#dau2#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area5#page7#dau2#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area5#page7#dau2#ln49" name="Flow49" to="sv2#area5#page7#pwu8" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page7#dau2#ln49#par88" name="lectureID_RoleCondition5 [lectureID]" source="data.ent6#att18" target="sv2#area5#page7#pwu8#su17#rcond6.ent6#att18"/>
+      </Link>
+    </DataUnit>
+    <PowerIndexUnit gr:x="0" gr:y="190" id="sv2#area5#page7#pwu8" name="Question List" sortable="true" checkable="false" useCountQuery="false" entity="ent3">
+      <Selector id="sv2#area5#page7#pwu8#su17" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#page7#pwu8#su17#rcond6" name="RoleCondition5" role="rel9#role17" predicate="in" implied="false"/>
+      </Selector>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page7#dau2">
+          <layout:Attribute attribute="ent6#att19"/>
+          <layout:Attribute attribute="ent6#att24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page3#pwu6">
+          <layout:Link link="sv2#area5#page3#pwu6#ln43"/>
+          <layout:Attribute attribute="ent6#att18"/>
+          <layout:Attribute attribute="ent6#att19"/>
+          <layout:Attribute attribute="ent6#att24"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page7#pwu8"/>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

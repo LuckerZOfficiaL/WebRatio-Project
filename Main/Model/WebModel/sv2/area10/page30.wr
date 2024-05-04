@@ -1,7 +1,7 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="15" gr:y="0" id="sv2#area10#page30" name="Enroll Courses">
   <ContentUnits>
-    <EntryUnit gr:x="15" gr:y="5" id="sv2#area10#page30#enu12" name="Search" fieldOrder="sv2#area10#page30#enu12#fld43" linkOrder="sv2#area10#page30#enu12#ln72" gr:showAllParts="true">
-      <Field id="sv2#area10#page30#enu12#fld43" name="Keyword" type="string" modifiable="true"/>
+    <EntryUnit gr:x="90" gr:y="0" id="sv2#area10#page30#enu12" name="Search" fieldOrder="sv2#area10#page30#enu12#fld43" linkOrder="sv2#area10#page30#enu12#ln72" gr:showAllParts="true">
+      <Field id="sv2#area10#page30#enu12#fld43" name="Keyword" type="string" modifiable="true" ajaxAutocompleteEnabled="false"/>
       <Link id="sv2#area10#page30#enu12#ln72" name="Search" to="sv2#area10#page30#pwu7" type="normal" validate="true">
         <LinkParameter id="sv2#area10#page30#enu12#ln72#par96" name="Keyword_AttCondition1" source="sv2#area10#page30#enu12#fld43" target="sv2#area10#page30#pwu7#su31#acond1"/>
         <LinkParameter id="sv2#area10#page30#enu12#ln72#par97" name="Keyword_AttCondition2" source="sv2#area10#page30#enu12#fld43" target="sv2#area10#page30#pwu7#su31#acond2"/>

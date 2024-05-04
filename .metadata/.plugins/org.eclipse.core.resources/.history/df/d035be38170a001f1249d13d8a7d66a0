@@ -1,0 +1,28 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="830" gr:y="1125" id="sv3#page11" name="Success Message">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#page11#mssu6" name="Success Message" linkOrder="sv3#page11#mssu6#ln15">
+      <Message xml:space="preserve">Operation successful!</Message>
+      <Link id="sv3#page11#mssu6#ln15" name="Manage Courses" to="sv3#area8" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-270,-164,235,511"/>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page11#mssu6">
+          <layout:Link link="sv3#page11#mssu6#ln15"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

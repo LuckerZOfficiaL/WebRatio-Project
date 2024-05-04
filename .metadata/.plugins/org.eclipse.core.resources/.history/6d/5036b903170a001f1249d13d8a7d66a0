@@ -1,0 +1,135 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="715" gr:y="405" id="sv3#page12" name="Mange Course">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv3#page12#dau4" name="Course Details" entity="ent1" displayAll="true">
+      <Selector id="sv3#page12#dau4#su13" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#page12#dau4#su13#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv3#page12#dau4#ln23" name="Flow23" to="sv3#page12#pwu4" type="transport" validate="true">
+        <LinkParameter id="sv3#page12#dau4#ln23#par23" name="courseID_RoleCondition7 [courseID]" source="data.ent1#att1" target="sv3#page12#pwu4#su14#rcond7.ent1#att1"/>
+        <LinkParameter id="sv3#page12#dau4#ln23#par24" name="name_RoleCondition7 [name]" source="data.ent1#att11" target="sv3#page12#pwu4#su14#rcond7.ent1#att11"/>
+      </Link>
+      <Link id="sv3#page12#dau4#ln26" name="Flow26" to="sv3#cru4" type="transport" validate="true" automaticCoupling="true"/>
+    </DataUnit>
+    <PowerIndexUnit gr:x="0" gr:y="170" id="sv3#page12#pwu4" name="Lecture List" sortable="true" checkable="false" useCountQuery="false" entity="ent6" linkOrder="sv3#page12#pwu4#ln24 sv3#page12#pwu4#ln66" displayAttributes="ent6#att18 ent6#att19 ent6#att24">
+      <Selector id="sv3#page12#pwu4#su14" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv3#page12#pwu4#su14#rcond7" name="RoleCondition7" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+      <Link id="sv3#page12#pwu4#ln24" name="Lecture Details" to="sv3#page13#dau5" type="normal" validate="true">
+        <LinkParameter id="sv3#page12#pwu4#ln24#par25" name="lectureID_KeyCondition7 [lectureID]" source="data[].ent6#att18" target="sv3#page13#dau5#su15#kcond7.ent6#att18"/>
+      </Link>
+      <Link id="sv3#page12#pwu4#ln66" name="Delete" to="sv3#dlu1" type="normal" validate="true">
+        <LinkParameter id="sv3#page12#pwu4#ln66#par80" name="lectureID_KeyCondition23 [lectureID]" source="data[].ent6#att18" target="sv3#dlu1#su29#kcond23.ent6#att18"/>
+      </Link>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page12#dau4">
+          <layout:Attribute attribute="ent1#att12"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page12#pwu4">
+          <layout:Attribute attribute="ent6#att18"/>
+          <layout:Attribute attribute="ent6#att19"/>
+          <layout:Attribute attribute="ent6#att24"/>
+          <layout:Link link="sv3#page12#pwu4#ln24"/>
+          <layout:Link link="sv3#page12#pwu4#ln66"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:SubPage pageId="sv3#page12#page15">
+          <layout:Grid containerType="grid">
+            <layout:Row>
+              <layout:Cell colspan="12">
+                <layout:Unit unitId="sv3#page12#page15#enu6">
+                  <layout:Link link="sv3#page12#page15#enu6#ln30"/>
+                  <layout:Field field="sv3#page12#page15#enu6#fld11"/>
+                  <layout:Field field="sv3#page12#page15#enu6#fld12"/>
+                  <layout:Field field="sv3#page12#page15#enu6#fld18"/>
+                </layout:Unit>
+              </layout:Cell>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+              <layout:Cell/>
+            </layout:Row>
+          </layout:Grid>
+        </layout:SubPage>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Page gr:x="10" gr:y="345" id="sv3#page12#page15" name="Add Lecture">
+    <ContentUnits>
+      <EntryUnit gr:x="0" gr:y="0" id="sv3#page12#page15#enu6" name="Add a Lecture" fieldOrder="sv3#page12#page15#enu6#fld11 sv3#page12#page15#enu6#fld12 sv3#page12#page15#enu6#fld18" linkOrder="sv3#page12#page15#enu6#ln30">
+        <Field id="sv3#page12#page15#enu6#fld18" name="Content" type="blob" modifiable="true"/>
+        <Field id="sv3#page12#page15#enu6#fld12" name="Title" type="string" modifiable="true"/>
+        <Link id="sv3#page12#page15#enu6#ln30" name="Add Lecture" to="sv3#cru4" type="normal" validate="true">
+          <LinkParameter id="sv3#page12#page15#enu6#ln30#par30" name="Content_content" source="sv3#page12#page15#enu6#fld18" target="sv3#cru4.ent6#att24"/>
+          <LinkParameter id="sv3#page12#page15#enu6#ln30#par32" name="Title_title" source="sv3#page12#page15#enu6#fld12" target="sv3#cru4.ent6#att19"/>
+          <LinkParameter id="sv3#page12#page15#enu6#ln30#par87" name="Lecture ID_lectureID" source="sv3#page12#page15#enu6#fld11" target="sv3#cru4.ent6#att18"/>
+        </Link>
+        <Field id="sv3#page12#page15#enu6#fld11" name="Lecture ID" type="integer" modifiable="true"/>
+      </EntryUnit>
+    </ContentUnits>
+  </Page>
+</Page>

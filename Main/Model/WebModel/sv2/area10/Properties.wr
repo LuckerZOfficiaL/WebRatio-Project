@@ -1,4 +1,4 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1260" gr:y="-15" id="sv2#area10" name="Enroll Courses" landmark="true" defaultPage="sv2#area10#page30">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1195" gr:y="20" id="sv2#area10" name="Enroll Courses" landmark="true" defaultPage="sv2#area10#page30">
   <OperationUnits>
     <CreateUnit gr:x="160" gr:y="360" id="sv2#area10#cru1" name="Create Enrolledcourse" entity="ent5">
       <OKLink id="sv2#area10#cru1#oln18" name="OKFlow18" to="sv2#page28#mssu18" automaticCoupling="true"/>

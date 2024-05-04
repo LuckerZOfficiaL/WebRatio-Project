@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#page28" name="Success Message" gr:x="920" gr:y="795">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#page28" name="Success Message" gr:x="1185" gr:y="645">
   <ContentUnits>
     <MultiMessageUnit id="sv2#page28#mssu18" name="Success Message" gr:x="0" gr:y="0">
       <Message xml:space="preserve">Operation successful!</Message>

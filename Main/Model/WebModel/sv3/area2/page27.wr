@@ -1,16 +1,10 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#page27" name="Edit Info" gr:x="0" gr:y="510">
   <ContentUnits>
-    <EntryUnit id="sv3#area2#page27#enu10" name="Edit Personal Information" linkOrder="sv3#area2#page27#enu10#ln57" gr:x="0" gr:y="0" fieldOrder="sv3#area2#page27#enu10#fld38 sv3#area2#page27#enu10#fld37 sv3#area2#page27#enu10#fld36 sv3#area2#page27#enu10#fld35">
+    <EntryUnit id="sv3#area2#page27#enu10" name="Edit Personal Information" gr:x="0" gr:y="0" fieldOrder="sv3#area2#page27#enu10#fld38 sv3#area2#page27#enu10#fld37 sv3#area2#page27#enu10#fld36 sv3#area2#page27#enu10#fld35">
       <Field id="sv3#area2#page27#enu10#fld35" name="Last Name" type="string" modifiable="true"/>
       <Field id="sv3#area2#page27#enu10#fld36" name="First name" type="string" modifiable="true"/>
       <Field id="sv3#area2#page27#enu10#fld37" name="Email" type="string" modifiable="true"/>
       <Field id="sv3#area2#page27#enu10#fld38" name="Username" type="string" modifiable="true"/>
-      <Link id="sv3#area2#page27#enu10#ln57" name="Confirm" to="sv3#mfu4" type="normal" validate="true">
-        <LinkParameter id="sv3#area2#page27#enu10#ln57#par55" name="Email_email" source="sv3#area2#page27#enu10#fld37" target="sv3#mfu4.email"/>
-        <LinkParameter id="sv3#area2#page27#enu10#ln57#par56" name="First name_firstName" source="sv3#area2#page27#enu10#fld36" target="sv3#mfu4.User#att17"/>
-        <LinkParameter id="sv3#area2#page27#enu10#ln57#par57" name="Last Name_lastName" source="sv3#area2#page27#enu10#fld35" target="sv3#mfu4.User#att22"/>
-        <LinkParameter id="sv3#area2#page27#enu10#ln57#par58" name="Username_userName" source="sv3#area2#page27#enu10#fld38" target="sv3#mfu4.userName"/>
-      </Link>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -21,7 +15,6 @@
           <layout:Field field="sv3#area2#page27#enu10#fld37"/>
           <layout:Field field="sv3#area2#page27#enu10#fld36"/>
           <layout:Field field="sv3#area2#page27#enu10#fld35"/>
-          <layout:Link link="sv3#area2#page27#enu10#ln57"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

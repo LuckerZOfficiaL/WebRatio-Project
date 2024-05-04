@@ -1,0 +1,18 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="20" id="sv2#area5" name="Enrolled Courses Area" landmark="true" protected="false" defaultPage="sv2#area5#page5">
+  <OperationUnits>
+    <LoopUnit gr:x="475" gr:y="795" id="sv2#area5#lpu1" name="Iterate over questions">
+      <SecondaryArray id="sv2#area5#lpu1#lsa1" name="Correct Answer"/>
+      <OKLink id="sv2#area5#lpu1#oln8" name="OKFlow8" to="sv2#area5#page10" automaticCoupling="true" code="end"/>
+      <OKLink id="sv2#area5#lpu1#oln9" name="OKFlow9" to="sv2#area5#seu6" automaticCoupling="true" code="next"/>
+    </LoopUnit>
+    <SelectorUnit gr:x="65" gr:y="815" id="sv2#area5#seu6" name="Next Question" entity="ent3">
+      <KOLink id="sv2#area5#seu6#kln1" name="KOFlow1" to="sv2#area5#lpu1" automaticCoupling="true" gr:bendpoints="127,15,-163,15"/>
+      <OKLink id="sv2#area5#seu6#oln10" name="OKFlow10" to="sv2#area5#lpu1" automaticCoupling="true" gr:bendpoints="111,35,-159,35"/>
+    </SelectorUnit>
+    <DeleteUnit gr:x="10" gr:y="175" id="sv2#area5#dlu3" name="Unenroll" entity="ent5">
+      <Selector id="sv2#area5#dlu3#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area5#dlu3#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+  </OperationUnits>
+</Area>
