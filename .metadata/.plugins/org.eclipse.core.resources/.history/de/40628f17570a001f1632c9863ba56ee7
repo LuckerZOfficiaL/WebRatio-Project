@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#page27" name="Edit Info" gr:x="0" gr:y="510">
+  <ContentUnits>
+    <EntryUnit id="sv3#area2#page27#enu10" name="Edit Personal Information" gr:x="0" gr:y="0" fieldOrder="sv3#area2#page27#enu10#fld38 sv3#area2#page27#enu10#fld37 sv3#area2#page27#enu10#fld36 sv3#area2#page27#enu10#fld35">
+      <Field id="sv3#area2#page27#enu10#fld35" name="Last Name" type="string" modifiable="true"/>
+      <Field id="sv3#area2#page27#enu10#fld36" name="First name" type="string" modifiable="true"/>
+      <Field id="sv3#area2#page27#enu10#fld37" name="Email" type="string" modifiable="true"/>
+      <Field id="sv3#area2#page27#enu10#fld38" name="Username" type="string" modifiable="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page27#enu10">
+          <layout:Field field="sv3#area2#page27#enu10#fld38"/>
+          <layout:Field field="sv3#area2#page27#enu10#fld37"/>
+          <layout:Field field="sv3#area2#page27#enu10#fld36"/>
+          <layout:Field field="sv3#area2#page27#enu10#fld35"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

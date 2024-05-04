@@ -16,6 +16,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area9#page24#dau15">
           <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
           <layout:Attribute attribute="email"/>
           <layout:Attribute attribute="User#att17"/>
           <layout:Attribute attribute="User#att22"/>

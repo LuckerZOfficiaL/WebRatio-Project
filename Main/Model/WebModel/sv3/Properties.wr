@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="Teacher" landmarks="sv3#area6 sv3#area8 sv3#area2 sv3#miu1" protected="true" homePage="sv3#area2#page18">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv3" name="Teacher" landmarks="sv3#area6 sv3#area8 sv3#area2" protected="true" homePage="sv3#area2#page18">
   <OperationUnits>
     <CreateUnit gr:x="635" gr:y="115" id="sv3#cru2" name="Create Course" entity="ent1" gr:showAllParts="false">
       <KOLink id="sv3#cru2#kln10" name="KOFlow10" to="sv3#page14#mssu8" automaticCoupling="true"/>
@@ -24,7 +24,6 @@
       <OKLink id="sv3#mfu1#oln11" name="OKFlow11" to="sv3#page11#mssu6" automaticCoupling="true"/>
       <KOLink id="sv3#mfu1#kln8" name="KOFlow8" to="sv3#page14#mssu8" automaticCoupling="true"/>
     </ModifyUnit>
-    <ModuleInstanceUnit gr:x="0" gr:y="55" id="sv3#miu1" action="true" moduleId="mov1#mpkg2#opm6" landmark="true"/>
     <DeleteUnit gr:x="1035" gr:y="670" id="sv3#dlu1" name="Delete Lecture" entity="ent6">
       <Selector id="sv3#dlu1#su29" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#dlu1#su29#kcond23" name="KeyCondition23" predicate="in" implied="false"/>

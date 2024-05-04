@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area10#page4" name="Search Products" protected="false" gr:x="0" gr:y="95">
   <ContentUnits>
-    <PowerIndexUnit id="sv1#area10#page4#pwu2" name="Product List" linkOrder="sv1#area10#page4#pwu2#ln24" customDescriptor="false" gr:x="75" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="pkg1#ent8" displayAttributes="pkg1#ent8#att48 pkg1#ent8#att39 pkg1#ent8#att41 pkg1#ent8#att42" distinct="false" blockFactor="10" blockWindow="1">
+    <PowerIndexUnit id="sv1#area10#page4#pwu2" name="Product List" linkOrder="sv1#area10#page4#pwu2#ln24" customDescriptor="false" gr:x="120" gr:y="105" sortable="true" checkable="false" useCountQuery="false" entity="pkg1#ent8" displayAttributes="pkg1#ent8#att48 pkg1#ent8#att39 pkg1#ent8#att41 pkg1#ent8#att42" distinct="false" blockFactor="10" blockWindow="1">
       <Selector id="sv1#area10#page4#pwu2#su5" defaultPolicy="fill" booleanOperator="and">
         <AttributesCondition id="sv1#area10#page4#pwu2#su5#acond2" name="Name" predicate="contains" booleanOperator="or" implied="true" ignoreCase="false" attributes="pkg1#ent8#att41"/>
         <AttributesCondition id="sv1#area10#page4#pwu2#su5#acond5" name="Price" predicate="eq" booleanOperator="or" implied="true" attributes="pkg1#ent8#att42"/>
@@ -21,7 +21,7 @@
       <DefaultSortAttribute attribute="pkg1#ent8#att41" order="ascending"/>
       <DefaultSortAttribute attribute="pkg1#ent8#att42" order="ascending"/>
     </PowerIndexUnit>
-    <EntryUnit id="sv1#area10#page4#enu13" name="Search" linkOrder="sv1#area10#page4#enu13#ln40 sv1#area10#page4#enu13#ln28" gr:x="110" gr:y="0" entity="pkg1#ent8" fieldOrder="sv1#area10#page4#enu13#sfld6 sv1#area10#page4#enu13#fld49 sv1#area10#page4#enu13#fld50">
+    <EntryUnit id="sv1#area10#page4#enu13" name="Search" linkOrder="sv1#area10#page4#enu13#ln40 sv1#area10#page4#enu13#ln28" gr:x="155" gr:y="0" entity="pkg1#ent8" fieldOrder="sv1#area10#page4#enu13#sfld6 sv1#area10#page4#enu13#fld49 sv1#area10#page4#enu13#fld50">
       <Link id="sv1#area10#page4#enu13#ln40" name="Search" to="sv1#area10#page4#pwu2" type="normal" validate="true">
         <LinkParameter id="sv1#area10#page4#enu13#ln40#par76" name="Category Key" source="sv1#area10#page4#enu13#sfld6" target="sv1#area10#page4#pwu2#su5#rcond3.pkg1#ent1#att1"/>
         <LinkParameter id="sv1#area10#page4#enu13#ln40#par77" name="Name" source="sv1#area10#page4#enu13#fld49" target="sv1#area10#page4#pwu2#su5#acond2"/>
@@ -32,7 +32,7 @@
       <Field id="sv1#area10#page4#enu13#fld50" name="Price" type="float" modifiable="true" attribute="pkg1#ent8#att42"/>
       <Link id="sv1#area10#page4#enu13#ln28" name="Reset" to="sv1#area10#opu5" type="normal" validate="true"/>
     </EntryUnit>
-    <SelectorUnit id="sv1#area10#page4#seu8" name="Categories" gr:x="0" gr:y="0" entity="pkg1#ent1">
+    <SelectorUnit id="sv1#area10#page4#seu8" name="Categories" gr:x="0" gr:y="5" entity="pkg1#ent1">
       <Link id="sv1#area10#page4#seu8#ln41" name="Link59" to="sv1#area10#page4#enu13" type="transport" validate="true">
         <LinkParameter id="sv1#area10#page4#seu8#ln41#par79" name="Category Name" source="pkg1#ent1#att2Array" target="sv1#area10#page4#enu13#sfld6_label"/>
         <LinkParameter id="sv1#area10#page4#seu8#ln41#par81" name="Category Key" source="pkg1#ent1#att1Array" target="sv1#area10#page4#enu13#sfld6_output"/>

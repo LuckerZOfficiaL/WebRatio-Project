@@ -1,0 +1,41 @@
+Buildfile: G:\WebRatio\WebRatio\plugins\com.webratio.generator.webapp_7.2.18.201903231300\DataModel\JavaCompile.xml
+
+main:
+    [javac] Compiling 7 source files to G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes
+    [javac] ----------
+    [javac] 1. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\Course.java (at line 15)
+    [javac] 	private com.webratio.webapp.Course_CreatorBean _creatorBean;
+    [javac] 	        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.Course_CreatorBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 2. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\Course.java (at line 53)
+    [javac] 	com.webratio.webapp.Course_CreatorBean __creator = this.getCreatorBean();
+    [javac] 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.Course_CreatorBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 3. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\Course.java (at line 53)
+    [javac] 	com.webratio.webapp.Course_CreatorBean __creator = this.getCreatorBean();
+    [javac] 	                                                        ^^^^^^^^^^^^^^
+    [javac] The method getCreatorBean() from the type Course refers to the missing type Course_CreatorBean
+    [javac] ----------
+    [javac] 4. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\Course.java (at line 64)
+    [javac] 	public com.webratio.webapp.Course_CreatorBean getCreatorBean() {
+    [javac] 	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.Course_CreatorBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 5. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\Course.java (at line 65)
+    [javac] 	return _creatorBean;
+    [javac] 	       ^^^^^^^^^^^^
+    [javac] Course_CreatorBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 6. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\Course.java (at line 68)
+    [javac] 	public void setCreatorBean(com.webratio.webapp.Course_CreatorBean _creatorBean) {
+    [javac] 	                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.Course_CreatorBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 7. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\Course.java (at line 69)
+    [javac] 	this._creatorBean = _creatorBean;
+    [javac] 	^^^^^^^^^^^^^^^^^
+    [javac] Course_CreatorBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 7 problems (7 errors)

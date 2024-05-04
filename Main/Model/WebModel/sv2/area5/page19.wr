@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="250" gr:y="325" id="sv2#area5#page19" name="Course Page">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="285" gr:y="330" id="sv2#area5#page19" name="Course Page">
   <ContentUnits>
-    <PowerIndexUnit gr:x="25" gr:y="185" id="sv2#area5#page19#pwu9" name="Lecture List" sortable="true" checkable="false" useCountQuery="false" entity="ent6" linkOrder="sv2#area5#page19#pwu9#ln12" displayAttributes="ent6#att18 ent6#att19 ent6#att24">
+    <PowerIndexUnit gr:x="5" gr:y="185" id="sv2#area5#page19#pwu9" name="Lecture List" sortable="true" checkable="false" useCountQuery="false" entity="ent6" linkOrder="sv2#area5#page19#pwu9#ln12" displayAttributes="ent6#att18 ent6#att19 ent6#att24">
       <Selector id="sv2#area5#page19#pwu9#su8" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area5#page19#pwu9#su8#rcond10" name="RoleCondition6" predicate="in" implied="false" role="rel4#role7"/>
       </Selector>
@@ -10,7 +10,7 @@
     </PowerIndexUnit>
     <DataUnit gr:x="0" gr:y="0" id="sv2#area5#page19#dau1" name="Course Details" entity="ent1" displayAll="true">
       <Selector id="sv2#area5#page19#dau1#su12" defaultPolicy="fill" booleanOperator="and">
-        <RelationshipRoleCondition id="sv2#area5#page19#dau1#su12#rcond11" predicate="in" implied="false" name="KeyCondition15" role="rel11#role21"/>
+        <KeyCondition id="sv2#area5#page19#dau1#su12#kcond12" predicate="in" implied="false" name="KeyCondition15"/>
       </Selector>
       <Link id="sv2#area5#page19#dau1#ln14" name="Flow45" to="sv2#area5#page19#pwu9" type="transport" validate="true">
         <LinkParameter id="sv2#area5#page19#dau1#ln14#par55" name="courseID_RoleCondition6 [courseID]" source="data.ent1#att1" target="sv2#area5#page19#pwu9#su8#rcond10.ent1#att1"/>

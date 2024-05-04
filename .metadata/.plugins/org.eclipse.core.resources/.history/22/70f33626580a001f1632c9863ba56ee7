@@ -1,0 +1,25 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="355" gr:y="115" id="sv2#area10#page3" name="Course Info">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area10#page3#dau9" name="Course Detail" entity="ent1" displayAll="true">
+      <Selector id="sv2#area10#page3#dau9#su16" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area10#page3#dau9#su16#kcond9" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
