@@ -1,0 +1,10 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="45" gr:y="15" id="sv2#area5" name="Enrolled Courses Area" landmark="true" protected="false" defaultPage="sv2#area5#page19">
+  <OperationUnits>
+    <DeleteUnit gr:x="0" gr:y="175" id="sv2#area5#dlu3" name="Unenroll" entity="ent5">
+      <Selector id="sv2#area5#dlu3#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area5#dlu3#su1#kcond1" name="KeyCondition1" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <SwitchUnit gr:x="300" gr:y="805" id="sv2#area5#switch1" name="Is Correct?"/>
+  </OperationUnits>
+</Area>

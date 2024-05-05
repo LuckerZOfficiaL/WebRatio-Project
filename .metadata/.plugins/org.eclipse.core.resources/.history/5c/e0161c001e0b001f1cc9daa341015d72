@@ -1,0 +1,29 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area11#page34" name="Lectures" gr:x="185" gr:y="200">
+  <ContentUnits>
+    <PowerIndexUnit id="sv2#area11#page34#pwu19" name="Lecture List" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="ent6#att19">
+      <Selector id="sv2#area11#page34#pwu19#su44" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area11#page34#pwu19#su44#rcond16" name="RoleCondition3" predicate="in" implied="false" role="rel4#role7"/>
+      </Selector>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area11#page34#pwu19">
+          <layout:Attribute attribute="ent6#att19"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

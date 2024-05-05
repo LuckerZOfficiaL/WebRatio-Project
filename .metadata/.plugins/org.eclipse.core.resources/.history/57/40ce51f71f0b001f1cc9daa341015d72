@@ -1,0 +1,57 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="505" gr:y="0" id="sv2#area11#page36" name="Question Page">
+  <ContentUnits>
+    <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu13" name="Question" entity="ent3" fieldOrder="sv2#area11#page36#enu13#sfld7">
+      <SelectionField id="sv2#area11#page36#enu13#sfld7" name="Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv2#area11#page36#enu13#sfld7#slot14 sv2#area11#page36#enu13#sfld7#slot13">
+        <Slot id="sv2#area11#page36#enu13#sfld7#slot13" name="output" value="1|2|3|4" output="true"/>
+        <Slot id="sv2#area11#page36#enu13#sfld7#slot14" name="option" value="option1|option2|option3|option4" label="true"/>
+      </SelectionField>
+    </EntryUnit>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page36#dau20" name="Question" entity="ent3" displayAttributes="ent3#att5 ent3#att6 ent3#att7 ent3#att8 ent3#att9">
+      <Selector id="sv2#area11#page36#dau20#su47" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area11#page36#dau20#su47#kcond30" name="KeyCondition3" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area11#page36#enu13">
+          <layout:Field field="sv2#area11#page36#enu13#sfld7"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area11#page36#dau20">
+          <layout:Attribute attribute="ent3#att5"/>
+          <layout:Attribute attribute="ent3#att6"/>
+          <layout:Attribute attribute="ent3#att7"/>
+          <layout:Attribute attribute="ent3#att8"/>
+          <layout:Attribute attribute="ent3#att9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
