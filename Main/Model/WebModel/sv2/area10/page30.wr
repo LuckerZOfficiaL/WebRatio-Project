@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="0" id="sv2#area10#page30" name="Enroll Courses">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="90" id="sv2#area10#page30" name="Enroll Courses">
   <ContentUnits>
     <EntryUnit gr:x="345" gr:y="0" id="sv2#area10#page30#enu12" name="Search" fieldOrder="sv2#area10#page30#enu12#fld43" linkOrder="sv2#area10#page30#enu12#ln72" gr:showAllParts="true">
       <Field id="sv2#area10#page30#enu12#fld43" name="Keyword" type="string" modifiable="true" ajaxAutocompleteEnabled="false"/>
@@ -115,4 +115,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv2#area10#page30#ln28" name="Log out" to="sv2#area10#miu2" type="normal" automaticCoupling="true" validate="true"/>
 </Page>

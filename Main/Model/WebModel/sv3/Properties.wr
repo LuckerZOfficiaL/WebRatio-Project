@@ -4,7 +4,7 @@
       <KOLink id="sv3#cru2#kln10" name="KOFlow10" to="sv3#page14#mssu8" automaticCoupling="true"/>
       <OKLink id="sv3#cru2#oln2" name="OKFlow2" to="sv3#page11#mssu6" automaticCoupling="true"/>
     </CreateUnit>
-    <DeleteUnit gr:x="325" gr:y="810" id="sv3#dlu2" name="Delete Course" entity="ent1">
+    <DeleteUnit gr:x="335" gr:y="915" id="sv3#dlu2" name="Delete Course" entity="ent1">
       <Selector id="sv3#dlu2#su9" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#dlu2#su9#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
       </Selector>
