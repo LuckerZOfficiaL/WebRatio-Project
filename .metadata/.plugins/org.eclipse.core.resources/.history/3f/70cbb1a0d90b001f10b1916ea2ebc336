@@ -8,10 +8,7 @@
         <LinkParameter id="sv3#page12#dau4#ln23#par23" name="courseID_RoleCondition7 [courseID]" source="data.ent1#att1" target="sv3#page12#pwu4#su14#rcond7.ent1#att1"/>
         <LinkParameter id="sv3#page12#dau4#ln23#par24" name="name_RoleCondition7 [name]" source="data.ent1#att11" target="sv3#page12#pwu4#su14#rcond7.ent1#att11"/>
       </Link>
-      <Link id="sv3#page12#dau4#ln26" name="Flow26" to="sv3#cru4" type="transport" validate="true">
-        <LinkParameter id="sv3#page12#dau4#ln26#par48" name="courseID_Course.courseID(LectureToCourse)" source="data.ent1#att1" target="sv3#cru4.rel4#role8.ent1#att1"/>
-        <LinkParameter id="sv3#page12#dau4#ln26#par55" name="name_Course.name(LectureToCourse)" source="data.ent1#att11" target="sv3#cru4.rel4#role8.ent1#att11"/>
-      </Link>
+      <Link id="sv3#page12#dau4#ln26" name="Flow26" to="sv3#cru4" type="transport" validate="true" automaticCoupling="true"/>
     </DataUnit>
     <PowerIndexUnit gr:x="5" gr:y="170" id="sv3#page12#pwu4" name="Lecture List" sortable="true" checkable="false" useCountQuery="false" entity="ent6" linkOrder="sv3#page12#pwu4#ln24 sv3#page12#pwu4#ln66" displayAttributes="ent6#att18 ent6#att19 ent6#att24">
       <Selector id="sv3#page12#pwu4#su14" defaultPolicy="fill" booleanOperator="and">
@@ -74,6 +71,7 @@
               <layout:Cell colspan="12">
                 <layout:Unit unitId="sv3#page12#page15#enu6">
                   <layout:Link link="sv3#page12#page15#enu6#ln30"/>
+                  <layout:Field field="sv3#page12#page15#enu6#fld11"/>
                   <layout:Field field="sv3#page12#page15#enu6#fld12"/>
                   <layout:Field field="sv3#page12#page15#enu6#fld18"/>
                 </layout:Unit>
@@ -122,13 +120,15 @@
   </layout:Grid>
   <Page gr:x="0" gr:y="315" id="sv3#page12#page15" name="Add Lecture">
     <ContentUnits>
-      <EntryUnit gr:x="0" gr:y="0" id="sv3#page12#page15#enu6" name="Add a Lecture" fieldOrder="sv3#page12#page15#enu6#fld12 sv3#page12#page15#enu6#fld18" linkOrder="sv3#page12#page15#enu6#ln30">
+      <EntryUnit gr:x="0" gr:y="0" id="sv3#page12#page15#enu6" name="Add a Lecture" fieldOrder="sv3#page12#page15#enu6#fld11 sv3#page12#page15#enu6#fld12 sv3#page12#page15#enu6#fld18" linkOrder="sv3#page12#page15#enu6#ln30">
         <Field id="sv3#page12#page15#enu6#fld18" name="Content" type="blob" modifiable="true"/>
         <Field id="sv3#page12#page15#enu6#fld12" name="Title" type="string" modifiable="true"/>
         <Link id="sv3#page12#page15#enu6#ln30" name="Add Lecture" to="sv3#cru4" type="normal" validate="true">
           <LinkParameter id="sv3#page12#page15#enu6#ln30#par30" name="Content_content" source="sv3#page12#page15#enu6#fld18" target="sv3#cru4.ent6#att24"/>
           <LinkParameter id="sv3#page12#page15#enu6#ln30#par32" name="Title_title" source="sv3#page12#page15#enu6#fld12" target="sv3#cru4.ent6#att19"/>
+          <LinkParameter id="sv3#page12#page15#enu6#ln30#par87" name="Lecture ID_lectureID" source="sv3#page12#page15#enu6#fld11" target="sv3#cru4.ent6#att18"/>
         </Link>
+        <Field id="sv3#page12#page15#enu6#fld11" name="Lecture ID" type="integer" modifiable="true"/>
       </EntryUnit>
     </ContentUnits>
   </Page>

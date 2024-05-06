@@ -11,6 +11,7 @@
       <Link id="sv3#area6#page6#enu3#ln1" name="Add" to="sv3#cru2" type="normal" validate="true">
         <LinkParameter id="sv3#area6#page6#enu3#ln1#par20" name="Course name_name" source="sv3#area6#page6#enu3#fld3" target="sv3#cru2.ent1#att11"/>
         <LinkParameter id="sv3#area6#page6#enu3#ln1#par21" name="Course topic_topic" source="sv3#area6#page6#enu3#fld4" target="sv3#cru2.ent1#att12"/>
+        <LinkParameter id="sv3#area6#page6#enu3#ln1#par56" name="1_courseID" sourceValue="1" target="sv3#cru2.ent1#att1"/>
       </Link>
     </EntryUnit>
   </ContentUnits>

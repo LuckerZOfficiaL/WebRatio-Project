@@ -96,7 +96,7 @@
       <db:JoinColumn attribute="ent1#att1" name="course_courseid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/db2" username="root" password="NTg1ODU4" cryptedPassword="true">
+  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/DB" username="root" password="NTg1ODU4" cryptedPassword="true">
   </db:Database>
   <Relationship id="rel9" name="Lecture_Question" sourceEntity="ent6" targetEntity="ent3" db:database="db2" db:table="question">
     <RelationshipRole1 id="rel9#role17" name="LectureToQuestion" maxCard="N">

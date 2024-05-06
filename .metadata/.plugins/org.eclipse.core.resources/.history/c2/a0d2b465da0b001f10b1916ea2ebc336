@@ -8,10 +8,7 @@
         <LinkParameter id="sv3#page12#dau4#ln23#par23" name="courseID_RoleCondition7 [courseID]" source="data.ent1#att1" target="sv3#page12#pwu4#su14#rcond7.ent1#att1"/>
         <LinkParameter id="sv3#page12#dau4#ln23#par24" name="name_RoleCondition7 [name]" source="data.ent1#att11" target="sv3#page12#pwu4#su14#rcond7.ent1#att11"/>
       </Link>
-      <Link id="sv3#page12#dau4#ln26" name="Flow26" to="sv3#cru4" type="transport" validate="true">
-        <LinkParameter id="sv3#page12#dau4#ln26#par48" name="courseID_Course.courseID(LectureToCourse)" source="data.ent1#att1" target="sv3#cru4.rel4#role8.ent1#att1"/>
-        <LinkParameter id="sv3#page12#dau4#ln26#par55" name="name_Course.name(LectureToCourse)" source="data.ent1#att11" target="sv3#cru4.rel4#role8.ent1#att11"/>
-      </Link>
+      <Link id="sv3#page12#dau4#ln26" name="Flow26" to="sv3#cru4" type="transport" validate="true" automaticCoupling="true"/>
     </DataUnit>
     <PowerIndexUnit gr:x="5" gr:y="170" id="sv3#page12#pwu4" name="Lecture List" sortable="true" checkable="false" useCountQuery="false" entity="ent6" linkOrder="sv3#page12#pwu4#ln24 sv3#page12#pwu4#ln66" displayAttributes="ent6#att18 ent6#att19 ent6#att24">
       <Selector id="sv3#page12#pwu4#su14" defaultPolicy="fill" booleanOperator="and">

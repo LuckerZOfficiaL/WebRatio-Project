@@ -9,7 +9,7 @@
         <KeyCondition id="sv3#dlu2#su9#kcond4" name="KeyCondition4" predicate="in" implied="false"/>
       </Selector>
     </DeleteUnit>
-    <CreateUnit gr:x="1045" gr:y="820" id="sv3#cru4" name="Create Lecture" entity="ent6">
+    <CreateUnit gr:x="1050" gr:y="800" id="sv3#cru4" name="Create Lecture" entity="ent6">
       <OKLink id="sv3#cru4#oln5" name="OKFlow5" to="sv3#page11#mssu6" automaticCoupling="true"/>
       <KOLink id="sv3#cru4#kln6" name="KOFlow6" to="sv3#page14#mssu8" automaticCoupling="true"/>
     </CreateUnit>

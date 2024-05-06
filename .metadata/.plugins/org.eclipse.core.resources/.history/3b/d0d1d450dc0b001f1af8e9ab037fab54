@@ -50,7 +50,7 @@
   </Relationship>
   <Entity gr:x="710" gr:y="410" id="ent1" name="Course" duration="persistent" attributeOrder="ent1#att1 ent1#att11 ent1#att12" db:database="db2" db:table="course">
     <Attribute id="ent1#att1" key="true" name="courseID" type="integer" db:column="courseid"/>
-    <Attribute id="ent1#att11" name="name" type="string" key="false" db:column="name"/>
+    <Attribute id="ent1#att11" name="name" type="string" key="true" db:column="name"/>
     <Attribute id="ent1#att12" name="topic" type="string" db:column="topic"/>
   </Entity>
   <Entity gr:x="1410" gr:y="370" id="ent3" name="Question" duration="persistent" attributeOrder="ent3#att3 ent3#att5 ent3#att6 ent3#att7 ent3#att8 ent3#att9 ent3#att10" db:database="db2" db:table="question">
@@ -83,6 +83,7 @@
   <Relationship id="rel4" name="Course_Lecture" sourceEntity="ent1" targetEntity="ent6" db:database="db2" db:table="lecture">
     <RelationshipRole1 id="rel4#role7" name="CourseToLecture" maxCard="N">
       <db:JoinColumn attribute="ent1#att1" name="course_courseid"/>
+      <db:JoinColumn attribute="ent1#att11" name="course_name"/>
     </RelationshipRole1>
     <RelationshipRole2 id="rel4#role8" name="LectureToCourse" maxCard="1">
       <db:JoinColumn attribute="ent6#att18" name="lectureid"/>
@@ -94,10 +95,10 @@
     </RelationshipRole1>
     <RelationshipRole2 id="rel11#role22" name="CourseToEnrolledCourse" maxCard="N">
       <db:JoinColumn attribute="ent1#att1" name="course_courseid"/>
+      <db:JoinColumn attribute="ent1#att11" name="course_name"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/db2" username="root" password="NTg1ODU4" cryptedPassword="true">
-  </db:Database>
+  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/DB" username="root" password="NTg1ODU4" cryptedPassword="true"/>
   <Relationship id="rel9" name="Lecture_Question" sourceEntity="ent6" targetEntity="ent3" db:database="db2" db:table="question">
     <RelationshipRole1 id="rel9#role17" name="LectureToQuestion" maxCard="N">
       <db:JoinColumn attribute="ent6#att18" name="lecture_lectureid"/>
@@ -112,6 +113,7 @@
     </RelationshipRole1>
     <RelationshipRole2 id="rel1#role2" name="CourseToUser" maxCard="1">
       <db:JoinColumn attribute="ent1#att1" name="courseid"/>
+      <db:JoinColumn attribute="ent1#att11" name="name"/>
     </RelationshipRole2>
   </Relationship>
 </DataModel>
