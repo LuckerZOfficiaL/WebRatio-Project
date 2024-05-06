@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="530" gr:y="10" id="sv2#area11#page36" name="Question Page">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="530" gr:y="10" id="sv2#area11#page36" name="Question Page" linkOrder="sv2#area11#page36#ln3">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page36#dau20" name="Question" entity="ent3" displayAttributes="ent3#att5 ent3#att6 ent3#att7 ent3#att8 ent3#att9">
       <Selector id="sv2#area11#page36#dau20#su47" defaultPolicy="fill" booleanOperator="and">
@@ -6,15 +6,13 @@
       </Selector>
       <Link id="sv2#area11#page36#dau20#ln29" name="Flow29" to="sv2#seu5" type="transport" validate="true">
         <LinkParameter id="sv2#area11#page36#dau20#ln29#par39" name="questionID_KeyCondition2 [questionID]" source="data.ent3#att3" target="sv2#seu5#su3#kcond2.ent3#att3"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par4" name="correctAnswer_AttCondition4" source="data.ent3#att10" target="sv2#seu5#su3#acond4"/>
       </Link>
     </DataUnit>
-    <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">
+    <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8">
       <SelectionField id="sv2#area11#page36#enu14#sfld8" name="Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv2#area11#page36#enu14#sfld8#slot15">
         <Slot id="sv2#area11#page36#enu14#sfld8#slot15" name="choice" value="1|2|3|4" label="true" output="true"/>
       </SelectionField>
-      <Link id="sv2#area11#page36#enu14#ln12" name="Check" to="sv2#seu5" type="normal" validate="true">
-        <LinkParameter id="sv2#area11#page36#enu14#ln12#par34" name="Answer[choice]_AttCondition4" source="sv2#area11#page36#enu14#sfld8#slot15" target="sv2#seu5#su3#acond4"/>
-      </Link>
     </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -58,7 +56,6 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area11#page36#enu14">
           <layout:Field field="sv2#area11#page36#enu14#sfld8"/>
-          <layout:Link link="sv2#area11#page36#enu14#ln12"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
@@ -88,4 +85,5 @@
       <layout:Cell/>
     </layout:Row>
   </layout:Grid>
+  <Link id="sv2#area11#page36#ln3" name="Check" to="sv2#inn1" automaticCoupling="true" type="normal" validate="true"/>
 </Page>

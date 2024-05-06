@@ -1,0 +1,26 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="885" gr:y="1055" id="sv2#page9" name="Result">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="115" gr:y="5" id="sv2#page9#mssu1" name="Incorrect">
+      <Message xml:space="preserve">That's incorrect!</Message>
+    </MultiMessageUnit>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#page9#mssu4" name="Correct">
+      <Message xml:space="preserve">That's correct! </Message>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,8 +1,8 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Student" landmarks="sv2#area5 sv2#area9 sv2#area10" protected="true" homePage="sv2#area9#page23">
   <OperationUnits>
-    <IsNotNullUnit gr:x="930" gr:y="940" id="sv2#inn1" name="Is Not Null1" emptyStringAsNull="true">
-      <OKLink id="sv2#inn1#oln3" name="OKFlow3" to="sv2#page10" automaticCoupling="true"/>
-      <KOLink id="sv2#inn1#kln1" name="KOFlow1" to="sv2#page9" automaticCoupling="true"/>
+    <IsNotNullUnit gr:x="905" gr:y="940" id="sv2#inn1" name="Is Not Null1" emptyStringAsNull="true">
+      <OKLink id="sv2#inn1#oln3" name="OKFlow3" to="sv2#page7#mssu3" automaticCoupling="true"/>
+      <KOLink id="sv2#inn1#kln1" name="KOFlow1" to="sv2#page9#mssu1" automaticCoupling="true"/>
     </IsNotNullUnit>
     <SelectorUnit gr:x="880" gr:y="730" id="sv2#seu5" name="Question Selector" entity="ent3">
       <Selector id="sv2#seu5#su3" defaultPolicy="fill" booleanOperator="and">

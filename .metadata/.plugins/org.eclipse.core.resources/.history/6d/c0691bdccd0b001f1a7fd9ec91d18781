@@ -8,7 +8,7 @@
         <LinkParameter id="sv2#area11#page36#dau20#ln29#par39" name="questionID_KeyCondition2 [questionID]" source="data.ent3#att3" target="sv2#seu5#su3#kcond2.ent3#att3"/>
       </Link>
     </DataUnit>
-    <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">
+    <EntryUnit gr:x="15" gr:y="150" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">
       <SelectionField id="sv2#area11#page36#enu14#sfld8" name="Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv2#area11#page36#enu14#sfld8#slot15">
         <Slot id="sv2#area11#page36#enu14#sfld8#slot15" name="choice" value="1|2|3|4" label="true" output="true"/>
       </SelectionField>
@@ -16,6 +16,12 @@
         <LinkParameter id="sv2#area11#page36#enu14#ln12#par34" name="Answer[choice]_AttCondition4" source="sv2#area11#page36#enu14#sfld8#slot15" target="sv2#seu5#su3#acond4"/>
       </Link>
     </EntryUnit>
+    <MultiMessageUnit gr:x="25" gr:y="250" id="sv2#area11#page36#mssu5" name="Correct">
+      <Message xml:space="preserve">That's correct! </Message>
+    </MultiMessageUnit>
+    <MultiMessageUnit gr:x="25" gr:y="340" id="sv2#area11#page36#mssu7" name="Incorrect">
+      <Message xml:space="preserve">That's incorrect!</Message>
+    </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
