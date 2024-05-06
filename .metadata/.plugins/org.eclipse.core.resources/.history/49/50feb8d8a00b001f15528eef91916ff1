@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="530" gr:y="10" id="sv2#area11#page36" name="Question Page">
   <ContentUnits>
-    <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page36#dau20" name="Question" entity="ent3" displayAttributes="ent3#att5 ent3#att10 ent3#att6 ent3#att7 ent3#att8 ent3#att9">
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page36#dau20" name="Question" entity="ent3" displayAttributes="ent3#att5 ent3#att3 ent3#att10">
       <Selector id="sv2#area11#page36#dau20#su47" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area11#page36#dau20#su47#kcond30" name="KeyCondition3" predicate="in" implied="false"/>
       </Selector>
@@ -12,7 +12,7 @@
       <SelectionField id="sv2#area11#page36#enu14#sfld8" name="Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv2#area11#page36#enu14#sfld8#slot15">
         <Slot id="sv2#area11#page36#enu14#sfld8#slot15" name="choice" value="1|2|3|4" label="true" output="true"/>
       </SelectionField>
-      <Link id="sv2#area11#page36#enu14#ln31" name="Confirm" to="sv2#seu5" type="normal" validate="true">
+      <Link id="sv2#area11#page36#enu14#ln31" name="Flow31" to="sv2#seu5" type="normal" validate="true">
         <LinkParameter id="sv2#area11#page36#enu14#ln31#par34" name="Answer[choice]_AttCondition4" source="sv2#area11#page36#enu14#sfld8#slot15" target="sv2#seu5#su3#acond4"/>
       </Link>
     </EntryUnit>
@@ -36,11 +36,8 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area11#page36#dau20">
           <layout:Attribute attribute="ent3#att5"/>
+          <layout:Attribute attribute="ent3#att3"/>
           <layout:Attribute attribute="ent3#att10"/>
-          <layout:Attribute attribute="ent3#att6"/>
-          <layout:Attribute attribute="ent3#att7"/>
-          <layout:Attribute attribute="ent3#att8"/>
-          <layout:Attribute attribute="ent3#att9"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

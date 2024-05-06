@@ -12,7 +12,7 @@
       <SelectionField id="sv2#area11#page36#enu14#sfld8" name="Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv2#area11#page36#enu14#sfld8#slot15">
         <Slot id="sv2#area11#page36#enu14#sfld8#slot15" name="choice" value="1|2|3|4" label="true" output="true"/>
       </SelectionField>
-      <Link id="sv2#area11#page36#enu14#ln31" name="Confirm" to="sv2#seu5" type="normal" validate="true">
+      <Link id="sv2#area11#page36#enu14#ln31" name="Flow31" to="sv2#seu5" type="normal" validate="true">
         <LinkParameter id="sv2#area11#page36#enu14#ln31#par34" name="Answer[choice]_AttCondition4" source="sv2#area11#page36#enu14#sfld8#slot15" target="sv2#seu5#su3#acond4"/>
       </Link>
     </EntryUnit>

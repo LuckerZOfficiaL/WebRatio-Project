@@ -1,6 +1,6 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Student" landmarks="sv2#area5 sv2#area9 sv2#area10" protected="true" homePage="sv2#area9#page23">
   <OperationUnits>
-    <IsNotNullUnit gr:x="905" gr:y="940" id="sv2#inn1" name="Is Not Null1" emptyStringAsNull="true">
+    <IsNotNullUnit gr:x="905" gr:y="940" id="sv2#inn1" name="Is Not Null1" emptyStringAsNull="false">
       <OKLink id="sv2#inn1#oln3" name="OKFlow3" to="sv2#page7#mssu3" automaticCoupling="true"/>
       <KOLink id="sv2#inn1#kln1" name="KOFlow1" to="sv2#page7#mssu4" automaticCoupling="true"/>
     </IsNotNullUnit>
@@ -9,9 +9,7 @@
         <AttributesCondition id="sv2#seu5#su3#acond4" name="AttCondition4" predicate="eq" booleanOperator="or" implied="false" attributes="ent3#att10"/>
         <KeyCondition id="sv2#seu5#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
       </Selector>
-      <Link id="sv2#seu5#ln33" name="Flow33" to="sv2#inn1" type="transport" validate="true">
-        <LinkParameter id="sv2#seu5#ln33#par40" name="questionID_Input" source="ent3#att3Array" target="sv2#inn1.isnotnull"/>
-      </Link>
+      <Link id="sv2#seu5#ln33" name="Flow33" to="sv2#inn1" automaticCoupling="true" type="transport" validate="true"/>
     </SelectorUnit>
   </OperationUnits>
 </SiteView>

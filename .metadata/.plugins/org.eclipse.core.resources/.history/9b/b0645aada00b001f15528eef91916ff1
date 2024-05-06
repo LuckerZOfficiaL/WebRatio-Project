@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area11#page33" name="Course Page" gr:x="0" gr:y="0">
   <ContentUnits>
-    <DataUnit id="sv2#area11#page33#dau18" name="Course Details" linkOrder="sv2#area11#page33#dau18#ln65" gr:x="0" gr:y="0" entity="ent1" displayAttributes="ent1#att1 ent1#att11 ent1#att12 rel1#role2.User#att22">
+    <DataUnit id="sv2#area11#page33#dau18" name="Course Detaisl" linkOrder="sv2#area11#page33#dau18#ln65" gr:x="0" gr:y="0" entity="ent1" displayAttributes="ent1#att1 ent1#att11 ent1#att12 rel1#role2.User#att22">
       <Selector id="sv2#area11#page33#dau18#su43" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area11#page33#dau18#su43#kcond27" name="KeyCondition5" predicate="in" implied="false"/>
       </Selector>

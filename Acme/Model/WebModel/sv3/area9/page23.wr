@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area9#page23" name="Combination Management" gr:x="155" gr:y="0">
   <ContentUnits>
-    <PowerIndexUnit id="sv3#area9#page23#pwu16" name="Combination List" linkOrder="sv3#area9#page23#pwu16#ln124 sv3#area9#page23#pwu16#ln105" customDescriptor="false" gr:x="0" gr:y="5" sortable="true" checkable="false" useCountQuery="false" entity="ent4" distinct="false" blockFactor="10" blockWindow="4" displayAttributes="ent4#att3 ent4#att5 ent4#att6 ent4#att20 ent4#att21 ent4#att22 ent4#att51">
+    <PowerIndexUnit id="sv3#area9#page23#pwu16" name="Combination List" linkOrder="sv3#area9#page23#pwu16#ln124 sv3#area9#page23#pwu16#ln105" customDescriptor="false" gr:x="0" gr:y="15" sortable="true" checkable="false" useCountQuery="false" entity="ent4" distinct="false" blockFactor="10" blockWindow="4" displayAttributes="ent4#att3 ent4#att5 ent4#att6 ent4#att20 ent4#att21 ent4#att22 ent4#att51">
       <VRules>
         <CheckedUnitItemsValidationRule id="sv3#area9#page23#pwu16#ckd2" name="Validate Combination Number" predicate="min" itemCount="1"/>
       </VRules>
@@ -15,7 +15,7 @@
       <DefaultSortAttribute attribute="ent4#att6" order="ascending"/>
       <Link id="sv3#area9#page23#pwu16#ln124" name="Edit" to="sv3#area9#page23#seu2" automaticCoupling="true" type="normal" validate="true" ajaxEnabled="false"/>
     </PowerIndexUnit>
-    <EntryUnit id="sv3#area9#page23#enu9" name="Combination Information" gr:x="320" gr:y="140" entity="ent4" fieldOrder="sv3#area9#page23#enu9#fld27 sv3#area9#page23#enu9#fld29 sv3#area9#page23#enu9#fld30 sv3#area9#page23#enu9#fld28 sv3#area9#page23#enu9#fld39 sv3#area9#page23#enu9#fld32 sv3#area9#page23#enu9#msfld5 sv3#area9#page23#enu9#fld40 sv3#area9#page23#enu9#fld41" linkOrder="sv3#area9#page23#enu9#ln7 sv3#area9#page23#enu9#ln22">
+    <EntryUnit id="sv3#area9#page23#enu9" name="Combination Information" gr:x="320" gr:y="150" entity="ent4" fieldOrder="sv3#area9#page23#enu9#fld27 sv3#area9#page23#enu9#fld29 sv3#area9#page23#enu9#fld30 sv3#area9#page23#enu9#fld28 sv3#area9#page23#enu9#fld39 sv3#area9#page23#enu9#fld32 sv3#area9#page23#enu9#msfld5 sv3#area9#page23#enu9#fld40 sv3#area9#page23#enu9#fld41" linkOrder="sv3#area9#page23#enu9#ln7 sv3#area9#page23#enu9#ln22">
       <Field id="sv3#area9#page23#enu9#fld27" name="code" type="integer" modifiable="true" attribute="ent4#att3">
         <VRules>
           <MandatoryValidationRule id="sv3#area9#page23#enu9#fld27#mnd22" name="Mandatory Field"/>
@@ -47,8 +47,8 @@
       </Link>
       <Link id="sv3#area9#page23#enu9#ln22" name="Cancel" to="sv3#area9#opu2" type="normal" validate="false"/>
     </EntryUnit>
-    <MultiMessageUnit id="sv3#area9#page23#mssu3" name="Notifications" gr:x="15" gr:y="160" ajaxTooltipEnabled="false" ajaxEnableExpandedLinks="false"/>
-    <SelectorUnit gr:x="170" gr:y="140" id="sv3#area9#page23#seu21" name="Load All Products" entity="pkg1#ent8" distinctAttributes="pkg1#ent8#att39 pkg1#ent8#att40 pkg1#ent8#att41 pkg1#ent8#att42 pkg1#ent8#att43 pkg1#ent8#att44 pkg1#ent8#att48">
+    <MultiMessageUnit id="sv3#area9#page23#mssu3" name="Notifications" gr:x="15" gr:y="170" ajaxTooltipEnabled="false" ajaxEnableExpandedLinks="false"/>
+    <SelectorUnit gr:x="170" gr:y="150" id="sv3#area9#page23#seu21" name="Load All Products" entity="pkg1#ent8" distinctAttributes="pkg1#ent8#att39 pkg1#ent8#att40 pkg1#ent8#att41 pkg1#ent8#att42 pkg1#ent8#att43 pkg1#ent8#att44 pkg1#ent8#att48">
       <Link id="sv3#area9#page23#seu21#ln122" name="Link122" to="sv3#area9#page23#enu9" type="transport" validate="true">
         <LinkParameter id="sv3#area9#page23#seu21#ln122#par184" name="Product Name" source="pkg1#ent8#att41Array" target="sv3#area9#page23#enu9#msfld5_label"/>
         <LinkParameter id="sv3#area9#page23#seu21#ln122#par185" name="Product Key" source="pkg1#ent8#att38Array" target="sv3#area9#page23#enu9#msfld5_output"/>
@@ -59,7 +59,7 @@
       <SortAttribute attribute="pkg1#ent8#att42" order="ascending"/>
       <SortAttribute attribute="pkg1#ent8#att48" order="ascending"/>
     </SelectorUnit>
-    <SelectorUnit gr:x="330" gr:y="0" id="sv3#area9#page23#seu22" name="Load Included Products" entity="pkg1#ent8">
+    <SelectorUnit gr:x="455" gr:y="0" id="sv3#area9#page23#seu22" name="Load Included Products" entity="pkg1#ent8">
       <Link id="sv3#area9#page23#seu22#ln123" name="Link123" to="sv3#area9#page23#enu9" type="transport" validate="true">
         <LinkParameter id="sv3#area9#page23#seu22#ln123#par183" name="Product Key" source="pkg1#ent8#att38Array" target="sv3#area9#page23#enu9#msfld5_presel"/>
       </Link>
@@ -67,7 +67,7 @@
         <RelationshipRoleCondition id="sv3#area9#page23#seu22#su64#rcond18" name="Combination" predicate="in" implied="false" role="rel9#rel2"/>
       </Selector>
     </SelectorUnit>
-    <SelectorUnit gr:x="185" gr:y="0" id="sv3#area9#page23#seu2" name="Combination" entity="ent4">
+    <SelectorUnit gr:x="185" gr:y="10" id="sv3#area9#page23#seu2" name="Combination" entity="ent4">
       <Selector id="sv3#area9#page23#seu2#su1" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#area9#page23#seu2#su1#kcond1" name="Combination" predicate="in" implied="false"/>
       </Selector>
