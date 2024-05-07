@@ -19,9 +19,6 @@
       <Link id="sv2#area5#page5#gtu2#ln27" name="Flow27" to="sv2#area5#page5#dau8" type="transport" validate="true">
         <LinkParameter id="sv2#area5#page5#gtu2#ln27#par68" name="UserCtxParam.userID_KeyCondition8 [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#area5#page5#dau8#su10#kcond8.userOID"/>
       </Link>
-      <Link id="sv2#area5#page5#gtu2#ln41" name="Flow41" to="sv2#seu2" type="transport" validate="true">
-        <LinkParameter id="sv2#area5#page5#gtu2#ln41#par103" name="UserCtxParam.userID_RoleCondition6 [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#seu2#su5#rcond6.userOID"/>
-      </Link>
     </GetUnit>
     <DataUnit gr:x="165" gr:y="0" id="sv2#area5#page5#dau8" name="User Info" entity="User" displayAll="true">
       <Selector id="sv2#area5#page5#dau8#su10" defaultPolicy="fill" booleanOperator="and">
@@ -56,7 +53,6 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area5#page5#dau8">
           <layout:Attribute attribute="userName"/>
-          <layout:Attribute attribute="password"/>
           <layout:Attribute attribute="email"/>
           <layout:Attribute attribute="User#att17"/>
           <layout:Attribute attribute="User#att22"/>
