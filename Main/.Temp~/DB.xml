@@ -9,7 +9,6 @@
   </Table>
   <Table schema="" ignoreIndexes="false" name="enrolledcourse" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourseid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="DOUBLE" size="22" decimalDigits="0" name="grade" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="course_courseid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_userid" primaryKey="false" notNull="false"/>
   </Table>
@@ -76,7 +75,7 @@
   <Table schema="" ignoreIndexes="false" name="enrolledcourse_numcorrectanswe" type="VIEW" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourseid" primaryKey="false" notNull="true"/>
     <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="32" decimalDigits="0" webMLType="decimal" name="der_attr" primaryKey="false" notNull="false"/>
-    <SQLDefinition>select `al1`.`enrolledcourseid` AS `enrolledcourseid`,sum(`al2`.`iscorrect`) AS `der_attr` from (`enrolledcourse` `al1` left join `questiontaken_2` `al2` on((`al1`.`enrolledcourseid` = `al2`.`enrolledcourse_enrolledcoursei`))) group by `al1`.`enrolledcourseid`</SQLDefinition>
+    <SQLDefinition>select `al1`.`enrolledcourseid` AS `enrolledcourseid`,sum(`al2`.`iscorrect`) AS `der_attr` from (`enrolledcourse` `al1` left join `questiontaken` `al2` on((`al1`.`enrolledcourseid` = `al2`.`enrolledcourse_enrolledcoursei`))) group by `al1`.`enrolledcourseid`</SQLDefinition>
   </Table>
   <Table schema="" ignoreIndexes="false" name="enrolledcourse_numquestions_vi" type="VIEW" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourseid" primaryKey="false" notNull="true"/>

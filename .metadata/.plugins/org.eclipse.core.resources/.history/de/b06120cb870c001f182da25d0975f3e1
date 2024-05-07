@@ -1,0 +1,46 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area11#page10" name="Correct Message" gr:x="1305" gr:y="145">
+  <ContentUnits>
+    <MultiMessageUnit id="sv2#area11#page10#mssu3" name="Correct" gr:x="0" gr:y="0" linkOrder="sv2#area11#page10#mssu3#ln40 sv2#area11#page10#mssu3#ln63">
+      <Message xml:space="preserve">Answer correct!</Message>
+      <Link id="sv2#area11#page10#mssu3#ln40" name="Save" to="sv2#area11#seu5" type="normal" validate="true"/>
+      <Link id="sv2#area11#page10#mssu3#ln63" name="Flow63" to="sv2#area11#cru6" type="normal" validate="true">
+        <LinkParameter id="sv2#area11#page10#mssu3#ln63#par106" name="1_iscorrect" sourceValue="1" target="sv2#area11#cru6.ent7#att28"/>
+      </Link>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area11#page10#mssu3">
+          <layout:Link link="sv2#area11#page10#mssu3#ln40"/>
+          <layout:Link link="sv2#area11#page10#mssu3#ln63"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

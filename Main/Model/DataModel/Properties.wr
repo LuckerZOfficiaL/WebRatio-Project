@@ -71,7 +71,7 @@
     <Attribute id="ent5#att21" name="numQuestions" type="integer" derivationQuery="calculated::count(Self.rel11#role21(as Var1).rel4#role7(as Var2).rel9#role17(as Var3))" db:table="enrolledcourse_numquestions_vi" db:column="der_attr" storageType="file">
       <db:JoinColumn attribute="ent5#att15" name="enrolledcourseid"/>
     </Attribute>
-    <Attribute id="ent5#att25" name="numCorrectAnswers" type="integer" derivationQuery="calculated::sum(Self.rel7#role13(as Var1).ent4#att20)" db:table="enrolledcourse_numcorrectanswe" db:column="der_attr" storageType="file">
+    <Attribute id="ent5#att25" name="numCorrectAnswers" type="integer" derivationQuery="calculated::sum(Self.rel8#role16(as Var1).ent7#att28)" storageType="file" db:table="enrolledcourse_numcorrectanswe" db:column="der_attr">
       <db:JoinColumn attribute="ent5#att15" name="enrolledcourseid"/>
     </Attribute>
   </Entity>
@@ -104,7 +104,8 @@
       <db:JoinColumn attribute="ent1#att1" name="course_courseid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/db2" username="root" password="NTg1ODU4" cryptedPassword="true"/>
+  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/db2" username="root" password="NTg1ODU4" cryptedPassword="true">
+  </db:Database>
   <Relationship id="rel9" name="Lecture_Question" sourceEntity="ent6" targetEntity="ent3" db:database="db2" db:table="question">
     <RelationshipRole1 id="rel9#role17" name="LectureToQuestion" maxCard="N">
       <db:JoinColumn attribute="ent6#att18" name="lecture_lectureid"/>
@@ -121,24 +122,24 @@
       <db:JoinColumn attribute="ent1#att1" name="courseid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="380" gr:y="790" id="ent4" name="QuestionTaken" duration="persistent" attributeOrder="ent4#att4 ent4#att20" db:database="db2" db:table="questiontaken_2">
-    <Attribute id="ent4#att4" key="true" name="oid" type="integer" db:column="oid"/>
-    <Attribute id="ent4#att20" name="isCorrect" type="integer" db:column="iscorrect"/>
+  <Entity id="ent7" name="Questiontaken" db:database="db2" duration="persistent" db:table="questiontaken" gr:x="415" gr:y="810">
+    <Attribute id="ent7#att27" name="oid" db:column="oid" type="integer" key="true"/>
+    <Attribute id="ent7#att28" name="iscorrect" db:column="iscorrect" type="integer" key="false"/>
   </Entity>
-  <Relationship id="rel6" name="QuestionTaken_Question" sourceEntity="ent4" targetEntity="ent3" db:database="db2" db:table="questiontaken_2">
-    <RelationshipRole1 id="rel6#role11" name="QuestionTakenToQuestion" maxCard="1">
-      <db:JoinColumn attribute="ent4#att4" name="oid"/>
+  <Relationship id="rel8" name="QuestiontakenEnrolledcourse" db:database="db2" db:table="questiontaken" sourceEntity="ent7" targetEntity="ent5">
+    <RelationshipRole1 id="rel8#role15" name="QuestiontakenToEnrolledcourse" maxCard="1">
+      <db:JoinColumn attribute="ent7#att27" name="oid"/>
     </RelationshipRole1>
-    <RelationshipRole2 id="rel6#role12" name="QuestionToQuestionTaken" maxCard="N">
-      <db:JoinColumn attribute="ent3#att3" name="question_questionid"/>
+    <RelationshipRole2 id="rel8#role16" name="EnrolledcourseToQuestiontaken" maxCard="N">
+      <db:JoinColumn attribute="ent5#att15" name="enrolledcourse_enrolledcoursei"/>
     </RelationshipRole2>
   </Relationship>
-  <Relationship id="rel7" name="EnrolledCourse_QuestionTaken" sourceEntity="ent5" targetEntity="ent4" db:database="db2" db:table="questiontaken_2">
-    <RelationshipRole1 id="rel7#role13" name="EnrolledCourseToQuestionTaken" maxCard="N">
-      <db:JoinColumn attribute="ent5#att15" name="enrolledcourse_enrolledcoursei"/>
+  <Relationship id="rel10" name="QuestiontakenQuestion" db:database="db2" db:table="questiontaken" sourceEntity="ent7" targetEntity="ent3">
+    <RelationshipRole1 id="rel10#role19" name="QuestiontakenToQuestion" maxCard="1">
+      <db:JoinColumn attribute="ent7#att27" name="oid"/>
     </RelationshipRole1>
-    <RelationshipRole2 id="rel7#role14" name="QuestionTakenToEnrolledCourse" maxCard="1">
-      <db:JoinColumn attribute="ent4#att4" name="oid"/>
+    <RelationshipRole2 id="rel10#role20" name="QuestionToQuestiontaken" maxCard="N">
+      <db:JoinColumn attribute="ent3#att3" name="question_questionid"/>
     </RelationshipRole2>
   </Relationship>
 </DataModel>
