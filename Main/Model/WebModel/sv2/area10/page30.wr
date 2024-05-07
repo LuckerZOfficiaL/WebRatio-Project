@@ -11,14 +11,12 @@
     <PowerIndexUnit gr:x="0" gr:y="60" id="sv2#area10#page30#pwu7" name="Resulting Courses" sortable="true" checkable="false" useCountQuery="false" entity="ent1" displayAttributes="ent1#att1 ent1#att11 ent1#att12" linkOrder="sv2#area10#page30#pwu7#ln74 sv2#area10#page30#pwu7#ln20">
       <SortAttribute attribute="ent1#att1" order="descending"/>
       <Selector id="sv2#area10#page30#pwu7#su31" defaultPolicy="fill" booleanOperator="or">
-        <AttributesCondition id="sv2#area10#page30#pwu7#su31#acond1" name="AttCondition1" predicate="contains" booleanOperator="or" implied="true" attributes="ent1#att1" ignoreCase="true"/>
+        <AttributesCondition id="sv2#area10#page30#pwu7#su31#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="true" attributes="ent1#att1" ignoreCase="true"/>
         <AttributesCondition id="sv2#area10#page30#pwu7#su31#acond2" name="AttCondition2" predicate="contains" booleanOperator="or" implied="true" attributes="ent1#att11" ignoreCase="true"/>
         <AttributesCondition id="sv2#area10#page30#pwu7#su31#acond3" name="AttCondition3" predicate="contains" booleanOperator="or" implied="true" attributes="ent1#att12" ignoreCase="true"/>
       </Selector>
       <Link id="sv2#area10#page30#pwu7#ln74" name="Enroll" to="sv2#area10#cru1" type="normal" validate="true">
         <LinkParameter id="sv2#area10#page30#pwu7#ln74#par99" name="courseID_Course.courseID(EnrolledCourseToCourse)" source="data[].ent1#att1" target="sv2#area10#cru1.rel11#role21.ent1#att1"/>
-        <LinkParameter id="sv2#area10#page30#pwu7#ln74#par100" name="name_Course.name(EnrolledCourseToCourse)" source="data[].ent1#att11" target="sv2#area10#cru1.rel11#role21.ent1#att11"/>
-        <LinkParameter id="sv2#area10#page30#pwu7#ln74#par101" name="0_grade" sourceValue="0" target="sv2#area10#cru1.ent5#att16"/>
       </Link>
       <Link id="sv2#area10#page30#pwu7#ln20" name="Details" to="sv2#area10#page30#dau7" type="normal" validate="true">
         <LinkParameter id="sv2#area10#page30#pwu7#ln20#par5" name="courseID_KeyCondition5 [courseID]" source="data[].ent1#att1" target="sv2#area10#page30#dau7#su11#kcond5.ent1#att1"/>

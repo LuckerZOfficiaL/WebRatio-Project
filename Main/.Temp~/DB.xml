@@ -43,6 +43,18 @@
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="correctanswer" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="lecture_lectureid" primaryKey="false" notNull="false"/>
   </Table>
+  <Table schema="" ignoreIndexes="false" name="questiontaken" type="TABLE" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="iscorrect" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="question_questionid" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourse_enrolledcoursei" primaryKey="false" notNull="false"/>
+  </Table>
+  <Table schema="" ignoreIndexes="false" name="questiontaken_2" type="TABLE" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="iscorrect" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="question_questionid" primaryKey="false" notNull="false"/>
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourse_enrolledcoursei" primaryKey="false" notNull="false"/>
+  </Table>
   <Table schema="" ignoreIndexes="false" name="user" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="userid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="username" primaryKey="false" notNull="false"/>
@@ -55,5 +67,20 @@
   <Table schema="" ignoreIndexes="false" name="user_group" type="TABLE" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_userid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_groupid" primaryKey="true" notNull="true"/>
+  </Table>
+  <Table schema="" ignoreIndexes="false" name="enrolledcourse_grade_view" type="VIEW" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourseid" primaryKey="false" notNull="true"/>
+    <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="24" decimalDigits="4" webMLType="decimal" name="der_attr" primaryKey="false" notNull="false"/>
+    <SQLDefinition>select `al1`.`enrolledcourseid` AS `enrolledcourseid`,(`al2`.`der_attr` / `al3`.`der_attr`) AS `der_attr` from ((`enrolledcourse` `al1` left join `enrolledcourse_numquestions_vi` `al2` on((`al1`.`enrolledcourseid` = `al2`.`enrolledcourseid`))) left join `enrolledcourse_numcorrectanswe` `al3` on((`al1`.`enrolledcourseid` = `al3`.`enrolledcourseid`)))</SQLDefinition>
+  </Table>
+  <Table schema="" ignoreIndexes="false" name="enrolledcourse_numcorrectanswe" type="VIEW" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourseid" primaryKey="false" notNull="true"/>
+    <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="32" decimalDigits="0" webMLType="decimal" name="der_attr" primaryKey="false" notNull="false"/>
+    <SQLDefinition>select `al1`.`enrolledcourseid` AS `enrolledcourseid`,sum(`al2`.`iscorrect`) AS `der_attr` from (`enrolledcourse` `al1` left join `questiontaken_2` `al2` on((`al1`.`enrolledcourseid` = `al2`.`enrolledcourse_enrolledcoursei`))) group by `al1`.`enrolledcourseid`</SQLDefinition>
+  </Table>
+  <Table schema="" ignoreIndexes="false" name="enrolledcourse_numquestions_vi" type="VIEW" refreshed="true">
+    <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourseid" primaryKey="false" notNull="true"/>
+    <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="19" decimalDigits="0" webMLType="decimal" name="der_attr" primaryKey="false" notNull="true"/>
+    <SQLDefinition>select `al1`.`enrolledcourseid` AS `enrolledcourseid`,count(distinct `al3`.`questionid`) AS `der_attr` from ((`enrolledcourse` `al1` left join `lecture` `al2` on((`al1`.`course_courseid` = `al2`.`course_courseid`))) left join `question` `al3` on((`al2`.`lectureid` = `al3`.`lecture_lectureid`))) group by `al1`.`enrolledcourseid`</SQLDefinition>
   </Table>
 </DBMetaData>

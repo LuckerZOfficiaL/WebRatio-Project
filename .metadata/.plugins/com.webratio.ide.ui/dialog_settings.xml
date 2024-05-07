@@ -21,9 +21,9 @@
 	</section>
 	<section name="DialogBounds_CouplingDialog">
 		<item value="1322" key="DIALOG_WIDTH"/>
-		<item value="386" key="DIALOG_Y_ORIGIN"/>
+		<item value="539" key="DIALOG_Y_ORIGIN"/>
 		<item value="1147" key="DIALOG_HEIGHT"/>
-		<item value="751" key="DIALOG_X_ORIGIN"/>
+		<item value="874" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="DatabaseMissingJarsDialog.FileDialog">

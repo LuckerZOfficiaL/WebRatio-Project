@@ -1,0 +1,151 @@
+
+<Warnings>
+
+<Warning xpath="id('sv2#area10#page30#pwu7#ln20#par8')" rootXPath="id('sv2')" error="true" label="name_KeyCondition5 [name]" key="UNKNOWN_INPUT_OUTPUT_PARAMETER">
+            <Message>The parameter binding 'name_KeyCondition5 [name]' references an input parameter 'sv2#area10#page30#dau7#su11#kcond5.ent1#att11' not provided by the flow's target</Message>
+            <Resolution 
+                class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter</Resolution>
+          </Warning>
+        <Warning xpath="id('sv2#area10#page30#dau7#ln22#par33')" rootXPath="id('sv2')" error="true" label="name_RoleCondition3 [name]" key="UNKNOWN_INPUT_OUTPUT_PARAMETER">
+            <Message>The parameter binding 'name_RoleCondition3 [name]' references an input parameter 'sv2#area10#page3#pwu6#su20#rcond3.ent1#att11' not provided by the flow's target</Message>
+            <Resolution 
+                class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter</Resolution>
+          </Warning>
+        <Warning xpath="id('sv2#area11#page36#dau20#ln29#par56')" rootXPath="id('sv2')" key="UNUSED_PASSING_PARAMETER" label="correctAnswer_PASSING">
+          <Message>The passing parameter 'correctAnswer_PASSING' is declared but never used</Message>
+          <Resolution 
+	          class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv2#area11#page36#dau20#ln29#par56'</Resolution>
+        </Warning>
+      <Warning xpath="id('sv2#area11#page36#enu14#ln12#par57')" rootXPath="id('sv2')" key="UNUSED_PASSING_PARAMETER" label="Answer[choice]_PASSING">
+          <Message>The passing parameter 'Answer[choice]_PASSING' is declared but never used</Message>
+          <Resolution 
+	          class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'sv2#area11#page36#enu14#ln12#par57'</Resolution>
+        </Warning>
+      <Warning xpath="id('sv2#area11#page36#enu14#ln12#par59')" rootXPath="id('sv2')" error="true" label="XML_Form_XML_Form" key="UNKNOWN_INPUT_OUTPUT_PARAMETER">
+            <Message>The parameter binding 'XML_Form_XML_Form' references an input parameter 'sv2#scu1.XML_Form' not provided by the flow's target</Message>
+            <Resolution 
+                class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter</Resolution>
+          </Warning>
+        <Warning xpath="id('sv2#inn2#oln19')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow19">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow19'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('sv2#inn2#kln5')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow5">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow5'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    	<Warning xpath="id('sv2#scu1')" rootXPath="id('sv2')" error="false" label="Check Answer" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Check Answer'</Message>
+        </Warning>
+    
+ 
+
+  <Warning error="false" xpath="id('sv2#switch3')" rootXPath="id(&apos;sv2&apos;)" key="MISSING_NO_CODE_OK_LINK" label="Fork">
+    <Message>No default OK flow is specified for the component &apos;Fork&apos;</Message>
+  </Warning>  <Warning xpath="id('sv2#seu2')" rootXPath="id('sv2')" error="false" label="Select" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Select'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#seu2')" rootXPath="id('sv2')" error="false" label="Select" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Select'</Message>
+        </Warning>
+    
+ <Warning xpath="id('sv2#cru7')" rootXPath="id('sv2')" error="false" label="Create QuestionTaken" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Create QuestionTaken'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#cru7')" rootXPath="id('sv2')" error="false" label="Create QuestionTaken" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Create QuestionTaken'</Message>
+        </Warning>
+    
+ <Warning xpath="id('sv2#mfu2')" rootXPath="id('sv2')" error="false" label="Update QuestionTaken" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Update QuestionTaken'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#mfu2')" rootXPath="id('sv2')" error="false" label="Update QuestionTaken" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Update QuestionTaken'</Message>
+        </Warning>
+    <Warning xpath="id('sv2#mfu2')" rootXPath="id('sv2')" key="MISSING_MANDATORY_INPUT_PARAMETER" label="Update QuestionTaken">
+        <Message>The mandatory input parameter 'KeyCondition3 [oid]' is not provided to the component 'Update QuestionTaken'</Message>
+      </Warning>
+ <Warning xpath="id('sv2#area10#miu2')" rootXPath="id('sv2')" error="false" label="sv2#area10#miu2" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'sv2#area10#miu2'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#area10#miu2')" rootXPath="id('sv2')" error="false" label="sv2#area10#miu2" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'sv2#area10#miu2'</Message>
+        </Warning>
+     <Warning xpath="id('sv2#area5#dlu3')" rootXPath="id('sv2')" error="false" label="Unenroll" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Unenroll'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#area5#dlu3')" rootXPath="id('sv2')" error="false" label="Unenroll" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Unenroll'</Message>
+        </Warning>
+     <Warning xpath="id('sv2#area5#miu1')" rootXPath="id('sv2')" error="false" label="sv2#area5#miu1" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'sv2#area5#miu1'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#area5#miu1')" rootXPath="id('sv2')" error="false" label="sv2#area5#miu1" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'sv2#area5#miu1'</Message>
+        </Warning>
+     <Warning xpath="id('sv2#area9#miu6')" rootXPath="id('sv2')" error="false" label="sv2#area9#miu6" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'sv2#area9#miu6'</Message>
+        </Warning>
+    	<Warning xpath="id('sv2#area9#miu6')" rootXPath="id('sv2')" error="false" label="sv2#area9#miu6" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'sv2#area9#miu6'</Message>
+        </Warning>
+    
+
+
+
+  <Warning error="false" xpath="id('sv2#area10#page3#pwu6')" rootXPath="id(&apos;sv2&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lecture List">
+    <Message>Sorting attribute are unspecified for the component &apos;Lecture List&apos;</Message>
+  </Warning> 
+
+
+
+
+  <Warning error="false" xpath="id('sv2#area11#page35#pwu20')" rootXPath="id(&apos;sv2&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Question List">
+    <Message>Sorting attribute are unspecified for the component &apos;Question List&apos;</Message>
+  </Warning> 
+
+  <Warning error="false" xpath="id('sv2#area11#page34#pwu19')" rootXPath="id(&apos;sv2&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Lecture List">
+    <Message>Sorting attribute are unspecified for the component &apos;Lecture List&apos;</Message>
+  </Warning> 
+
+
+
+  <Warning error="false" xpath="id('sv2#area5#page5#pwu1')" rootXPath="id(&apos;sv2&apos;)" key="UNSPECIFIED_SORTING_ATTRIBUTE" label="Enrolled Courses">
+    <Message>Sorting attribute are unspecified for the component &apos;Enrolled Courses&apos;</Message>
+  </Warning> 
+
+
+
+          <Warning xpath="id('sv2#area9#page24#dau15')" rootXPath="id('sv2')" label="User Info">
+            <Message>Security Warning: the component 'User Info' shows the password attributes</Message>
+            <Resolution class="com.webratio.ide.ui.resources.RemoveShownPasswordAttributesResolutionGenerator">
+                Remove the attribute from the display attributes</Resolution>
+          </Warning>
+        
+          <Warning xpath="id('sv2#area5#page5#dau8')" rootXPath="id('sv2')" label="User Info">
+            <Message>Security Warning: the component 'User Info' shows the password attributes</Message>
+            <Resolution class="com.webratio.ide.ui.resources.RemoveShownPasswordAttributesResolutionGenerator">
+                Remove the attribute from the display attributes</Resolution>
+          </Warning>
+        <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject">
+	      <Message>Security Warning: the Admin Area generation is enabled</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="adminArea"
+	            value="">Remove the 'Admin Area' property</Resolution>
+	    </Warning>
+    <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject" tab="security">
+	      <Message>Security Warning: the project contains a protected resource but the 'Protect URL' property is missing</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="protectURL"
+	            value="true">Set the 'Protect URL' property to 'true'</Resolution>
+	    </Warning>
+    
+</Warnings>

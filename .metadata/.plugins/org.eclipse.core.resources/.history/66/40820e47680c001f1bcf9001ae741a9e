@@ -1,0 +1,40 @@
+
+<Warnings>
+<Warning xpath="id('password')" rootXPath="/WebProject/DataModel" label="password" tab="mapping">
+	            <Message>Security Warning: the 'password' attribute is not encrypted</Message>
+	            <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	                        attribute="db:cryptAlgorithm" value="com.webratio.rtx.core.PBKDF2WithHmacSHA1CryptImplementation">Set the 'Crypt Algorithm' property to 'PBKDF2WithHmacSHA1'</Resolution>
+	         </Warning><Warning xpath="id('db2')" rootXPath="/WebProject/DataModel" key="DISCONNECTED_DATABASE" tab="mapping" label="DB">
+        <Message>The database 'DB' is not connected: unable to perform a deep analysis</Message>
+        <Resolution class="com.webratio.ide.ui.resources.RefreshDatabaseResolutionGenerator">Refresh the database</Resolution>
+      </Warning>
+    <Warning xpath="id('ent5#att16')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="grade" key="UNSPECIFIED_MAPPING_COLUMN">
+	        <Message>The mapping column of the attribute 'grade' is unspecified</Message>
+	      </Warning><Warning xpath="id('ent5#att21')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="numQuestions" key="UNSPECIFIED_MAPPING_COLUMN">
+	        <Message>The mapping column of the attribute 'numQuestions' is unspecified</Message>
+	      </Warning><Warning xpath="id('ent5#att25')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="attribute25" key="UNSPECIFIED_MAPPING_COLUMN">
+	        <Message>The mapping column of the attribute 'attribute25' is unspecified</Message>
+	      </Warning>	<Warning xpath="id('ent4')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="QuestionTaken">
+              <Message>The mapping database of the entity 'QuestionTaken' is unspecified</Message>
+            </Warning>
+        <Warning xpath="id('rel6')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="QuestionTaken_Question">
+              <Message>The mapping database of the relationship 'QuestionTaken_Question' is unspecified</Message>
+            </Warning><Warning xpath="id('rel7')" rootXPath="/WebProject/DataModel" error="true" tab="mapping" label="EnrolledCourse_QuestionTaken">
+              <Message>The mapping database of the relationship 'EnrolledCourse_QuestionTaken' is unspecified</Message>
+            </Warning>
+<Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject">
+	      <Message>Security Warning: the Admin Area generation is enabled</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="adminArea"
+	            value="">Remove the 'Admin Area' property</Resolution>
+	    </Warning>
+    <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject" tab="security">
+	      <Message>Security Warning: the project contains a protected resource but the 'Protect URL' property is missing</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="protectURL"
+	            value="true">Set the 'Protect URL' property to 'true'</Resolution>
+	    </Warning>
+    
+</Warnings>

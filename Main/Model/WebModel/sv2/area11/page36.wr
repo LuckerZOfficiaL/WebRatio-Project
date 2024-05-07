@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="530" gr:y="10" id="sv2#area11#page36" name="Question Page">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="810" gr:y="10" id="sv2#area11#page36" name="Question Page">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page36#dau20" name="Question" entity="ent3" displayAttributes="ent3#att5 ent3#att6 ent3#att7 ent3#att8 ent3#att9">
       <Selector id="sv2#area11#page36#dau20#su47" defaultPolicy="fill" booleanOperator="and">
@@ -11,6 +11,12 @@
       <Link id="sv2#area11#page36#dau20#ln42" name="Flow42" to="sv2#seu2" type="transport" validate="true">
         <LinkParameter id="sv2#area11#page36#dau20#ln42#par104" name="questionID_Question Condition [questionID]" source="data.ent3#att3" target="sv2#seu2#su5#rcond9.ent3#att3"/>
       </Link>
+      <Link id="sv2#area11#page36#dau20#ln31" name="Flow31" to="sv2#cru7" type="transport" validate="true">
+        <LinkParameter id="sv2#area11#page36#dau20#ln31#par39" name="questionID_Question.questionID(QuestionTakenToQuestion)" source="data.ent3#att3" target="sv2#cru7.rel6#role11.ent3#att3"/>
+      </Link>
+      <Link id="sv2#area11#page36#dau20#ln34" name="Flow34" to="sv2#mfu2" type="transport" validate="true">
+        <LinkParameter id="sv2#area11#page36#dau20#ln34#par40" name="questionID_Question.questionID(QuestionTakenToQuestion)" source="data.ent3#att3" target="sv2#mfu2.rel6#role11.ent3#att3"/>
+      </Link>
     </DataUnit>
     <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">
       <SelectionField id="sv2#area11#page36#enu14#sfld8" name="Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv2#area11#page36#enu14#sfld8#slot15">
@@ -19,7 +25,6 @@
       <Link id="sv2#area11#page36#enu14#ln12" name="Check" to="sv2#scu1" type="normal" validate="true">
         <LinkParameter id="sv2#area11#page36#enu14#ln12#par57" name="Answer[choice]_PASSING" source="sv2#area11#page36#enu14#sfld8#slot15" passing="true"/>
         <LinkParameter id="sv2#area11#page36#enu14#ln12#par58" name="Answerchoice_Answerchoice" source="sv2#area11#page36#enu14#sfld8#slot15" target="sv2#scu1.Answerchoice"/>
-        <LinkParameter id="sv2#area11#page36#enu14#ln12#par59" name="XML_Form_XML_Form" source="xmlForm" target="sv2#scu1.XML_Form"/>
       </Link>
     </EntryUnit>
   </ContentUnits>

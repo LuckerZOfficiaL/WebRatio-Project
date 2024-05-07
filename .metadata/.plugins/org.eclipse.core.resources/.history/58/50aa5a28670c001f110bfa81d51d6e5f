@@ -1,0 +1,95 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area5#page5" name="Enrolled Courses Page" landmark="false">
+  <ContentUnits>
+    <PowerIndexUnit id="sv2#area5#page5#pwu1" entity="ent5" displayAttributes="ent5#att15 ent5#att23 ent5#att16 ent5#att21 ent5#att25" sortable="true" checkable="false" useCountQuery="false" gr:x="0" gr:y="135" name="Enrolled Courses" linkOrder="sv2#area5#page5#pwu1#ln6 sv2#area5#page5#pwu1#ln69">
+      <Selector id="sv2#area5#page5#pwu1#su2" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#page5#pwu1#su2#rcond1" role="rel2#role3" predicate="in" implied="false" name="User ID Condition"/>
+      </Selector>
+      <Link id="sv2#area5#page5#pwu1#ln6" name="Unenroll" to="sv2#area5#dlu3" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page5#pwu1#ln6#par27" name="enrolledCourseID_KeyCondition1 [enrolledCourseID]" source="data[].ent5#att15" target="sv2#area5#dlu3#su1#kcond1.ent5#att15"/>
+      </Link>
+      <Link id="sv2#area5#page5#pwu1#ln69" name="Courses Page" to="sv2#area11#page33#dau18" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page5#pwu1#ln69#par121" name="EnrolledCourseToCourse.courseID_KeyCondition5 [courseID]" source="data[].rel11#role21_ent1#att1" target="sv2#area11#page33#dau18#su43#kcond27.ent1#att1"/>
+        <LinkParameter id="sv2#area5#page5#pwu1#ln69#par122" name="EnrolledCourseToCourse.name_KeyCondition5 [name]" source="data[].rel11#role21_ent1#att11" target="sv2#area11#page33#dau18#su43#kcond27.ent1#att11"/>
+      </Link>
+    </PowerIndexUnit>
+    <GetUnit gr:x="20" gr:y="5" id="sv2#area5#page5#gtu2" name="Get User" contextParameters="UserCtxParam">
+      <Link id="sv2#area5#page5#gtu2#ln8" name="Flow8" to="sv2#area5#page5#pwu1" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page5#gtu2#ln8#par19" name="UserCtxParam.userID_User ID Condition [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#area5#page5#pwu1#su2#rcond1.userOID"/>
+      </Link>
+      <Link id="sv2#area5#page5#gtu2#ln27" name="Flow27" to="sv2#area5#page5#dau8" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page5#gtu2#ln27#par68" name="UserCtxParam.userID_KeyCondition8 [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#area5#page5#dau8#su10#kcond8.userOID"/>
+      </Link>
+      <Link id="sv2#area5#page5#gtu2#ln41" name="Flow41" to="sv2#seu2" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page5#gtu2#ln41#par103" name="UserCtxParam.userID_RoleCondition6 [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#seu2#su5#rcond6.userOID"/>
+      </Link>
+    </GetUnit>
+    <DataUnit gr:x="165" gr:y="0" id="sv2#area5#page5#dau8" name="User Info" entity="User" displayAll="true">
+      <Selector id="sv2#area5#page5#dau8#su10" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area5#page5#dau8#su10#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page5#pwu1">
+          <layout:Link link="sv2#area5#page5#pwu1#ln6"/>
+          <layout:Link link="sv2#area5#page5#pwu1#ln69"/>
+          <layout:Attribute attribute="ent5#att15"/>
+          <layout:Attribute attribute="ent5#att23"/>
+          <layout:Attribute attribute="ent5#att16"/>
+          <layout:Attribute attribute="ent5#att21"/>
+          <layout:Attribute attribute="ent5#att25"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area5#page5#dau8">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att17"/>
+          <layout:Attribute attribute="User#att22"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv2#area5#page5#ln14" name="Log out" to="sv2#area5#miu1" type="normal" automaticCoupling="true" validate="true"/>
+</Page>

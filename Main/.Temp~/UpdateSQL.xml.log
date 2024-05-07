@@ -1,52 +1,35 @@
-[06 May 2024 21:34:55] DEBUG Executing SQL script
-[06 May 2024 21:34:55] INFO ================================================================================
-[06 May 2024 21:34:55] INFO onError= 'stop'
-[06 May 2024 21:34:55] INFO autoCommit= 'false'
-[06 May 2024 21:34:55] INFO username= 'root'
-[06 May 2024 21:34:55] INFO outputPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml'
-[06 May 2024 21:34:55] INFO outputLogPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml.log'
-[06 May 2024 21:34:55] INFO encoding= ''
-[06 May 2024 21:34:55] INFO driverClass= 'com.mysql.jdbc.Driver'
-[06 May 2024 21:34:55] INFO sqlScript= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql'
-[06 May 2024 21:34:55] INFO eventSocketPort= '49407'
-[06 May 2024 21:34:55] INFO statementSeparator= ';'
-[06 May 2024 21:34:55] INFO derby.system.home= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\.metadata\.plugins\com.webratio.commons.db\derby'
-[06 May 2024 21:34:55] INFO password= '585858'
-[06 May 2024 21:34:55] INFO url= 'jdbc:mysql://localhost:3306/db2'
-[06 May 2024 21:34:55] INFO ================================================================================
-[06 May 2024 21:34:55] INFO Connecting to the Database...
-[06 May 2024 21:34:55] INFO Database connection estabilished
-[06 May 2024 21:34:55] INFO transaction isolation: 4
-[06 May 2024 21:34:55] DEBUG ================================================================================
-[06 May 2024 21:34:55] DEBUG Executing SQL script file: E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql
-[06 May 2024 21:34:55] DEBUG Executing statement:  create table `group` ( `groupid`  integer  not null, `groupname`  varchar(255), primary key (`groupid`) )
-[06 May 2024 21:34:55] DEBUG Executing statement:    create table `module` ( `oid`  integer  not null, `moduleid`  varchar(255), `modulename`  varchar(255), primary key (`oid`) )
-[06 May 2024 21:34:56] DEBUG Executing statement:    create table `user` ( `userid`  integer  not null, `username`  varchar(255), `password`  varchar(255), `email`  varchar(255), `firstname`  varchar(255), `lastname`  varchar(255), primary key (`userid`) )
-[06 May 2024 21:34:56] DEBUG Executing statement:    create table `course` ( `courseid`  integer  not null, `name`  varchar(255), `topic`  varchar(255), primary key (`courseid`) )
-[06 May 2024 21:34:56] DEBUG Executing statement:    create table `question` ( `questionid`  integer  not null, `question`  varchar(255), `option1`  varchar(255), `option2`  varchar(255), `option3`  varchar(255), `option4`  varchar(255), `correctanswer`  integer, primary key (`questionid`) )
-[06 May 2024 21:34:56] DEBUG Executing statement:    create table `enrolledcourse` ( `enrolledcourseid`  integer  not null, `grade`  double precision, primary key (`enrolledcourseid`) )
-[06 May 2024 21:34:56] DEBUG Executing statement:    create table `lecture` ( `lectureid`  integer  not null, `title`  varchar(255), `content`  varchar(255), primary key (`lectureid`) )
-[06 May 2024 21:34:56] DEBUG Executing statement:    alter table `group`  add column  `module_oid`  integer
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `group`   add index fk_group_module (`module_oid`), add constraint fk_group_module foreign key (`module_oid`) references `module` (`oid`)
-[06 May 2024 21:34:56] DEBUG Executing statement:    create table `group_module` ( `group_groupid`  integer not null, `module_oid`  integer not null, primary key (`group_groupid`, `module_oid`) )
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_group (`group_groupid`), add constraint fk_group_module_group foreign key (`group_groupid`) references `group` (`groupid`)
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_module (`module_oid`), add constraint fk_group_module_module foreign key (`module_oid`) references `module` (`oid`)
-[06 May 2024 21:34:56] DEBUG Executing statement:    alter table `user`  add column  `group_groupid`  integer
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `user`   add index fk_user_group (`group_groupid`), add constraint fk_user_group foreign key (`group_groupid`) references `group` (`groupid`)
-[06 May 2024 21:34:56] DEBUG Executing statement:    create table `user_group` ( `user_userid`  integer not null, `group_groupid`  integer not null, primary key (`user_userid`, `group_groupid`) )
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_user (`user_userid`), add constraint fk_user_group_user foreign key (`user_userid`) references `user` (`userid`)
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_group (`group_groupid`), add constraint fk_user_group_group foreign key (`group_groupid`) references `group` (`groupid`)
-[06 May 2024 21:34:56] DEBUG Executing statement:    alter table `course`  add column  `user_userid`  integer
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `course`   add index fk_course_user (`user_userid`), add constraint fk_course_user foreign key (`user_userid`) references `user` (`userid`)
-[06 May 2024 21:34:56] DEBUG Executing statement:    alter table `enrolledcourse`  add column  `course_courseid`  integer
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `enrolledcourse`   add index fk_enrolledcourse_course (`course_courseid`), add constraint fk_enrolledcourse_course foreign key (`course_courseid`) references `course` (`courseid`)
-[06 May 2024 21:34:56] DEBUG Executing statement:    alter table `enrolledcourse`  add column  `user_userid`  integer
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `enrolledcourse`   add index fk_enrolledcourse_user (`user_userid`), add constraint fk_enrolledcourse_user foreign key (`user_userid`) references `user` (`userid`)
-[06 May 2024 21:34:56] DEBUG Executing statement:    alter table `lecture`  add column  `course_courseid`  integer
-[06 May 2024 21:34:56] DEBUG Executing statement:  alter table `lecture`   add index fk_lecture_course (`course_courseid`), add constraint fk_lecture_course foreign key (`course_courseid`) references `course` (`courseid`)
-[06 May 2024 21:34:57] DEBUG Executing statement:    alter table `question`  add column  `lecture_lectureid`  integer
-[06 May 2024 21:34:57] DEBUG Executing statement:  alter table `question`   add index fk_question_lecture (`lecture_lectureid`), add constraint fk_question_lecture foreign key (`lecture_lectureid`) references `lecture` (`lectureid`)
-[06 May 2024 21:34:57] DEBUG ================================================================================
-[06 May 2024 21:34:57] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[06 May 2024 21:34:57] INFO Database connection closed
-[06 May 2024 21:34:57] DEBUG Total time: 1606 milliseconds
+[07 May 2024 13:56:58] DEBUG Executing SQL script
+[07 May 2024 13:56:58] INFO ================================================================================
+[07 May 2024 13:56:58] INFO onError= 'stop'
+[07 May 2024 13:56:58] INFO autoCommit= 'false'
+[07 May 2024 13:56:58] INFO username= 'root'
+[07 May 2024 13:56:58] INFO outputPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml'
+[07 May 2024 13:56:58] INFO outputLogPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml.log'
+[07 May 2024 13:56:58] INFO encoding= ''
+[07 May 2024 13:56:58] INFO driverClass= 'com.mysql.jdbc.Driver'
+[07 May 2024 13:56:58] INFO sqlScript= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql'
+[07 May 2024 13:56:58] INFO eventSocketPort= '23879'
+[07 May 2024 13:56:58] INFO statementSeparator= ';'
+[07 May 2024 13:56:58] INFO derby.system.home= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\.metadata\.plugins\com.webratio.commons.db\derby'
+[07 May 2024 13:56:58] INFO password= '585858'
+[07 May 2024 13:56:58] INFO url= 'jdbc:mysql://localhost:3306/db2'
+[07 May 2024 13:56:58] INFO ================================================================================
+[07 May 2024 13:56:58] INFO Connecting to the Database...
+[07 May 2024 13:56:58] INFO Database connection estabilished
+[07 May 2024 13:56:58] INFO transaction isolation: 4
+[07 May 2024 13:56:58] DEBUG ================================================================================
+[07 May 2024 13:56:58] DEBUG Executing SQL script file: E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql
+[07 May 2024 13:56:58] DEBUG Executing statement:  create table `questiontaken_2` ( `oid`  integer  not null, `iscorrect`  integer, primary key (`oid`) )
+[07 May 2024 13:56:58] DEBUG Executing statement:    alter table `questiontaken_2`  add column  `question_questionid`  integer
+[07 May 2024 13:56:58] DEBUG Executing statement:  alter table `questiontaken_2`   add index fk_questiontaken_2_question (`question_questionid`), add constraint fk_questiontaken_2_question foreign key (`question_questionid`) references `question` (`questionid`)
+[07 May 2024 13:56:58] DEBUG Executing statement:    alter table `questiontaken_2`  add column  `enrolledcourse_enrolledcoursei`  integer
+[07 May 2024 13:56:58] DEBUG Executing statement:  alter table `questiontaken_2`   add index fk_questiontaken_2_enrolledcou (`enrolledcourse_enrolledcoursei`), add constraint fk_questiontaken_2_enrolledcou foreign key (`enrolledcourse_enrolledcoursei`) references `enrolledcourse` (`enrolledcourseid`)
+[07 May 2024 13:56:58] DEBUG Executing statement:    drop view `enrolledcourse_numquestions_vi`
+[07 May 2024 13:56:58] DEBUG Executing statement:  create view `enrolledcourse_numquestions_vi` as select AL1.`enrolledcourseid` as `enrolledcourseid`, count(distinct AL3.`questionid`) as `der_attr` from  `enrolledcourse` AL1 left outer join `lecture` AL2 on AL1.`course_courseid`=AL2.`course_courseid` left outer join `question` AL3 on AL2.`lectureid`=AL3.`lecture_lectureid` group by AL1.`enrolledcourseid`
+[07 May 2024 13:56:58] DEBUG Executing statement:    drop view `enrolledcourse_numcorrectanswe`
+[07 May 2024 13:56:58] DEBUG Executing statement:  create view `enrolledcourse_numcorrectanswe` as select AL1.`enrolledcourseid` as `enrolledcourseid`, sum(AL2.`iscorrect`) as `der_attr` from  `enrolledcourse` AL1 left outer join `questiontaken_2` AL2 on AL1.`enrolledcourseid`=AL2.`enrolledcourse_enrolledcoursei` group by AL1.`enrolledcourseid`
+[07 May 2024 13:56:58] DEBUG Executing statement:    create view `enrolledcourse_grade_view` as select AL1.`enrolledcourseid` as `enrolledcourseid`, AL2.`der_attr` / AL3.`der_attr` as `der_attr` from  `enrolledcourse` AL1 left outer join `enrolledcourse_numquestions_vi` AL2 on AL1.`enrolledcourseid`=AL2.`enrolledcourseid` left outer join `enrolledcourse_numcorrectanswe` AL3 on AL1.`enrolledcourseid`=AL3.`enrolledcourseid`
+[07 May 2024 13:56:58] DEBUG ================================================================================
+[07 May 2024 13:56:58] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[07 May 2024 13:56:58] INFO Database connection closed
+[07 May 2024 13:56:58] DEBUG Total time: 668 milliseconds
