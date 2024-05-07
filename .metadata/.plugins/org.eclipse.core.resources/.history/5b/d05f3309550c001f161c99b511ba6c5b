@@ -1,0 +1,40 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Student" landmarks="sv2#area5 sv2#area9 sv2#area10" protected="true" homePage="sv2#area9#page23">
+  <OperationUnits>
+    <IsNotNullUnit gr:x="950" gr:y="950" id="sv2#inn1" name="Is Not Null1" emptyStringAsNull="true">
+      <OKLink id="sv2#inn1#oln3" name="OKFlow3" to="sv2#page28#mssu18">
+        <LinkParameter id="sv2#inn1#oln3#par46" name="Answer correct!_Shown Messages" sourceValue="Answer correct!" target="sv2#page28#mssu18.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv2#inn1#kln1" name="KOFlow1" to="sv2#page29#mssu19">
+        <LinkParameter id="sv2#inn1#kln1#par47" name="Answer incorrect!_Shown Messages" sourceValue="Answer incorrect!" target="sv2#page29#mssu19.shownMessages"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <SelectorUnit gr:x="870" gr:y="765" id="sv2#seu5" name="Question Selector" entity="ent3">
+      <Selector id="sv2#seu5#su3" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv2#seu5#su3#acond4" name="AttCondition4" predicate="eq" booleanOperator="or" implied="false" attributes="ent3#att10" ignoreCase="true"/>
+        <KeyCondition id="sv2#seu5#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv2#seu5#oln4" name="OKFlow4" to="sv2#inn1">
+        <LinkParameter id="sv2#seu5#oln4#par40" name="questionID_Input" source="ent3#att3Array" target="sv2#inn1.isnotnull"/>
+      </OKLink>
+    </SelectorUnit>
+    <ScriptUnit gr:x="995" gr:y="575" id="sv2#scu1" name="Check Answer" linkOrder="sv2#scu1#ln3">
+      <ScriptUnitText xml:space="preserve">#input Answerchoice
+#input XML_Form
+#input correctAnswer
+#input Data_Size
+#input option1
+#input option2
+#input option3
+#input option4
+#input question
+#input questionID
+#input QuestionToLecture_lectureID
+
+Result = correctAnswer == Answerchoice
+#output Result</ScriptUnitText>
+      <Link id="sv2#scu1#ln3" name="Flow3" to="sv2#page28#mssu18" type="transport" validate="true">
+        <LinkParameter id="sv2#scu1#ln3#par82" name="Result_Shown Messages" source="result" target="sv2#page28#mssu18.shownMessages"/>
+      </Link>
+    </ScriptUnit>
+  </OperationUnits>
+</SiteView>

@@ -7,6 +7,14 @@
       <Link id="sv2#area11#page36#dau20#ln29" name="Flow29" to="sv2#scu1" type="transport" validate="true">
         <LinkParameter id="sv2#area11#page36#dau20#ln29#par56" name="correctAnswer_PASSING" source="data.ent3#att10" passing="true"/>
         <LinkParameter id="sv2#area11#page36#dau20#ln29#par60" name="correctAnswer_correctAnswer" source="data.ent3#att10" target="sv2#scu1.correctAnswer"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par61" name="Data_Size_Data_Size" source="dataSize" target="sv2#scu1.Data_Size"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par71" name="option1_option1" source="data.ent3#att6" target="sv2#scu1.option1"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par74" name="option2_option2" source="data.ent3#att7" target="sv2#scu1.option2"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par75" name="option3_option3" source="data.ent3#att8" target="sv2#scu1.option3"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par76" name="option4_option4" source="data.ent3#att9" target="sv2#scu1.option4"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par77" name="question_question" source="data.ent3#att5" target="sv2#scu1.question"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par79" name="questionID_questionID" source="data.ent3#att3" target="sv2#scu1.questionID"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par81" name="QuestionToLecture_lectureID_QuestionToLecture_lectureID" source="data.rel9#role18_ent6#att18" target="sv2#scu1.QuestionToLecture_lectureID"/>
       </Link>
     </DataUnit>
     <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">
