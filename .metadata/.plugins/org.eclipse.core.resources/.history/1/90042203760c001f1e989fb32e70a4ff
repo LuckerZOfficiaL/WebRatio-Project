@@ -1,0 +1,54 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#page9" name="Result" gr:x="1615" gr:y="890">
+  <ContentUnits>
+    <MultiMessageUnit id="sv2#page9#mssu1" name="Correct" gr:x="0" gr:y="0" linkOrder="sv2#page9#mssu1#ln49">
+      <Message xml:space="preserve">Answer correct!</Message>
+      <Link id="sv2#page9#mssu1#ln49" name="Save" to="sv2#cru7" type="normal" validate="true">
+        <LinkParameter id="sv2#page9#mssu1#ln49#par79" name="1_isCorrect" sourceValue="1" target="sv2#cru7.ent4#att20"/>
+      </Link>
+    </MultiMessageUnit>
+    <MultiMessageUnit gr:x="0" gr:y="115" id="sv2#page9#mssu3" name="Incorrect" linkOrder="sv2#page9#mssu3#ln55">
+      <Message xml:space="preserve">Answer incorrect!</Message>
+      <Link id="sv2#page9#mssu3#ln55" name="Save" to="sv2#cru7" type="normal" validate="true">
+        <LinkParameter id="sv2#page9#mssu3#ln55#par81" name="0_isCorrect" sourceValue="0" target="sv2#cru7.ent4#att20"/>
+      </Link>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page9#mssu1">
+          <layout:Link link="sv2#page9#mssu1#ln49"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page9#mssu3">
+          <layout:Link link="sv2#page9#mssu3#ln55"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
