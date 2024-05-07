@@ -1,8 +1,11 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#page9" name="Correct Message" gr:x="1615" gr:y="885">
   <ContentUnits>
-    <MultiMessageUnit id="sv2#page9#mssu1" name="Correct" gr:x="0" gr:y="0" linkOrder="sv2#page9#mssu1#ln49">
+    <MultiMessageUnit id="sv2#page9#mssu1" name="Correct" gr:x="0" gr:y="0" linkOrder="sv2#page9#mssu1#ln49 sv2#page9#mssu1#ln62">
       <Message xml:space="preserve">Answer correct!</Message>
-      <Link id="sv2#page9#mssu1#ln49" name="Save" to="sv2#seu2" type="normal" validate="true"/>
+      <Link id="sv2#page9#mssu1#ln49" name="Save" to="sv2#cru7" type="normal" validate="true">
+        <LinkParameter id="sv2#page9#mssu1#ln49#par79" name="1_isCorrect" sourceValue="1" target="sv2#cru7.ent4#att20"/>
+      </Link>
+      <Link id="sv2#page9#mssu1#ln62" name="Update" to="sv2#mfu2" automaticCoupling="true" type="normal" validate="true"/>
     </MultiMessageUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
@@ -10,6 +13,7 @@
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#page9#mssu1">
           <layout:Link link="sv2#page9#mssu1#ln49"/>
+          <layout:Link link="sv2#page9#mssu1#ln62"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

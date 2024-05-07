@@ -13,13 +13,9 @@
       </Link>
       <Link id="sv2#area11#page36#dau20#ln31" name="Flow31" to="sv2#cru7" type="transport" validate="true">
         <LinkParameter id="sv2#area11#page36#dau20#ln31#par39" name="questionID_Question.questionID(QuestionTakenToQuestion)" source="data.ent3#att3" target="sv2#cru7.rel6#role11.ent3#att3"/>
-        <LinkParameter id="sv2#area11#page36#dau20#ln31#par85" name="1_isCorrect" target="sv2#cru7.ent4#att20" blank="true"/>
       </Link>
       <Link id="sv2#area11#page36#dau20#ln34" name="Flow34" to="sv2#mfu2" type="transport" validate="true">
         <LinkParameter id="sv2#area11#page36#dau20#ln34#par40" name="questionID_Question.questionID(QuestionTakenToQuestion)" source="data.ent3#att3" target="sv2#mfu2.rel6#role11.ent3#att3"/>
-      </Link>
-      <Link id="sv2#area11#page36#dau20#ln45" name="Flow42" to="sv2#seu3" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page36#dau20#ln45#par84" name="questionID_Question Condition [questionID]" source="data.ent3#att3" target="sv2#seu3#su12#rcond11.ent3#att3"/>
       </Link>
     </DataUnit>
     <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">

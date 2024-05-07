@@ -16,9 +16,6 @@
       <Link id="sv2#area11#page7#dau1#ln38" name="Flow38" to="sv2#mfu2" type="transport" validate="true">
         <LinkParameter id="sv2#area11#page7#dau1#ln38#par71" name="EnrolledCourseToCourse.courseID_EnrolledCourse.enrolledCourseID(QuestionTakenToEnrolledCourse)" source="data.rel11#role21_ent1#att1" target="sv2#mfu2.rel7#role14.ent5#att15"/>
       </Link>
-      <Link id="sv2#area11#page7#dau1#ln44" name="Flow18" to="sv2#seu3" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page7#dau1#ln44#par82" name="enrolledCourseID_EnrolledCorse Condition [enrolledCourseID]" source="data.ent5#att15" target="sv2#seu3#su12#rcond10.ent5#att15"/>
-      </Link>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

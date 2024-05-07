@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="com.webratio.ide.ui.actions.MoveElementsAction.chooseTargetElementDialog">
-		<item value="sv2#page28" key="LAST_CHOOSEN_TARGET_ELEMENT_ID"/>
+		<item value="sv2#area11" key="LAST_CHOOSEN_TARGET_ELEMENT_ID"/>
 	</section>
 	<section name="DBSyncPlugin">
 	</section>
