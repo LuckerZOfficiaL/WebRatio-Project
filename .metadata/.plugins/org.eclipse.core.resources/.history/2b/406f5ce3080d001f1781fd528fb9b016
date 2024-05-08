@@ -1,0 +1,77 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area11#page33" name="Course Page" gr:x="280" gr:y="0">
+  <ContentUnits>
+    <DataUnit id="sv2#area11#page33#dau18" name="Course Details" linkOrder="sv2#area11#page33#dau18#ln65" gr:x="0" gr:y="0" entity="ent1" displayAttributes="ent1#att1 ent1#att11 ent1#att12">
+      <Selector id="sv2#area11#page33#dau18#su43" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area11#page33#dau18#su43#kcond27" name="KeyCondition5" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area11#page33#dau18#ln65" name="Lectures" to="sv2#area11#page34#pwu19" type="normal" validate="true">
+        <LinkParameter id="sv2#area11#page33#dau18#ln65#par111" name="courseID_RoleCondition3 [courseID]" source="data.ent1#att1" target="sv2#area11#page34#pwu19#su44#rcond16.ent1#att1"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area11#page33#dau18">
+          <layout:Link link="sv2#area11#page33#dau18#ln65"/>
+          <layout:Attribute attribute="ent1#att1"/>
+          <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att12"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -7,19 +7,8 @@
       <Link id="sv2#area11#page36#dau20#ln29" name="Flow29" to="sv2#area11#scu2" type="transport" validate="true">
         <LinkParameter id="sv2#area11#page36#dau20#ln29#par56" name="correctAnswer_PASSING" source="data.ent3#att10" passing="true"/>
         <LinkParameter id="sv2#area11#page36#dau20#ln29#par60" name="correctAnswer_correctAnswer" source="data.ent3#att10" target="sv2#area11#scu2.correctAnswer"/>
-      </Link>
-      <Link id="sv2#area11#page36#dau20#ln42" name="Flow42" to="sv2#area11#seu5" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page36#dau20#ln42#par104" name="questionID_Question Condition [questionID]" source="data.ent3#att3" target="sv2#area11#seu5#su21#rcond15.ent3#att3"/>
-      </Link>
-      <Link id="sv2#area11#page36#dau20#ln31" name="Flow31" to="sv2#area11#cru6" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page36#dau20#ln31#par105" name="questionID_Question.questionID(QuestiontakenToQuestion)" source="data.ent3#att3" target="sv2#area11#cru6.rel10#role19.ent3#att3"/>
-      </Link>
-      <Link id="sv2#area11#page36#dau20#ln34" name="Flow34" to="sv2#area11#mfu3" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page36#dau20#ln34#par112" name="questionID_iscorrect" target="sv2#area11#mfu3.ent7#att28" sourceValue="0"/>
-        <LinkParameter id="sv2#area11#page36#dau20#ln34#par114" name="questionID_Question.questionID(QuestiontakenToQuestion)" source="data.ent3#att3" target="sv2#area11#mfu3.rel10#role19.ent3#att3"/>
-      </Link>
-      <Link id="sv2#area11#page36#dau20#ln45" name="Flow42" to="sv2#area11#seu4" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page36#dau20#ln45#par84" name="questionID_Question Condition [questionID]" source="data.ent3#att3" target="sv2#area11#seu4#su16#rcond13.ent3#att3"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par94" name="questionID_PASSING" source="data.ent3#att3" passing="true"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par109" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#page35#pwu20#ln73#par108" passing="true"/>
       </Link>
     </DataUnit>
     <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">

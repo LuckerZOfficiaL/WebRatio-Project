@@ -6,6 +6,7 @@
       </Selector>
       <Link id="sv2#area11#page33#dau18#ln65" name="Lectures" to="sv2#area11#page34#pwu19" type="normal" validate="true">
         <LinkParameter id="sv2#area11#page33#dau18#ln65#par111" name="courseID_RoleCondition3 [courseID]" source="data.ent1#att1" target="sv2#area11#page34#pwu19#su44#rcond16.ent1#att1"/>
+        <LinkParameter id="sv2#area11#page33#dau18#ln65#par105" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#page7#dau1#ln3#par104" passing="true"/>
       </Link>
     </DataUnit>
   </ContentUnits>

@@ -13,6 +13,10 @@
     <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Save'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
   </Warning>  
+  <Warning xpath="id('sv2#area11#page10#mssu3#ln39')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Save"> 
+    <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Save'</Message>  
+    <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 
+  </Warning>  
   <Warning xpath="id('sv2#area11#mfu3#oln23')" rootXPath="id('sv2')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow4"> 
     <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow4'</Message>  
     <Resolution class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" attribute="automaticCoupling" value="">Remove the 'Automatic Coupling' property</Resolution> 

@@ -6,18 +6,7 @@
       </Selector>
       <Link id="sv2#area11#page7#dau1#ln3" name="Enter" to="sv2#area11#page33#dau18" type="normal" validate="true">
         <LinkParameter id="sv2#area11#page7#dau1#ln3#par46" name="EnrolledCourseToCourse.courseID_KeyCondition5 [courseID]" source="data.rel11#role21_ent1#att1" target="sv2#area11#page33#dau18#su43#kcond27.ent1#att1"/>
-      </Link>
-      <Link id="sv2#area11#page7#dau1#ln18" name="Flow18" to="sv2#area11#seu5" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page7#dau1#ln18#par47" name="enrolledCourseID_EnrolledCorse Condition [enrolledCourseID]" source="data.ent5#att15" target="sv2#area11#seu5#su21#rcond14.ent5#att15"/>
-      </Link>
-      <Link id="sv2#area11#page7#dau1#ln36" name="Flow36" to="sv2#area11#cru6" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page7#dau1#ln36#par107" name="enrolledCourseID_EnrolledCourse.enrolledCourseID(QuestiontakenToEnrolledcourse)" source="data.ent5#att15" target="sv2#area11#cru6.rel8#role15.ent5#att15"/>
-      </Link>
-      <Link id="sv2#area11#page7#dau1#ln38" name="Flow38" to="sv2#area11#mfu3" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page7#dau1#ln38#par113" name="EnrolledCourseToCourse.courseID_EnrolledCourse.enrolledCourseID(QuestiontakenToEnrolledcourse)" source="data.rel11#role21_ent1#att1" target="sv2#area11#mfu3.rel8#role15.ent5#att15"/>
-      </Link>
-      <Link id="sv2#area11#page7#dau1#ln44" name="Flow18" to="sv2#area11#seu4" type="transport" validate="true">
-        <LinkParameter id="sv2#area11#page7#dau1#ln44#par82" name="enrolledCourseID_EnrolledCorse Condition [enrolledCourseID]" source="data.ent5#att15" target="sv2#area11#seu4#su16#rcond12.ent5#att15"/>
+        <LinkParameter id="sv2#area11#page7#dau1#ln3#par104" name="enrolledCourseID_PASSING" source="data.ent5#att15" passing="true"/>
       </Link>
     </DataUnit>
   </ContentUnits>

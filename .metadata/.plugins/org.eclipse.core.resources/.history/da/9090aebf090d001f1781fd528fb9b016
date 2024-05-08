@@ -1,0 +1,53 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="250" gr:y="105" id="mov1#mpkg2#opm3" name="Save QuestionTaken">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#mpkg2#opm3#icu3" gr:x="15" gr:y="100">
+      <InputCollectorParameter id="mov1#mpkg2#opm3#icu3#icp5" name="EnrolledCourseID"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm3#icu3#icp3" name="QuestionID"/>
+      <InputCollectorParameter id="mov1#mpkg2#opm3#icu3#icp2" name="isCorrect"/>
+      <OKLink id="mov1#mpkg2#opm3#icu3#oln3" name="Flow40" to="mov1#mpkg2#opm3#seu2">
+        <LinkParameter id="mov1#mpkg2#opm3#icu3#oln3#par71" name="EnrolledCourseID_EnrolledCourse Condition [enrolledCourseID]" source="mov1#mpkg2#opm3#icu3#icp5" target="mov1#mpkg2#opm3#seu2#su5#rcond9.ent5#att15"/>
+        <LinkParameter id="mov1#mpkg2#opm3#icu3#oln3#par74" name="QuestionID_Question Condition [questionID]" source="mov1#mpkg2#opm3#icu3#icp3" target="mov1#mpkg2#opm3#seu2#su5#rcond6.ent3#att3"/>
+        <LinkParameter id="mov1#mpkg2#opm3#icu3#oln3#par120" name="isCorrect_PASSING" source="mov1#mpkg2#opm3#icu3#icp2" passing="true"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <SelectorUnit gr:x="350" gr:y="115" id="mov1#mpkg2#opm3#seu2" name="Selector2" entity="ent7">
+      <Selector id="mov1#mpkg2#opm3#seu2#su5" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#mpkg2#opm3#seu2#su5#rcond6" name="Question Condition" predicate="in" implied="false" role="rel10#role20"/>
+        <RelationshipRoleCondition id="mov1#mpkg2#opm3#seu2#su5#rcond9" name="EnrolledCourse Condition" predicate="in" implied="false" role="rel8#role16"/>
+      </Selector>
+      <OKLink id="mov1#mpkg2#opm3#seu2#oln4" name="Flow41" to="mov1#mpkg2#opm3#inn1">
+        <LinkParameter id="mov1#mpkg2#opm3#seu2#oln4#par76" name="QuestiontakenToEnrolledcourse.enrolledCourseID_PASSING" source="rel8#role15_ent5#att15Array" passing="true"/>
+        <LinkParameter id="mov1#mpkg2#opm3#seu2#oln4#par77" name="QuestiontakenToQuestion.questionID_PASSING" source="rel10#role19_ent3#att3Array" passing="true"/>
+        <LinkParameter id="mov1#mpkg2#opm3#seu2#oln4#par87" name="oid_Input" source="ent7#att27Array" target="mov1#mpkg2#opm3#inn1.isnotnull"/>
+        <LinkParameter id="mov1#mpkg2#opm3#seu2#oln4#par88" name="oid_PASSING" source="ent7#att27Array" passing="true"/>
+        <LinkParameter id="mov1#mpkg2#opm3#seu2#oln4#par121" name="isCorrect_PASSING" sourceLinkParameter="mov1#mpkg2#opm3#icu3#oln3#par120" passing="true"/>
+      </OKLink>
+    </SelectorUnit>
+    <IsNotNullUnit gr:x="660" gr:y="145" id="mov1#mpkg2#opm3#inn1" name="Is Not Null1">
+      <OKLink id="mov1#mpkg2#opm3#inn1#oln6" name="OKFlow6" to="mov1#mpkg2#opm3#mfu2">
+        <LinkParameter id="mov1#mpkg2#opm3#inn1#oln6#par84" name="QuestiontakenToEnrolledcourse.enrolledCourseID_PASSING_EnrolledCourse.enrolledCourseID(QuestiontakenToEnrolledcourse)" sourceLinkParameter="mov1#mpkg2#opm3#seu2#oln4#par76" target="mov1#mpkg2#opm3#mfu2.rel8#role15.ent5#att15"/>
+        <LinkParameter id="mov1#mpkg2#opm3#inn1#oln6#par86" name="QuestiontakenToQuestion.questionID_PASSING_Question.questionID(QuestiontakenToQuestion)" sourceLinkParameter="mov1#mpkg2#opm3#seu2#oln4#par77" target="mov1#mpkg2#opm3#mfu2.rel10#role19.ent3#att3"/>
+        <LinkParameter id="mov1#mpkg2#opm3#inn1#oln6#par90" name="oid_PASSING_KeyCondition3 [oid]" sourceLinkParameter="mov1#mpkg2#opm3#seu2#oln4#par88" target="mov1#mpkg2#opm3#mfu2#su8#kcond3.ent7#att27"/>
+        <LinkParameter id="mov1#mpkg2#opm3#inn1#oln6#par125" name="isCorrect_PASSING_iscorrect" sourceLinkParameter="mov1#mpkg2#opm3#seu2#oln4#par121" target="mov1#mpkg2#opm3#mfu2.ent7#att28"/>
+      </OKLink>
+      <KOLink id="mov1#mpkg2#opm3#inn1#kln1" name="KOFlow1" to="mov1#mpkg2#opm3#cru7">
+        <LinkParameter id="mov1#mpkg2#opm3#inn1#kln1#par79" name="QuestiontakenToEnrolledcourse.enrolledCourseID_PASSING_EnrolledCourse.enrolledCourseID(QuestiontakenToEnrolledcourse)" sourceLinkParameter="mov1#mpkg2#opm3#seu2#oln4#par76" target="mov1#mpkg2#opm3#cru7.rel8#role15.ent5#att15"/>
+        <LinkParameter id="mov1#mpkg2#opm3#inn1#kln1#par82" name="QuestiontakenToQuestion.questionID_PASSING_Question.questionID(QuestiontakenToQuestion)" sourceLinkParameter="mov1#mpkg2#opm3#seu2#oln4#par77" target="mov1#mpkg2#opm3#cru7.rel10#role19.ent3#att3"/>
+        <LinkParameter id="mov1#mpkg2#opm3#inn1#kln1#par122" name="isCorrect_PASSING_iscorrect" sourceLinkParameter="mov1#mpkg2#opm3#seu2#oln4#par121" target="mov1#mpkg2#opm3#cru7.ent7#att28"/>
+      </KOLink>
+    </IsNotNullUnit>
+    <CreateUnit gr:x="855" gr:y="45" id="mov1#mpkg2#opm3#cru7" name="Create" entity="ent7">
+      <OKLink id="mov1#mpkg2#opm3#cru7#oln8" name="OKFlow8" to="mov1#mpkg2#opm3#okcu2" automaticCoupling="true"/>
+      <KOLink id="mov1#mpkg2#opm3#cru7#kln5" name="KOFlow5" to="mov1#mpkg2#opm3#kocu3" automaticCoupling="true"/>
+    </CreateUnit>
+    <ModifyUnit gr:x="865" gr:y="200" id="mov1#mpkg2#opm3#mfu2" name="Update" entity="ent7">
+      <Selector id="mov1#mpkg2#opm3#mfu2#su8" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="mov1#mpkg2#opm3#mfu2#su8#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="mov1#mpkg2#opm3#mfu2#oln9" name="OKFlow9" to="mov1#mpkg2#opm3#okcu2" automaticCoupling="true"/>
+      <KOLink id="mov1#mpkg2#opm3#mfu2#kln7" name="KOFlow7" to="mov1#mpkg2#opm3#kocu3" automaticCoupling="true"/>
+    </ModifyUnit>
+    <KOCollectorUnit gr:x="1110" gr:y="215" id="mov1#mpkg2#opm3#kocu3" name="KO Port3"/>
+    <OKCollectorUnit gr:x="1110" gr:y="50" id="mov1#mpkg2#opm3#okcu2" name="OK Port2"/>
+  </OperationUnits>
+</OperationModule>

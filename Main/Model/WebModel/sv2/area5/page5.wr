@@ -19,7 +19,7 @@
         <LinkParameter id="sv2#area5#page5#gtu2#ln27#par68" name="UserCtxParam.userID_KeyCondition8 [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#area5#page5#dau8#su10#kcond8.userOID"/>
       </Link>
     </GetUnit>
-    <DataUnit gr:x="165" gr:y="0" id="sv2#area5#page5#dau8" name="User Info" entity="User" displayAll="true">
+    <DataUnit gr:x="165" gr:y="0" id="sv2#area5#page5#dau8" name="User Info" entity="User" displayAttributes="userOID userName password email User#att17 User#att22">
       <Selector id="sv2#area5#page5#dau8#su10" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area5#page5#dau8#su10#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
       </Selector>
@@ -51,6 +51,7 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area5#page5#dau8">
+          <layout:Attribute attribute="userOID"/>
           <layout:Attribute attribute="userName"/>
           <layout:Attribute attribute="password"/>
           <layout:Attribute attribute="email"/>

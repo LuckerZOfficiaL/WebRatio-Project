@@ -1,0 +1,49 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="80" id="sv2#area11#page7" name="Enrolled Course">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page7#dau1" name="Enrolled Course" entity="ent5" linkOrder="sv2#area11#page7#dau1#ln3" displayAttributes="ent5#att15 ent5#att16 ent5#att23 ent5#att21 ent5#att25">
+      <Selector id="sv2#area11#page7#dau1#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area11#page7#dau1#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area11#page7#dau1#ln3" name="Enter" to="sv2#area11#page33#dau18" type="normal" validate="true">
+        <LinkParameter id="sv2#area11#page7#dau1#ln3#par46" name="EnrolledCourseToCourse.courseID_KeyCondition5 [courseID]" source="data.rel11#role21_ent1#att1" target="sv2#area11#page33#dau18#su43#kcond27.ent1#att1"/>
+      </Link>
+      <Link id="sv2#area11#page7#dau1#ln18" name="Flow18" to="sv2#area11#seu5" type="transport" validate="true">
+        <LinkParameter id="sv2#area11#page7#dau1#ln18#par47" name="enrolledCourseID_EnrolledCorse Condition [enrolledCourseID]" source="data.ent5#att15" target="sv2#area11#seu5#su21#rcond14.ent5#att15"/>
+      </Link>
+      <Link id="sv2#area11#page7#dau1#ln36" name="Flow36" to="sv2#area11#cru6" type="transport" validate="true">
+        <LinkParameter id="sv2#area11#page7#dau1#ln36#par107" name="enrolledCourseID_EnrolledCourse.enrolledCourseID(QuestiontakenToEnrolledcourse)" source="data.ent5#att15" target="sv2#area11#cru6.rel8#role15.ent5#att15"/>
+      </Link>
+      <Link id="sv2#area11#page7#dau1#ln38" name="Flow38" to="sv2#area11#mfu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area11#page7#dau1#ln38#par113" name="EnrolledCourseToCourse.courseID_EnrolledCourse.enrolledCourseID(QuestiontakenToEnrolledcourse)" source="data.rel11#role21_ent1#att1" target="sv2#area11#mfu3.rel8#role15.ent5#att15"/>
+      </Link>
+      <Link id="sv2#area11#page7#dau1#ln44" name="Flow18" to="sv2#area11#seu4" type="transport" validate="true">
+        <LinkParameter id="sv2#area11#page7#dau1#ln44#par82" name="enrolledCourseID_EnrolledCorse Condition [enrolledCourseID]" source="data.ent5#att15" target="sv2#area11#seu4#su16#rcond12.ent5#att15"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area11#page7#dau1">
+          <layout:Link link="sv2#area11#page7#dau1#ln3"/>
+          <layout:Attribute attribute="ent5#att15"/>
+          <layout:Attribute attribute="ent5#att16"/>
+          <layout:Attribute attribute="ent5#att23"/>
+          <layout:Attribute attribute="ent5#att21"/>
+          <layout:Attribute attribute="ent5#att25"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -6,6 +6,7 @@
       </Selector>
       <Link id="sv2#area11#page35#dau19#ln70" to="sv2#area11#page35#pwu20" type="transport" validate="true" name="Questions">
         <LinkParameter id="sv2#area11#page35#dau19#ln70#par123" name="lectureID_RoleCondition5 [lectureID]" source="data.ent6#att18" target="sv2#area11#page35#pwu20#su46#rcond17.ent6#att18"/>
+        <LinkParameter id="sv2#area11#page35#dau19#ln70#par107" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#page34#pwu19#ln75#par106" passing="true"/>
       </Link>
     </DataUnit>
     <PowerIndexUnit gr:x="0" gr:y="190" id="sv2#area11#page35#pwu20" name="Question List" sortable="true" checkable="false" useCountQuery="false" entity="ent3" linkOrder="sv2#area11#page35#pwu20#ln73" displayAttributes="ent3#att5">
@@ -14,6 +15,7 @@
       </Selector>
       <Link id="sv2#area11#page35#pwu20#ln73" name="Attempt" to="sv2#area11#page36#dau20" type="normal" validate="true">
         <LinkParameter id="sv2#area11#page35#pwu20#ln73#par124" name="questionID_KeyCondition3 [questionID]" source="data[].ent3#att3" target="sv2#area11#page36#dau20#su47#kcond30.ent3#att3"/>
+        <LinkParameter id="sv2#area11#page35#pwu20#ln73#par108" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#page35#dau19#ln70#par107" passing="true"/>
       </Link>
     </PowerIndexUnit>
   </ContentUnits>

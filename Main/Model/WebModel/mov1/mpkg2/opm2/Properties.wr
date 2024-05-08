@@ -1,5 +1,0 @@
-<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="415" gr:y="85" id="mov1#mpkg2#opm2" name="Go Teacher Site">
-  <OperationUnits>
-    <InputCollectorUnit id="mov1#mpkg2#opm2#icu2" name="Input Collector" gr:x="30" gr:y="60"/>
-  </OperationUnits>
-</OperationModule>
