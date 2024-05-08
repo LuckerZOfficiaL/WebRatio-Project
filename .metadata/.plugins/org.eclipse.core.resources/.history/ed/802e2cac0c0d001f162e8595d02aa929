@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area5#page5" name="Enrolled Courses Page" landmark="false">
   <ContentUnits>
-    <PowerIndexUnit id="sv2#area5#page5#pwu1" entity="ent5" displayAttributes="ent5#att15 ent5#att23" sortable="true" checkable="false" useCountQuery="false" gr:x="0" gr:y="135" name="Enrolled Courses" linkOrder="sv2#area5#page5#pwu1#ln6 sv2#area5#page5#pwu1#ln69">
+    <PowerIndexUnit id="sv2#area5#page5#pwu1" entity="ent5" displayAttributes="ent5#att15 ent5#att23 ent5#att16" sortable="true" checkable="false" useCountQuery="false" gr:x="0" gr:y="135" name="Enrolled Courses" linkOrder="sv2#area5#page5#pwu1#ln6 sv2#area5#page5#pwu1#ln69">
       <Selector id="sv2#area5#page5#pwu1#su2" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area5#page5#pwu1#su2#rcond1" role="rel2#role3" predicate="in" implied="false" name="User ID Condition"/>
       </Selector>
@@ -29,10 +29,11 @@
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv2#area5#page5#pwu1">
-          <layout:Link link="sv2#area5#page5#pwu1#ln6"/>
-          <layout:Link link="sv2#area5#page5#pwu1#ln69"/>
           <layout:Attribute attribute="ent5#att15"/>
           <layout:Attribute attribute="ent5#att23"/>
+          <layout:Attribute attribute="ent5#att16"/>
+          <layout:Link link="sv2#area5#page5#pwu1#ln6"/>
+          <layout:Link link="sv2#area5#page5#pwu1#ln69"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

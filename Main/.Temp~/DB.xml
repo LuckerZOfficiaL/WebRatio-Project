@@ -6,34 +6,26 @@
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="name" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="topic" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_userid" primaryKey="false" notNull="false"/>
-    <ForeignKey localColumnName="user_userid" foreignColumnName="userid" name="fk_course_user" foreignTableName="user" foreignSchemaName=""/>
   </Table>
   <Table type="TABLE" schema="" ignoreIndexes="false" name="enrolledcourse" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourseid" primaryKey="true" notNull="true"/>
-    <Column sqlTypeId="8" indexed="unknown" autoIncrement="false" type="DOUBLE" size="22" decimalDigits="0" name="grade" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="course_courseid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_userid" primaryKey="false" notNull="false"/>
-    <ForeignKey localColumnName="course_courseid" foreignColumnName="courseid" name="fk_enrolledcourse_course" foreignTableName="course" foreignSchemaName=""/>
-    <ForeignKey localColumnName="user_userid" foreignColumnName="userid" name="fk_enrolledcourse_user" foreignTableName="user" foreignSchemaName=""/>
   </Table>
   <Table type="TABLE" schema="" ignoreIndexes="false" name="group" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="groupid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="groupname" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="false" notNull="false"/>
-    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module" foreignTableName="module" foreignSchemaName=""/>
   </Table>
   <Table type="TABLE" schema="" ignoreIndexes="false" name="group_module" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_groupid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="module_oid" primaryKey="true" notNull="true"/>
-    <ForeignKey localColumnName="group_groupid" foreignColumnName="groupid" name="fk_group_module_group" foreignTableName="group" foreignSchemaName=""/>
-    <ForeignKey localColumnName="module_oid" foreignColumnName="oid" name="fk_group_module_module" foreignTableName="module" foreignSchemaName=""/>
   </Table>
   <Table type="TABLE" schema="" ignoreIndexes="false" name="lecture" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="lectureid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="title" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="content" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="course_courseid" primaryKey="false" notNull="false"/>
-    <ForeignKey localColumnName="course_courseid" foreignColumnName="courseid" name="fk_lecture_course" foreignTableName="course" foreignSchemaName=""/>
   </Table>
   <Table type="TABLE" schema="" ignoreIndexes="false" name="module" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
@@ -49,15 +41,12 @@
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="option4" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="correctanswer" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="lecture_lectureid" primaryKey="false" notNull="false"/>
-    <ForeignKey localColumnName="lecture_lectureid" foreignColumnName="lectureid" name="fk_question_lecture" foreignTableName="lecture" foreignSchemaName=""/>
   </Table>
   <Table type="TABLE" schema="" ignoreIndexes="false" name="questiontaken" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="oid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="iscorrect" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="question_questionid" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourse_enrolledcoursei" primaryKey="false" notNull="false"/>
-    <ForeignKey localColumnName="enrolledcourse_enrolledcoursei" foreignColumnName="enrolledcourseid" name="fk_questiontaken_enrolledcours" foreignTableName="enrolledcourse" foreignSchemaName=""/>
-    <ForeignKey localColumnName="question_questionid" foreignColumnName="questionid" name="fk_questiontaken_question" foreignTableName="question" foreignSchemaName=""/>
   </Table>
   <Table type="TABLE" schema="" ignoreIndexes="false" name="user" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="userid" primaryKey="true" notNull="true"/>
@@ -67,18 +56,15 @@
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="firstname" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="12" indexed="unknown" autoIncrement="false" type="VARCHAR" size="255" decimalDigits="0" name="lastname" primaryKey="false" notNull="false"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_groupid" primaryKey="false" notNull="false"/>
-    <ForeignKey localColumnName="group_groupid" foreignColumnName="groupid" name="fk_user_group" foreignTableName="group" foreignSchemaName=""/>
   </Table>
   <Table type="TABLE" schema="" ignoreIndexes="false" name="user_group" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="user_userid" primaryKey="true" notNull="true"/>
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="group_groupid" primaryKey="true" notNull="true"/>
-    <ForeignKey localColumnName="group_groupid" foreignColumnName="groupid" name="fk_user_group_group" foreignTableName="group" foreignSchemaName=""/>
-    <ForeignKey localColumnName="user_userid" foreignColumnName="userid" name="fk_user_group_user" foreignTableName="user" foreignSchemaName=""/>
   </Table>
   <Table type="VIEW" schema="" ignoreIndexes="false" name="enrolledcourse_grade_view" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourseid" primaryKey="false" notNull="true"/>
-    <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="24" decimalDigits="4" name="der_attr" primaryKey="false" webMLType="decimal" notNull="false"/>
-    <SQLDefinition>select `al1`.`enrolledcourseid` AS `enrolledcourseid`,(`al2`.`der_attr` / `al3`.`der_attr`) AS `der_attr` from ((`enrolledcourse` `al1` left join `enrolledcourse_numquestions_vi` `al2` on((`al1`.`enrolledcourseid` = `al2`.`enrolledcourseid`))) left join `enrolledcourse_numcorrectanswe` `al3` on((`al1`.`enrolledcourseid` = `al3`.`enrolledcourseid`)))</SQLDefinition>
+    <Column sqlTypeId="2" indexed="unknown" autoIncrement="false" type="NUMERIC" size="36" decimalDigits="4" name="der_attr" primaryKey="false" webMLType="decimal" notNull="false"/>
+    <SQLDefinition>select `al1`.`enrolledcourseid` AS `enrolledcourseid`,(`al2`.`der_attr` / `al3`.`der_attr`) AS `der_attr` from ((`enrolledcourse` `al1` left join `enrolledcourse_numcorrectanswe` `al2` on((`al1`.`enrolledcourseid` = `al2`.`enrolledcourseid`))) left join `enrolledcourse_numquestions_vi` `al3` on((`al1`.`enrolledcourseid` = `al3`.`enrolledcourseid`)))</SQLDefinition>
   </Table>
   <Table type="VIEW" schema="" ignoreIndexes="false" name="enrolledcourse_numcorrectanswe" refreshed="true">
     <Column sqlTypeId="4" indexed="unknown" autoIncrement="false" type="INT" size="10" decimalDigits="0" name="enrolledcourseid" primaryKey="false" notNull="true"/>

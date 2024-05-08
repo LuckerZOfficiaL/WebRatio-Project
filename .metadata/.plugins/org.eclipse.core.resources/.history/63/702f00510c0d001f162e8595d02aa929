@@ -64,9 +64,7 @@
   </Entity>
   <Entity gr:x="330" gr:y="425" id="ent5" name="EnrolledCourse" duration="persistent" attributeOrder="ent5#att15 ent5#att16 ent5#att23 ent5#att21 ent5#att25" volatileStorage="database" db:database="db2" db:table="enrolledcourse">
     <Attribute id="ent5#att15" key="true" name="enrolledCourseID" type="integer" db:column="enrolledcourseid"/>
-    <Attribute id="ent5#att16" name="grade" type="float" derivationQuery="calculated::Self.ent5#att21 / Self.ent5#att25" storageType="file" db:table="enrolledcourse_grade_view" db:column="der_attr">
-      <db:JoinColumn attribute="ent5#att15" name="enrolledcourseid"/>
-    </Attribute>
+    <Attribute id="ent5#att16" name="grade" type="float" derivationQuery="calculated::Self.ent5#att25 / Self.ent5#att21" storageType="file"/>
     <Attribute id="ent5#att23" name="courseName" type="string" derivationQuery="simpleImported::Self.rel11#role21.ent1#att11"/>
     <Attribute id="ent5#att21" name="numQuestions" type="integer" derivationQuery="calculated::count(Self.rel11#role21(as Var1).rel4#role7(as Var2).rel9#role17(as Var3))" db:table="enrolledcourse_numquestions_vi" db:column="der_attr" storageType="file">
       <db:JoinColumn attribute="ent5#att15" name="enrolledcourseid"/>
@@ -104,8 +102,7 @@
       <db:JoinColumn attribute="ent1#att1" name="course_courseid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/db2" username="root" password="NTg1ODU4" cryptedPassword="true">
-  </db:Database>
+  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/db2" username="root" password="NTg1ODU4" cryptedPassword="true"/>
   <Relationship id="rel9" name="Lecture_Question" sourceEntity="ent6" targetEntity="ent3" db:database="db2" db:table="question">
     <RelationshipRole1 id="rel9#role17" name="LectureToQuestion" maxCard="N">
       <db:JoinColumn attribute="ent6#att18" name="lecture_lectureid"/>

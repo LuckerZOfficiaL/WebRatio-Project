@@ -1,39 +1,39 @@
-Buildfile: D:\WebRatio\WebRatio\plugins\com.webratio.generator.webapp_7.2.18.201903231300\DataModel\JavaCompile.xml
+Buildfile: G:\WebRatio\WebRatio\plugins\com.webratio.generator.webapp_7.2.18.201903231300\DataModel\JavaCompile.xml
 
 main:
-    [javac] Compiling 8 source files to D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes
+    [javac] Compiling 10 source files to G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes
     [javac] ----------
-    [javac] 1. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 11)
+    [javac] 1. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 11)
     [javac] 	private com.webratio.webapp.EnrolledCourse_GradeBean _gradeBean;
     [javac] 	        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     [javac] com.webratio.webapp.EnrolledCourse_GradeBean cannot be resolved to a type
     [javac] ----------
-    [javac] 2. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 39)
+    [javac] 2. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 43)
     [javac] 	com.webratio.webapp.EnrolledCourse_GradeBean __grade = this.getGradeBean();
     [javac] 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     [javac] com.webratio.webapp.EnrolledCourse_GradeBean cannot be resolved to a type
     [javac] ----------
-    [javac] 3. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 39)
+    [javac] 3. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 43)
     [javac] 	com.webratio.webapp.EnrolledCourse_GradeBean __grade = this.getGradeBean();
     [javac] 	                                                            ^^^^^^^^^^^^
     [javac] The method getGradeBean() from the type EnrolledCourse refers to the missing type EnrolledCourse_GradeBean
     [javac] ----------
-    [javac] 4. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 50)
+    [javac] 4. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 54)
     [javac] 	public com.webratio.webapp.EnrolledCourse_GradeBean getGradeBean() {
     [javac] 	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     [javac] com.webratio.webapp.EnrolledCourse_GradeBean cannot be resolved to a type
     [javac] ----------
-    [javac] 5. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 51)
+    [javac] 5. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 55)
     [javac] 	return _gradeBean;
     [javac] 	       ^^^^^^^^^^
     [javac] EnrolledCourse_GradeBean cannot be resolved to a type
     [javac] ----------
-    [javac] 6. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 54)
+    [javac] 6. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 58)
     [javac] 	public void setGradeBean(com.webratio.webapp.EnrolledCourse_GradeBean _gradeBean) {
     [javac] 	                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     [javac] com.webratio.webapp.EnrolledCourse_GradeBean cannot be resolved to a type
     [javac] ----------
-    [javac] 7. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 55)
+    [javac] 7. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 59)
     [javac] 	this._gradeBean = _gradeBean;
     [javac] 	^^^^^^^^^^^^^^^
     [javac] EnrolledCourse_GradeBean cannot be resolved to a type
