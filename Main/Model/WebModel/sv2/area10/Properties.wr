@@ -1,6 +1,6 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1380" gr:y="-45" id="sv2#area10" name="Enroll Courses" landmark="true" defaultPage="sv2#area10#page30" landmarks="sv2#area10#miu2">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1655" gr:y="-45" id="sv2#area10" name="Enroll Courses" landmark="true" defaultPage="sv2#area10#page30" landmarks="sv2#area10#miu2">
   <OperationUnits>
-    <CreateUnit gr:x="135" gr:y="445" id="sv2#area10#cru1" name="Create Enrolledcourse" entity="ent5">
+    <CreateUnit gr:x="175" gr:y="425" id="sv2#area10#cru1" name="Create Enrolledcourse" entity="ent5">
       <OKLink id="sv2#area10#cru1#oln18" name="OKFlow18" to="sv2#page28#mssu18">
         <LinkParameter id="sv2#area10#cru1#oln18#par4" name="Operation successfull!_Shown Messages" sourceValue="Operation successfull!" target="sv2#page28#mssu18.shownMessages"/>
       </OKLink>

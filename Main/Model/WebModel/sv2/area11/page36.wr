@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="810" gr:y="10" id="sv2#area11#page36" name="Question Page">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="655" gr:y="5" id="sv2#area11#page36" name="Question Page">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page36#dau20" name="Question" entity="ent3" displayAttributes="ent3#att5 ent3#att6 ent3#att7 ent3#att8 ent3#att9">
       <Selector id="sv2#area11#page36#dau20#su47" defaultPolicy="fill" booleanOperator="and">
@@ -11,7 +11,7 @@
         <LinkParameter id="sv2#area11#page36#dau20#ln29#par109" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#page35#pwu20#ln73#par108" passing="true"/>
       </Link>
     </DataUnit>
-    <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">
+    <EntryUnit gr:x="20" gr:y="140" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">
       <SelectionField id="sv2#area11#page36#enu14#sfld8" name="Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv2#area11#page36#enu14#sfld8#slot15">
         <Slot id="sv2#area11#page36#enu14#sfld8#slot15" name="choice" value="1|2|3|4" label="true" output="true"/>
       </SelectionField>

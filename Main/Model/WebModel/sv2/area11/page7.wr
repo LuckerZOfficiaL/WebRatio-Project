@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="80" id="sv2#area11#page7" name="Enrolled Course">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="5" id="sv2#area11#page7" name="Enrolled Course">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page7#dau1" name="Enrolled Course" entity="ent5" linkOrder="sv2#area11#page7#dau1#ln3" displayAttributes="ent5#att23 ent5#att21 ent5#att25">
       <Selector id="sv2#area11#page7#dau1#su3" defaultPolicy="fill" booleanOperator="and">

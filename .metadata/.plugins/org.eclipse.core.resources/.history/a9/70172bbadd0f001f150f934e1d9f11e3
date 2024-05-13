@@ -1,0 +1,36 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="80" id="sv2#area11#page7" name="Enrolled Course">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page7#dau1" name="Enrolled Course" entity="ent5" linkOrder="sv2#area11#page7#dau1#ln3" displayAttributes="ent5#att23 ent5#att21 ent5#att25">
+      <Selector id="sv2#area11#page7#dau1#su3" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area11#page7#dau1#su3#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area11#page7#dau1#ln3" name="Enter" to="sv2#area11#page33#dau18" type="normal" validate="true">
+        <LinkParameter id="sv2#area11#page7#dau1#ln3#par46" name="EnrolledCourseToCourse.courseID_KeyCondition5 [courseID]" source="data.rel11#role21_ent1#att1" target="sv2#area11#page33#dau18#su43#kcond27.ent1#att1"/>
+        <LinkParameter id="sv2#area11#page7#dau1#ln3#par104" name="enrolledCourseID_PASSING" source="data.ent5#att15" passing="true"/>
+      </Link>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area11#page7#dau1">
+          <layout:Link link="sv2#area11#page7#dau1#ln3"/>
+          <layout:Attribute attribute="ent5#att23"/>
+          <layout:Attribute attribute="ent5#att21"/>
+          <layout:Attribute attribute="ent5#att25"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

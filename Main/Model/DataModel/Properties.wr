@@ -104,8 +104,7 @@
       <db:JoinColumn attribute="ent1#att1" name="course_courseid"/>
     </RelationshipRole2>
   </Relationship>
-  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/db2" username="root" password="NTg1ODU4" cryptedPassword="true">
-  </db:Database>
+  <db:Database id="db2" name="DB" type="MySQL" url="jdbc:mysql://localhost:3306/db2" username="root" password="NTg1ODU4" cryptedPassword="true"/>
   <Relationship id="rel9" name="Lecture_Question" sourceEntity="ent6" targetEntity="ent3" db:database="db2" db:table="question">
     <RelationshipRole1 id="rel9#role17" name="LectureToQuestion" maxCard="N">
       <db:JoinColumn attribute="ent6#att18" name="lecture_lectureid"/>
@@ -122,7 +121,7 @@
       <db:JoinColumn attribute="ent1#att1" name="courseid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity id="ent7" name="Questiontaken" db:database="db2" duration="persistent" db:table="questiontaken" gr:x="380" gr:y="670">
+  <Entity id="ent7" name="Questiontaken" db:database="db2" duration="persistent" db:table="questiontaken" gr:x="880" gr:y="625">
     <Attribute id="ent7#att27" name="oid" db:column="oid" type="integer" key="true"/>
     <Attribute id="ent7#att28" name="iscorrect" db:column="iscorrect" type="integer" key="false"/>
   </Entity>

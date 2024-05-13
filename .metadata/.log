@@ -2358,3 +2358,12 @@ java.lang.NullPointerException
 	at com.webratio.ide.debug.ui.launcher.WebDebugLaunchShortcut.launchDebug(WebDebugLaunchShortcut.java:155)
 	at com.webratio.ide.debug.ui.adapters.WebDebugUIDisconnectListener$1$1.run(WebDebugUIDisconnectListener.java:80)
 	at java.lang.Thread.run(Unknown Source)
+!SESSION 2024-05-11 23:24:21.963 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-05-11 23:25:24.837
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

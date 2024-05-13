@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area11#page34" name="Lectures" gr:x="285" gr:y="195">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area11#page34" name="Lectures" gr:x="205" gr:y="190">
   <ContentUnits>
     <PowerIndexUnit id="sv2#area11#page34#pwu19" name="Lecture List" gr:x="0" gr:y="0" sortable="true" checkable="false" useCountQuery="false" entity="ent6" displayAttributes="ent6#att19" linkOrder="sv2#area11#page34#pwu19#ln75">
       <Selector id="sv2#area11#page34#pwu19#su44" defaultPolicy="fill" booleanOperator="and">

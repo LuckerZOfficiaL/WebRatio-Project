@@ -1,20 +1,62 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#page27" name="Edit Info" gr:x="0" gr:y="620">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv3#area2#page27" name="Edit Info" gr:x="0" gr:y="615">
   <ContentUnits>
-    <EntryUnit id="sv3#area2#page27#enu10" name="Edit Personal Information" gr:x="0" gr:y="0" fieldOrder="sv3#area2#page27#enu10#fld38 sv3#area2#page27#enu10#fld37 sv3#area2#page27#enu10#fld36 sv3#area2#page27#enu10#fld35">
+    <EntryUnit id="sv3#area2#page27#enu10" name="Edit Personal Information" gr:x="0" gr:y="250" fieldOrder="sv3#area2#page27#enu10#fld37 sv3#area2#page27#enu10#fld36 sv3#area2#page27#enu10#fld35 sv3#area2#page27#enu10#fld10" linkOrder="sv3#area2#page27#enu10#ln18">
       <Field id="sv3#area2#page27#enu10#fld35" name="Last Name" type="string" modifiable="true"/>
       <Field id="sv3#area2#page27#enu10#fld36" name="First name" type="string" modifiable="true"/>
       <Field id="sv3#area2#page27#enu10#fld37" name="Email" type="string" modifiable="true"/>
-      <Field id="sv3#area2#page27#enu10#fld38" name="Username" type="string" modifiable="true"/>
+      <Link id="sv3#area2#page27#enu10#ln18" name="Save" to="sv3#mfu3" type="normal" validate="true">
+        <LinkParameter id="sv3#area2#page27#enu10#ln18#par40" name="Email_email" source="sv3#area2#page27#enu10#fld37" target="sv3#mfu3.email"/>
+        <LinkParameter id="sv3#area2#page27#enu10#ln18#par47" name="First name_firstName" source="sv3#area2#page27#enu10#fld36" target="sv3#mfu3.User#att17"/>
+        <LinkParameter id="sv3#area2#page27#enu10#ln18#par61" name="Last Name_lastName" source="sv3#area2#page27#enu10#fld35" target="sv3#mfu3.User#att22"/>
+        <LinkParameter id="sv3#area2#page27#enu10#ln18#par75" name="Password _password" source="sv3#area2#page27#enu10#fld10" target="sv3#mfu3.password"/>
+      </Link>
+      <Field id="sv3#area2#page27#enu10#fld10" name="Password " type="password" modifiable="true"/>
     </EntryUnit>
+    <GetUnit id="sv3#area2#page27#gtu1" name="Get Student" gr:x="40" gr:y="0" contextParameters="UserCtxParam">
+      <Link id="sv3#area2#page27#gtu1#ln34" name="Flow27" to="sv3#area2#page27#dau3" type="transport" validate="true">
+        <LinkParameter id="sv3#area2#page27#gtu1#ln34#par39" name="UserCtxParam.userID_KeyCondition8 [userID]" source="sv3#area2#page27#gtu1.UserCtxParam" target="sv3#area2#page27#dau3#su17#kcond12.userOID"/>
+        <LinkParameter id="sv3#area2#page27#gtu1#ln34#par79" name="UserCtxParam.userID_PASSING" source="sv3#area2#page27#gtu1.UserCtxParam" passing="true"/>
+      </Link>
+      <Link id="sv3#area2#page27#gtu1#ln38" name="Flow38" to="sv3#mfu3" type="transport" validate="true">
+        <LinkParameter id="sv3#area2#page27#gtu1#ln38#par81" name="UserCtxParam.userID_KeyCondition9 [userID]" source="sv3#area2#page27#gtu1.UserCtxParam" target="sv3#mfu3#su12#kcond9.userOID"/>
+      </Link>
+    </GetUnit>
+    <DataUnit id="sv3#area2#page27#dau3" name="User Info" gr:x="30" gr:y="120" entity="User" displayAll="true">
+      <Selector id="sv3#area2#page27#dau3#su17" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv3#area2#page27#dau3#su17#kcond12" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
         <layout:Unit unitId="sv3#area2#page27#enu10">
-          <layout:Field field="sv3#area2#page27#enu10#fld38"/>
+          <layout:Link link="sv3#area2#page27#enu10#ln18"/>
           <layout:Field field="sv3#area2#page27#enu10#fld37"/>
           <layout:Field field="sv3#area2#page27#enu10#fld36"/>
           <layout:Field field="sv3#area2#page27#enu10#fld35"/>
+          <layout:Field field="sv3#area2#page27#enu10#fld10"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#area2#page27#dau3">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="email"/>
+          <layout:Attribute attribute="User#att17"/>
+          <layout:Attribute attribute="User#att22"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell/>

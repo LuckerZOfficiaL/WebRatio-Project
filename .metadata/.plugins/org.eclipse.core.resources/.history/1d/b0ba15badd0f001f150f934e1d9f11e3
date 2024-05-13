@@ -1,0 +1,95 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="810" gr:y="10" id="sv2#area11#page36" name="Question Page">
+  <ContentUnits>
+    <DataUnit gr:x="0" gr:y="0" id="sv2#area11#page36#dau20" name="Question" entity="ent3" displayAttributes="ent3#att5 ent3#att6 ent3#att7 ent3#att8 ent3#att9">
+      <Selector id="sv2#area11#page36#dau20#su47" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv2#area11#page36#dau20#su47#kcond30" name="KeyCondition3" predicate="in" implied="false"/>
+      </Selector>
+      <Link id="sv2#area11#page36#dau20#ln29" name="Flow29" to="sv2#area11#scu2" type="transport" validate="true">
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par56" name="correctAnswer_PASSING" source="data.ent3#att10" passing="true"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par60" name="correctAnswer_correctAnswer" source="data.ent3#att10" target="sv2#area11#scu2.correctAnswer"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par94" name="questionID_PASSING" source="data.ent3#att3" passing="true"/>
+        <LinkParameter id="sv2#area11#page36#dau20#ln29#par109" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#page35#pwu20#ln73#par108" passing="true"/>
+      </Link>
+    </DataUnit>
+    <EntryUnit gr:x="20" gr:y="210" id="sv2#area11#page36#enu14" name="Answer" fieldOrder="sv2#area11#page36#enu14#sfld8" linkOrder="sv2#area11#page36#enu14#ln12">
+      <SelectionField id="sv2#area11#page36#enu14#sfld8" name="Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv2#area11#page36#enu14#sfld8#slot15">
+        <Slot id="sv2#area11#page36#enu14#sfld8#slot15" name="choice" value="1|2|3|4" label="true" output="true"/>
+      </SelectionField>
+      <Link id="sv2#area11#page36#enu14#ln12" name="Check" to="sv2#area11#scu2" type="normal" validate="true">
+        <LinkParameter id="sv2#area11#page36#enu14#ln12#par57" name="Answer[choice]_PASSING" source="sv2#area11#page36#enu14#sfld8#slot15" passing="true"/>
+        <LinkParameter id="sv2#area11#page36#enu14#ln12#par58" name="Answerchoice_Answerchoice" source="sv2#area11#page36#enu14#sfld8#slot15" target="sv2#area11#scu2.Answerchoice"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area11#page36#dau20">
+          <layout:Attribute attribute="ent3#att5"/>
+          <layout:Attribute attribute="ent3#att6"/>
+          <layout:Attribute attribute="ent3#att7"/>
+          <layout:Attribute attribute="ent3#att8"/>
+          <layout:Attribute attribute="ent3#att9"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#area11#page36#enu14">
+          <layout:Field field="sv2#area11#page36#enu14#sfld8"/>
+          <layout:Link link="sv2#area11#page36#enu14#ln12"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>
