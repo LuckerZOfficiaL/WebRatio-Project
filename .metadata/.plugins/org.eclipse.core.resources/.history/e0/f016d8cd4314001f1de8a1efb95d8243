@@ -1,0 +1,17 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area11" name="Course Area" defaultPage="sv2#area11#page33" landmark="false" gr:x="-310" gr:y="535">
+  <OperationUnits>
+    <ScriptUnit gr:x="695" gr:y="540" id="sv2#area11#scu2" name="Check Answer">
+      <ScriptUnitText xml:space="preserve">#input int Answerchoice
+#input int correctAnswer
+#output int result
+
+def result = 0
+
+if(correctAnswer == Answerchoice){
+	result = 1
+}
+else{
+	result = 0
+}
+return ["result": result]
+</ScriptUnitText>      <OKLink id="sv2#area11#scu2#oln10" name="Flow3" to="sv2#area11#switch1">        <LinkParameter id="sv2#area11#scu2#oln10#par59" name="result_Switch" source="result(result)" target="sv2#area11#switch1.switch"/>        <LinkParameter id="sv2#area11#scu2#oln10#par100" name="questionID_PASSING" sourceLinkParameter="sv2#area11#page36#dau20#ln29#par94" passing="true"/>        <LinkParameter id="sv2#area11#scu2#oln10#par110" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#page36#dau20#ln29#par109" passing="true"/>      </OKLink>    </ScriptUnit>    <SwitchUnit gr:x="755" gr:y="315" id="sv2#area11#switch1" name="Fork">      <Case value="0"/>      <Case value="1"/>      <OKLink id="sv2#area11#switch1#oln20" name="OKFlow9" to="sv2#area11#page10#mssu3" code="1">        <LinkParameter id="sv2#area11#switch1#oln20#par101" name="questionID_PASSING" sourceLinkParameter="sv2#area11#scu2#oln10#par100" passing="true"/>        <LinkParameter id="sv2#area11#switch1#oln20#par112" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#scu2#oln10#par110" passing="true"/>      </OKLink>      <OKLink id="sv2#area11#switch1#oln21" name="OKFlow10" to="sv2#area11#page20#mssu4" code="0">        <LinkParameter id="sv2#area11#switch1#oln21#par102" name="questionID_PASSING" sourceLinkParameter="sv2#area11#scu2#oln10#par100" passing="true"/>        <LinkParameter id="sv2#area11#switch1#oln21#par113" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#scu2#oln10#par110" passing="true"/>      </OKLink>    </SwitchUnit>    <ModuleInstanceUnit gr:x="1220" gr:y="285" id="sv2#area11#miu9" action="true" moduleId="mov1#mpkg2#opm3">      <OKLink id="sv2#area11#miu9#oln19" name="OKFlow19" to="sv2#page28#mssu18">        <LinkParameter id="sv2#area11#miu9#oln19#par119" name="Saved._Shown Messages" sourceValue="Saved." target="sv2#page28#mssu18.shownMessages"/>      </OKLink>      <KOLink id="sv2#area11#miu9#kln11" name="KOFlow11" to="sv2#page29#mssu19">        <LinkParameter id="sv2#area11#miu9#kln11#par118" name="Failed to save._Shown Messages" sourceValue="Failed to save." target="sv2#page29#mssu19.shownMessages"/>      </KOLink>    </ModuleInstanceUnit>  </OperationUnits></Area>

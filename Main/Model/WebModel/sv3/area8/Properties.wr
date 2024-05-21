@@ -1,5 +1,5 @@
-<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="305" gr:y="420" id="sv3#area8" name="Manage Courses" landmark="true" protected="false" defaultPage="sv3#area8#page8" landmarks="sv3#area8#miu8">
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="305" gr:y="470" id="sv3#area8" name="Manage Courses" landmark="true" protected="false" defaultPage="sv3#area8#page8" landmarks="sv3#area8#miu8">
   <OperationUnits>
-    <ModuleInstanceUnit id="sv3#area8#miu8" landmark="true" gr:x="25" gr:y="0" action="true" moduleId="mov1#mpkg2#opm6"/>
+    <ModuleInstanceUnit id="sv3#area8#miu8" landmark="true" gr:x="40" gr:y="0" action="true" moduleId="mov1#mpkg2#opm6"/>
   </OperationUnits>
 </Area>

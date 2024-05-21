@@ -1,6 +1,6 @@
 <SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2" name="Student" landmarks="sv2#area5 sv2#area9 sv2#area10" protected="true" homePage="sv2#area9#page23">
   <OperationUnits>
-    <ModifyUnit gr:x="1155" gr:y="245" id="sv2#mfu4" name="Update User" entity="User">
+    <ModifyUnit gr:x="1305" gr:y="305" id="sv2#mfu4" name="Update User" entity="User">
       <Selector id="sv2#mfu4#su23" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#mfu4#su23#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
       </Selector>

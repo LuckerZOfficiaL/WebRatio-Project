@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="95" id="sv3#area8#page8" name="Mange Courses">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="120" id="sv3#area8#page8" name="Mange Courses">
   <ContentUnits>
-    <PowerIndexUnit gr:x="0" gr:y="130" id="sv3#area8#page8#pwu2" name="Your Courses" sortable="true" checkable="false" useCountQuery="false" entity="ent1" linkOrder="sv3#area8#page8#pwu2#ln13 sv3#area8#page8#pwu2#ln17 sv3#area8#page8#pwu2#ln7" displayAttributes="ent1#att1 ent1#att11 ent1#att12">
+    <PowerIndexUnit gr:x="0" gr:y="165" id="sv3#area8#page8#pwu2" name="Your Courses" sortable="true" checkable="false" useCountQuery="false" entity="ent1" linkOrder="sv3#area8#page8#pwu2#ln13 sv3#area8#page8#pwu2#ln17 sv3#area8#page8#pwu2#ln7" displayAttributes="ent1#att1 ent1#att11 ent1#att12">
       <Selector id="sv3#area8#page8#pwu2#su6" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv3#area8#page8#pwu2#su6#rcond4" name="RoleCondition4" predicate="in" implied="false" role="rel1#role1"/>
       </Selector>

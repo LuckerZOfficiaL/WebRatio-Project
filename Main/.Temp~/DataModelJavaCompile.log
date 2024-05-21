@@ -1,41 +1,111 @@
-Buildfile: G:\WebRatio\WebRatio\plugins\com.webratio.generator.webapp_7.2.18.201903231300\DataModel\JavaCompile.xml
+Buildfile: D:\WebRatio\WebRatio\plugins\com.webratio.generator.webapp_7.2.18.201903231300\DataModel\JavaCompile.xml
 
 main:
-    [javac] Compiling 10 source files to G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes
+    [javac] Compiling 12 source files to D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes
     [javac] ----------
-    [javac] 1. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 11)
-    [javac] 	private com.webratio.webapp.EnrolledCourse_GradeBean _gradeBean;
-    [javac] 	        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    [javac] com.webratio.webapp.EnrolledCourse_GradeBean cannot be resolved to a type
+    [javac] 1. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 11)
+    [javac] 	private com.webratio.webapp.LectureTaken_NumQuestionsBean _numQuestionsBean;
+    [javac] 	        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_NumQuestionsBean cannot be resolved to a type
     [javac] ----------
-    [javac] 2. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 43)
-    [javac] 	com.webratio.webapp.EnrolledCourse_GradeBean __grade = this.getGradeBean();
-    [javac] 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    [javac] com.webratio.webapp.EnrolledCourse_GradeBean cannot be resolved to a type
+    [javac] 2. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 15)
+    [javac] 	private com.webratio.webapp.LectureTaken_NumCorrectAnswersBean _numCorrectAnswersBean;
+    [javac] 	        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_NumCorrectAnswersBean cannot be resolved to a type
     [javac] ----------
-    [javac] 3. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 43)
-    [javac] 	com.webratio.webapp.EnrolledCourse_GradeBean __grade = this.getGradeBean();
-    [javac] 	                                                            ^^^^^^^^^^^^
-    [javac] The method getGradeBean() from the type EnrolledCourse refers to the missing type EnrolledCourse_GradeBean
+    [javac] 3. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 19)
+    [javac] 	private com.webratio.webapp.LectureTaken_GradeBean _gradeBean;
+    [javac] 	        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_GradeBean cannot be resolved to a type
     [javac] ----------
-    [javac] 4. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 54)
-    [javac] 	public com.webratio.webapp.EnrolledCourse_GradeBean getGradeBean() {
-    [javac] 	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    [javac] com.webratio.webapp.EnrolledCourse_GradeBean cannot be resolved to a type
+    [javac] 4. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 41)
+    [javac] 	com.webratio.webapp.LectureTaken_NumQuestionsBean __numQuestions = this.getNumQuestionsBean();
+    [javac] 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_NumQuestionsBean cannot be resolved to a type
     [javac] ----------
-    [javac] 5. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 55)
+    [javac] 5. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 41)
+    [javac] 	com.webratio.webapp.LectureTaken_NumQuestionsBean __numQuestions = this.getNumQuestionsBean();
+    [javac] 	                                                                        ^^^^^^^^^^^^^^^^^^^
+    [javac] The method getNumQuestionsBean() from the type LectureTaken refers to the missing type LectureTaken_NumQuestionsBean
+    [javac] ----------
+    [javac] 6. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 52)
+    [javac] 	public com.webratio.webapp.LectureTaken_NumQuestionsBean getNumQuestionsBean() {
+    [javac] 	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_NumQuestionsBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 7. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 53)
+    [javac] 	return _numQuestionsBean;
+    [javac] 	       ^^^^^^^^^^^^^^^^^
+    [javac] LectureTaken_NumQuestionsBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 8. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 56)
+    [javac] 	public void setNumQuestionsBean(com.webratio.webapp.LectureTaken_NumQuestionsBean _numQuestionsBean) {
+    [javac] 	                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_NumQuestionsBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 9. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 57)
+    [javac] 	this._numQuestionsBean = _numQuestionsBean;
+    [javac] 	^^^^^^^^^^^^^^^^^^^^^^
+    [javac] LectureTaken_NumQuestionsBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 10. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 64)
+    [javac] 	com.webratio.webapp.LectureTaken_NumCorrectAnswersBean __numCorrectAnswers = this.getNumCorrectAnswersBean();
+    [javac] 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_NumCorrectAnswersBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 11. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 64)
+    [javac] 	com.webratio.webapp.LectureTaken_NumCorrectAnswersBean __numCorrectAnswers = this.getNumCorrectAnswersBean();
+    [javac] 	                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] The method getNumCorrectAnswersBean() from the type LectureTaken refers to the missing type LectureTaken_NumCorrectAnswersBean
+    [javac] ----------
+    [javac] 12. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 75)
+    [javac] 	public com.webratio.webapp.LectureTaken_NumCorrectAnswersBean getNumCorrectAnswersBean() {
+    [javac] 	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_NumCorrectAnswersBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 13. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 76)
+    [javac] 	return _numCorrectAnswersBean;
+    [javac] 	       ^^^^^^^^^^^^^^^^^^^^^^
+    [javac] LectureTaken_NumCorrectAnswersBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 14. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 79)
+    [javac] 	public void setNumCorrectAnswersBean(com.webratio.webapp.LectureTaken_NumCorrectAnswersBean _numCorrectAnswersBean) {
+    [javac] 	                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_NumCorrectAnswersBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 15. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 80)
+    [javac] 	this._numCorrectAnswersBean = _numCorrectAnswersBean;
+    [javac] 	^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] LectureTaken_NumCorrectAnswersBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 16. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 87)
+    [javac] 	com.webratio.webapp.LectureTaken_GradeBean __grade = this.getGradeBean();
+    [javac] 	^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_GradeBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 17. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 87)
+    [javac] 	com.webratio.webapp.LectureTaken_GradeBean __grade = this.getGradeBean();
+    [javac] 	                                                          ^^^^^^^^^^^^
+    [javac] The method getGradeBean() from the type LectureTaken refers to the missing type LectureTaken_GradeBean
+    [javac] ----------
+    [javac] 18. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 98)
+    [javac] 	public com.webratio.webapp.LectureTaken_GradeBean getGradeBean() {
+    [javac] 	       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_GradeBean cannot be resolved to a type
+    [javac] ----------
+    [javac] 19. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 99)
     [javac] 	return _gradeBean;
     [javac] 	       ^^^^^^^^^^
-    [javac] EnrolledCourse_GradeBean cannot be resolved to a type
+    [javac] LectureTaken_GradeBean cannot be resolved to a type
     [javac] ----------
-    [javac] 6. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 58)
-    [javac] 	public void setGradeBean(com.webratio.webapp.EnrolledCourse_GradeBean _gradeBean) {
-    [javac] 	                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    [javac] com.webratio.webapp.EnrolledCourse_GradeBean cannot be resolved to a type
+    [javac] 20. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 102)
+    [javac] 	public void setGradeBean(com.webratio.webapp.LectureTaken_GradeBean _gradeBean) {
+    [javac] 	                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    [javac] com.webratio.webapp.LectureTaken_GradeBean cannot be resolved to a type
     [javac] ----------
-    [javac] 7. ERROR in G:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\EnrolledCourse.java (at line 59)
+    [javac] 21. ERROR in D:\WebRatio\Tomcat\webapps\Main\WEB-INF\classes\com\webratio\webapp\LectureTaken.java (at line 103)
     [javac] 	this._gradeBean = _gradeBean;
     [javac] 	^^^^^^^^^^^^^^^
-    [javac] EnrolledCourse_GradeBean cannot be resolved to a type
+    [javac] LectureTaken_GradeBean cannot be resolved to a type
     [javac] ----------
-    [javac] 7 problems (7 errors)
+    [javac] 21 problems (21 errors)

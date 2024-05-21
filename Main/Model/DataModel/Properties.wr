@@ -48,7 +48,7 @@
       <db:JoinColumn attribute="moduleOID" name="module_oid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity gr:x="710" gr:y="410" id="ent1" name="Course" duration="persistent" attributeOrder="ent1#att1 ent1#att11 ent1#att12" db:database="db2" db:table="course">
+  <Entity gr:x="755" gr:y="470" id="ent1" name="Course" duration="persistent" attributeOrder="ent1#att1 ent1#att11 ent1#att12" db:database="db2" db:table="course">
     <Attribute id="ent1#att1" key="true" name="courseID" type="integer" db:column="courseid"/>
     <Attribute id="ent1#att11" name="name" type="string" key="false" db:column="name"/>
     <Attribute id="ent1#att12" name="topic" type="string" db:column="topic"/>
@@ -75,7 +75,7 @@
       <db:JoinColumn attribute="ent5#att15" name="enrolledcourseid"/>
     </Attribute>
   </Entity>
-  <Entity gr:x="1080" gr:y="420" id="ent6" name="Lecture" duration="persistent" attributeOrder="ent6#att18 ent6#att19 ent6#att24" db:database="db2" db:table="lecture">
+  <Entity gr:x="1080" gr:y="465" id="ent6" name="Lecture" duration="persistent" attributeOrder="ent6#att18 ent6#att19 ent6#att24" db:database="db2" db:table="lecture">
     <Attribute id="ent6#att18" key="true" name="lectureID" type="integer" db:column="lectureid"/>
     <Attribute id="ent6#att19" name="title" type="string" db:column="title"/>
     <Attribute id="ent6#att24" name="content" type="blob" db:column="content"/>
@@ -121,9 +121,11 @@
       <db:JoinColumn attribute="ent1#att1" name="courseid"/>
     </RelationshipRole2>
   </Relationship>
-  <Entity id="ent7" name="Questiontaken" db:database="db2" duration="persistent" db:table="questiontaken" gr:x="880" gr:y="625">
+  <Entity id="ent7" name="Questiontaken" db:database="db2" duration="persistent" db:table="questiontaken" gr:x="900" gr:y="740" attributeOrder="ent7#att27 ent7#att28 ent7#att2 ent7#att26">
     <Attribute id="ent7#att27" name="oid" db:column="oid" type="integer" key="true"/>
     <Attribute id="ent7#att28" name="iscorrect" db:column="iscorrect" type="integer" key="false"/>
+    <Attribute id="ent7#att2" name="attempts" type="integer" db:column="attempts"/>
+    <Attribute id="ent7#att26" name="weight" type="float" db:column="weight"/>
   </Entity>
   <Relationship id="rel8" name="QuestiontakenEnrolledcourse" db:database="db2" db:table="questiontaken" sourceEntity="ent7" targetEntity="ent5">
     <RelationshipRole1 id="rel8#role15" name="QuestiontakenToEnrolledcourse" maxCard="1">
@@ -139,6 +141,42 @@
     </RelationshipRole1>
     <RelationshipRole2 id="rel10#role20" name="QuestionToQuestiontaken" maxCard="N">
       <db:JoinColumn attribute="ent3#att3" name="question_questionid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Entity gr:x="325" gr:y="745" id="ent2" name="LectureTaken" duration="persistent" attributeOrder="ent2#att4 ent2#att13 ent2#att14 ent2#att20" db:database="db2" db:table="lecturetaken">
+    <Attribute id="ent2#att4" key="true" name="oid" type="integer" db:column="oid"/>
+    <Attribute id="ent2#att13" name="numQuestions" type="integer" derivationQuery="calculated::count(Self.rel6#role11(as Var1))" db:table="lecturetaken_numquestions_view" db:column="der_attr" storageType="file">
+      <db:JoinColumn attribute="ent2#att4" name="oid"/>
+    </Attribute>
+    <Attribute id="ent2#att14" name="numCorrectAnswers" type="integer" derivationQuery="calculated::sum(Self.rel6#role11(as Var1).ent7#att28)" db:table="lecturetaken_numcorrectanswers" db:column="der_attr" storageType="file">
+      <db:JoinColumn attribute="ent2#att4" name="oid"/>
+    </Attribute>
+    <Attribute id="ent2#att20" name="grade" type="float" derivationQuery="calculated::sum(Self.rel6#role11(as Var1).ent7#att26) / Self.ent2#att13" db:table="lecturetaken_grade_view" db:column="der_attr" storageType="file">
+      <db:JoinColumn attribute="ent2#att4" name="oid"/>
+    </Attribute>
+  </Entity>
+  <Relationship id="rel3" name="EnrolledCourse_Taken Lecture" sourceEntity="ent5" targetEntity="ent2" db:database="db2" db:table="lecturetaken">
+    <RelationshipRole1 id="rel3#role5" name="EnrolledCourseToTaken Lecture" maxCard="N">
+      <db:JoinColumn attribute="ent5#att15" name="enrolledcourse_enrolledcoursei"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel3#role6" name="Taken LectureToEnrolledCourse" maxCard="1">
+      <db:JoinColumn attribute="ent2#att4" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel5" name="Lecture_Taken Lecture" sourceEntity="ent6" targetEntity="ent2" db:database="db2" db:table="lecturetaken">
+    <RelationshipRole1 id="rel5#role9" name="LectureToTaken Lecture" maxCard="N">
+      <db:JoinColumn attribute="ent6#att18" name="lecture_lectureid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel5#role10" name="Taken LectureToLecture" maxCard="1">
+      <db:JoinColumn attribute="ent2#att4" name="oid"/>
+    </RelationshipRole2>
+  </Relationship>
+  <Relationship id="rel6" name="LectureTaken_Questiontaken" sourceEntity="ent2" targetEntity="ent7" db:database="db2" db:table="questiontaken">
+    <RelationshipRole1 id="rel6#role11" name="LectureTakenToQuestiontaken" maxCard="N">
+      <db:JoinColumn attribute="ent2#att4" name="lecturetaken_oid"/>
+    </RelationshipRole1>
+    <RelationshipRole2 id="rel6#role12" name="QuestiontakenToLectureTaken" maxCard="1">
+      <db:JoinColumn attribute="ent7#att27" name="oid"/>
     </RelationshipRole2>
   </Relationship>
 </DataModel>

@@ -1,6 +1,6 @@
 <Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv2#area5#page5" name="Enrolled Courses Page" landmark="false">
   <ContentUnits>
-    <PowerIndexUnit id="sv2#area5#page5#pwu1" entity="ent5" displayAttributes="ent5#att15 ent5#att23" sortable="true" checkable="false" useCountQuery="false" gr:x="0" gr:y="135" name="Enrolled Courses" linkOrder="sv2#area5#page5#pwu1#ln6 sv2#area5#page5#pwu1#ln69">
+    <PowerIndexUnit id="sv2#area5#page5#pwu1" entity="ent5" displayAttributes="ent5#att15 ent5#att23" sortable="true" checkable="false" useCountQuery="false" gr:x="0" gr:y="200" name="Enrolled Courses" linkOrder="sv2#area5#page5#pwu1#ln6 sv2#area5#page5#pwu1#ln69">
       <Selector id="sv2#area5#page5#pwu1#su2" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area5#page5#pwu1#su2#rcond1" role="rel2#role3" predicate="in" implied="false" name="User ID Condition"/>
       </Selector>
@@ -11,7 +11,7 @@
         <LinkParameter id="sv2#area5#page5#pwu1#ln69#par34" name="enrolledCourseID_KeyCondition2 [enrolledCourseID]" source="data[].ent5#att15" target="sv2#area11#page7#dau1#su3#kcond2.ent5#att15"/>
       </Link>
     </PowerIndexUnit>
-    <GetUnit gr:x="20" gr:y="5" id="sv2#area5#page5#gtu2" name="Get User" contextParameters="UserCtxParam">
+    <GetUnit gr:x="30" gr:y="10" id="sv2#area5#page5#gtu2" name="Get User" contextParameters="UserCtxParam">
       <Link id="sv2#area5#page5#gtu2#ln8" name="Flow8" to="sv2#area5#page5#pwu1" type="transport" validate="true">
         <LinkParameter id="sv2#area5#page5#gtu2#ln8#par19" name="UserCtxParam.userID_User ID Condition [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#area5#page5#pwu1#su2#rcond1.userOID"/>
       </Link>
@@ -19,7 +19,7 @@
         <LinkParameter id="sv2#area5#page5#gtu2#ln27#par68" name="UserCtxParam.userID_KeyCondition8 [userID]" source="sv2#area5#page5#gtu2.UserCtxParam" target="sv2#area5#page5#dau8#su10#kcond8.userOID"/>
       </Link>
     </GetUnit>
-    <DataUnit gr:x="165" gr:y="0" id="sv2#area5#page5#dau8" name="User Info" entity="User" displayAttributes="userOID userName password email User#att17 User#att22">
+    <DataUnit gr:x="280" gr:y="0" id="sv2#area5#page5#dau8" name="User Info" entity="User" displayAttributes="userOID userName password email User#att17 User#att22">
       <Selector id="sv2#area5#page5#dau8#su10" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area5#page5#dau8#su10#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
       </Selector>

@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="55" gr:y="110" id="sv3#area2#page18" name="Home Page" protected="false" linkOrder="sv3#area2#page18#ln54 sv3#area2#page18#ln19">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="40" gr:y="165" id="sv3#area2#page18" name="Home Page" protected="false" linkOrder="sv3#area2#page18#ln54 sv3#area2#page18#ln19">
   <ContentUnits>
     <MultiMessageUnit gr:x="0" gr:y="0" id="sv3#area2#page18#mssu15" name="Welcome">
       <Message xml:space="preserve">Welcome to the teacher's private area. 

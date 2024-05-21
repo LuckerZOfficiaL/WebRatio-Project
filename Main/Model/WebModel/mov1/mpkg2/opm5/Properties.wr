@@ -1,4 +1,4 @@
-<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="50" gr:y="65" id="mov1#mpkg2#opm5" name="Register">
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="60" gr:y="90" id="mov1#mpkg2#opm5" name="Register">
   <OperationUnits>
     <InputCollectorUnit id="mov1#mpkg2#opm5#icu5" gr:x="30" gr:y="60">
       <InputCollectorParameter id="mov1#mpkg2#opm5#icu5#icp11" name="email"/>
@@ -17,9 +17,9 @@
         <LinkParameter id="mov1#mpkg2#opm5#icu5#oln15#par1" name="group ID_Group.groupID(groups)" source="mov1#mpkg2#opm5#icu5#icp16" target="mov1#mpkg2#opm5#cru3.User2Group.groupOID"/>
       </OKLink>
     </InputCollectorUnit>
-    <CreateUnit gr:x="345" gr:y="120" id="mov1#mpkg2#opm5#cru3" name="CreateUser" entity="User">
+    <CreateUnit gr:x="350" gr:y="140" id="mov1#mpkg2#opm5#cru3" name="CreateUser" entity="User">
       <OKLink id="mov1#mpkg2#opm5#cru3#oln16" name="OKFlow13" to="mov1#mpkg2#opm5#okcu1" automaticCoupling="true"/>
     </CreateUnit>
-    <OKCollectorUnit gr:x="515" gr:y="110" id="mov1#mpkg2#opm5#okcu1" name="OK Port1"/>
+    <OKCollectorUnit gr:x="555" gr:y="125" id="mov1#mpkg2#opm5#okcu1" name="OK Port1"/>
   </OperationUnits>
 </OperationModule>

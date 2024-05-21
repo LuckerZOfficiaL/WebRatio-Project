@@ -1,6 +1,6 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="30" gr:y="90" id="sv2#area10#page30" name="Enroll Courses">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="135" id="sv2#area10#page30" name="Enroll Courses">
   <ContentUnits>
-    <EntryUnit gr:x="345" gr:y="0" id="sv2#area10#page30#enu12" name="Search" fieldOrder="sv2#area10#page30#enu12#fld43" linkOrder="sv2#area10#page30#enu12#ln72" gr:showAllParts="true">
+    <EntryUnit gr:x="460" gr:y="0" id="sv2#area10#page30#enu12" name="Search" fieldOrder="sv2#area10#page30#enu12#fld43" linkOrder="sv2#area10#page30#enu12#ln72" gr:showAllParts="true">
       <Field id="sv2#area10#page30#enu12#fld43" name="Keyword" type="string" modifiable="true" ajaxAutocompleteEnabled="false"/>
       <Link id="sv2#area10#page30#enu12#ln72" name="Search" to="sv2#area10#page30#pwu7" type="normal" validate="true">
         <LinkParameter id="sv2#area10#page30#enu12#ln72#par96" name="Keyword_AttCondition1" source="sv2#area10#page30#enu12#fld43" target="sv2#area10#page30#pwu7#su31#acond1"/>
@@ -8,7 +8,7 @@
         <LinkParameter id="sv2#area10#page30#enu12#ln72#par98" name="Keyword_AttCondition3" source="sv2#area10#page30#enu12#fld43" target="sv2#area10#page30#pwu7#su31#acond3"/>
       </Link>
     </EntryUnit>
-    <PowerIndexUnit gr:x="0" gr:y="60" id="sv2#area10#page30#pwu7" name="Resulting Courses" sortable="true" checkable="false" useCountQuery="false" entity="ent1" displayAttributes="ent1#att1 ent1#att11 ent1#att12" linkOrder="sv2#area10#page30#pwu7#ln74 sv2#area10#page30#pwu7#ln20">
+    <PowerIndexUnit gr:x="0" gr:y="30" id="sv2#area10#page30#pwu7" name="Resulting Courses" sortable="true" checkable="false" useCountQuery="false" entity="ent1" displayAttributes="ent1#att1 ent1#att11 ent1#att12" linkOrder="sv2#area10#page30#pwu7#ln74 sv2#area10#page30#pwu7#ln20">
       <SortAttribute attribute="ent1#att1" order="descending"/>
       <Selector id="sv2#area10#page30#pwu7#su31" defaultPolicy="fill" booleanOperator="or">
         <AttributesCondition id="sv2#area10#page30#pwu7#su31#acond1" name="AttCondition1" predicate="eq" booleanOperator="or" implied="true" attributes="ent1#att1" ignoreCase="true"/>
@@ -22,7 +22,7 @@
         <LinkParameter id="sv2#area10#page30#pwu7#ln20#par5" name="courseID_KeyCondition5 [courseID]" source="data[].ent1#att1" target="sv2#area10#page30#dau7#su11#kcond5.ent1#att1"/>
       </Link>
     </PowerIndexUnit>
-    <DataUnit gr:x="345" gr:y="120" id="sv2#area10#page30#dau7" name="Course Detail" entity="ent1" linkOrder="sv2#area10#page30#dau7#ln22" displayAttributes="ent1#att1 ent1#att11 ent1#att12 rel1#role2.User#att22">
+    <DataUnit gr:x="460" gr:y="120" id="sv2#area10#page30#dau7" name="Course Detail" entity="ent1" linkOrder="sv2#area10#page30#dau7#ln22" displayAttributes="ent1#att1 ent1#att11 ent1#att12 rel1#role2.User#att22">
       <Selector id="sv2#area10#page30#dau7#su11" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv2#area10#page30#dau7#su11#kcond5" name="KeyCondition5" predicate="in" implied="false"/>
       </Selector>

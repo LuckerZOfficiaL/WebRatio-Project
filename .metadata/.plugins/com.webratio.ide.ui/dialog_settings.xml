@@ -11,20 +11,20 @@
 		<section name="com.webratio.ide.ui.viewers.WRLogTableViewer.Settings">
 			<item value="" key="GROUPS_VALUE"/>
 			<item value="0" key="SCALE_LEVEL_FILTER_VALUE"/>
-			<item value="false" key="USE_CUSTOM_CONFIG_FILE"/>
 			<item value="2024-04-25T10:12:59" key="ENDING_DATE_FILTER_ID.DATE"/>
+			<item value="false" key="USE_CUSTOM_CONFIG_FILE"/>
 			<item value="false" key="STARTING_DATE_FILTER_ID.ENABLED"/>
 			<item value="2024-04-25T10:12:59" key="STARTING_DATE_FILTER_ID.DATE"/>
-			<item value="false" key="ENDING_DATE_FILTER_ID.ENABLED"/>
 			<item value="ROW_ID=65|TIMESTAMP=150|LEVEL=60|THREAD=150|CATEGORY=330|LINENUMBER=45|SESSION_ID=65|MODEL=65|MESSAGE=700" key="COLUMNS_SETTINGS"/>
+			<item value="false" key="ENDING_DATE_FILTER_ID.ENABLED"/>
 		</section>
 	</section>
 	<section name="DialogBounds_CouplingDialog">
-		<item value="1030" key="DIALOG_WIDTH"/>
-		<item value="480" key="DIALOG_Y_ORIGIN"/>
-		<item value="911" key="DIALOG_HEIGHT"/>
-		<item value="842" key="DIALOG_X_ORIGIN"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="1322" key="DIALOG_WIDTH"/>
+		<item value="733" key="DIALOG_Y_ORIGIN"/>
+		<item value="906" key="DIALOG_X_ORIGIN"/>
+		<item value="1147" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="DatabaseMissingJarsDialog.FileDialog">
 		<item value="C:\Users\Luca\Desktop\postgresql-42.2.29.jre7.jar" key="PATH"/>
