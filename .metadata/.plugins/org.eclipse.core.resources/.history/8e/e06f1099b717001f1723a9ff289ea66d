@@ -152,9 +152,7 @@
     <Attribute id="ent2#att14" name="numCorrectAnswers" type="integer" derivationQuery="calculated::sum(Self.rel6#role11(as Var1).ent7#att28)" db:table="lecturetaken_numcorrectanswers" db:column="der_attr" storageType="file">
       <db:JoinColumn attribute="ent2#att4" name="oid"/>
     </Attribute>
-    <Attribute id="ent2#att20" name="grade" type="float" derivationQuery="calculated::sum(Self.rel6#role11(as Var1).ent7#att28) / sum(Self.rel6#role11(as Var1).ent7#att2) * count(Self.rel6#role11(as Var1)) / count(Self.rel5#role10(as Var2).rel9#role17(as Var3))" storageType="file" db:table="lecturetaken_grade_view" db:column="der_attr">
-      <db:JoinColumn attribute="ent2#att4" name="oid"/>
-    </Attribute>
+    <Attribute id="ent2#att20" name="grade" type="float" derivationQuery="calculated::sum(Self.rel6#role11(as Var1).ent7#att28) / sum(Self.rel6#role11(as Var1).ent7#att2)" storageType="file"/>
   </Entity>
   <Relationship id="rel3" name="EnrolledCourse_Taken Lecture" sourceEntity="ent5" targetEntity="ent2" db:database="db2" db:table="lecturetaken">
     <RelationshipRole1 id="rel3#role5" name="EnrolledCourseToTaken Lecture" maxCard="N">

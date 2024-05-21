@@ -3,30 +3,30 @@
 	<section name="com.webratio.ide.ui.dialogs.EditEntryUnitDialog">
 		<item value="1902" key="DIALOG_WIDTH"/>
 		<item value="106" key="DIALOG_Y_ORIGIN"/>
+		<item value="1219" key="DIALOG_HEIGHT"/>
 		<item value="342" key="DIALOG_X_ORIGIN"/>
-		<item value="1219" key="DIALOG_HEIGHT"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-	</section>
-	<section name="com.webratio.ide.ui.dialogs.EditSubUnitsDialog">
-		<item value="767" key="DIALOG_WIDTH"/>
-		<item value="172" key="DIALOG_Y_ORIGIN"/>
-		<item value="1219" key="DIALOG_HEIGHT"/>
-		<item value="896" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="com.webratio.ide.ui.dialogs.EditSlotsDialog">
 		<item value="1716" key="DIALOG_WIDTH"/>
 		<item value="318" key="DIALOG_Y_ORIGIN"/>
-		<item value="506" key="DIALOG_X_ORIGIN"/>
 		<item value="829" key="DIALOG_HEIGHT"/>
+		<item value="506" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
-	<section name="com.webratio.ide.ui.properties.items.EntityPropertyItem$2.DialogSettings">
+	<section name="com.webratio.ide.ui.dialogs.EditSubUnitsDialog">
+		<item value="767" key="DIALOG_WIDTH"/>
+		<item value="172" key="DIALOG_Y_ORIGIN"/>
+		<item value="896" key="DIALOG_X_ORIGIN"/>
+		<item value="1219" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="DialogBounds_ExceptionDialog">
 		<item value="876" key="DIALOG_WIDTH"/>
-		<item value="571" key="DIALOG_Y_ORIGIN"/>
-		<item value="853" key="DIALOG_X_ORIGIN"/>
+		<item value="0" key="DIALOG_Y_ORIGIN"/>
 		<item value="196" key="DIALOG_HEIGHT"/>
+		<item value="0" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="com.webratio.ide.ui.properties.items.EntityPropertyItem$2.DialogSettings">
 	</section>
 </section>

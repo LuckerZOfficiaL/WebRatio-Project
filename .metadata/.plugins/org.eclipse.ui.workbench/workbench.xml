@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="44" version="2.0">
+<workbench progressCount="48" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -75,8 +75,7 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (4 items)"/>
+<expanded>&#x0A;<category IMemento.internal.id="Warnings (4 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="104" org.eclipse.ui.ide.markerType="154" org.eclipse.ui.ide.pathField="204" org.eclipse.ui.ide.resourceField="379" org.eclipse.ui.ide.severityAndDescriptionField="808"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -114,6 +113,9 @@
 </xmlDefinedFilters>
 </customFilters>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="com.webratio.eclipse.cloud.ui.views.CloudServicesView" partName="Cloud Accounts">
 <viewState/>
@@ -249,6 +251,7 @@
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="com.webratio.ide.ui.views.GenerationErrorsView"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -268,12 +271,14 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@70f622d0" ratio="0.8713221" ratioLeft="2221" ratioRight="328" relationship="2" relative="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.19973235" ratioLeft="597" ratioRight="2392" relationship="2" relative="left"/>
@@ -310,84 +315,6 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.webratio.ide.ui.editors.WebProjectEditor" path="/Main/Model.wr"/>
 </editors>
-<item historyLabel="Main" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att13&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att14&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att20&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Correct Answers" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att14&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; LectureTaken" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att29&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Grade" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att20&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Correct Answers" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att14&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Attempted Questions" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att13&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Correct Answers" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att14&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Grade" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att20&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Total Questions" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att29&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Domain Model" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; weight" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent7#att26&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Questiontaken" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent7&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; weight" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent7#att26&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Grade" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att20&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; DB" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; LectureTaken" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att13&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Domain Model" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; weight" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent7#att26&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; numQuestions" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att13&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; DB" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; Domain Model" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
-</item>
-<item historyLabel="Main &gt; DB" index="0">
-<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
-</item>
 <item historyLabel="Main &gt; Domain Model" index="0">
 <position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
 </item>
@@ -438,6 +365,84 @@
 </item>
 <item historyLabel="Main &gt; Domain Model" index="0">
 <position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; grade" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att20&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; Domain Model" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; Domain Model" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; grade" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; Domain Model" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; Domain Model" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; weight" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent7#att26&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; grade" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att20&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; weight" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent7#att26&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; grade" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att20&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; numCorrectAnswers" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att14&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; grade" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att20&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; Domain Model" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; Domain Model" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; Domain Model" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="/WebProject/DataModel" PROPERTY_TAB_ID=""/>
+</item>
+<item historyLabel="Main &gt; DB" index="0">
+<position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;db2&apos;)" PROPERTY_TAB_ID=""/>
 </item>
 <item historyLabel="Main &gt; grade" index="0">
 <position CLIENTAREA_GRAPHINFO="" GRAPHEDITOR_INPUT_PATH="/WebProject/DataModel" GRAPHEDITOR_PATH="/WebProject/DataModel" LOCATIONS="id(&apos;ent2#att20&apos;)" PROPERTY_TAB_ID=""/>
