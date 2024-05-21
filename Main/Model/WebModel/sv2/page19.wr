@@ -1,0 +1,31 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1945" gr:y="830" id="sv2#page19" name="Enrollment Message">
+  <ContentUnits>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv2#page19#mssu1" name="Welcome" linkOrder="sv2#page19#mssu1#ln62">
+      <Message xml:space="preserve">Welcome to the course!</Message>
+      <Link id="sv2#page19#mssu1#ln62" name="Thanks" to="sv2#miu11" type="normal" validate="true">
+        <LinkParameter id="sv2#page19#mssu1#ln62#par154" name="enrolledCourseID_PASSING_EnrolledCourse ID" sourceLinkParameter="sv2#area10#cru1#oln18#par153" target="sv2#miu11.mov1#mpkg2#opm1#icu1#icp6"/>
+        <LinkParameter id="sv2#page19#mssu1#ln62#par155" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area10#cru1#oln18#par153" passing="true"/>
+      </Link>
+    </MultiMessageUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv2#page19#mssu1">
+          <layout:Link link="sv2#page19#mssu1#ln62"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

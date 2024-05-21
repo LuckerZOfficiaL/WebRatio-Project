@@ -1,0 +1,64 @@
+
+<Warnings>
+
+<Warning xpath="id('sv1#area1#page1#mssu2#ln2')" rootXPath="id('sv1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="Register">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'Register'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+     <Warning xpath="id('sv1#miu4')" rootXPath="id('sv1')" error="false" label="sv1#miu4" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'sv1#miu4'</Message>
+        </Warning>
+    	<Warning xpath="id('sv1#miu5')" rootXPath="id('sv1')" error="false" label="sv1#miu5" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'sv1#miu5'</Message>
+        </Warning>
+    
+
+
+					  <Warning xpath="id('sv1#area1#page1#enu1#fld1')" rootXPath="id('sv1')" label="Password">
+					    <Message>Security Warning: the password field 'Password' does not have any validation to ensure password strength</Message>
+					    <Resolution 
+					    	class="com.webratio.ide.ui.resources.AddMissingValidationRuleResolutionGenerator" 
+					    	validationRuleName="PasswordStrengthValidationRule">Add missing Password Strength validation rule</Resolution>
+					  </Warning>
+					
+					  <Warning xpath="id('sv1#area3#page2#enu2#fld7')" rootXPath="id('sv1')" label="Password">
+					    <Message>Security Warning: the password field 'Password' does not have any validation to ensure password strength</Message>
+					    <Resolution 
+					    	class="com.webratio.ide.ui.resources.AddMissingValidationRuleResolutionGenerator" 
+					    	validationRuleName="PasswordStrengthValidationRule">Add missing Password Strength validation rule</Resolution>
+					  </Warning>
+					
+		  <Warning xpath="id('sv1#area3#page2')" rootXPath="id('sv1')" label="Registration">
+		    <Message>Security Warning: the public page 'Registration' shows information about the user</Message>
+		    
+			    <Resolution 
+			        class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+			        attribute="protected"
+			        value="true">Protect the page</Resolution>
+		    
+		  </Warning>
+		
+  <Warning error="false" xpath="id('sv1#area1#page1')" rootXPath="id(&apos;sv1&apos;)" key="" label="Login">
+    <Message>Security Warning: the page &apos;Login&apos; is public but no captcha field is configured on its form component</Message>
+  </Warning> 
+  <Warning error="false" xpath="id('sv1#area3#page2')" rootXPath="id(&apos;sv1&apos;)" key="" label="Registration">
+    <Message>Security Warning: the page &apos;Registration&apos; is public but no captcha field is configured on its form component</Message>
+  </Warning> <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject">
+	      <Message>Security Warning: the Admin Area generation is enabled</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="adminArea"
+	            value="">Remove the 'Admin Area' property</Resolution>
+	    </Warning>
+    <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject" tab="security">
+	      <Message>Security Warning: the project contains a protected resource but the 'Protect URL' property is missing</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="protectURL"
+	            value="true">Set the 'Protect URL' property to 'true'</Resolution>
+	    </Warning>
+    
+</Warnings>

@@ -1,36 +1,27 @@
-[21 May 2024 12:36:47] DEBUG Executing SQL script
-[21 May 2024 12:36:47] INFO ================================================================================
-[21 May 2024 12:36:47] INFO onError= 'stop'
-[21 May 2024 12:36:47] INFO autoCommit= 'false'
-[21 May 2024 12:36:47] INFO username= 'root'
-[21 May 2024 12:36:47] INFO outputPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml'
-[21 May 2024 12:36:47] INFO outputLogPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml.log'
-[21 May 2024 12:36:47] INFO encoding= ''
-[21 May 2024 12:36:47] INFO driverClass= 'com.mysql.jdbc.Driver'
-[21 May 2024 12:36:47] INFO sqlScript= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql'
-[21 May 2024 12:36:47] INFO eventSocketPort= '51818'
-[21 May 2024 12:36:47] INFO statementSeparator= ';'
-[21 May 2024 12:36:47] INFO derby.system.home= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\.metadata\.plugins\com.webratio.commons.db\derby'
-[21 May 2024 12:36:47] INFO password= '585858'
-[21 May 2024 12:36:47] INFO url= 'jdbc:mysql://localhost:3306/db2'
-[21 May 2024 12:36:47] INFO ================================================================================
-[21 May 2024 12:36:47] INFO Connecting to the Database...
-[21 May 2024 12:36:47] INFO Database connection estabilished
-[21 May 2024 12:36:47] INFO transaction isolation: 4
-[21 May 2024 12:36:47] DEBUG ================================================================================
-[21 May 2024 12:36:47] DEBUG Executing SQL script file: E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql
-[21 May 2024 12:36:47] DEBUG Executing statement:  create table `lecturetaken` ( `oid`  integer  not null, primary key (`oid`) )
-[21 May 2024 12:36:47] DEBUG Executing statement:    alter table `questiontaken`  add column  `weight`  double precision
-[21 May 2024 12:36:47] DEBUG Executing statement:    alter table `lecturetaken`  add column  `enrolledcourse_enrolledcoursei`  integer
-[21 May 2024 12:36:47] DEBUG Executing statement:  alter table `lecturetaken`   add index fk_lecturetaken_enrolledcourse (`enrolledcourse_enrolledcoursei`), add constraint fk_lecturetaken_enrolledcourse foreign key (`enrolledcourse_enrolledcoursei`) references `enrolledcourse` (`enrolledcourseid`)
-[21 May 2024 12:36:47] DEBUG Executing statement:    alter table `lecturetaken`  add column  `lecture_lectureid`  integer
-[21 May 2024 12:36:47] DEBUG Executing statement:  alter table `lecturetaken`   add index fk_lecturetaken_lecture (`lecture_lectureid`), add constraint fk_lecturetaken_lecture foreign key (`lecture_lectureid`) references `lecture` (`lectureid`)
-[21 May 2024 12:36:47] DEBUG Executing statement:    alter table `questiontaken`  add column  `lecturetaken_oid`  integer
-[21 May 2024 12:36:47] DEBUG Executing statement:  alter table `questiontaken`   add index fk_questiontaken_lecturetaken (`lecturetaken_oid`), add constraint fk_questiontaken_lecturetaken foreign key (`lecturetaken_oid`) references `lecturetaken` (`oid`)
-[21 May 2024 12:36:48] DEBUG Executing statement:    create view `lecturetaken_numquestions_view` as select AL1.`oid` as `oid`, count(distinct AL2.`oid`) as `der_attr` from  `lecturetaken` AL1 left outer join `questiontaken` AL2 on AL1.`oid`=AL2.`lecturetaken_oid` group by AL1.`oid`
-[21 May 2024 12:36:48] DEBUG Executing statement:    create view `lecturetaken_numcorrectanswers` as select AL1.`oid` as `oid`, sum(AL3.`iscorrect`) as `der_attr` from  `lecturetaken` AL1 left outer join `questiontaken` AL2 on AL1.`oid`=AL2.`lecturetaken_oid` left outer join `questiontaken` AL3 on AL2.`oid`=AL3.`oid` group by AL1.`oid`
-[21 May 2024 12:36:48] DEBUG Executing statement:    create view `lecturetaken_grade_view` as select AL1.`oid` as `oid`, sum(AL3.`weight`) / AL4.`der_attr` as `der_attr` from  `lecturetaken` AL1 left outer join `questiontaken` AL2 on AL1.`oid`=AL2.`lecturetaken_oid` left outer join `questiontaken` AL3 on AL2.`oid`=AL3.`oid` left outer join `lecturetaken_numquestions_view` AL4 on AL1.`oid`=AL4.`oid` group by AL1.`oid`, AL4.`der_attr`
-[21 May 2024 12:36:48] DEBUG ================================================================================
-[21 May 2024 12:36:48] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[21 May 2024 12:36:48] INFO Database connection closed
-[21 May 2024 12:36:48] DEBUG Total time: 684 milliseconds
+[21 May 2024 21:48:50] DEBUG Executing SQL script
+[21 May 2024 21:48:50] INFO ================================================================================
+[21 May 2024 21:48:50] INFO outputPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.xml'
+[21 May 2024 21:48:50] INFO onError= 'stop'
+[21 May 2024 21:48:50] INFO statementSeparator= ';'
+[21 May 2024 21:48:50] INFO derby.system.home= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\.metadata\.plugins\com.webratio.commons.db\derby'
+[21 May 2024 21:48:50] INFO password= '585858'
+[21 May 2024 21:48:50] INFO url= 'jdbc:mysql://localhost:3306/db2'
+[21 May 2024 21:48:50] INFO username= 'root'
+[21 May 2024 21:48:50] INFO autoCommit= 'false'
+[21 May 2024 21:48:50] INFO outputLogPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.xml.log'
+[21 May 2024 21:48:50] INFO driverClass= 'com.mysql.jdbc.Driver'
+[21 May 2024 21:48:50] INFO encoding= ''
+[21 May 2024 21:48:50] INFO eventSocketPort= '49915'
+[21 May 2024 21:48:50] INFO sqlScript= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.sql'
+[21 May 2024 21:48:50] INFO ================================================================================
+[21 May 2024 21:48:50] INFO Connecting to the Database...
+[21 May 2024 21:48:50] INFO Database connection estabilished
+[21 May 2024 21:48:50] INFO transaction isolation: 4
+[21 May 2024 21:48:50] DEBUG ================================================================================
+[21 May 2024 21:48:50] DEBUG Executing SQL script file: F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.sql
+[21 May 2024 21:48:50] DEBUG Executing statement:  drop view `lecturetaken_grade_view`
+[21 May 2024 21:48:50] DEBUG Executing statement:  create view `lecturetaken_grade_view` as select AL1.`oid` as `oid`, sum(AL2.`iscorrect`) / AL3.`der_attr` as `der_attr` from  `lecturetaken` AL1 left outer join `questiontaken` AL2 on AL1.`oid`=AL2.`lecturetaken_oid` left outer join `lecturetaken_numquestions_view` AL3 on AL1.`oid`=AL3.`oid` group by AL1.`oid`, AL3.`der_attr`
+[21 May 2024 21:48:50] DEBUG ================================================================================
+[21 May 2024 21:48:50] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[21 May 2024 21:48:50] INFO Database connection closed
+[21 May 2024 21:48:50] DEBUG Total time: 262 milliseconds

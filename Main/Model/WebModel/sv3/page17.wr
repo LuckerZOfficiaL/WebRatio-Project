@@ -1,10 +1,32 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1560" gr:y="450" id="sv3#page17" name="Edit Question">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="1520" gr:y="205" id="sv3#page17" name="Edit Question">
   <ContentUnits>
     <DataUnit gr:x="0" gr:y="0" id="sv3#page17#dau6" name="Question Details" entity="ent3" displayAll="true">
       <Selector id="sv3#page17#dau6#su19" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="sv3#page17#dau6#su19#kcond11" name="KeyCondition11" predicate="in" implied="false"/>
       </Selector>
+      <Link id="sv3#page17#dau6#ln58" name="Flow58" to="sv3#mfu1" type="transport" validate="true">
+        <LinkParameter id="sv3#page17#dau6#ln58#par137" name="questionID_KeyCondition10 [questionID]" source="data.ent3#att3" target="sv3#mfu1#su26#kcond10.ent3#att3"/>
+        <LinkParameter id="sv3#page17#dau6#ln58#par147" name="QuestionToLecture.lectureID_Lecture.lectureID(QuestionToLecture)" source="data.rel9#role18_ent6#att18" target="sv3#mfu1.rel9#role18.ent6#att18"/>
+      </Link>
     </DataUnit>
+    <EntryUnit gr:x="150" gr:y="125" id="sv3#page17#enu5" name="Edit" fieldOrder="sv3#page17#enu5#fld16 sv3#page17#enu5#fld17 sv3#page17#enu5#fld24 sv3#page17#enu5#fld25 sv3#page17#enu5#fld26 sv3#page17#enu5#sfld2" linkOrder="sv3#page17#enu5#ln60">
+      <Field id="sv3#page17#enu5#fld26" name="Option 4" type="string" modifiable="true"/>
+      <Field id="sv3#page17#enu5#fld25" name="Option 3" type="string" modifiable="true"/>
+      <Field id="sv3#page17#enu5#fld24" name="Option 2" type="string" modifiable="true"/>
+      <Field id="sv3#page17#enu5#fld17" name="Option 1" type="string" modifiable="true"/>
+      <Field id="sv3#page17#enu5#fld16" name="Question" type="string" modifiable="true"/>
+      <Link id="sv3#page17#enu5#ln60" name="Save" to="sv3#mfu1" type="normal" validate="true">
+        <LinkParameter id="sv3#page17#enu5#ln60#par141" name="Correct Answer_correctAnswer" source="sv3#page17#enu5#fld27" target="sv3#mfu1.ent3#att10"/>
+        <LinkParameter id="sv3#page17#enu5#ln60#par142" name="Option 1_option1" source="sv3#page17#enu5#fld17" target="sv3#mfu1.ent3#att6"/>
+        <LinkParameter id="sv3#page17#enu5#ln60#par143" name="Option 2_option2" source="sv3#page17#enu5#fld24" target="sv3#mfu1.ent3#att7"/>
+        <LinkParameter id="sv3#page17#enu5#ln60#par144" name="Option 2_option3" source="sv3#page17#enu5#fld24" target="sv3#mfu1.ent3#att8"/>
+        <LinkParameter id="sv3#page17#enu5#ln60#par145" name="Option 3_option4" source="sv3#page17#enu5#fld25" target="sv3#mfu1.ent3#att9"/>
+        <LinkParameter id="sv3#page17#enu5#ln60#par146" name="Question_question" source="sv3#page17#enu5#fld16" target="sv3#mfu1.ent3#att5"/>
+      </Link>
+      <SelectionField id="sv3#page17#enu5#sfld2" name="Correct Answer" type="integer" modifiable="true" splitOutput="true" slotOrder="sv3#page17#enu5#sfld2#slot5">
+        <Slot id="sv3#page17#enu5#sfld2#slot5" name="Output" value="1|2|3|4" label="true" output="true"/>
+      </SelectionField>
+    </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
@@ -31,7 +53,17 @@
       <layout:Cell/>
     </layout:Row>
     <layout:Row>
-      <layout:Cell colspan="12"/>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv3#page17#enu5">
+          <layout:Link link="sv3#page17#enu5#ln60"/>
+          <layout:Field field="sv3#page17#enu5#fld16"/>
+          <layout:Field field="sv3#page17#enu5#fld17"/>
+          <layout:Field field="sv3#page17#enu5#fld24"/>
+          <layout:Field field="sv3#page17#enu5#fld25"/>
+          <layout:Field field="sv3#page17#enu5#fld26"/>
+          <layout:Field field="sv3#page17#enu5#sfld2"/>
+        </layout:Unit>
+      </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>
       <layout:Cell/>

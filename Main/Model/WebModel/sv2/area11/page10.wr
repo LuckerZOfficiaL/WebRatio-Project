@@ -6,6 +6,7 @@
         <LinkParameter id="sv2#area11#page10#mssu3#ln42#par93" name="1_isCorrect" sourceValue="1" target="sv2#area11#miu9.mov1#mpkg2#opm3#icu3#icp2"/>
         <LinkParameter id="sv2#area11#page10#mssu3#ln42#par103" name="questionID_PASSING_QuestionID" sourceLinkParameter="sv2#area11#switch1#oln20#par101" target="sv2#area11#miu9.mov1#mpkg2#opm3#icu3#icp3"/>
         <LinkParameter id="sv2#area11#page10#mssu3#ln42#par114" name="enrolledCourseID_PASSING_EnrolledCourseID" sourceLinkParameter="sv2#area11#switch1#oln20#par112" target="sv2#area11#miu9.mov1#mpkg2#opm3#icu3#icp5"/>
+        <LinkParameter id="sv2#area11#page10#mssu3#ln42#par171" name="oid_PASSING_LectureTaken ID" sourceLinkParameter="sv2#area11#switch1#oln20#par166" target="sv2#area11#miu9.mov1#mpkg2#opm3#icu3#icp7"/>
       </Link>
     </MultiMessageUnit>
   </ContentUnits>

@@ -1,0 +1,22 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="1635" gr:y="-100" id="sv2#area10" name="Enroll Courses" landmark="true" defaultPage="sv2#area10#page30" landmarks="sv2#area10#miu2">
+  <OperationUnits>
+    <CreateUnit gr:x="235" gr:y="490" id="sv2#area10#cru1" name="Create Enrolledcourse" entity="ent5" linkOrder="sv2#area10#cru1#ln51">
+      <OKLink id="sv2#area10#cru1#oln18" name="OKFlow18" to="sv2#page28#mssu18">
+        <LinkParameter id="sv2#area10#cru1#oln18#par4" name="Operation successfull!_Shown Messages" sourceValue="Operation successfull!" target="sv2#page28#mssu18.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv2#area10#cru1#kln14" name="KOFlow14" to="sv2#page29#mssu19">
+        <LinkParameter id="sv2#area10#cru1#kln14#par45" name="Operation failed!_Shown Messages" sourceValue="Operation failed!" target="sv2#page29#mssu19.shownMessages"/>
+      </KOLink>
+      <Link id="sv2#area10#cru1#ln51" name="Flow51" to="sv2#area10#miu10" type="transport" validate="true">
+        <LinkParameter id="sv2#area10#cru1#ln51#par49" name="enrolledCourseID_EnrolledCourse ID" source="ent5#att15Array" target="sv2#area10#miu10.mov1#mpkg2#opm1#icu1#icp6"/>
+      </Link>
+    </CreateUnit>
+    <GetUnit gr:x="10" gr:y="480" id="sv2#area10#gtu14" name="Get User" contextParameters="UserCtxParam">
+      <Link id="sv2#area10#gtu14#ln71" name="Flow71" to="sv2#area10#cru1" type="transport" validate="true">
+        <LinkParameter id="sv2#area10#gtu14#ln71#par95" name="UserCtxParam.userID_User.userID(EnrolledCourseToUser)" source="sv2#area10#gtu14.UserCtxParam" target="sv2#area10#cru1.rel2#role4.userOID"/>
+      </Link>
+    </GetUnit>
+    <ModuleInstanceUnit id="sv2#area10#miu2" landmark="true" gr:x="295" gr:y="0" action="true" moduleId="mov1#mpkg2#opm6"/>
+    <ModuleInstanceUnit gr:x="350" gr:y="945" id="sv2#area10#miu10" action="true" moduleId="mov1#mpkg2#opm1"/>
+  </OperationUnits>
+</Area>

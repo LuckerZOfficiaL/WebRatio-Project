@@ -1,0 +1,34 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="355" gr:y="285" id="mov1#mpkg2#opm1" name="Create LectureTaken">
+  <OperationUnits>
+    <InputCollectorUnit id="mov1#mpkg2#opm1#icu1" gr:x="30" gr:y="60">
+      <InputCollectorParameter id="mov1#mpkg2#opm1#icu1#icp6" name="EnrolledCourse ID"/>
+      <Link id="mov1#mpkg2#opm1#icu1#ln57" name="Flow57" to="mov1#mpkg2#opm1#seu3" type="transport" validate="true">
+        <LinkParameter id="mov1#mpkg2#opm1#icu1#ln57#par134" name="EnrolledCourse ID_RoleCondition12 [enrolledCourseID]" source="mov1#mpkg2#opm1#icu1#icp6" target="mov1#mpkg2#opm1#seu3#su22#rcond12.ent5#att15"/>
+        <LinkParameter id="mov1#mpkg2#opm1#icu1#ln57#par135" name="EnrolledCourse ID_PASSING" source="mov1#mpkg2#opm1#icu1#icp6" passing="true"/>
+      </Link>
+    </InputCollectorUnit>
+    <SelectorUnit gr:x="390" gr:y="70" id="mov1#mpkg2#opm1#seu3" name="Lectures of Enrolled Course" entity="ent6">
+      <Selector id="mov1#mpkg2#opm1#seu3#su22" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="mov1#mpkg2#opm1#seu3#su22#rcond12" name="RoleCondition12" predicate="in" implied="false" role="rel11#role21.rel4#role7"/>
+      </Selector>
+      <OKLink id="mov1#mpkg2#opm1#seu3#oln26" name="Flow56" to="mov1#mpkg2#opm1#lpu1">
+        <LinkParameter id="mov1#mpkg2#opm1#seu3#oln26#par149" name="EnrolledCourse ID_PASSING" sourceLinkParameter="mov1#mpkg2#opm1#icu1#ln57#par135" passing="true"/>
+        <LinkParameter id="mov1#mpkg2#opm1#seu3#oln26#par150" name="lectureID_Input Array" source="ent6#att18Array" target="mov1#mpkg2#opm1#lpu1.array"/>
+      </OKLink>
+    </SelectorUnit>
+    <LoopUnit gr:x="835" gr:y="90" id="mov1#mpkg2#opm1#lpu1" name="Loop through Lectures">
+      <OKLink id="mov1#mpkg2#opm1#lpu1#oln11" name="OKFlow11" to="mov1#mpkg2#opm1#cru6" code="next">
+        <LinkParameter id="mov1#mpkg2#opm1#lpu1#oln11#par139" name="lectureID_PASSING_Lecture.lectureID(Taken LectureToLecture)" target="mov1#mpkg2#opm1#cru6.rel5#role10.ent6#att18" source="next"/>
+        <LinkParameter id="mov1#mpkg2#opm1#lpu1#oln11#par156" name="EnrolledCourse ID_PASSING" sourceLinkParameter="mov1#mpkg2#opm1#seu3#oln26#par149" passing="true"/>
+        <LinkParameter id="mov1#mpkg2#opm1#lpu1#oln11#par157" name="EnrolledCourse ID_PASSING_EnrolledCourse.enrolledCourseID(Taken LectureToEnrolledCourse)" sourceLinkParameter="mov1#mpkg2#opm1#seu3#oln26#par149" target="mov1#mpkg2#opm1#cru6.rel3#role6.ent5#att15"/>
+      </OKLink>
+      <OKLink id="mov1#mpkg2#opm1#lpu1#oln24" name="OKFlow24" to="mov1#mpkg2#opm1#okcu3" automaticCoupling="true" code="end"/>
+    </LoopUnit>
+    <CreateUnit gr:x="875" gr:y="290" id="mov1#mpkg2#opm1#cru6" name="Create" entity="ent2">
+      <OKLink id="mov1#mpkg2#opm1#cru6#oln25" name="OKFlow25" to="mov1#mpkg2#opm1#lpu1" automaticCoupling="true" gr:bendpoints="41,-107,31,93"/>
+      <KOLink id="mov1#mpkg2#opm1#cru6#kln8" name="KOFlow8" to="mov1#mpkg2#opm1#lpu1" automaticCoupling="true" gr:bendpoints="68,-109,68,101"/>
+    </CreateUnit>
+    <OKCollectorUnit gr:x="1165" gr:y="75" id="mov1#mpkg2#opm1#okcu3" name="OK Port3"/>
+    <KOCollectorUnit gr:x="1165" gr:y="280" id="mov1#mpkg2#opm1#kocu4" name="KO Port4"/>
+  </OperationUnits>
+</OperationModule>

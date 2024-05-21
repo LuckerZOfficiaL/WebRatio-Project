@@ -20,13 +20,17 @@
       <Link id="sv2#area11#page35#pwu20#ln73" name="Attempt" to="sv2#area11#page36#dau20" type="normal" validate="true">
         <LinkParameter id="sv2#area11#page35#pwu20#ln73#par124" name="questionID_KeyCondition3 [questionID]" source="data[].ent3#att3" target="sv2#area11#page36#dau20#su47#kcond30.ent3#att3"/>
         <LinkParameter id="sv2#area11#page35#pwu20#ln73#par108" name="enrolledCourseID_PASSING" sourceLinkParameter="sv2#area11#page35#dau19#ln70#par107" passing="true"/>
+        <LinkParameter id="sv2#area11#page35#pwu20#ln73#par163" name="oid_PASSING" sourceLinkParameter="sv2#area11#page35#dau2#ln64#par162" passing="true"/>
       </Link>
     </PowerIndexUnit>
-    <DataUnit gr:x="225" gr:y="0" id="sv2#area11#page35#dau2" name="LectureTaken" entity="ent2" displayAttributes="ent2#att13 ent2#att14 ent2#att20">
+    <DataUnit gr:x="225" gr:y="0" id="sv2#area11#page35#dau2" name="Progress" entity="ent2" displayAttributes="ent2#att13 ent2#att14 ent2#att20">
       <Selector id="sv2#area11#page35#dau2#su16" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="sv2#area11#page35#dau2#su16#rcond10" name="RoleCondition10" predicate="in" implied="false" role="rel3#role5"/>
         <RelationshipRoleCondition id="sv2#area11#page35#dau2#su16#rcond11" name="RoleCondition11" predicate="in" implied="false" role="rel5#role9"/>
       </Selector>
+      <Link id="sv2#area11#page35#dau2#ln64" name="Flow64" to="sv2#area11#page35#pwu20" type="transport" validate="true">
+        <LinkParameter id="sv2#area11#page35#dau2#ln64#par162" name="oid_PASSING" source="data.ent2#att4" passing="true"/>
+      </Link>
     </DataUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">

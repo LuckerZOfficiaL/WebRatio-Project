@@ -1,0 +1,60 @@
+
+<Warnings>
+
+<Warning xpath="id('mov1#mpkg2#opm1#seu3#ln56#par136')" rootXPath="id('mov1')" key="UNUSED_PASSING_PARAMETER" label="EnrolledCourse ID_PASSING">
+          <Message>The passing parameter 'EnrolledCourse ID_PASSING' is declared but never used</Message>
+          <Resolution 
+	          class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'mov1#mpkg2#opm1#seu3#ln56#par136'</Resolution>
+        </Warning>
+      <Warning xpath="id('mov1#mpkg2#opm1#seu3#ln56#par138')" rootXPath="id('mov1')" key="UNUSED_PASSING_PARAMETER" label="lectureID_PASSING">
+          <Message>The passing parameter 'lectureID_PASSING' is declared but never used</Message>
+          <Resolution 
+	          class="com.webratio.ide.ui.resources.RemoveElementResolutionGenerator">Remove the invalid link parameter 'mov1#mpkg2#opm1#seu3#ln56#par138'</Resolution>
+        </Warning>
+      <Warning xpath="id('mov1#mpkg2#opm1#lpu1#oln24')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow24">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow24'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('mov1#mpkg2#opm1#cru6#oln25')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="OKFlow25">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'OKFlow25'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+    <Warning xpath="id('mov1#mpkg2#opm1#cru6#kln8')" rootXPath="id('mov1')" key="AUTOMATIC_COUPLING_WITHOUT_EFFECT" label="KOFlow8">
+        <Message>Neither explicit nor implicit parameters' bindings could be found for the flow 'KOFlow8'</Message>
+        <Resolution 
+            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+            attribute="automaticCoupling"
+            value="">Remove the 'Automatic Coupling' property</Resolution>
+      </Warning>
+     <Warning xpath="id('mov1#mpkg2#opm1#icu1')" rootXPath="id('mov1')" error="false" label="mov1#mpkg2#opm1#icu1" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'mov1#mpkg2#opm1#icu1'</Message>
+        </Warning>
+     <Warning xpath="id('mov1#mpkg2#opm1#seu3')" rootXPath="id('mov1')" error="false" label="Lectures of Enrolled Course" key="NO_OUTGOING_OK_LINKS">
+          <Message>No outgoing OK flow(s) for the operation 'Lectures of Enrolled Course'</Message>
+        </Warning>
+    	<Warning xpath="id('mov1#mpkg2#opm1#seu3')" rootXPath="id('mov1')" error="false" label="Lectures of Enrolled Course" key="NO_OUTGOING_KO_LINKS">
+          <Message>No outgoing KO flow(s) for the operation 'Lectures of Enrolled Course'</Message>
+        </Warning>
+    
+<Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject">
+	      <Message>Security Warning: the Admin Area generation is enabled</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="adminArea"
+	            value="">Remove the 'Admin Area' property</Resolution>
+	    </Warning>
+    <Warning xpath="/WebProject" rootXPath="/WebProject" key="" label="WebProject" tab="security">
+	      <Message>Security Warning: the project contains a protected resource but the 'Protect URL' property is missing</Message>
+          <Resolution 
+	            class="com.webratio.ide.ui.resources.ChangeAttributeResolutionGenerator" 
+	            attribute="protectURL"
+	            value="true">Set the 'Protect URL' property to 'true'</Resolution>
+	    </Warning>
+    
+</Warnings>

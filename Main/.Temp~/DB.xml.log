@@ -1,198 +1,153 @@
-[21 May 2024 17:08:49] Building database metadata model
-[21 May 2024 17:08:49] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@76dff374, includeTables=true, username=root, outputLogPath=E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\DB.xml.log, readIndexes=null, driverClass=com.mysql.jdbc.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.MySQLMetaDataProvider, outputPath=E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=E:\University\Sapienza\Advanced SWE\WebRatio-Project\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:mysql://localhost:3306/db2, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=true, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=51148}
-[21 May 2024 17:08:49] URL: jdbc:mysql://localhost:3306/db2
-[21 May 2024 17:08:49] Product name: MySQL
-[21 May 2024 17:08:49] Product version: 5.7.9-log
-[21 May 2024 17:08:49] Driver name: MySQL Connector Java
-[21 May 2024 17:08:49] Driver version: mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
-[21 May 2024 17:08:49] Driver major version: 5
-[21 May 2024 17:08:49] Driver minor version: 1
-[21 May 2024 17:08:49] Identifier quote string: 1
-[21 May 2024 17:08:49] Retrieving schemas
-[21 May 2024 17:08:49] Retrieving [TABLE, VIEW, SYNONYM] for schema ''
-[21 May 2024 17:08:49]   Found 'course' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'enrolledcourse' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'group' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'group_module' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'lecture' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'lecturetaken' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'module' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'question' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'questiontaken' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'questiontaken_2' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'user' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'user_group' [type = TABLE]
-[21 May 2024 17:08:49]   Found 'enrolledcourse_grade_view' [type = VIEW]
-[21 May 2024 17:08:49]   Found 'enrolledcourse_numcorrectanswe' [type = VIEW]
-[21 May 2024 17:08:49]   Found 'enrolledcourse_numquestions_vi' [type = VIEW]
-[21 May 2024 17:08:49]   Found 'lecturetaken_grade_view' [type = VIEW]
-[21 May 2024 17:08:49]   Found 'lecturetaken_numcorrectanswers' [type = VIEW]
-[21 May 2024 17:08:49]   Found 'lecturetaken_numquestions_view' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving columns for 'course' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: courseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: name [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: topic [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: user_userid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'course' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: courseid
-[21 May 2024 17:08:49] Retrieving columns for 'enrolledcourse' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: enrolledcourseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: course_courseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: user_userid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'enrolledcourse' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: enrolledcourseid
-[21 May 2024 17:08:49] Retrieving columns for 'group' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: groupid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: groupname [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: module_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'group' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: groupid
-[21 May 2024 17:08:49] Retrieving columns for 'group_module' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: group_groupid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: module_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'group_module' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: group_groupid
-[21 May 2024 17:08:49]   Found primary key column: module_oid
-[21 May 2024 17:08:49] Retrieving columns for 'lecture' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: lectureid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: title [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: content [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: course_courseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'lecture' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: lectureid
-[21 May 2024 17:08:49] Retrieving columns for 'lecturetaken' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: enrolledcourse_enrolledcoursei [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: lecture_lectureid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'lecturetaken' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: oid
-[21 May 2024 17:08:49] Retrieving columns for 'module' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: moduleid [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: modulename [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'module' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: oid
-[21 May 2024 17:08:49] Retrieving columns for 'question' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: questionid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: question [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: option1 [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: option2 [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: option3 [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: option4 [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: correctanswer [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: lecture_lectureid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'question' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: questionid
-[21 May 2024 17:08:49] Retrieving columns for 'questiontaken' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: iscorrect [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: question_questionid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: enrolledcourse_enrolledcoursei [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: attempts [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: weight [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: lecturetaken_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'questiontaken' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: oid
-[21 May 2024 17:08:49] Retrieving columns for 'questiontaken_2' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: iscorrect [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: question_questionid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: enrolledcourse_enrolledcoursei [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'questiontaken_2' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: oid
-[21 May 2024 17:08:49] Retrieving columns for 'user' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: userid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: username [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: password [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: email [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: firstname [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: lastname [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: group_groupid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'user' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: userid
-[21 May 2024 17:08:49] Retrieving columns for 'user_group' [type = TABLE]
-[21 May 2024 17:08:49]   Found column: user_userid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: group_groupid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'user_group' [type = TABLE]
-[21 May 2024 17:08:49]   Found primary key column: user_userid
-[21 May 2024 17:08:49]   Found primary key column: group_groupid
-[21 May 2024 17:08:49] Retrieving columns for 'enrolledcourse_grade_view' [type = VIEW]
-[21 May 2024 17:08:49]   Found column: enrolledcourseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 24][dec. digits = 4]
-[21 May 2024 17:08:49] Retrieving primary keys for 'enrolledcourse_grade_view' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving columns for 'enrolledcourse_numcorrectanswe' [type = VIEW]
-[21 May 2024 17:08:49]   Found column: enrolledcourseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 32][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'enrolledcourse_numcorrectanswe' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving columns for 'enrolledcourse_numquestions_vi' [type = VIEW]
-[21 May 2024 17:08:49]   Found column: enrolledcourseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 19][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'enrolledcourse_numquestions_vi' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving columns for 'lecturetaken_grade_view' [type = VIEW]
-[21 May 2024 17:08:49]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: der_attr [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'lecturetaken_grade_view' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving columns for 'lecturetaken_numcorrectanswers' [type = VIEW]
-[21 May 2024 17:08:49]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 32][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'lecturetaken_numcorrectanswers' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving columns for 'lecturetaken_numquestions_view' [type = VIEW]
-[21 May 2024 17:08:49]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
-[21 May 2024 17:08:49]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 19][dec. digits = 0]
-[21 May 2024 17:08:49] Retrieving primary keys for 'lecturetaken_numquestions_view' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving foreign keys for 'course' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column user_userid references user(userid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'enrolledcourse' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column course_courseid references course(courseid)
-[21 May 2024 17:08:49]   Found foreign key: column user_userid references user(userid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'group' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column module_oid references module(oid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'group_module' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column group_groupid references group(groupid)
-[21 May 2024 17:08:49]   Found foreign key: column module_oid references module(oid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'lecture' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column course_courseid references course(courseid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'lecturetaken' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column enrolledcourse_enrolledcoursei references enrolledcourse(enrolledcourseid)
-[21 May 2024 17:08:49]   Found foreign key: column lecture_lectureid references lecture(lectureid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'module' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving foreign keys for 'question' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column lecture_lectureid references lecture(lectureid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'questiontaken' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column enrolledcourse_enrolledcoursei references enrolledcourse(enrolledcourseid)
-[21 May 2024 17:08:49]   Found foreign key: column lecturetaken_oid references lecturetaken(oid)
-[21 May 2024 17:08:49]   Found foreign key: column question_questionid references question(questionid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'questiontaken_2' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column enrolledcourse_enrolledcoursei references enrolledcourse(enrolledcourseid)
-[21 May 2024 17:08:49]   Found foreign key: column question_questionid references question(questionid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'user' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column group_groupid references group(groupid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'user_group' [type = TABLE]
-[21 May 2024 17:08:49]   Found foreign key: column group_groupid references group(groupid)
-[21 May 2024 17:08:49]   Found foreign key: column user_userid references user(userid)
-[21 May 2024 17:08:49] Retrieving foreign keys for 'enrolledcourse_grade_view' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving foreign keys for 'enrolledcourse_numcorrectanswe' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving foreign keys for 'enrolledcourse_numquestions_vi' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving foreign keys for 'lecturetaken_grade_view' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving foreign keys for 'lecturetaken_numcorrectanswers' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving foreign keys for 'lecturetaken_numquestions_view' [type = VIEW]
-[21 May 2024 17:08:49] Database metadata retrieved (183 ms)
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'course' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'enrolledcourse' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'group' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'group_module' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'lecture' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'lecturetaken' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'module' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'question' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'questiontaken' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'questiontaken_2' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'user' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'user_group' [type = TABLE]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'enrolledcourse_grade_view' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'enrolledcourse_numcorrectanswe' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'enrolledcourse_numquestions_vi' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'lecturetaken_grade_view' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'lecturetaken_numcorrectanswers' [type = VIEW]
-[21 May 2024 17:08:49] Retrieving auto-increment columns for 'lecturetaken_numquestions_view' [type = VIEW]
-[21 May 2024 17:08:49] Database connection closed
+[21 May 2024 21:48:51] Building database metadata model
+[21 May 2024 21:48:51] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@53c33ccd, includeTables=true, username=root, outputLogPath=F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\DB.xml.log, readIndexes=null, driverClass=com.mysql.jdbc.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.MySQLMetaDataProvider, outputPath=F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=F:\University\MSc\Y1\S2\Advanced SWE\Project\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:mysql://localhost:3306/db2, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=false, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=49918}
+[21 May 2024 21:48:51] URL: jdbc:mysql://localhost:3306/db2
+[21 May 2024 21:48:51] Product name: MySQL
+[21 May 2024 21:48:51] Product version: 5.7.7-rc-log
+[21 May 2024 21:48:51] Driver name: MySQL Connector Java
+[21 May 2024 21:48:51] Driver version: mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
+[21 May 2024 21:48:51] Driver major version: 5
+[21 May 2024 21:48:51] Driver minor version: 1
+[21 May 2024 21:48:51] Identifier quote string: 1
+[21 May 2024 21:48:51] Retrieving schemas
+[21 May 2024 21:48:51] Retrieving [TABLE, VIEW, SYNONYM] for schema ''
+[21 May 2024 21:48:51]   Found 'course' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'enrolledcourse' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'group' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'group_module' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'lecture' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'lecturetaken' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'module' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'question' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'questiontaken' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'user' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'user_group' [type = TABLE]
+[21 May 2024 21:48:51]   Found 'enrolledcourse_grade_view' [type = VIEW]
+[21 May 2024 21:48:51]   Found 'enrolledcourse_numcorrectanswe' [type = VIEW]
+[21 May 2024 21:48:51]   Found 'enrolledcourse_numquestions_vi' [type = VIEW]
+[21 May 2024 21:48:51]   Found 'lecturetaken_grade_view' [type = VIEW]
+[21 May 2024 21:48:51]   Found 'lecturetaken_numcorrectanswers' [type = VIEW]
+[21 May 2024 21:48:51]   Found 'lecturetaken_numquestions_view' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving columns for 'course' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: courseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: name [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: topic [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: user_userid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'course' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: courseid
+[21 May 2024 21:48:51] Retrieving columns for 'enrolledcourse' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: enrolledcourseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: course_courseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: user_userid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'enrolledcourse' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: enrolledcourseid
+[21 May 2024 21:48:51] Retrieving columns for 'group' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: groupid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: groupname [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: module_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'group' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: groupid
+[21 May 2024 21:48:51] Retrieving columns for 'group_module' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: group_groupid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: module_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'group_module' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: group_groupid
+[21 May 2024 21:48:51]   Found primary key column: module_oid
+[21 May 2024 21:48:51] Retrieving columns for 'lecture' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: lectureid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: title [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: content [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: course_courseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'lecture' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: lectureid
+[21 May 2024 21:48:51] Retrieving columns for 'lecturetaken' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: enrolledcourse_enrolledcoursei [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: lecture_lectureid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'lecturetaken' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: oid
+[21 May 2024 21:48:51] Retrieving columns for 'module' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: moduleid [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: modulename [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'module' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: oid
+[21 May 2024 21:48:51] Retrieving columns for 'question' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: questionid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: question [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: option1 [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: option2 [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: option3 [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: option4 [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: correctanswer [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: lecture_lectureid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'question' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: questionid
+[21 May 2024 21:48:51] Retrieving columns for 'questiontaken' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: iscorrect [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: question_questionid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: enrolledcourse_enrolledcoursei [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: attempts [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: weight [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: lecturetaken_oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'questiontaken' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: oid
+[21 May 2024 21:48:51] Retrieving columns for 'user' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: userid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: username [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: password [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: email [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: firstname [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: lastname [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: group_groupid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'user' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: userid
+[21 May 2024 21:48:51] Retrieving columns for 'user_group' [type = TABLE]
+[21 May 2024 21:48:51]   Found column: user_userid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: group_groupid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'user_group' [type = TABLE]
+[21 May 2024 21:48:51]   Found primary key column: user_userid
+[21 May 2024 21:48:51]   Found primary key column: group_groupid
+[21 May 2024 21:48:51] Retrieving columns for 'enrolledcourse_grade_view' [type = VIEW]
+[21 May 2024 21:48:51]   Found column: enrolledcourseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 36][dec. digits = 4]
+[21 May 2024 21:48:51] Retrieving primary keys for 'enrolledcourse_grade_view' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving columns for 'enrolledcourse_numcorrectanswe' [type = VIEW]
+[21 May 2024 21:48:51]   Found column: enrolledcourseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 32][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'enrolledcourse_numcorrectanswe' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving columns for 'enrolledcourse_numquestions_vi' [type = VIEW]
+[21 May 2024 21:48:51]   Found column: enrolledcourseid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 19][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'enrolledcourse_numquestions_vi' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving columns for 'lecturetaken_grade_view' [type = VIEW]
+[21 May 2024 21:48:51]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 36][dec. digits = 4]
+[21 May 2024 21:48:51] Retrieving primary keys for 'lecturetaken_grade_view' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving columns for 'lecturetaken_numcorrectanswers' [type = VIEW]
+[21 May 2024 21:48:51]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 32][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'lecturetaken_numcorrectanswers' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving columns for 'lecturetaken_numquestions_view' [type = VIEW]
+[21 May 2024 21:48:51]   Found column: oid [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[21 May 2024 21:48:51]   Found column: der_attr [type = NUMERIC][SQL/XOPEN type = 2][size = 19][dec. digits = 0]
+[21 May 2024 21:48:51] Retrieving primary keys for 'lecturetaken_numquestions_view' [type = VIEW]
+[21 May 2024 21:48:51] Database metadata retrieved (162 ms)
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'course' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'enrolledcourse' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'group' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'group_module' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'lecture' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'lecturetaken' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'module' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'question' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'questiontaken' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'user' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'user_group' [type = TABLE]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'enrolledcourse_grade_view' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'enrolledcourse_numcorrectanswe' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'enrolledcourse_numquestions_vi' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'lecturetaken_grade_view' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'lecturetaken_numcorrectanswers' [type = VIEW]
+[21 May 2024 21:48:51] Retrieving auto-increment columns for 'lecturetaken_numquestions_view' [type = VIEW]
+[21 May 2024 21:48:51] Database connection closed

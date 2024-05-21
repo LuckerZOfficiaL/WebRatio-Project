@@ -1,6 +1,6 @@
 <OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="285" id="mov1#mpkg2#opm3" name="Save QuestionTaken">
   <OperationUnits>
-    <InputCollectorUnit id="mov1#mpkg2#opm3#icu3" gr:x="-30" gr:y="190" linkOrder="mov1#mpkg2#opm3#icu3#ln44 mov1#mpkg2#opm3#icu3#ln45">
+    <InputCollectorUnit id="mov1#mpkg2#opm3#icu3" gr:x="-30" gr:y="190">
       <InputCollectorParameter id="mov1#mpkg2#opm3#icu3#icp5" name="EnrolledCourseID"/>
       <InputCollectorParameter id="mov1#mpkg2#opm3#icu3#icp3" name="QuestionID"/>
       <InputCollectorParameter id="mov1#mpkg2#opm3#icu3#icp2" name="isCorrect"/>
@@ -15,12 +15,15 @@
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln44#par128" name="isCorrect_iscorrect" source="mov1#mpkg2#opm3#icu3#icp2" target="mov1#mpkg2#opm3#cru7.ent7#att28"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln44#par33" name="0_attempts" sourceValue="1" target="mov1#mpkg2#opm3#cru7.ent7#att2"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln44#par54" name="isCorrect_weight" source="mov1#mpkg2#opm3#icu3#icp2" target="mov1#mpkg2#opm3#cru7.ent7#att26"/>
+        <LinkParameter id="mov1#mpkg2#opm3#icu3#ln44#par160" name="LectureTaken ID_LectureTaken.oid(QuestiontakenToLectureTaken)" source="mov1#mpkg2#opm3#icu3#icp7" target="mov1#mpkg2#opm3#cru7.rel6#role12.ent2#att4"/>
       </Link>
       <Link id="mov1#mpkg2#opm3#icu3#ln45" name="Flow45" to="mov1#mpkg2#opm3#mfu2" type="transport" validate="true">
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln45#par129" name="EnrolledCourseID_EnrolledCourse.enrolledCourseID(QuestiontakenToEnrolledcourse)" source="mov1#mpkg2#opm3#icu3#icp5" target="mov1#mpkg2#opm3#mfu2.rel8#role15.ent5#att15"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln45#par130" name="isCorrect_iscorrect" source="mov1#mpkg2#opm3#icu3#icp2" target="mov1#mpkg2#opm3#mfu2.ent7#att28"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln45#par131" name="QuestionID_Question.questionID(QuestiontakenToQuestion)" source="mov1#mpkg2#opm3#icu3#icp3" target="mov1#mpkg2#opm3#mfu2.rel10#role19.ent3#att3"/>
+        <LinkParameter id="mov1#mpkg2#opm3#icu3#ln45#par161" name="LectureTaken ID_LectureTaken.oid(QuestiontakenToLectureTaken)" source="mov1#mpkg2#opm3#icu3#icp7" target="mov1#mpkg2#opm3#mfu2.rel6#role12.ent2#att4"/>
       </Link>
+      <InputCollectorParameter id="mov1#mpkg2#opm3#icu3#icp7" name="LectureTaken ID"/>
     </InputCollectorUnit>
     <SelectorUnit gr:x="370" gr:y="205" id="mov1#mpkg2#opm3#seu2" name="Selector" entity="ent7" linkOrder="mov1#mpkg2#opm3#seu2#ln31">
       <Selector id="mov1#mpkg2#opm3#seu2#su5" defaultPolicy="fill" booleanOperator="and">
