@@ -9,14 +9,14 @@
         <LinkParameter id="mov1#mpkg2#opm3#icu3#oln3#par74" name="QuestionID_Question Condition [questionID]" source="mov1#mpkg2#opm3#icu3#icp3" target="mov1#mpkg2#opm3#seu2#su5#rcond6.ent3#att3"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#oln3#par120" name="isCorrect_PASSING" source="mov1#mpkg2#opm3#icu3#icp2" passing="true"/>
       </OKLink>
-      <Link id="mov1#mpkg2#opm3#icu3#ln44" name="Flow44" to="mov1#mpkg2#opm3#cru7" type="transport" validate="true" gr:bendpoints="242,-191,-673,4">
+      <Link id="mov1#mpkg2#opm3#icu3#ln44" name="Flow44" to="mov1#mpkg2#opm3#cru7" type="transport" validate="true">
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln44#par126" name="EnrolledCourseID_EnrolledCourse.enrolledCourseID(QuestiontakenToEnrolledcourse)" source="mov1#mpkg2#opm3#icu3#icp5" target="mov1#mpkg2#opm3#cru7.rel8#role15.ent5#att15"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln44#par127" name="QuestionID_Question.questionID(QuestiontakenToQuestion)" source="mov1#mpkg2#opm3#icu3#icp3" target="mov1#mpkg2#opm3#cru7.rel10#role19.ent3#att3"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln44#par128" name="isCorrect_iscorrect" source="mov1#mpkg2#opm3#icu3#icp2" target="mov1#mpkg2#opm3#cru7.ent7#att28"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln44#par33" name="0_attempts" sourceValue="1" target="mov1#mpkg2#opm3#cru7.ent7#att2"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln44#par160" name="LectureTaken ID_LectureTaken.oid(QuestiontakenToLectureTaken)" source="mov1#mpkg2#opm3#icu3#icp7" target="mov1#mpkg2#opm3#cru7.rel6#role12.ent2#att4"/>
       </Link>
-      <Link id="mov1#mpkg2#opm3#icu3#ln45" name="Flow45" to="mov1#mpkg2#opm3#mfu2" type="transport" validate="true" gr:bendpoints="242,169,-653,4">
+      <Link id="mov1#mpkg2#opm3#icu3#ln45" name="Flow45" to="mov1#mpkg2#opm3#mfu2" type="transport" validate="true">
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln45#par129" name="EnrolledCourseID_EnrolledCourse.enrolledCourseID(QuestiontakenToEnrolledcourse)" source="mov1#mpkg2#opm3#icu3#icp5" target="mov1#mpkg2#opm3#mfu2.rel8#role15.ent5#att15"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln45#par130" name="isCorrect_iscorrect" source="mov1#mpkg2#opm3#icu3#icp2" target="mov1#mpkg2#opm3#mfu2.ent7#att28"/>
         <LinkParameter id="mov1#mpkg2#opm3#icu3#ln45#par131" name="QuestionID_Question.questionID(QuestiontakenToQuestion)" source="mov1#mpkg2#opm3#icu3#icp3" target="mov1#mpkg2#opm3#mfu2.rel10#role19.ent3#att3"/>
@@ -24,7 +24,7 @@
       </Link>
       <InputCollectorParameter id="mov1#mpkg2#opm3#icu3#icp7" name="LectureTaken ID"/>
     </InputCollectorUnit>
-    <SelectorUnit gr:x="370" gr:y="205" id="mov1#mpkg2#opm3#seu2" name="Selector" entity="ent7" maxResults="1" linkOrder="mov1#mpkg2#opm3#seu2#ln82">
+    <SelectorUnit gr:x="370" gr:y="205" id="mov1#mpkg2#opm3#seu2" name="Selector" entity="ent7" maxResults="1">
       <Selector id="mov1#mpkg2#opm3#seu2#su5" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="mov1#mpkg2#opm3#seu2#su5#rcond6" name="Question Condition" predicate="in" implied="false" role="rel10#role20"/>
         <RelationshipRoleCondition id="mov1#mpkg2#opm3#seu2#su5#rcond9" name="EnrolledCourse Condition" predicate="in" implied="false" role="rel8#role16"/>
@@ -37,13 +37,14 @@
         <LinkParameter id="mov1#mpkg2#opm3#seu2#oln4#par121" name="isCorrect_PASSING" sourceLinkParameter="mov1#mpkg2#opm3#icu3#oln3#par120" passing="true"/>
         <LinkParameter id="mov1#mpkg2#opm3#seu2#oln4#par135" name="attempts_PASSING" source="ent7#att2Array" passing="true"/>
       </OKLink>
-      <Link id="mov1#mpkg2#opm3#seu2#ln82" name="Flow82" to="mov1#mpkg2#opm3#scu1" type="transport" validate="true">
-        <LinkParameter id="mov1#mpkg2#opm3#seu2#ln82#par210" name="attempts_attempts" source="ent7#att2Array" target="mov1#mpkg2#opm3#scu1.attempts"/>
+      <Link id="mov1#mpkg2#opm3#seu2#ln63" name="Flow59" to="mov1#mpkg2#opm3#scu1" type="transport" validate="true">
+        <LinkParameter id="mov1#mpkg2#opm3#seu2#ln63#par180" name="attempts_PASSING_attempts" target="mov1#mpkg2#opm3#scu1.attempts" source="ent7#att2Array"/>
       </Link>
     </SelectorUnit>
     <IsNotNullUnit gr:x="865" gr:y="245" id="mov1#mpkg2#opm3#inn1" name="Is Not Null1">
       <OKLink id="mov1#mpkg2#opm3#inn1#oln6" name="OKFlow6" to="mov1#mpkg2#opm3#mfu2">
         <LinkParameter id="mov1#mpkg2#opm3#inn1#oln6#par90" name="oid_PASSING_KeyCondition3 [oid]" target="mov1#mpkg2#opm3#mfu2#su8#kcond3.ent7#att27" source="inputValue"/>
+        <LinkParameter id="mov1#mpkg2#opm3#inn1#oln6#par182" name="new_attempts_PASSING_attempts" sourceLinkParameter="mov1#mpkg2#opm3#scu1#ln36#par138" target="mov1#mpkg2#opm3#mfu2.ent7#att2"/>
       </OKLink>
       <KOLink id="mov1#mpkg2#opm3#inn1#kln1" name="KOFlow1" to="mov1#mpkg2#opm3#cru7"/>
     </IsNotNullUnit>
@@ -51,7 +52,7 @@
       <OKLink id="mov1#mpkg2#opm3#cru7#oln8" name="OKFlow8" to="mov1#mpkg2#opm3#okcu2" automaticCoupling="true"/>
       <KOLink id="mov1#mpkg2#opm3#cru7#kln5" name="KOFlow5" to="mov1#mpkg2#opm3#kocu3" automaticCoupling="true"/>
     </CreateUnit>
-    <ModifyUnit gr:x="930" gr:y="390" id="mov1#mpkg2#opm3#mfu2" name="Update" entity="ent7">
+    <ModifyUnit gr:x="930" gr:y="375" id="mov1#mpkg2#opm3#mfu2" name="Update" entity="ent7">
       <Selector id="mov1#mpkg2#opm3#mfu2#su8" defaultPolicy="fill" booleanOperator="and">
         <KeyCondition id="mov1#mpkg2#opm3#mfu2#su8#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
       </Selector>
@@ -60,13 +61,16 @@
     </ModifyUnit>
     <KOCollectorUnit gr:x="1290" gr:y="380" id="mov1#mpkg2#opm3#kocu3" name="KO Port3"/>
     <OKCollectorUnit gr:x="1290" gr:y="20" id="mov1#mpkg2#opm3#okcu2" name="OK Port2"/>
-    <ScriptUnit gr:x="700" gr:y="330" id="mov1#mpkg2#opm3#scu1" name="Add One">
+    <ScriptUnit gr:x="475" gr:y="400" id="mov1#mpkg2#opm3#scu1" name="Add One" linkOrder="mov1#mpkg2#opm3#scu1#ln36">
       <ScriptUnitText xml:space="preserve">#input int attempts
 #output int new_attempts
 
 
-def new_attempts = attempts + 1
+def new_attempts = 0
+
+
+new_attempts = attempts + 1
 
 
 return ["new_attempts": new_attempts]
-</ScriptUnitText>      <Link id="mov1#mpkg2#opm3#scu1#ln83" name="OKFlow30" to="mov1#mpkg2#opm3#mfu2" type="transport">        <LinkParameter id="mov1#mpkg2#opm3#scu1#ln83#par211" name="new_attempts_attempts" source="result(new_attempts)" target="mov1#mpkg2#opm3#mfu2.ent7#att2"/>      </Link>    </ScriptUnit>  </OperationUnits></OperationModule>
+</ScriptUnitText>      <Link id="mov1#mpkg2#opm3#scu1#ln36" name="Flow36" to="mov1#mpkg2#opm3#inn1" type="transport" validate="true">        <LinkParameter id="mov1#mpkg2#opm3#scu1#ln36#par138" name="new_attempts_PASSING" source="result(new_attempts)" passing="true"/>      </Link>    </ScriptUnit>  </OperationUnits></OperationModule>
