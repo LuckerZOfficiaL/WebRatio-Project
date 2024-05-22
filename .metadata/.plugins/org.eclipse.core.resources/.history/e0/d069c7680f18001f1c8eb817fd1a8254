@@ -24,7 +24,7 @@
       </Link>
       <InputCollectorParameter id="mov1#mpkg2#opm3#icu3#icp7" name="LectureTaken ID"/>
     </InputCollectorUnit>
-    <SelectorUnit gr:x="370" gr:y="205" id="mov1#mpkg2#opm3#seu2" name="Selector" entity="ent7" maxResults="1" linkOrder="mov1#mpkg2#opm3#seu2#ln82 mov1#mpkg2#opm3#seu2#ln84">
+    <SelectorUnit gr:x="370" gr:y="205" id="mov1#mpkg2#opm3#seu2" name="Selector" entity="ent7" maxResults="1">
       <Selector id="mov1#mpkg2#opm3#seu2#su5" defaultPolicy="fill" booleanOperator="and">
         <RelationshipRoleCondition id="mov1#mpkg2#opm3#seu2#su5#rcond6" name="Question Condition" predicate="in" implied="false" role="rel10#role20"/>
         <RelationshipRoleCondition id="mov1#mpkg2#opm3#seu2#su5#rcond9" name="EnrolledCourse Condition" predicate="in" implied="false" role="rel8#role16"/>
@@ -37,12 +37,8 @@
         <LinkParameter id="mov1#mpkg2#opm3#seu2#oln4#par121" name="isCorrect_PASSING" sourceLinkParameter="mov1#mpkg2#opm3#icu3#oln3#par120" passing="true"/>
         <LinkParameter id="mov1#mpkg2#opm3#seu2#oln4#par135" name="attempts_PASSING" source="ent7#att2Array" passing="true"/>
       </OKLink>
-      <Link id="mov1#mpkg2#opm3#seu2#ln82" name="Flow82" to="mov1#mpkg2#opm3#scu1" type="transport" validate="true">
-        <LinkParameter id="mov1#mpkg2#opm3#seu2#ln82#par210" name="attempts_attempts" source="ent7#att2Array" target="mov1#mpkg2#opm3#scu1.attempts"/>
-      </Link>
       <Link id="mov1#mpkg2#opm3#seu2#ln84" name="Flow84" to="mov1#mpkg2#opm3#mathu1" type="transport" validate="true">
         <LinkParameter id="mov1#mpkg2#opm3#seu2#ln84#par213" name="attempts_Operand1" source="ent7#att2Array" target="mov1#mpkg2#opm3#mathu1#mathv1"/>
-        <LinkParameter id="mov1#mpkg2#opm3#seu2#ln84#par216" name="1_Operand2" sourceValue="1" target="mov1#mpkg2#opm3#mathu1#mathv2"/>
       </Link>
     </SelectorUnit>
     <IsNotNullUnit gr:x="865" gr:y="245" id="mov1#mpkg2#opm3#inn1" name="Is Not Null1">
@@ -64,13 +60,11 @@
     </ModifyUnit>
     <KOCollectorUnit gr:x="1290" gr:y="380" id="mov1#mpkg2#opm3#kocu3" name="KO Port3"/>
     <OKCollectorUnit gr:x="1290" gr:y="20" id="mov1#mpkg2#opm3#okcu2" name="OK Port2"/>
-    <ScriptUnit gr:x="700" gr:y="330" id="mov1#mpkg2#opm3#scu1" name="Add One">
-      <ScriptUnitText xml:space="preserve">#input int attempts
-#output int new_attempts
-
-
-def new_attempts = attempts + 1
-
-
-return ["new_attempts": new_attempts]
-</ScriptUnitText>    </ScriptUnit>    <MathUnit gr:x="505" gr:y="465" id="mov1#mpkg2#opm3#mathu1" name="Sum" resultType="integer" defaultExpression="Operand1 + Operand2">      <MathVariable id="mov1#mpkg2#opm3#mathu1#mathv1" name="Operand1"/>      <MathVariable id="mov1#mpkg2#opm3#mathu1#mathv2" name="Operand2"/>      <OKLink id="mov1#mpkg2#opm3#mathu1#oln31" name="Flow86" to="mov1#mpkg2#opm3#mfu2">        <LinkParameter id="mov1#mpkg2#opm3#mathu1#oln31#par218" name="Result_attempts" source="result" target="mov1#mpkg2#opm3#mfu2.ent7#att2"/>      </OKLink>    </MathUnit>  </OperationUnits></OperationModule>
+    <MathUnit gr:x="535" gr:y="470" id="mov1#mpkg2#opm3#mathu1" name="Math1" resultType="integer" defaultExpression="Operand1 + 1" linkOrder="mov1#mpkg2#opm3#mathu1#ln85">
+      <MathVariable id="mov1#mpkg2#opm3#mathu1#mathv1" name="Operand1"/>
+      <Link id="mov1#mpkg2#opm3#mathu1#ln85" name="Flow85" to="mov1#mpkg2#opm3#mfu2" type="transport" validate="true">
+        <LinkParameter id="mov1#mpkg2#opm3#mathu1#ln85#par214" name="Result_attempts" source="result" target="mov1#mpkg2#opm3#mfu2.ent7#att2"/>
+      </Link>
+    </MathUnit>
+  </OperationUnits>
+</OperationModule>
