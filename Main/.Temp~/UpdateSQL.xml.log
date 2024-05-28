@@ -1,27 +1,26 @@
-[21 May 2024 23:16:08] DEBUG Executing SQL script
-[21 May 2024 23:16:08] INFO ================================================================================
-[21 May 2024 23:16:08] INFO outputPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.xml'
-[21 May 2024 23:16:08] INFO onError= 'stop'
-[21 May 2024 23:16:08] INFO statementSeparator= ';'
-[21 May 2024 23:16:08] INFO derby.system.home= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\.metadata\.plugins\com.webratio.commons.db\derby'
-[21 May 2024 23:16:08] INFO password= '585858'
-[21 May 2024 23:16:08] INFO url= 'jdbc:mysql://localhost:3306/db2'
-[21 May 2024 23:16:08] INFO username= 'root'
-[21 May 2024 23:16:08] INFO autoCommit= 'false'
-[21 May 2024 23:16:08] INFO outputLogPath= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.xml.log'
-[21 May 2024 23:16:08] INFO driverClass= 'com.mysql.jdbc.Driver'
-[21 May 2024 23:16:08] INFO encoding= ''
-[21 May 2024 23:16:08] INFO eventSocketPort= '52195'
-[21 May 2024 23:16:08] INFO sqlScript= 'F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.sql'
-[21 May 2024 23:16:08] INFO ================================================================================
-[21 May 2024 23:16:08] INFO Connecting to the Database...
-[21 May 2024 23:16:08] INFO Database connection estabilished
-[21 May 2024 23:16:08] INFO transaction isolation: 4
-[21 May 2024 23:16:08] DEBUG ================================================================================
-[21 May 2024 23:16:08] DEBUG Executing SQL script file: F:\University\MSc\Y1\S2\Advanced SWE\Project\Main\.Temp~\UpdateSQL.sql
-[21 May 2024 23:16:09] DEBUG Executing statement:  drop view `lecturetaken_grade_view`
-[21 May 2024 23:16:09] DEBUG Executing statement:  create view `lecturetaken_grade_view` as select AL1.`oid` as `oid`, sum(AL2.`iscorrect`) / sum(AL2.`attempts`) * count(distinct AL2.`oid`) / count(distinct AL3.`questionid`) as `der_attr` from  `lecturetaken` AL1 left outer join `questiontaken` AL2 on AL1.`oid`=AL2.`lecturetaken_oid` left outer join `question` AL3 on AL1.`lecture_lectureid`=AL3.`lecture_lectureid` group by AL1.`oid`
-[21 May 2024 23:16:09] DEBUG ================================================================================
-[21 May 2024 23:16:09] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[21 May 2024 23:16:09] INFO Database connection closed
-[21 May 2024 23:16:09] DEBUG Total time: 414 milliseconds
+[28 May 2024 11:59:19] DEBUG Executing SQL script
+[28 May 2024 11:59:19] INFO ================================================================================
+[28 May 2024 11:59:19] INFO onError= 'stop'
+[28 May 2024 11:59:19] INFO autoCommit= 'false'
+[28 May 2024 11:59:19] INFO username= 'root'
+[28 May 2024 11:59:19] INFO outputPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml'
+[28 May 2024 11:59:19] INFO outputLogPath= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.xml.log'
+[28 May 2024 11:59:19] INFO encoding= ''
+[28 May 2024 11:59:19] INFO driverClass= 'com.mysql.jdbc.Driver'
+[28 May 2024 11:59:19] INFO sqlScript= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql'
+[28 May 2024 11:59:19] INFO eventSocketPort= '51682'
+[28 May 2024 11:59:19] INFO statementSeparator= ';'
+[28 May 2024 11:59:19] INFO derby.system.home= 'E:\University\Sapienza\Advanced SWE\WebRatio-Project\.metadata\.plugins\com.webratio.commons.db\derby'
+[28 May 2024 11:59:19] INFO password= '585858'
+[28 May 2024 11:59:19] INFO url= 'jdbc:mysql://localhost:3306/db2'
+[28 May 2024 11:59:19] INFO ================================================================================
+[28 May 2024 11:59:19] INFO Connecting to the Database...
+[28 May 2024 11:59:19] INFO Database connection estabilished
+[28 May 2024 11:59:19] INFO transaction isolation: 4
+[28 May 2024 11:59:19] DEBUG ================================================================================
+[28 May 2024 11:59:19] DEBUG Executing SQL script file: E:\University\Sapienza\Advanced SWE\WebRatio-Project\Main\.Temp~\UpdateSQL.sql
+[28 May 2024 11:59:19] DEBUG Executing statement:  alter table `course`  add column  `academicyear`  integer
+[28 May 2024 11:59:20] DEBUG ================================================================================
+[28 May 2024 11:59:20] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[28 May 2024 11:59:20] INFO Database connection closed
+[28 May 2024 11:59:20] DEBUG Total time: 347 milliseconds
